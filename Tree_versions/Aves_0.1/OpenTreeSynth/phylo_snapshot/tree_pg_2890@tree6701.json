@@ -1,0 +1,611 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [
+"--embed", 
+"--agent-only"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-06-27T15:04:15.963Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-06-27T15:04:15.963Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6701"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 472037, 
+"^ot:focalCladeOTTTaxonName": "Formicariidae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus2890"
+], 
+"^ot:studyId": "pg_2890", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1642/0004-8038(2005)122[0673:proagp]2.0.co;2"
+}, 
+"^ot:studyPublicationReference": "Rice, Nathan H. 2005. Phylogenetic relationships of antpitta genera (Passeriformes: Formicariidae). The Auk 122 (2): 673-683.", 
+"^ot:studyYear": 2005, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees2890"
+], 
+"otusById": {
+"otus2890": {
+"otuById": {
+"otu428830": {
+"^ot:originalLabel": "Grallaricula lineifrons", 
+"^ot:ottId": 514515, 
+"^ot:ottTaxonName": "Grallaricula lineifrons"
+}, 
+"otu428831": {
+"^ot:originalLabel": "Grallaricula flavirostris", 
+"^ot:ottId": 959335, 
+"^ot:ottTaxonName": "Grallaricula flavirostris"
+}, 
+"otu428832": {
+"^ot:originalLabel": "Myrmothera campanisona", 
+"^ot:ottId": 736630, 
+"^ot:ottTaxonName": "Myrmothera campanisona"
+}, 
+"otu428833": {
+"^ot:originalLabel": "Myrmothera simplex", 
+"^ot:ottId": 433839, 
+"^ot:ottTaxonName": "Myrmothera simplex"
+}, 
+"otu428834": {
+"^ot:originalLabel": "Hylopezus fulviventris", 
+"^ot:ottId": 514527, 
+"^ot:ottTaxonName": "Hylopezus fulviventris"
+}, 
+"otu428835": {
+"^ot:originalLabel": "Hylopezus berlepschi", 
+"^ot:ottId": 412581, 
+"^ot:ottTaxonName": "Hylopezus berlepschi"
+}, 
+"otu428836": {
+"^ot:originalLabel": "Grallaria squamigera", 
+"^ot:ottId": 1091661, 
+"^ot:ottTaxonName": "Grallaria squamigera"
+}, 
+"otu428837": {
+"^ot:originalLabel": "Grallaria varia", 
+"^ot:ottId": 1091665, 
+"^ot:ottTaxonName": "Grallaria varia"
+}, 
+"otu428838": {
+"^ot:originalLabel": "Grallaria rufula", 
+"^ot:ottId": 464216, 
+"^ot:ottTaxonName": "Grallaria rufula"
+}, 
+"otu428839": {
+"^ot:originalLabel": "Grallaria blakei", 
+"^ot:ottId": 1041028, 
+"^ot:ottTaxonName": "Grallaria blakei"
+}, 
+"otu428840": {
+"^ot:originalLabel": "Grallaria ruficapilla", 
+"^ot:ottId": 464218, 
+"^ot:ottTaxonName": "Grallaria ruficapilla"
+}, 
+"otu428841": {
+"^ot:originalLabel": "Grallaria watkinsi", 
+"^ot:ottId": 1091678, 
+"^ot:ottTaxonName": "Grallaria watkinsi"
+}, 
+"otu428842": {
+"^ot:originalLabel": "Grallaria eludens", 
+"^ot:ottId": 959333, 
+"^ot:ottTaxonName": "Grallaria eludens"
+}, 
+"otu428843": {
+"^ot:originalLabel": "Grallaria dignissima", 
+"^ot:ottId": 1041030, 
+"^ot:ottTaxonName": "Grallaria dignissima"
+}, 
+"otu428844": {
+"^ot:originalLabel": "Conopophaga lineata", 
+"^ot:ottId": 45219, 
+"^ot:ottTaxonName": "Conopophaga lineata"
+}, 
+"otu428845": {
+"^ot:originalLabel": "Conopophaga peruviana", 
+"^ot:ottId": 683051, 
+"^ot:ottTaxonName": "Conopophaga peruviana"
+}, 
+"otu428846": {
+"^ot:originalLabel": "Pittasoma rufopileatum", 
+"^ot:ottId": 412590, 
+"^ot:ottTaxonName": "Pittasoma rufopileatum"
+}, 
+"otu428847": {
+"^ot:originalLabel": "Pittasoma michleri", 
+"^ot:ottId": 412592, 
+"^ot:ottTaxonName": "Pittasoma michleri"
+}, 
+"otu428848": {
+"^ot:originalLabel": "Myrmornis torquata", 
+"^ot:ottId": 705964, 
+"^ot:ottTaxonName": "Myrmornis torquata"
+}, 
+"otu428849": {
+"^ot:originalLabel": "Phlegopsis nigromaculata", 
+"^ot:ottId": 433855, 
+"^ot:ottTaxonName": "Phlegopsis nigromaculata"
+}, 
+"otu428850": {
+"^ot:originalLabel": "Liosceles thoracicus", 
+"^ot:ottId": 332218, 
+"^ot:ottTaxonName": "Liosceles thoracicus"
+}, 
+"otu428851": {
+"^ot:originalLabel": "Rhinocrypta lanceolata", 
+"^ot:ottId": 873515, 
+"^ot:ottTaxonName": "Rhinocrypta lanceolata"
+}, 
+"otu428852": {
+"^ot:originalLabel": "Chamaeza campanisona", 
+"^ot:ottId": 959339, 
+"^ot:ottTaxonName": "Chamaeza campanisona"
+}
+}
+}
+}, 
+"treesById": {
+"trees2890": {
+"@otus": "otus2890", 
+"^ot:treeElementOrder": [
+"tree6701"
+], 
+"treeById": {
+"tree6701": {
+"@label": "Fig. 1 ML", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1166409", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1166407", 
+"^ot:specifiedRoot": "node1166407", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1166407": {
+"edge1166408": {
+"@source": "node1166407", 
+"@target": "node1166408"
+}, 
+"edge1166447": {
+"@source": "node1166407", 
+"@target": "node1166447"
+}
+}, 
+"node1166408": {
+"edge1166409": {
+"@source": "node1166408", 
+"@target": "node1166409"
+}, 
+"edge1166436": {
+"@source": "node1166408", 
+"@target": "node1166436"
+}
+}, 
+"node1166409": {
+"edge1166410": {
+"@source": "node1166409", 
+"@target": "node1166410"
+}, 
+"edge1166421": {
+"@source": "node1166409", 
+"@target": "node1166421"
+}
+}, 
+"node1166410": {
+"edge1166411": {
+"@source": "node1166410", 
+"@target": "node1166411"
+}, 
+"edge1166414": {
+"@source": "node1166410", 
+"@target": "node1166414"
+}
+}, 
+"node1166411": {
+"edge1166412": {
+"@source": "node1166411", 
+"@target": "node1166412"
+}, 
+"edge1166413": {
+"@source": "node1166411", 
+"@target": "node1166413"
+}
+}, 
+"node1166414": {
+"edge1166415": {
+"@source": "node1166414", 
+"@target": "node1166415"
+}, 
+"edge1166418": {
+"@source": "node1166414", 
+"@target": "node1166418"
+}
+}, 
+"node1166415": {
+"edge1166416": {
+"@source": "node1166415", 
+"@target": "node1166416"
+}, 
+"edge1166417": {
+"@source": "node1166415", 
+"@target": "node1166417"
+}
+}, 
+"node1166418": {
+"edge1166419": {
+"@source": "node1166418", 
+"@target": "node1166419"
+}, 
+"edge1166420": {
+"@source": "node1166418", 
+"@target": "node1166420"
+}
+}, 
+"node1166421": {
+"edge1166422": {
+"@source": "node1166421", 
+"@target": "node1166422"
+}, 
+"edge1166425": {
+"@source": "node1166421", 
+"@target": "node1166425"
+}
+}, 
+"node1166422": {
+"edge1166423": {
+"@source": "node1166422", 
+"@target": "node1166423"
+}, 
+"edge1166424": {
+"@source": "node1166422", 
+"@target": "node1166424"
+}
+}, 
+"node1166425": {
+"edge1166426": {
+"@source": "node1166425", 
+"@target": "node1166426"
+}, 
+"edge1166429": {
+"@source": "node1166425", 
+"@target": "node1166429"
+}
+}, 
+"node1166426": {
+"edge1166427": {
+"@source": "node1166426", 
+"@target": "node1166427"
+}, 
+"edge1166428": {
+"@source": "node1166426", 
+"@target": "node1166428"
+}
+}, 
+"node1166429": {
+"edge1166430": {
+"@source": "node1166429", 
+"@target": "node1166430"
+}, 
+"edge1166433": {
+"@source": "node1166429", 
+"@target": "node1166433"
+}
+}, 
+"node1166430": {
+"edge1166431": {
+"@source": "node1166430", 
+"@target": "node1166431"
+}, 
+"edge1166432": {
+"@source": "node1166430", 
+"@target": "node1166432"
+}
+}, 
+"node1166433": {
+"edge1166434": {
+"@source": "node1166433", 
+"@target": "node1166434"
+}, 
+"edge1166435": {
+"@source": "node1166433", 
+"@target": "node1166435"
+}
+}, 
+"node1166436": {
+"edge1166437": {
+"@source": "node1166436", 
+"@target": "node1166437"
+}, 
+"edge1166444": {
+"@source": "node1166436", 
+"@target": "node1166444"
+}
+}, 
+"node1166437": {
+"edge1166438": {
+"@source": "node1166437", 
+"@target": "node1166438"
+}, 
+"edge1166441": {
+"@source": "node1166437", 
+"@target": "node1166441"
+}
+}, 
+"node1166438": {
+"edge1166439": {
+"@source": "node1166438", 
+"@target": "node1166439"
+}, 
+"edge1166440": {
+"@source": "node1166438", 
+"@target": "node1166440"
+}
+}, 
+"node1166441": {
+"edge1166442": {
+"@source": "node1166441", 
+"@target": "node1166442"
+}, 
+"edge1166443": {
+"@source": "node1166441", 
+"@target": "node1166443"
+}
+}, 
+"node1166444": {
+"edge1166445": {
+"@source": "node1166444", 
+"@target": "node1166445"
+}, 
+"edge1166446": {
+"@source": "node1166444", 
+"@target": "node1166446"
+}
+}, 
+"node1166447": {
+"edge1166448": {
+"@source": "node1166447", 
+"@target": "node1166448"
+}, 
+"edge1166451": {
+"@source": "node1166447", 
+"@target": "node1166451"
+}
+}, 
+"node1166448": {
+"edge1166449": {
+"@source": "node1166448", 
+"@target": "node1166449"
+}, 
+"edge1166450": {
+"@source": "node1166448", 
+"@target": "node1166450"
+}
+}
+}, 
+"nodeById": {
+"node1166407": {
+"@root": true
+}, 
+"node1166408": {}, 
+"node1166409": {}, 
+"node1166410": {}, 
+"node1166411": {}, 
+"node1166412": {
+"@otu": "otu428830"
+}, 
+"node1166413": {
+"@otu": "otu428831"
+}, 
+"node1166414": {}, 
+"node1166415": {}, 
+"node1166416": {
+"@otu": "otu428832"
+}, 
+"node1166417": {
+"@otu": "otu428833"
+}, 
+"node1166418": {}, 
+"node1166419": {
+"@otu": "otu428834"
+}, 
+"node1166420": {
+"@otu": "otu428835"
+}, 
+"node1166421": {}, 
+"node1166422": {}, 
+"node1166423": {
+"@otu": "otu428836"
+}, 
+"node1166424": {
+"@otu": "otu428837"
+}, 
+"node1166425": {}, 
+"node1166426": {}, 
+"node1166427": {
+"@otu": "otu428838"
+}, 
+"node1166428": {
+"@otu": "otu428839"
+}, 
+"node1166429": {}, 
+"node1166430": {}, 
+"node1166431": {
+"@otu": "otu428840"
+}, 
+"node1166432": {
+"@otu": "otu428841"
+}, 
+"node1166433": {}, 
+"node1166434": {
+"@otu": "otu428842"
+}, 
+"node1166435": {
+"@otu": "otu428843"
+}, 
+"node1166436": {}, 
+"node1166437": {}, 
+"node1166438": {}, 
+"node1166439": {
+"@otu": "otu428844"
+}, 
+"node1166440": {
+"@otu": "otu428845"
+}, 
+"node1166441": {}, 
+"node1166442": {
+"@otu": "otu428846"
+}, 
+"node1166443": {
+"@otu": "otu428847"
+}, 
+"node1166444": {}, 
+"node1166445": {
+"@otu": "otu428848"
+}, 
+"node1166446": {
+"@otu": "otu428849"
+}, 
+"node1166447": {}, 
+"node1166448": {}, 
+"node1166449": {
+"@otu": "otu428850"
+}, 
+"node1166450": {
+"@otu": "otu428851"
+}, 
+"node1166451": {
+"@otu": "otu428852"
+}
+}
+}
+}
+}
+}
+}
+}

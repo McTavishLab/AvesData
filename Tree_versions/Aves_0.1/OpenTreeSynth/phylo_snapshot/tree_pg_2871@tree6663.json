@@ -1,0 +1,591 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [
+"--embed", 
+"--agent-only"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-07-01T16:42:55.761Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-01T16:42:55.761Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6663"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 212186, 
+"^ot:focalCladeOTTTaxonName": "Falconidae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus2871"
+], 
+"^ot:studyId": "pg_2871", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.1474-919X.2012.01222.x"
+}, 
+"^ot:studyPublicationReference": "Fuchs, J\u00e9r\u00f4me, Jeff A. Johnson, David P. Mindell. 2012. Molecular systematics of the caracaras and allies (Falconidae: Polyborinae) inferred from mitochondrial and nuclear sequence data. Ibis 154 (3): 520-532.", 
+"^ot:studyYear": 2012, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees2871"
+], 
+"otusById": {
+"otus2871": {
+"otuById": {
+"otu427023": {
+"^ot:originalLabel": "Microhierax caerulescens", 
+"^ot:ottId": 301634, 
+"^ot:ottTaxonName": "Microhierax caerulescens"
+}, 
+"otu427024": {
+"^ot:originalLabel": "Polihierax semitorquatus", 
+"^ot:ottId": 1015204, 
+"^ot:ottTaxonName": "Polihierax semitorquatus"
+}, 
+"otu427025": {
+"^ot:originalLabel": "Falco peregrinus", 
+"^ot:ottId": 786435, 
+"^ot:ottTaxonName": "Falco peregrinus"
+}, 
+"otu427026": {
+"^ot:originalLabel": "Falco columbarius", 
+"^ot:ottId": 786443, 
+"^ot:ottTaxonName": "Falco columbarius"
+}, 
+"otu427027": {
+"^ot:originalLabel": "Spiziapteryx circumcincta", 
+"^ot:ottId": 1015196, 
+"^ot:ottTaxonName": "Spiziapteryx circumcincta"
+}, 
+"otu427028": {
+"^ot:originalLabel": "Ibycter americanus", 
+"^ot:ottId": 438659, 
+"^ot:ottTaxonName": "Daptrius americanus"
+}, 
+"otu427029": {
+"^ot:originalLabel": "Milvago chimango", 
+"^ot:ottId": 474152, 
+"^ot:ottTaxonName": "Milvago chimango"
+}, 
+"otu427030": {
+"^ot:originalLabel": "Phalcoboenus australis", 
+"^ot:ottId": 438657, 
+"^ot:ottTaxonName": "Phalcoboenus australis"
+}, 
+"otu427031": {
+"^ot:originalLabel": "Phalcoboenus carunculatus", 
+"^ot:ottId": 943736, 
+"^ot:ottTaxonName": "Phalcoboenus carunculatus"
+}, 
+"otu427032": {
+"^ot:originalLabel": "Phalcoboenus albogularis", 
+"^ot:ottId": 943734, 
+"^ot:ottTaxonName": "Phalcoboenus albogularis"
+}, 
+"otu427033": {
+"^ot:originalLabel": "Phalcoboenus megalopterus", 
+"^ot:ottId": 728383, 
+"^ot:ottTaxonName": "Phalcoboenus megalopterus"
+}, 
+"otu427034": {
+"^ot:originalLabel": "Milvago chimachima", 
+"^ot:ottId": 1015193, 
+"^ot:ottTaxonName": "Milvago chimachima"
+}, 
+"otu427035": {
+"^ot:originalLabel": "Daptrius ater", 
+"^ot:ottId": 438664, 
+"^ot:ottTaxonName": "Daptrius ater"
+}, 
+"otu427036": {
+"^ot:originalLabel": "Caracara plancus", 
+"^ot:ottId": 786444, 
+"^ot:ottTaxonName": "Caracara plancus"
+}, 
+"otu427037": {
+"^ot:originalLabel": "Caracara cheriway", 
+"^ot:ottId": 1005432, 
+"^ot:ottTaxonName": "Caracara cheriway"
+}, 
+"otu427038": {
+"^ot:originalLabel": "Micrastur semitorquatus", 
+"^ot:ottId": 1015189, 
+"^ot:ottTaxonName": "Micrastur semitorquatus"
+}, 
+"otu427039": {
+"^ot:originalLabel": "Micrastur ruficollis", 
+"^ot:ottId": 273700, 
+"^ot:ottTaxonName": "Micrastur ruficollis"
+}, 
+"otu427040": {
+"^ot:originalLabel": "Herpetotheres cachinnans", 
+"^ot:ottId": 438655, 
+"^ot:ottTaxonName": "Herpetotheres cachinnans"
+}, 
+"otu427041": {
+"^ot:originalLabel": "Buteo jamaicensis", 
+"^ot:ottId": 509839, 
+"^ot:ottTaxonName": "Buteo jamaicensis"
+}, 
+"otu427042": {
+"^ot:originalLabel": "Corvus corax", 
+"^ot:ottId": 140425, 
+"^ot:ottTaxonName": "Corvus corax"
+}
+}
+}
+}, 
+"treesById": {
+"trees2871": {
+"@otus": "otus2871", 
+"^ot:treeElementOrder": [
+"tree6663"
+], 
+"treeById": {
+"tree6663": {
+"@label": "Fig. 3 species tree", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Species tree inference", 
+"^ot:inGroupClade": "node1161893", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1161891", 
+"^ot:specifiedRoot": "node1161891", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1161891": {
+"edge1161892": {
+"@length": 0.1080633193748, 
+"@source": "node1161891", 
+"@target": "node1161892"
+}, 
+"edge1161929": {
+"@length": 0.5837312233487, 
+"@source": "node1161891", 
+"@target": "node1161929"
+}
+}, 
+"node1161892": {
+"edge1161893": {
+"@length": 0.1429548136174, 
+"@source": "node1161892", 
+"@target": "node1161893"
+}, 
+"edge1161928": {
+"@length": 0.4756679039739, 
+"@source": "node1161892", 
+"@target": "node1161928"
+}
+}, 
+"node1161893": {
+"edge1161894": {
+"@length": 0.03836992576715, 
+"@source": "node1161893", 
+"@target": "node1161894"
+}, 
+"edge1161923": {
+"@length": 0.1712716066262, 
+"@source": "node1161893", 
+"@target": "node1161923"
+}
+}, 
+"node1161894": {
+"edge1161895": {
+"@length": 0.05528329114365, 
+"@source": "node1161894", 
+"@target": "node1161895"
+}, 
+"edge1161902": {
+"@length": 0.0860484156599, 
+"@source": "node1161894", 
+"@target": "node1161902"
+}
+}, 
+"node1161895": {
+"edge1161896": {
+"@length": 0.07905309444417, 
+"@source": "node1161895", 
+"@target": "node1161896"
+}, 
+"edge1161899": {
+"@length": 0.1876873449205, 
+"@source": "node1161895", 
+"@target": "node1161899"
+}
+}, 
+"node1161896": {
+"edge1161897": {
+"@length": 0.1600067790016, 
+"@source": "node1161896", 
+"@target": "node1161897"
+}, 
+"edge1161898": {
+"@length": 0.1600067790016, 
+"@source": "node1161896", 
+"@target": "node1161898"
+}
+}, 
+"node1161899": {
+"edge1161900": {
+"@length": 0.05137252852523, 
+"@source": "node1161899", 
+"@target": "node1161900"
+}, 
+"edge1161901": {
+"@length": 0.05137252852523, 
+"@source": "node1161899", 
+"@target": "node1161901"
+}
+}, 
+"node1161902": {
+"edge1161903": {
+"@length": 0.2082947489295, 
+"@source": "node1161902", 
+"@target": "node1161903"
+}, 
+"edge1161904": {
+"@length": 0.09398235116939, 
+"@source": "node1161902", 
+"@target": "node1161904"
+}
+}, 
+"node1161904": {
+"edge1161905": {
+"@length": 0.02836564218499, 
+"@source": "node1161904", 
+"@target": "node1161905"
+}, 
+"edge1161920": {
+"@length": 0.1095538610294, 
+"@source": "node1161904", 
+"@target": "node1161920"
+}
+}, 
+"node1161905": {
+"edge1161906": {
+"@length": 0.0859467555751, 
+"@source": "node1161905", 
+"@target": "node1161906"
+}, 
+"edge1161907": {
+"@length": 0.05722430907041, 
+"@source": "node1161905", 
+"@target": "node1161907"
+}
+}, 
+"node1161907": {
+"edge1161908": {
+"@length": 0.001522277491562, 
+"@source": "node1161907", 
+"@target": "node1161908"
+}, 
+"edge1161917": {
+"@length": 0.01094496713118, 
+"@source": "node1161907", 
+"@target": "node1161917"
+}
+}, 
+"node1161908": {
+"edge1161909": {
+"@length": 0.02720016901312, 
+"@source": "node1161908", 
+"@target": "node1161909"
+}, 
+"edge1161910": {
+"@length": 0.01966932329405, 
+"@source": "node1161908", 
+"@target": "node1161910"
+}
+}, 
+"node1161910": {
+"edge1161911": {
+"@length": 0.00753084571907, 
+"@source": "node1161910", 
+"@target": "node1161911"
+}, 
+"edge1161912": {
+"@length": 0.001868660897224, 
+"@source": "node1161910", 
+"@target": "node1161912"
+}
+}, 
+"node1161912": {
+"edge1161913": {
+"@length": 0.005662184821846, 
+"@source": "node1161912", 
+"@target": "node1161913"
+}, 
+"edge1161914": {
+"@length": 0.005285434931652, 
+"@source": "node1161912", 
+"@target": "node1161914"
+}
+}, 
+"node1161914": {
+"edge1161915": {
+"@length": 0.0003767498901942, 
+"@source": "node1161914", 
+"@target": "node1161915"
+}, 
+"edge1161916": {
+"@length": 0.0003767498901942, 
+"@source": "node1161914", 
+"@target": "node1161916"
+}
+}, 
+"node1161917": {
+"edge1161918": {
+"@length": 0.0177774793735, 
+"@source": "node1161917", 
+"@target": "node1161918"
+}, 
+"edge1161919": {
+"@length": 0.0177774793735, 
+"@source": "node1161917", 
+"@target": "node1161919"
+}
+}, 
+"node1161920": {
+"edge1161921": {
+"@length": 0.004758536730699, 
+"@source": "node1161920", 
+"@target": "node1161921"
+}, 
+"edge1161922": {
+"@length": 0.004758536730699, 
+"@source": "node1161920", 
+"@target": "node1161922"
+}
+}, 
+"node1161923": {
+"edge1161924": {
+"@length": 0.06412780176412, 
+"@source": "node1161923", 
+"@target": "node1161924"
+}, 
+"edge1161927": {
+"@length": 0.1614414837304, 
+"@source": "node1161923", 
+"@target": "node1161927"
+}
+}, 
+"node1161924": {
+"edge1161925": {
+"@length": 0.09731368196625, 
+"@source": "node1161924", 
+"@target": "node1161925"
+}, 
+"edge1161926": {
+"@length": 0.09731368196625, 
+"@source": "node1161924", 
+"@target": "node1161926"
+}
+}
+}, 
+"nodeById": {
+"node1161891": {
+"@root": true
+}, 
+"node1161892": {}, 
+"node1161893": {}, 
+"node1161894": {}, 
+"node1161895": {}, 
+"node1161896": {}, 
+"node1161897": {
+"@otu": "otu427023"
+}, 
+"node1161898": {
+"@otu": "otu427024"
+}, 
+"node1161899": {}, 
+"node1161900": {
+"@otu": "otu427025"
+}, 
+"node1161901": {
+"@otu": "otu427026"
+}, 
+"node1161902": {}, 
+"node1161903": {
+"@otu": "otu427027"
+}, 
+"node1161904": {}, 
+"node1161905": {}, 
+"node1161906": {
+"@otu": "otu427028"
+}, 
+"node1161907": {}, 
+"node1161908": {}, 
+"node1161909": {
+"@otu": "otu427029"
+}, 
+"node1161910": {}, 
+"node1161911": {
+"@otu": "otu427030"
+}, 
+"node1161912": {}, 
+"node1161913": {
+"@otu": "otu427031"
+}, 
+"node1161914": {}, 
+"node1161915": {
+"@otu": "otu427032"
+}, 
+"node1161916": {
+"@otu": "otu427033"
+}, 
+"node1161917": {}, 
+"node1161918": {
+"@otu": "otu427034"
+}, 
+"node1161919": {
+"@otu": "otu427035"
+}, 
+"node1161920": {}, 
+"node1161921": {
+"@otu": "otu427036"
+}, 
+"node1161922": {
+"@otu": "otu427037"
+}, 
+"node1161923": {}, 
+"node1161924": {}, 
+"node1161925": {
+"@otu": "otu427038"
+}, 
+"node1161926": {
+"@otu": "otu427039"
+}, 
+"node1161927": {
+"@otu": "otu427040"
+}, 
+"node1161928": {
+"@otu": "otu427041"
+}, 
+"node1161929": {
+"@otu": "otu427042"
+}
+}
+}
+}
+}
+}
+}
+}

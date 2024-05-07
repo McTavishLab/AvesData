@@ -1,0 +1,1385 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.16"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2022-12-22T12:38:33.373Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-12-22T12:38:33.373Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-12-22T12:38:33.373Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.nex", 
+"@size": 37281, 
+"@type": "nexus", 
+"@url": "/curator/download/supporting_files.doc.8df961e602f84b40.5041535445442e6e6578.nex", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}, 
+{
+"@filename": "PASTED.tre", 
+"@size": 2827, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.b962a5f6bb76d1a0.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"eliotmiller"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 5846361, 
+"^ot:focalCladeOTTTaxonName": "Cettiidae", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_2182", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/1471-2148-11-352"
+}, 
+"^ot:studyPublicationReference": "Alstr\u00f6m, P., H\u00f6hna, S., Gelang, M., Ericson, P. G., & Olsson, U. (2011). Non-monophyly and intricate morphological evolution within the avian family Cettiidae revealed by multilocus analysis of a taxonomically densely sampled dataset. BMC Evolutionary Biology, 11(1), 352. https://doi.org/10.1186/1471-2148-11-352\n", 
+"^ot:studyYear": 2011, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Cettia.pallidipes_pallidipes"
+}, 
+"otu10": {
+"^ot:originalLabel": "Orthotomus.cucullatus_coronatus"
+}, 
+"otu11": {
+"^ot:originalLabel": "Orthotomus.cucullatus_hedymeles"
+}, 
+"otu12": {
+"^ot:originalLabel": "Orthotomus.cucullatus_cucullatus"
+}, 
+"otu13": {
+"^ot:originalLabel": "Orthotomus.cucullatus_stentor(orriedeli)"
+}, 
+"otu14": {
+"^ot:originalLabel": "Orthotomus.cucullatus_philippinus"
+}, 
+"otu15": {
+"^ot:originalLabel": "Cettia.brunnescens_monotypic"
+}, 
+"otu16": {
+"^ot:originalLabel": "Cettia.acanthizoides_acanthizoides"
+}, 
+"otu17": {
+"^ot:originalLabel": "Cettia.acanthizoides_concolor"
+}, 
+"otu18": {
+"^ot:originalLabel": "Cettia.flavolivacea_weberi"
+}, 
+"otu19": {
+"^ot:originalLabel": "Cettia.flavolivacea_oblita"
+}, 
+"otu2": {
+"^ot:originalLabel": "Cettia.pallidipes_laurentei"
+}, 
+"otu20": {
+"^ot:originalLabel": "Cettia.flavolivacea_intricata"
+}, 
+"otu21": {
+"^ot:originalLabel": "Cettia.flavolivacea_flavolivacea"
+}, 
+"otu22": {
+"^ot:originalLabel": "Cettia.vulcania_oreophila"
+}, 
+"otu23": {
+"^ot:originalLabel": "Cettia.vulcania_vulcania"
+}, 
+"otu24": {
+"^ot:originalLabel": "Cettia.vulcania_flaviventris"
+}, 
+"otu25": {
+"^ot:originalLabel": "Cettia.fortipes_fortipes"
+}, 
+"otu26": {
+"^ot:originalLabel": "Cettia.fortipes_pallida"
+}, 
+"otu27": {
+"^ot:originalLabel": "Cettia.fortipes_davidiana"
+}, 
+"otu28": {
+"^ot:originalLabel": "Cettia.fortipes_robustipes"
+}, 
+"otu29": {
+"^ot:originalLabel": "Cettia.annae_monotypic"
+}, 
+"otu3": {
+"^ot:originalLabel": "Hemitesia.neumanni_monotypic"
+}, 
+"otu30": {
+"^ot:originalLabel": "Cettia.haddeni_monotypic"
+}, 
+"otu31": {
+"^ot:originalLabel": "Cettia.ruficapilla_?"
+}, 
+"otu32": {
+"^ot:originalLabel": "Cettia.parens_monotypic"
+}, 
+"otu33": {
+"^ot:originalLabel": "Cettia.carolinae_monotypic"
+}, 
+"otu34": {
+"^ot:originalLabel": "Cettia.diphone_borealis"
+}, 
+"otu35": {
+"^ot:originalLabel": "Cettia.seebohmi_monotypic"
+}, 
+"otu36": {
+"^ot:originalLabel": "Cettia.diphone_cantans"
+}, 
+"otu37": {
+"^ot:originalLabel": "Cettia.diphone_canturians"
+}, 
+"otu38": {
+"^ot:originalLabel": "Tickellia.hodgsoni_monotypic"
+}, 
+"otu39": {
+"^ot:originalLabel": "Cettia.cetti_cetti"
+}, 
+"otu4": {
+"^ot:originalLabel": "Urosphena.whiteheadi_monotypic"
+}, 
+"otu40": {
+"^ot:originalLabel": "Cettia.cetti_albiventris"
+}, 
+"otu41": {
+"^ot:originalLabel": "Cettia.cetti_orientalis"
+}, 
+"otu42": {
+"^ot:originalLabel": "Tesia.cyaniventer_monotypic"
+}, 
+"otu43": {
+"^ot:originalLabel": "Tesia.olivea_monotypic"
+}, 
+"otu44": {
+"^ot:originalLabel": "Tesia.everetti_everetti"
+}, 
+"otu45": {
+"^ot:originalLabel": "Tesia.superciliaris_monotypic"
+}, 
+"otu46": {
+"^ot:originalLabel": "Cettia.major_major"
+}, 
+"otu47": {
+"^ot:originalLabel": "Tesia.castaneocoronata_castaneocoronata"
+}, 
+"otu48": {
+"^ot:originalLabel": "Cettia.brunnifrons_monotypic"
+}, 
+"otu49": {
+"^ot:originalLabel": "Cettia pallidipes pallidipes", 
+"^ot:ottId": 829624, 
+"^ot:ottTaxonName": "Cettia pallidipes"
+}, 
+"otu5": {
+"^ot:originalLabel": "Urosphena.squameiceps_ussurianus"
+}, 
+"otu50": {
+"^ot:originalLabel": "Cettia pallidipes laurentei", 
+"^ot:ottId": 829624, 
+"^ot:ottTaxonName": "Cettia pallidipes"
+}, 
+"otu51": {
+"^ot:originalLabel": "Hemitesia neumanni monotypic", 
+"^ot:ottId": 833233, 
+"^ot:ottTaxonName": "Hemitesia neumanni"
+}, 
+"otu52": {
+"^ot:originalLabel": "Urosphena whiteheadi monotypic", 
+"^ot:ottId": 346549, 
+"^ot:ottTaxonName": "Urosphena whiteheadi"
+}, 
+"otu53": {
+"^ot:originalLabel": "Urosphena squameiceps ussurianus", 
+"^ot:ottId": 699766, 
+"^ot:ottTaxonName": "Urosphena squameiceps"
+}, 
+"otu54": {
+"^ot:originalLabel": "Urosphena squameiceps squameiceps", 
+"^ot:ottId": 699766, 
+"^ot:ottTaxonName": "Urosphena squameiceps"
+}, 
+"otu55": {
+"^ot:originalLabel": "Abroscopus superciliaris superciliaris", 
+"^ot:ottId": 684404, 
+"^ot:ottTaxonName": "Abroscopus superciliaris superciliaris"
+}, 
+"otu56": {
+"^ot:originalLabel": "Abroscopus schisticeps ripponi", 
+"^ot:ottId": 54175, 
+"^ot:ottTaxonName": "Abroscopus schisticeps"
+}, 
+"otu57": {
+"^ot:originalLabel": "Abroscopus albogularis fulvifacies", 
+"^ot:ottId": 912455, 
+"^ot:ottTaxonName": "Abroscopus albogularis fulvifacies"
+}, 
+"otu58": {
+"^ot:originalLabel": "Orthotomus cucullatus coronatus", 
+"^ot:ottId": 874240, 
+"^ot:ottTaxonName": "Phyllergates cucullatus coronatus"
+}, 
+"otu59": {
+"^ot:originalLabel": "Orthotomus cucullatus hedymeles", 
+"^ot:ottId": 833227, 
+"^ot:ottTaxonName": "Phyllergates cucullatus hedymeles"
+}, 
+"otu6": {
+"^ot:originalLabel": "Urosphena.squameiceps_squameiceps"
+}, 
+"otu60": {
+"^ot:originalLabel": "Orthotomus cucullatus cucullatus", 
+"^ot:ottId": 808157, 
+"^ot:ottTaxonName": "Phyllergates cucullatus cucullatus"
+}, 
+"otu61": {
+"^ot:originalLabel": "Orthotomus cucullatus stentor-orriedeli", 
+"^ot:ottId": 333264, 
+"^ot:ottTaxonName": "Phyllergates cucullatus"
+}, 
+"otu62": {
+"^ot:originalLabel": "Orthotomus cucullatus philippinus", 
+"^ot:ottId": 534581, 
+"^ot:ottTaxonName": "Phyllergates cucullatus philippinus"
+}, 
+"otu63": {
+"^ot:originalLabel": "Cettia brunnescens monotypic", 
+"^ot:ottId": 1031171, 
+"^ot:ottTaxonName": "Horornis brunnescens"
+}, 
+"otu64": {
+"^ot:originalLabel": "Cettia acanthizoides acanthizoides", 
+"^ot:ottId": 396749, 
+"^ot:ottTaxonName": "Horornis acanthizoides acanthizoides"
+}, 
+"otu65": {
+"^ot:originalLabel": "Cettia acanthizoides concolor", 
+"^ot:ottId": 396755, 
+"^ot:ottTaxonName": "Horornis acanthizoides concolor"
+}, 
+"otu66": {
+"^ot:originalLabel": "Cettia flavolivacea weberi", 
+"^ot:ottId": 305438, 
+"^ot:ottTaxonName": "Horornis flavolivaceus weberi (Mayr, 1941)"
+}, 
+"otu67": {
+"^ot:originalLabel": "Cettia flavolivacea oblita", 
+"^ot:ottId": 355464, 
+"^ot:ottTaxonName": "Horornis flavolivaceus"
+}, 
+"otu68": {
+"^ot:originalLabel": "Cettia flavolivacea intricata", 
+"^ot:ottId": 258690, 
+"^ot:ottTaxonName": "Horornis flavolivaceus intricatus (Hartert, E, 1909)"
+}, 
+"otu69": {
+"^ot:originalLabel": "Cettia flavolivacea flavolivacea", 
+"^ot:ottId": 305437, 
+"^ot:ottTaxonName": "Horornis flavolivaceus flavolivaceus"
+}, 
+"otu7": {
+"^ot:originalLabel": "Abroscopus.superciliaris_superciliaris"
+}, 
+"otu70": {
+"^ot:originalLabel": "Cettia vulcania oreophila", 
+"^ot:ottId": 305429, 
+"^ot:ottTaxonName": "Cettia vulcania oreophila"
+}, 
+"otu71": {
+"^ot:originalLabel": "Cettia vulcania vulcania", 
+"^ot:ottId": 981405, 
+"^ot:ottTaxonName": "Cettia vulcania vulcania"
+}, 
+"otu72": {
+"^ot:originalLabel": "Cettia vulcania flaviventris", 
+"^ot:ottId": 305433, 
+"^ot:ottTaxonName": "Cettia vulcania flaviventris"
+}, 
+"otu73": {
+"^ot:originalLabel": "Cettia fortipes fortipes", 
+"^ot:ottId": 305432, 
+"^ot:ottTaxonName": "Cettia fortipes fortipes"
+}, 
+"otu74": {
+"^ot:originalLabel": "Cettia fortipes pallida", 
+"^ot:ottId": 903277, 
+"^ot:ottTaxonName": "Cettia fortipes"
+}, 
+"otu75": {
+"^ot:originalLabel": "Cettia fortipes davidiana", 
+"^ot:ottId": 305431, 
+"^ot:ottTaxonName": "Cettia fortipes davidiana"
+}, 
+"otu76": {
+"^ot:originalLabel": "Cettia fortipes robustipes", 
+"^ot:ottId": 903277, 
+"^ot:ottTaxonName": "Cettia fortipes"
+}, 
+"otu77": {
+"^ot:originalLabel": "Cettia annae monotypic", 
+"^ot:ottId": 721920, 
+"^ot:ottTaxonName": "Horornis annae"
+}, 
+"otu78": {
+"^ot:originalLabel": "Cettia haddeni monotypic", 
+"^ot:ottId": 743801, 
+"^ot:ottTaxonName": "Cettia haddeni"
+}, 
+"otu79": {
+"^ot:originalLabel": "Cettia ruficapilla ?", 
+"^ot:ottId": 721919, 
+"^ot:ottTaxonName": "Cettia ruficapilla"
+}, 
+"otu8": {
+"^ot:originalLabel": "Abroscopus.schisticeps_ripponi"
+}, 
+"otu80": {
+"^ot:originalLabel": "Cettia parens monotypic", 
+"^ot:ottId": 147444, 
+"^ot:ottTaxonName": "Cettia parens"
+}, 
+"otu81": {
+"^ot:originalLabel": "Cettia carolinae monotypic", 
+"^ot:ottId": 829611, 
+"^ot:ottTaxonName": "Cettia carolinae"
+}, 
+"otu82": {
+"^ot:originalLabel": "Cettia diphone borealis", 
+"^ot:ottId": 833236, 
+"^ot:ottTaxonName": "Horornis borealis"
+}, 
+"otu83": {
+"^ot:originalLabel": "Cettia seebohmi monotypic", 
+"^ot:ottId": 829612, 
+"^ot:ottTaxonName": "Horornis seebohmi"
+}, 
+"otu84": {
+"^ot:originalLabel": "Cettia diphone cantans", 
+"^ot:ottId": 1076190, 
+"^ot:ottTaxonName": "Horornis diphone"
+}, 
+"otu85": {
+"^ot:originalLabel": "Cettia diphone canturians", 
+"^ot:ottId": 684400, 
+"^ot:ottTaxonName": "Horornis canturians"
+}, 
+"otu86": {
+"^ot:originalLabel": "Tickellia hodgsoni monotypic", 
+"^ot:ottId": 382666, 
+"^ot:ottTaxonName": "Tickellia hodgsoni"
+}, 
+"otu87": {
+"^ot:originalLabel": "Cettia cetti cetti", 
+"^ot:ottId": 305436, 
+"^ot:ottTaxonName": "Cettia cetti cetti"
+}, 
+"otu88": {
+"^ot:originalLabel": "Cettia cetti albiventris", 
+"^ot:ottId": 684398, 
+"^ot:ottTaxonName": "Cettia cetti albiventris"
+}, 
+"otu89": {
+"^ot:originalLabel": "Cettia cetti orientalis", 
+"^ot:ottId": 1009612, 
+"^ot:ottTaxonName": "Cettia cetti orientalis"
+}, 
+"otu9": {
+"^ot:originalLabel": "Abroscopus.albogularis_fulvifacies"
+}, 
+"otu90": {
+"^ot:originalLabel": "Tesia cyaniventer monotypic", 
+"^ot:ottId": 346542, 
+"^ot:ottTaxonName": "Tesia cyaniventer"
+}, 
+"otu91": {
+"^ot:originalLabel": "Tesia olivea monotypic", 
+"^ot:ottId": 106883, 
+"^ot:ottTaxonName": "Tesia olivea"
+}, 
+"otu92": {
+"^ot:originalLabel": "Tesia everetti everetti", 
+"^ot:ottId": 346544, 
+"^ot:ottTaxonName": "Tesia everetti"
+}, 
+"otu93": {
+"^ot:originalLabel": "Tesia superciliaris monotypic", 
+"^ot:ottId": 346546, 
+"^ot:ottTaxonName": "Tesia superciliaris"
+}, 
+"otu94": {
+"^ot:originalLabel": "Cettia major major", 
+"^ot:ottId": 305435, 
+"^ot:ottTaxonName": "Cettia major"
+}, 
+"otu95": {
+"^ot:originalLabel": "Tesia castaneocoronata castaneocoronata", 
+"^ot:ottId": 5805, 
+"^ot:ottTaxonName": "Oligura castaneocoronata"
+}, 
+"otu96": {
+"^ot:originalLabel": "Cettia brunnifrons monotypic", 
+"^ot:ottId": 865554, 
+"^ot:ottTaxonName": "Cettia brunnifrons"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "*BEAST Cettiidae_all_ssp_MB_relaxed_100mill (Alstrom et al. 2011).tre", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:time", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 0.022931, 
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge12": {
+"@length": 0.002135, 
+"@source": "node1", 
+"@target": "node13"
+}
+}, 
+"node10": {
+"edge10": {
+"@length": 0.001967, 
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge11": {
+"@length": 0.001967, 
+"@source": "node10", 
+"@target": "node12"
+}
+}, 
+"node13": {
+"edge13": {
+"@length": 0.027415, 
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge76": {
+"@length": 0.024249, 
+"@source": "node13", 
+"@target": "node77"
+}
+}, 
+"node14": {
+"edge14": {
+"@length": 0.02941, 
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge19": {
+"@length": 0.023193, 
+"@source": "node14", 
+"@target": "node20"
+}
+}, 
+"node15": {
+"edge15": {
+"@length": 0.084089, 
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge16": {
+"@length": 0.010637, 
+"@source": "node15", 
+"@target": "node17"
+}
+}, 
+"node17": {
+"edge17": {
+"@length": 0.073453, 
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge18": {
+"@length": 0.073453, 
+"@source": "node17", 
+"@target": "node19"
+}
+}, 
+"node2": {
+"edge2": {
+"@length": 0.038379, 
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge7": {
+"@length": 0.058326, 
+"@source": "node2", 
+"@target": "node8"
+}
+}, 
+"node20": {
+"edge20": {
+"@length": 0.08054, 
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge29": {
+"@length": 0.017987, 
+"@source": "node20", 
+"@target": "node30"
+}
+}, 
+"node21": {
+"edge21": {
+"@length": 0.009766, 
+"@source": "node21", 
+"@target": "node22"
+}, 
+"edge22": {
+"@length": 0.003945, 
+"@source": "node21", 
+"@target": "node23"
+}
+}, 
+"node23": {
+"edge23": {
+"@length": 0.001853, 
+"@source": "node23", 
+"@target": "node24"
+}, 
+"edge28": {
+"@length": 0.005821, 
+"@source": "node23", 
+"@target": "node29"
+}
+}, 
+"node24": {
+"edge24": {
+"@length": 0.002301, 
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge27": {
+"@length": 0.003968, 
+"@source": "node24", 
+"@target": "node28"
+}
+}, 
+"node25": {
+"edge25": {
+"@length": 0.001667, 
+"@source": "node25", 
+"@target": "node26"
+}, 
+"edge26": {
+"@length": 0.001667, 
+"@source": "node25", 
+"@target": "node27"
+}
+}, 
+"node3": {
+"edge3": {
+"@length": 0.081516, 
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge6": {
+"@length": 0.081739, 
+"@source": "node3", 
+"@target": "node7"
+}
+}, 
+"node30": {
+"edge30": {
+"@length": 0.006284, 
+"@source": "node30", 
+"@target": "node31"
+}, 
+"edge75": {
+"@length": 0.072319, 
+"@source": "node30", 
+"@target": "node76"
+}
+}, 
+"node31": {
+"edge31": {
+"@length": 0.015582, 
+"@source": "node31", 
+"@target": "node32"
+}, 
+"edge58": {
+"@length": 0.039724, 
+"@source": "node31", 
+"@target": "node59"
+}
+}, 
+"node32": {
+"edge32": {
+"@length": 0.019283, 
+"@source": "node32", 
+"@target": "node33"
+}, 
+"edge51": {
+"@length": 0.042239, 
+"@source": "node32", 
+"@target": "node52"
+}
+}, 
+"node33": {
+"edge33": {
+"@length": 0.024145, 
+"@source": "node33", 
+"@target": "node34"
+}, 
+"edge38": {
+"@length": 0.02317, 
+"@source": "node33", 
+"@target": "node39"
+}
+}, 
+"node34": {
+"edge34": {
+"@length": 0.007025, 
+"@source": "node34", 
+"@target": "node35"
+}, 
+"edge35": {
+"@length": 0.005766, 
+"@source": "node34", 
+"@target": "node36"
+}
+}, 
+"node36": {
+"edge36": {
+"@length": 0.001259, 
+"@source": "node36", 
+"@target": "node37"
+}, 
+"edge37": {
+"@length": 0.001259, 
+"@source": "node36", 
+"@target": "node38"
+}
+}, 
+"node39": {
+"edge39": {
+"@length": 0.006735, 
+"@source": "node39", 
+"@target": "node40"
+}, 
+"edge46": {
+"@length": 0.005953, 
+"@source": "node39", 
+"@target": "node47"
+}
+}, 
+"node4": {
+"edge4": {
+"@length": 0.000224, 
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge5": {
+"@length": 0.000224, 
+"@source": "node4", 
+"@target": "node6"
+}
+}, 
+"node40": {
+"edge40": {
+"@length": 0.001265, 
+"@source": "node40", 
+"@target": "node41"
+}, 
+"edge41": {
+"@length": 0.00094, 
+"@source": "node40", 
+"@target": "node42"
+}
+}, 
+"node42": {
+"edge42": {
+"@length": 0.000325, 
+"@source": "node42", 
+"@target": "node43"
+}, 
+"edge43": {
+"@length": 0.000259, 
+"@source": "node42", 
+"@target": "node44"
+}
+}, 
+"node44": {
+"edge44": {
+"@length": 6.6e-05, 
+"@source": "node44", 
+"@target": "node45"
+}, 
+"edge45": {
+"@length": 6.6e-05, 
+"@source": "node44", 
+"@target": "node46"
+}
+}, 
+"node47": {
+"edge47": {
+"@length": 0.001956, 
+"@source": "node47", 
+"@target": "node48"
+}, 
+"edge50": {
+"@length": 0.002047, 
+"@source": "node47", 
+"@target": "node51"
+}
+}, 
+"node48": {
+"edge48": {
+"@length": 9.1e-05, 
+"@source": "node48", 
+"@target": "node49"
+}, 
+"edge49": {
+"@length": 9.1e-05, 
+"@source": "node48", 
+"@target": "node50"
+}
+}, 
+"node52": {
+"edge52": {
+"@length": 0.004453, 
+"@source": "node52", 
+"@target": "node53"
+}, 
+"edge55": {
+"@length": 0.007262, 
+"@source": "node52", 
+"@target": "node56"
+}
+}, 
+"node53": {
+"edge53": {
+"@length": 0.003761, 
+"@source": "node53", 
+"@target": "node54"
+}, 
+"edge54": {
+"@length": 0.003761, 
+"@source": "node53", 
+"@target": "node55"
+}
+}, 
+"node56": {
+"edge56": {
+"@length": 0.000952, 
+"@source": "node56", 
+"@target": "node57"
+}, 
+"edge57": {
+"@length": 0.000952, 
+"@source": "node56", 
+"@target": "node58"
+}
+}, 
+"node59": {
+"edge59": {
+"@length": 0.010281, 
+"@source": "node59", 
+"@target": "node60"
+}, 
+"edge68": {
+"@length": 0.000225, 
+"@source": "node59", 
+"@target": "node69"
+}
+}, 
+"node60": {
+"edge60": {
+"@length": 0.01603, 
+"@source": "node60", 
+"@target": "node61"
+}, 
+"edge61": {
+"@length": 0.000126, 
+"@source": "node60", 
+"@target": "node62"
+}
+}, 
+"node62": {
+"edge62": {
+"@length": 0.00868, 
+"@source": "node62", 
+"@target": "node63"
+}, 
+"edge67": {
+"@length": 0.015904, 
+"@source": "node62", 
+"@target": "node68"
+}
+}, 
+"node63": {
+"edge63": {
+"@length": 0.002902, 
+"@source": "node63", 
+"@target": "node64"
+}, 
+"edge66": {
+"@length": 0.007224, 
+"@source": "node63", 
+"@target": "node67"
+}
+}, 
+"node64": {
+"edge64": {
+"@length": 0.004323, 
+"@source": "node64", 
+"@target": "node65"
+}, 
+"edge65": {
+"@length": 0.004323, 
+"@source": "node64", 
+"@target": "node66"
+}
+}, 
+"node69": {
+"edge69": {
+"@length": 0.013166, 
+"@source": "node69", 
+"@target": "node70"
+}, 
+"edge72": {
+"@length": 0.025538, 
+"@source": "node69", 
+"@target": "node73"
+}
+}, 
+"node70": {
+"edge70": {
+"@length": 0.01292, 
+"@source": "node70", 
+"@target": "node71"
+}, 
+"edge71": {
+"@length": 0.01292, 
+"@source": "node70", 
+"@target": "node72"
+}
+}, 
+"node73": {
+"edge73": {
+"@length": 0.000549, 
+"@source": "node73", 
+"@target": "node74"
+}, 
+"edge74": {
+"@length": 0.000549, 
+"@source": "node73", 
+"@target": "node75"
+}
+}, 
+"node77": {
+"edge77": {
+"@length": 0.112495, 
+"@source": "node77", 
+"@target": "node78"
+}, 
+"edge82": {
+"@length": 0.027571, 
+"@source": "node77", 
+"@target": "node83"
+}
+}, 
+"node78": {
+"edge78": {
+"@length": 0.00417, 
+"@source": "node78", 
+"@target": "node79"
+}, 
+"edge79": {
+"@length": 0.004012, 
+"@source": "node78", 
+"@target": "node80"
+}
+}, 
+"node8": {
+"edge8": {
+"@length": 0.061792, 
+"@source": "node8", 
+"@target": "node9"
+}, 
+"edge9": {
+"@length": 0.059825, 
+"@source": "node8", 
+"@target": "node10"
+}
+}, 
+"node80": {
+"edge80": {
+"@length": 0.000159, 
+"@source": "node80", 
+"@target": "node81"
+}, 
+"edge81": {
+"@length": 0.000159, 
+"@source": "node80", 
+"@target": "node82"
+}
+}, 
+"node83": {
+"edge83": {
+"@length": 0.035193, 
+"@source": "node83", 
+"@target": "node84"
+}, 
+"edge90": {
+"@length": 0.006344, 
+"@source": "node83", 
+"@target": "node91"
+}
+}, 
+"node84": {
+"edge84": {
+"@length": 0.012327, 
+"@source": "node84", 
+"@target": "node85"
+}, 
+"edge87": {
+"@length": 0.017233, 
+"@source": "node84", 
+"@target": "node88"
+}
+}, 
+"node85": {
+"edge85": {
+"@length": 0.041575, 
+"@source": "node85", 
+"@target": "node86"
+}, 
+"edge86": {
+"@length": 0.041575, 
+"@source": "node85", 
+"@target": "node87"
+}
+}, 
+"node88": {
+"edge88": {
+"@length": 0.036669, 
+"@source": "node88", 
+"@target": "node89"
+}, 
+"edge89": {
+"@length": 0.036669, 
+"@source": "node88", 
+"@target": "node90"
+}
+}, 
+"node91": {
+"edge91": {
+"@length": 0.08275, 
+"@source": "node91", 
+"@target": "node92"
+}, 
+"edge92": {
+"@length": 0.039514, 
+"@source": "node91", 
+"@target": "node93"
+}
+}, 
+"node93": {
+"edge93": {
+"@length": 0.043236, 
+"@source": "node93", 
+"@target": "node94"
+}, 
+"edge94": {
+"@length": 0.043236, 
+"@source": "node93", 
+"@target": "node95"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node11": {
+"@otu": "otu53"
+}, 
+"node12": {
+"@otu": "otu54"
+}, 
+"node13": {}, 
+"node14": {}, 
+"node15": {}, 
+"node16": {
+"@otu": "otu55"
+}, 
+"node17": {}, 
+"node18": {
+"@otu": "otu56"
+}, 
+"node19": {
+"@otu": "otu57"
+}, 
+"node2": {}, 
+"node20": {}, 
+"node21": {}, 
+"node22": {
+"@otu": "otu58"
+}, 
+"node23": {}, 
+"node24": {}, 
+"node25": {}, 
+"node26": {
+"@otu": "otu59"
+}, 
+"node27": {
+"@otu": "otu60"
+}, 
+"node28": {
+"@otu": "otu61"
+}, 
+"node29": {
+"@otu": "otu62"
+}, 
+"node3": {}, 
+"node30": {}, 
+"node31": {}, 
+"node32": {}, 
+"node33": {}, 
+"node34": {}, 
+"node35": {
+"@otu": "otu63"
+}, 
+"node36": {}, 
+"node37": {
+"@otu": "otu64"
+}, 
+"node38": {
+"@otu": "otu65"
+}, 
+"node39": {}, 
+"node4": {}, 
+"node40": {}, 
+"node41": {
+"@otu": "otu66"
+}, 
+"node42": {}, 
+"node43": {
+"@otu": "otu67"
+}, 
+"node44": {}, 
+"node45": {
+"@otu": "otu68"
+}, 
+"node46": {
+"@otu": "otu69"
+}, 
+"node47": {}, 
+"node48": {}, 
+"node49": {
+"@otu": "otu70"
+}, 
+"node5": {
+"@otu": "otu49"
+}, 
+"node50": {
+"@otu": "otu71"
+}, 
+"node51": {
+"@otu": "otu72"
+}, 
+"node52": {}, 
+"node53": {}, 
+"node54": {
+"@otu": "otu73"
+}, 
+"node55": {
+"@otu": "otu74"
+}, 
+"node56": {}, 
+"node57": {
+"@otu": "otu75"
+}, 
+"node58": {
+"@otu": "otu76"
+}, 
+"node59": {}, 
+"node6": {
+"@otu": "otu50"
+}, 
+"node60": {}, 
+"node61": {
+"@otu": "otu77"
+}, 
+"node62": {}, 
+"node63": {}, 
+"node64": {}, 
+"node65": {
+"@otu": "otu78"
+}, 
+"node66": {
+"@otu": "otu79"
+}, 
+"node67": {
+"@otu": "otu80"
+}, 
+"node68": {
+"@otu": "otu81"
+}, 
+"node69": {}, 
+"node7": {
+"@otu": "otu51"
+}, 
+"node70": {}, 
+"node71": {
+"@otu": "otu82"
+}, 
+"node72": {
+"@otu": "otu83"
+}, 
+"node73": {}, 
+"node74": {
+"@otu": "otu84"
+}, 
+"node75": {
+"@otu": "otu85"
+}, 
+"node76": {
+"@otu": "otu86"
+}, 
+"node77": {}, 
+"node78": {}, 
+"node79": {
+"@otu": "otu87"
+}, 
+"node8": {}, 
+"node80": {}, 
+"node81": {
+"@otu": "otu88"
+}, 
+"node82": {
+"@otu": "otu89"
+}, 
+"node83": {}, 
+"node84": {}, 
+"node85": {}, 
+"node86": {
+"@otu": "otu90"
+}, 
+"node87": {
+"@otu": "otu91"
+}, 
+"node88": {}, 
+"node89": {
+"@otu": "otu92"
+}, 
+"node9": {
+"@otu": "otu52"
+}, 
+"node90": {
+"@otu": "otu93"
+}, 
+"node91": {}, 
+"node92": {
+"@otu": "otu94"
+}, 
+"node93": {}, 
+"node94": {
+"@otu": "otu95"
+}, 
+"node95": {
+"@otu": "otu96"
+}
+}
+}
+}
+}
+}
+}
+}

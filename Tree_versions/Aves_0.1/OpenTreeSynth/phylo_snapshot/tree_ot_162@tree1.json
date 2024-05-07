@@ -1,0 +1,804 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-07T15:08:04.461Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-07T15:08:04.461Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 108566, 
+"^ot:focalCladeOTTTaxonName": "Prioniturus", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_162", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.1439-0469.2012.00654.x"
+}, 
+"^ot:studyPublicationReference": "Schweizer, Manuel, Marcel G\u00fcntert, Stefan T. Hertwig. 2012. Phylogeny and biogeography of the parrot genus Prioniturus (Aves: Psittaciformes). Journal of Zoological Systematics and Evolutionary Research 50 (2): 145-156.", 
+"^ot:studyYear": 2012, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Prioniturus verticalis AMNH620985", 
+"^ot:ottId": 18323, 
+"^ot:ottTaxonName": "Prioniturus verticalis"
+}, 
+"otu10": {
+"^ot:originalLabel": "Prioniturus discurus discurus ZMUC136355", 
+"^ot:ottId": 70125, 
+"^ot:ottTaxonName": "Prioniturus discurus discurus"
+}, 
+"otu11": {
+"^ot:originalLabel": "Prioniturus discurus discurus ZMUC136356", 
+"^ot:ottId": 70125, 
+"^ot:ottTaxonName": "Prioniturus discurus discurus"
+}, 
+"otu12": {
+"^ot:originalLabel": "Prioniturus luconensis NMBE1056247", 
+"^ot:ottId": 771954, 
+"^ot:ottTaxonName": "Prioniturus luconensis"
+}, 
+"otu13": {
+"^ot:originalLabel": "Prioniturus flavicans AMNH620995", 
+"^ot:ottId": 591214, 
+"^ot:ottTaxonName": "Prioniturus flavicans"
+}, 
+"otu14": {
+"^ot:originalLabel": "Prioniturus waterstradti FMNH357417", 
+"^ot:ottId": 18325, 
+"^ot:ottTaxonName": "Prioniturus waterstradti"
+}, 
+"otu15": {
+"^ot:originalLabel": "Prioniturus waterstradti ZMUC1.10.1953.1295", 
+"^ot:ottId": 18325, 
+"^ot:ottTaxonName": "Prioniturus waterstradti"
+}, 
+"otu16": {
+"^ot:originalLabel": "Prioniturus waterstradti ZMUC1.10.1953.1297", 
+"^ot:ottId": 18325, 
+"^ot:ottTaxonName": "Prioniturus waterstradti"
+}, 
+"otu17": {
+"^ot:originalLabel": "Prioniturus waterstradti KU19120", 
+"^ot:ottId": 18325, 
+"^ot:ottTaxonName": "Prioniturus waterstradti"
+}, 
+"otu18": {
+"^ot:originalLabel": "Prioniturus discurus mindorensis AMNH620956", 
+"^ot:ottId": 591223, 
+"^ot:ottTaxonName": "Prioniturus mindorensis"
+}, 
+"otu19": {
+"^ot:originalLabel": "Prioniturus discurus mindorensis ZMUC22.12.1955.128", 
+"^ot:ottId": 591223, 
+"^ot:ottTaxonName": "Prioniturus mindorensis"
+}, 
+"otu2": {
+"^ot:originalLabel": "Prioniturus verticalis ZMUC26.6.1976.27", 
+"^ot:ottId": 18323, 
+"^ot:ottTaxonName": "Prioniturus verticalis"
+}, 
+"otu20": {
+"^ot:originalLabel": "Prioniturus platenae BMNH1911.11.16.112", 
+"^ot:ottId": 1015530, 
+"^ot:ottTaxonName": "Prioniturus platenae"
+}, 
+"otu21": {
+"^ot:originalLabel": "Prioniturus montanus FMNH454964", 
+"^ot:ottId": 681045, 
+"^ot:ottTaxonName": "Prioniturus montanus"
+}, 
+"otu22": {
+"^ot:originalLabel": "Prioniturus platurus talautensis ZMUC146427", 
+"^ot:ottId": 18320, 
+"^ot:ottTaxonName": "Prioniturus platurus talautensis"
+}, 
+"otu23": {
+"^ot:originalLabel": "Prioniturus platurus talautensis AMNH621000", 
+"^ot:ottId": 18320, 
+"^ot:ottTaxonName": "Prioniturus platurus talautensis"
+}, 
+"otu24": {
+"^ot:originalLabel": "Prioniturus platurus platurus AMNH621028", 
+"^ot:ottId": 18318, 
+"^ot:ottTaxonName": "Prioniturus platurus platurus"
+}, 
+"otu25": {
+"^ot:originalLabel": "Prioniturus platurus platurus BMNH1926.12.3.1", 
+"^ot:ottId": 18318, 
+"^ot:ottTaxonName": "Prioniturus platurus platurus"
+}, 
+"otu26": {
+"^ot:originalLabel": "Prioniturus mada AMNH621031", 
+"^ot:ottId": 591212, 
+"^ot:ottTaxonName": "Prioniturus mada"
+}, 
+"otu27": {
+"^ot:originalLabel": "Psittacula columboides", 
+"^ot:ottId": 864236, 
+"^ot:ottTaxonName": "Psittacula columboides"
+}, 
+"otu28": {
+"^ot:originalLabel": "Tanygnathus megalorhynchus", 
+"^ot:ottId": 7116, 
+"^ot:ottTaxonName": "Tanygnathus megalorynchos"
+}, 
+"otu29": {
+"^ot:originalLabel": "Psittinus cyanurus", 
+"^ot:ottId": 528631, 
+"^ot:ottTaxonName": "Psittinus cyanurus"
+}, 
+"otu3": {
+"^ot:originalLabel": "Prioniturus verticalis ZMUC26.6.1976.28", 
+"^ot:ottId": 18323, 
+"^ot:ottTaxonName": "Prioniturus verticalis"
+}, 
+"otu30": {
+"^ot:originalLabel": "Geoffroyus heteroclitus", 
+"^ot:ottId": 717631, 
+"^ot:ottTaxonName": "Geoffroyus heteroclitus"
+}, 
+"otu31": {
+"^ot:originalLabel": "Eclectus roratus", 
+"^ot:ottId": 375776, 
+"^ot:ottTaxonName": "Eclectus roratus"
+}, 
+"otu4": {
+"^ot:originalLabel": "Prioniturus discurus whiteheadi FMNH344943", 
+"^ot:ottId": 70127, 
+"^ot:ottTaxonName": "Prioniturus discurus whiteheadi"
+}, 
+"otu5": {
+"^ot:originalLabel": "Prioniturus discurus whiteheadi KU14237", 
+"^ot:ottId": 70127, 
+"^ot:ottTaxonName": "Prioniturus discurus whiteheadi"
+}, 
+"otu6": {
+"^ot:originalLabel": "Prioniturus discurus whiteheadi BMNH1897.5.13.502", 
+"^ot:ottId": 70127, 
+"^ot:ottTaxonName": "Prioniturus discurus whiteheadi"
+}, 
+"otu7": {
+"^ot:originalLabel": "Prioniturus discurus whiteheadi ZMUC22.12.1955.130", 
+"^ot:ottId": 70127, 
+"^ot:ottTaxonName": "Prioniturus discurus whiteheadi"
+}, 
+"otu8": {
+"^ot:originalLabel": "Prioniturus discurus discurus ZMUC136358", 
+"^ot:ottId": 70125, 
+"^ot:ottTaxonName": "Prioniturus discurus discurus"
+}, 
+"otu9": {
+"^ot:originalLabel": "Prioniturus discurus discurus ZMUC136357", 
+"^ot:ottId": 70125, 
+"^ot:ottTaxonName": "Prioniturus discurus discurus"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node2", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageu3f42ed4c-0352-4f8b-ba02-74e00fbfce51", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 1222, 
+"@sourceForTree": "tree1", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u3f42ed4c-0352-4f8b-ba02-74e00fbfce51", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:nearestTaxonMRCAName": "Prioniturus", 
+"^ot:nearestTaxonMRCAOttId": "108566", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge49": {
+"@source": "node1", 
+"@target": "node50"
+}
+}, 
+"node10": {
+"edge10": {
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge25": {
+"@source": "node10", 
+"@target": "node26"
+}
+}, 
+"node11": {
+"edge11": {
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge24": {
+"@source": "node11", 
+"@target": "node25"
+}
+}, 
+"node12": {
+"edge12": {
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge17": {
+"@source": "node12", 
+"@target": "node18"
+}
+}, 
+"node13": {
+"edge13": {
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge14": {
+"@source": "node13", 
+"@target": "node15"
+}, 
+"edge15": {
+"@source": "node13", 
+"@target": "node16"
+}, 
+"edge16": {
+"@source": "node13", 
+"@target": "node17"
+}
+}, 
+"node18": {
+"edge18": {
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge23": {
+"@source": "node18", 
+"@target": "node24"
+}
+}, 
+"node19": {
+"edge19": {
+"@source": "node19", 
+"@target": "node20"
+}, 
+"edge22": {
+"@source": "node19", 
+"@target": "node23"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge40": {
+"@source": "node2", 
+"@target": "node41"
+}
+}, 
+"node20": {
+"edge20": {
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge21": {
+"@source": "node20", 
+"@target": "node22"
+}
+}, 
+"node27": {
+"edge27": {
+"@source": "node27", 
+"@target": "node28"
+}, 
+"edge33": {
+"@source": "node27", 
+"@target": "node34"
+}
+}, 
+"node28": {
+"edge28": {
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge31": {
+"@source": "node28", 
+"@target": "node32"
+}, 
+"edge32": {
+"@source": "node28", 
+"@target": "node33"
+}
+}, 
+"node29": {
+"edge29": {
+"@source": "node29", 
+"@target": "node30"
+}, 
+"edge30": {
+"@source": "node29", 
+"@target": "node31"
+}
+}, 
+"node3": {
+"edge26": {
+"@source": "node3", 
+"@target": "node27"
+}, 
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node34": {
+"edge34": {
+"@source": "node34", 
+"@target": "node35"
+}, 
+"edge39": {
+"@source": "node34", 
+"@target": "node40"
+}
+}, 
+"node35": {
+"edge35": {
+"@source": "node35", 
+"@target": "node36"
+}, 
+"edge38": {
+"@source": "node35", 
+"@target": "node39"
+}
+}, 
+"node36": {
+"edge36": {
+"@source": "node36", 
+"@target": "node37"
+}, 
+"edge37": {
+"@source": "node36", 
+"@target": "node38"
+}
+}, 
+"node4": {
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge9": {
+"@source": "node4", 
+"@target": "node10"
+}
+}, 
+"node41": {
+"edge41": {
+"@source": "node41", 
+"@target": "node42"
+}, 
+"edge48": {
+"@source": "node41", 
+"@target": "node49"
+}
+}, 
+"node42": {
+"edge42": {
+"@source": "node42", 
+"@target": "node43"
+}, 
+"edge45": {
+"@source": "node42", 
+"@target": "node46"
+}
+}, 
+"node43": {
+"edge43": {
+"@source": "node43", 
+"@target": "node44"
+}, 
+"edge44": {
+"@source": "node43", 
+"@target": "node45"
+}
+}, 
+"node46": {
+"edge46": {
+"@source": "node46", 
+"@target": "node47"
+}, 
+"edge47": {
+"@source": "node46", 
+"@target": "node48"
+}
+}, 
+"node5": {
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}, 
+"edge8": {
+"@source": "node5", 
+"@target": "node9"
+}
+}, 
+"node50": {
+"edge50": {
+"@source": "node50", 
+"@target": "node51"
+}, 
+"edge57": {
+"@source": "node50", 
+"@target": "node58"
+}
+}, 
+"node51": {
+"edge51": {
+"@source": "node51", 
+"@target": "node52"
+}, 
+"edge56": {
+"@source": "node51", 
+"@target": "node57"
+}
+}, 
+"node52": {
+"edge52": {
+"@source": "node52", 
+"@target": "node53"
+}, 
+"edge55": {
+"@source": "node52", 
+"@target": "node56"
+}
+}, 
+"node53": {
+"edge53": {
+"@source": "node53", 
+"@target": "node54"
+}, 
+"edge54": {
+"@source": "node53", 
+"@target": "node55"
+}
+}, 
+"node6": {
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge7": {
+"@source": "node6", 
+"@target": "node8"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node11": {}, 
+"node12": {}, 
+"node13": {}, 
+"node14": {
+"@otu": "otu4", 
+"^ot:isTaxonExemplar": true
+}, 
+"node15": {
+"@otu": "otu5", 
+"^ot:isTaxonExemplar": false
+}, 
+"node16": {
+"@otu": "otu6", 
+"^ot:isTaxonExemplar": false
+}, 
+"node17": {
+"@otu": "otu7", 
+"^ot:isTaxonExemplar": false
+}, 
+"node18": {}, 
+"node19": {}, 
+"node2": {}, 
+"node20": {}, 
+"node21": {
+"@otu": "otu8"
+}, 
+"node22": {
+"@otu": "otu9"
+}, 
+"node23": {
+"@otu": "otu10"
+}, 
+"node24": {
+"@otu": "otu11"
+}, 
+"node25": {
+"@otu": "otu12"
+}, 
+"node26": {
+"@otu": "otu13"
+}, 
+"node27": {}, 
+"node28": {}, 
+"node29": {}, 
+"node3": {}, 
+"node30": {
+"@otu": "otu14"
+}, 
+"node31": {
+"@otu": "otu15"
+}, 
+"node32": {
+"@otu": "otu16"
+}, 
+"node33": {
+"@otu": "otu17"
+}, 
+"node34": {}, 
+"node35": {}, 
+"node36": {}, 
+"node37": {
+"@otu": "otu18", 
+"^ot:isTaxonExemplar": true
+}, 
+"node38": {
+"@otu": "otu19", 
+"^ot:isTaxonExemplar": false
+}, 
+"node39": {
+"@otu": "otu20"
+}, 
+"node4": {}, 
+"node40": {
+"@otu": "otu21"
+}, 
+"node41": {}, 
+"node42": {}, 
+"node43": {}, 
+"node44": {
+"@otu": "otu22", 
+"^ot:isTaxonExemplar": true
+}, 
+"node45": {
+"@otu": "otu23", 
+"^ot:isTaxonExemplar": false
+}, 
+"node46": {}, 
+"node47": {
+"@otu": "otu24", 
+"^ot:isTaxonExemplar": true
+}, 
+"node48": {
+"@otu": "otu25", 
+"^ot:isTaxonExemplar": false
+}, 
+"node49": {
+"@otu": "otu26"
+}, 
+"node5": {}, 
+"node50": {}, 
+"node51": {}, 
+"node52": {}, 
+"node53": {}, 
+"node54": {
+"@otu": "otu27"
+}, 
+"node55": {
+"@otu": "otu28"
+}, 
+"node56": {
+"@otu": "otu29"
+}, 
+"node57": {
+"@otu": "otu30"
+}, 
+"node58": {
+"@otu": "otu31"
+}, 
+"node6": {}, 
+"node7": {
+"@otu": "otu1"
+}, 
+"node8": {
+"@otu": "otu2"
+}, 
+"node9": {
+"@otu": "otu3"
+}
+}
+}
+}
+}
+}
+}
+}

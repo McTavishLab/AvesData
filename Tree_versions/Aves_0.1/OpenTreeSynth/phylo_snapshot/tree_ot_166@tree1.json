@@ -1,0 +1,828 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-07T21:05:17.654Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-07T21:05:17.653Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 745, 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=uef93e17c-0b6d-4a72-aba7-f87f741cef19", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2023-05-24T18:23:05.212Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown", 
+"Emily Jane McTavish"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 1020130, 
+"^ot:focalCladeOTTTaxonName": "Psittacidae", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_166", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.1463-6409.2012.00567.x"
+}, 
+"^ot:studyPublicationReference": " Quintero, Esther, Camila C. Ribas, Joel Cracraft. 2012. The Andean Hapalopsittaca parrots (Psittacidae, Aves): an example of montane-tropical lowland vicariance. Zoologica Scripta 42 (1): 28-43.", 
+"^ot:studyYear": 2012, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Hapalopsittaca amazonina amazonina"
+}, 
+"otu10": {
+"^ot:originalLabel": "Pyrilia haematotis", 
+"^ot:ottId": 238155, 
+"^ot:ottTaxonName": "Pionopsitta haematotis"
+}, 
+"otu11": {
+"^ot:originalLabel": "Pionus ponsi", 
+"^ot:ottId": 706763, 
+"^ot:ottTaxonName": "Pionus sordidus ponsi"
+}, 
+"otu12": {
+"^ot:originalLabel": "Pionus sordidus"
+}, 
+"otu13": {
+"^ot:originalLabel": "Pionus antelius"
+}, 
+"otu14": {
+"^ot:originalLabel": "Pionus saturatus", 
+"^ot:ottId": 757507, 
+"^ot:ottTaxonName": "Pionus sordidus saturatus"
+}, 
+"otu15": {
+"^ot:originalLabel": "Pionus mindoensis", 
+"^ot:ottId": 706785, 
+"^ot:ottTaxonName": "Pionus sordidus mindoensis"
+}, 
+"otu16": {
+"^ot:originalLabel": "Pionus corallinus", 
+"^ot:ottId": 183248, 
+"^ot:ottTaxonName": "Pionus sordidus corallinus"
+}, 
+"otu17": {
+"^ot:originalLabel": "Pionus maximiliani"
+}, 
+"otu18": {
+"^ot:originalLabel": "Pionus melanoblepharus", 
+"^ot:ottId": 183250, 
+"^ot:ottTaxonName": "Pionus maximiliani melanoblepharus"
+}, 
+"otu19": {
+"^ot:originalLabel": "Pionus siy", 
+"^ot:ottId": 183252, 
+"^ot:ottTaxonName": "Pionus maximiliani siy"
+}, 
+"otu2": {
+"^ot:originalLabel": "Hapalopsittaca amazonina velezi", 
+"^ot:ottId": 642313, 
+"^ot:ottTaxonName": "Hapalopsittaca amazonina velezi"
+}, 
+"otu20": {
+"^ot:originalLabel": "Pionus lacerus", 
+"^ot:ottId": 183241, 
+"^ot:ottTaxonName": "Pionus maximiliani lacerus"
+}, 
+"otu21": {
+"^ot:originalLabel": "Pionus fuscus", 
+"^ot:ottId": 250897, 
+"^ot:ottTaxonName": "Pionus fuscus"
+}, 
+"otu22": {
+"^ot:originalLabel": "Pionus cyanescens", 
+"^ot:ottId": 706784, 
+"^ot:ottTaxonName": "Pionus cyanescens"
+}, 
+"otu23": {
+"^ot:originalLabel": "Pionus chalcopterus", 
+"^ot:ottId": 165630, 
+"^ot:ottTaxonName": "Pionus chalcopterus"
+}, 
+"otu24": {
+"^ot:originalLabel": "Pionus senilis", 
+"^ot:ottId": 1028838, 
+"^ot:ottTaxonName": "Pionus senilis"
+}, 
+"otu25": {
+"^ot:originalLabel": "Pionus menstruus", 
+"^ot:ottId": 875952, 
+"^ot:ottTaxonName": "Pionus menstruus menstruus"
+}, 
+"otu26": {
+"^ot:originalLabel": "Pionus reichenowi", 
+"^ot:ottId": 706765, 
+"^ot:ottTaxonName": "Pionus menstruus reichenowi"
+}, 
+"otu27": {
+"^ot:originalLabel": "Pionus rubrigularis", 
+"^ot:ottId": 183244, 
+"^ot:ottTaxonName": "Pionus menstruus rubrigularis"
+}, 
+"otu28": {
+"^ot:originalLabel": "Pionus tumultuosus", 
+"^ot:ottId": 757510, 
+"^ot:ottTaxonName": "Pionus tumultuosus"
+}, 
+"otu29": {
+"^ot:originalLabel": "Pionus seniloides", 
+"^ot:ottId": 1028838, 
+"^ot:ottTaxonName": "Pionus senilis"
+}, 
+"otu3": {
+"^ot:originalLabel": "Hapalopsittaca amazonina theresae", 
+"^ot:ottId": 642310, 
+"^ot:ottTaxonName": "Hapalopsittaca amazonina theresae"
+}, 
+"otu30": {
+"^ot:originalLabel": "Amazona farinosa"
+}, 
+"otu31": {
+"^ot:originalLabel": "Alipiopsitta xanthops", 
+"^ot:ottId": 3600448, 
+"^ot:ottTaxonName": "Alipiopsitta xanthops"
+}, 
+"otu32": {
+"^ot:originalLabel": "Graydidascalus brachyurus", 
+"^ot:ottId": 400211, 
+"^ot:ottTaxonName": "Graydidascalus brachyurus"
+}, 
+"otu33": {
+"^ot:originalLabel": "Triclaria malachitacea", 
+"^ot:ottId": 250892, 
+"^ot:ottTaxonName": "Triclaria malachitacea"
+}, 
+"otu4": {
+"^ot:originalLabel": "Hapalopsittaca pyrrhops", 
+"^ot:ottId": 1064717, 
+"^ot:ottTaxonName": "Hapalopsittaca pyrrhops"
+}, 
+"otu5": {
+"^ot:originalLabel": "Hapalopsittaca fuertesi", 
+"^ot:ottId": 642316, 
+"^ot:ottTaxonName": "Hapalopsittaca fuertesi"
+}, 
+"otu6": {
+"^ot:originalLabel": "Hapalopsittaca melanotis melanotis"
+}, 
+"otu7": {
+"^ot:originalLabel": "Hapalopsittaca melanotis peruviana", 
+"^ot:ottId": 1064714, 
+"^ot:ottTaxonName": "Hapalopsittaca melanotis peruviana"
+}, 
+"otu8": {
+"^ot:originalLabel": "Pyrilia pyrilia", 
+"^ot:ottId": 3600349, 
+"^ot:ottTaxonName": "Pionopsitta pyrilia"
+}, 
+"otu9": {
+"^ot:originalLabel": "Pyrilia caica", 
+"^ot:ottId": 238149, 
+"^ot:ottTaxonName": "Pionopsitta caica"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 4c", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge64": {
+"@source": "node1", 
+"@target": "node65"
+}
+}, 
+"node11": {
+"edge11": {
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge12": {
+"@source": "node11", 
+"@target": "node13"
+}
+}, 
+"node14": {
+"edge14": {
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge15": {
+"@source": "node14", 
+"@target": "node16"
+}
+}, 
+"node17": {
+"edge17": {
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge20": {
+"@source": "node17", 
+"@target": "node21"
+}
+}, 
+"node18": {
+"edge18": {
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge19": {
+"@source": "node18", 
+"@target": "node20"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge21": {
+"@source": "node2", 
+"@target": "node22"
+}
+}, 
+"node22": {
+"edge22": {
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge61": {
+"@source": "node22", 
+"@target": "node62"
+}
+}, 
+"node23": {
+"edge23": {
+"@source": "node23", 
+"@target": "node24"
+}, 
+"edge60": {
+"@source": "node23", 
+"@target": "node61"
+}
+}, 
+"node24": {
+"edge24": {
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge45": {
+"@source": "node24", 
+"@target": "node46"
+}
+}, 
+"node25": {
+"edge25": {
+"@source": "node25", 
+"@target": "node26"
+}, 
+"edge44": {
+"@source": "node25", 
+"@target": "node45"
+}
+}, 
+"node26": {
+"edge26": {
+"@source": "node26", 
+"@target": "node27"
+}, 
+"edge37": {
+"@source": "node26", 
+"@target": "node38"
+}
+}, 
+"node27": {
+"edge27": {
+"@source": "node27", 
+"@target": "node28"
+}, 
+"edge34": {
+"@source": "node27", 
+"@target": "node35"
+}
+}, 
+"node28": {
+"edge28": {
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge33": {
+"@source": "node28", 
+"@target": "node34"
+}
+}, 
+"node29": {
+"edge29": {
+"@source": "node29", 
+"@target": "node30"
+}, 
+"edge32": {
+"@source": "node29", 
+"@target": "node33"
+}
+}, 
+"node3": {
+"edge16": {
+"@source": "node3", 
+"@target": "node17"
+}, 
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node30": {
+"edge30": {
+"@source": "node30", 
+"@target": "node31"
+}, 
+"edge31": {
+"@source": "node30", 
+"@target": "node32"
+}
+}, 
+"node35": {
+"edge35": {
+"@source": "node35", 
+"@target": "node36"
+}, 
+"edge36": {
+"@source": "node35", 
+"@target": "node37"
+}
+}, 
+"node38": {
+"edge38": {
+"@source": "node38", 
+"@target": "node39"
+}, 
+"edge41": {
+"@source": "node38", 
+"@target": "node42"
+}
+}, 
+"node39": {
+"edge39": {
+"@source": "node39", 
+"@target": "node40"
+}, 
+"edge40": {
+"@source": "node39", 
+"@target": "node41"
+}
+}, 
+"node4": {
+"edge13": {
+"@source": "node4", 
+"@target": "node14"
+}, 
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node42": {
+"edge42": {
+"@source": "node42", 
+"@target": "node43"
+}, 
+"edge43": {
+"@source": "node42", 
+"@target": "node44"
+}
+}, 
+"node46": {
+"edge46": {
+"@source": "node46", 
+"@target": "node47"
+}, 
+"edge57": {
+"@source": "node46", 
+"@target": "node58"
+}
+}, 
+"node47": {
+"edge47": {
+"@source": "node47", 
+"@target": "node48"
+}, 
+"edge52": {
+"@source": "node47", 
+"@target": "node53"
+}
+}, 
+"node48": {
+"edge48": {
+"@source": "node48", 
+"@target": "node49"
+}, 
+"edge51": {
+"@source": "node48", 
+"@target": "node52"
+}
+}, 
+"node49": {
+"edge49": {
+"@source": "node49", 
+"@target": "node50"
+}, 
+"edge50": {
+"@source": "node49", 
+"@target": "node51"
+}
+}, 
+"node5": {
+"edge10": {
+"@source": "node5", 
+"@target": "node11"
+}, 
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node53": {
+"edge53": {
+"@source": "node53", 
+"@target": "node54"
+}, 
+"edge56": {
+"@source": "node53", 
+"@target": "node57"
+}
+}, 
+"node54": {
+"edge54": {
+"@source": "node54", 
+"@target": "node55"
+}, 
+"edge55": {
+"@source": "node54", 
+"@target": "node56"
+}
+}, 
+"node58": {
+"edge58": {
+"@source": "node58", 
+"@target": "node59"
+}, 
+"edge59": {
+"@source": "node58", 
+"@target": "node60"
+}
+}, 
+"node6": {
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge9": {
+"@source": "node6", 
+"@target": "node10"
+}
+}, 
+"node62": {
+"edge62": {
+"@source": "node62", 
+"@target": "node63"
+}, 
+"edge63": {
+"@source": "node62", 
+"@target": "node64"
+}
+}, 
+"node7": {
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@source": "node7", 
+"@target": "node9"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu3"
+}, 
+"node11": {}, 
+"node12": {
+"@otu": "otu4"
+}, 
+"node13": {
+"@otu": "otu5"
+}, 
+"node14": {}, 
+"node15": {
+"@otu": "otu6"
+}, 
+"node16": {
+"@otu": "otu7"
+}, 
+"node17": {}, 
+"node18": {}, 
+"node19": {
+"@otu": "otu8"
+}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu9"
+}, 
+"node21": {
+"@otu": "otu10"
+}, 
+"node22": {}, 
+"node23": {}, 
+"node24": {}, 
+"node25": {}, 
+"node26": {}, 
+"node27": {}, 
+"node28": {}, 
+"node29": {}, 
+"node3": {}, 
+"node30": {}, 
+"node31": {
+"@otu": "otu11"
+}, 
+"node32": {
+"@otu": "otu12"
+}, 
+"node33": {
+"@otu": "otu13"
+}, 
+"node34": {
+"@otu": "otu14"
+}, 
+"node35": {}, 
+"node36": {
+"@otu": "otu15"
+}, 
+"node37": {
+"@otu": "otu16"
+}, 
+"node38": {}, 
+"node39": {}, 
+"node4": {}, 
+"node40": {
+"@otu": "otu17"
+}, 
+"node41": {
+"@otu": "otu18"
+}, 
+"node42": {}, 
+"node43": {
+"@otu": "otu19"
+}, 
+"node44": {
+"@otu": "otu20"
+}, 
+"node45": {
+"@otu": "otu21"
+}, 
+"node46": {}, 
+"node47": {}, 
+"node48": {}, 
+"node49": {}, 
+"node5": {}, 
+"node50": {
+"@otu": "otu22"
+}, 
+"node51": {
+"@otu": "otu23"
+}, 
+"node52": {
+"@otu": "otu24"
+}, 
+"node53": {}, 
+"node54": {}, 
+"node55": {
+"@otu": "otu25"
+}, 
+"node56": {
+"@otu": "otu26"
+}, 
+"node57": {
+"@otu": "otu27"
+}, 
+"node58": {}, 
+"node59": {
+"@otu": "otu28"
+}, 
+"node6": {}, 
+"node60": {
+"@otu": "otu29"
+}, 
+"node61": {
+"@otu": "otu30"
+}, 
+"node62": {}, 
+"node63": {
+"@otu": "otu31"
+}, 
+"node64": {
+"@otu": "otu32"
+}, 
+"node65": {
+"@otu": "otu33"
+}, 
+"node7": {}, 
+"node8": {
+"@otu": "otu1"
+}, 
+"node9": {
+"@otu": "otu2"
+}
+}
+}
+}
+}
+}
+}
+}

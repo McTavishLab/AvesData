@@ -1,0 +1,1863 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.16"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2022-04-13T16:33:46.481Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-04-13T16:33:46.481Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-04-13T16:33:46.481Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "snap.Epinecrophylla_toClade_x2_priors.MCC.tre", 
+"@size": 23149, 
+"@type": "nexus", 
+"@url": "/curator/download/supporting_files.doc.b2dbda57e05f9df9.736e61702e4570696e6563726f7068796c6c615f746f436c6164655f78325f7072696f72732e4d43432e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}, 
+{
+"@filename": "image.png", 
+"@size": 1866, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.880a34db2e9fc049.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1828, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.9af3bcf9b4e15252.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1678, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.9df26f004280dc94.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1781, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.8e9687c679c63c54.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1781, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.bdb2e4ef1716b8c7.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1548, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.b711859d24dd63bb.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1781, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.a71f8190c2fe3a5d.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1905, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.90171188bb05cf1d.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1905, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.96924d517d1607e5.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1781, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.95176248144a693a.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1785, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.9c1682ec0cc2d9f7.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 2023, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.b04d72a87b8b8d77.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1726, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.9435f0b5d43631d4.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1923, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.93c69516208c0cee.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1687, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.81daddc256a74501.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1924, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.841e54fb149db50c.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1785, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.a578b7542c8f02dd.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "image.png", 
+"@size": 1548, 
+"@type": "", 
+"@url": "/curator/supporting_files/download/supporting_files.doc.98b680a1ed9875b4.696d6167652e706e67.png", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": []
+}, 
+{
+"@filename": "Epinecrophylla-exabayes-treePL-75p-intree.dated.tre", 
+"@size": 4434, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.a42cffc5c74bd0b5.4570696e6563726f7068796c6c612d65786162617965732d74726565504c2d3735702d696e747265652e64617465642e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree2'"
+}, 
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"eliotmiller", 
+"Emily Jane McTavish"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 294045, 
+"^ot:focalCladeOTTTaxonName": "Epinecrophylla", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_2074", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2020.106962"
+}, 
+"^ot:studyPublicationReference": "Johnson, O., Howard, J. T., & Brumfield, R. T. (2021). Systematics of a Neotropical clade of dead-leaf-foraging antwrens (Aves: Thamnophilidae; Epinecrophylla). Molecular Phylogenetics and Evolution, 154, 106962. https://doi.org/10.1016/j.ympev.2020.106962\n", 
+"^ot:studyYear": 2021, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "amazonica", 
+"^ot:ottId": 6154109, 
+"^ot:ottTaxonName": "Epinecrophylla amazonica"
+}, 
+"otu10": {
+"^ot:originalLabel": "leucophthalma east", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu11": {
+"^ot:originalLabel": "leucophthalma west", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu12": {
+"^ot:originalLabel": "meridionalis", 
+"^ot:ottId": 1033816, 
+"^ot:ottTaxonName": "Epinecrophylla ornata"
+}, 
+"otu13": {
+"^ot:originalLabel": "phaeonota", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu14": {
+"^ot:originalLabel": "pyrrhonota east", 
+"^ot:ottId": 294046, 
+"^ot:ottTaxonName": "Epinecrophylla haematonota"
+}, 
+"otu15": {
+"^ot:originalLabel": "pyrrhonota west", 
+"^ot:ottId": 294046, 
+"^ot:ottTaxonName": "Epinecrophylla haematonota"
+}, 
+"otu16": {
+"^ot:originalLabel": "sordida", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu17": {
+"^ot:originalLabel": "sororia", 
+"^ot:ottId": 857173, 
+"^ot:ottTaxonName": "Epinecrophylla spodionota"
+}, 
+"otu18": {
+"^ot:originalLabel": "spodionota", 
+"^ot:ottId": 857173, 
+"^ot:ottTaxonName": "Epinecrophylla spodionota"
+}, 
+"otu19": {
+"^ot:originalLabel": "Neoctantes niger L2749 1", 
+"^ot:ottId": 1078383, 
+"^ot:ottTaxonName": "Neoctantes niger"
+}, 
+"otu2": {
+"^ot:originalLabel": "atrogularis", 
+"^ot:ottId": 1033816, 
+"^ot:ottTaxonName": "Epinecrophylla ornata"
+}, 
+"otu20": {
+"^ot:originalLabel": "Epinecrophylla fulviventris costaricensis e18 LSUMZ82086 1", 
+"^ot:ottId": 82228, 
+"^ot:ottTaxonName": "Epinecrophylla fulviventris"
+}, 
+"otu21": {
+"^ot:originalLabel": "Epinecrophylla fulviventris costaricensis e17 LSU2299 1", 
+"^ot:ottId": 82228, 
+"^ot:ottTaxonName": "Epinecrophylla fulviventris"
+}, 
+"otu22": {
+"^ot:originalLabel": "Epinecrophylla ornata atrogularis e65 MSB36505 1", 
+"^ot:ottId": 1033816, 
+"^ot:ottTaxonName": "Epinecrophylla ornata"
+}, 
+"otu23": {
+"^ot:originalLabel": "Epinecrophylla ornata atrogularis e64 LSU74213 1", 
+"^ot:ottId": 1033816, 
+"^ot:ottTaxonName": "Epinecrophylla ornata"
+}, 
+"otu24": {
+"^ot:originalLabel": "Epinecrophylla ornata hoffmansi e68 LSU78113 1", 
+"^ot:ottId": 1033816, 
+"^ot:ottTaxonName": "Epinecrophylla ornata"
+}, 
+"otu25": {
+"^ot:originalLabel": "Epinecrophylla ornata hoffmannsi e66 FMNH391379 1", 
+"^ot:ottId": 1033816, 
+"^ot:ottTaxonName": "Epinecrophylla ornata"
+}, 
+"otu26": {
+"^ot:originalLabel": "Epinecrophylla ornata hoffmannsi e67 FMNH457051 1", 
+"^ot:ottId": 1033816, 
+"^ot:ottTaxonName": "Epinecrophylla ornata"
+}, 
+"otu27": {
+"^ot:originalLabel": "Epinecrophylla ornata meridionalis e70 LSUMZ9502 1", 
+"^ot:ottId": 1033816, 
+"^ot:ottTaxonName": "Epinecrophylla ornata"
+}, 
+"otu28": {
+"^ot:originalLabel": "Epinecrophylla ornata meridionalis e69 LSUMZ1082 1", 
+"^ot:ottId": 1033816, 
+"^ot:ottTaxonName": "Epinecrophylla ornata"
+}, 
+"otu29": {
+"^ot:originalLabel": "Epinecrophylla ornata meridionalis e71 LSUMZ78808 1", 
+"^ot:ottId": 1033816, 
+"^ot:ottTaxonName": "Epinecrophylla ornata"
+}, 
+"otu3": {
+"^ot:originalLabel": "dentei", 
+"^ot:ottId": 6154109, 
+"^ot:ottTaxonName": "Epinecrophylla amazonica"
+}, 
+"otu30": {
+"^ot:originalLabel": "Epinecrophylla erythrura septentrionalis e10 LSUMZ27716 1", 
+"^ot:ottId": 913362, 
+"^ot:ottTaxonName": "Epinecrophylla erythrura"
+}, 
+"otu31": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma leucophthalma e51 LSUMZ42670 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu32": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma leucophthalma e46 LSUMZ10538 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu33": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma leucophthalma e45 LSUMZ9173 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu34": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma dissita e43 LSUMZ75006 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu35": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma sordida e61 FMNH392048 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu36": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma sordida e62 FMNH457026 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu37": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma phaeonota e53 FMNH389907 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu38": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma leucophthalma e50 LSUMZ36628 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu39": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma e49 LSU18242 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu4": {
+"^ot:originalLabel": "erythrura", 
+"^ot:ottId": 913362, 
+"^ot:ottTaxonName": "Epinecrophylla erythrura"
+}, 
+"otu40": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma leucophthalma e48 LSUMZ14575 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu41": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma leucophthalma e47 LSUMZ12394 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu42": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma phaeonota e59 LSUMZ85998 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu43": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma phaeonota e56 LSUMZ78380 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu44": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma phaeonota e55 LSUMZ77807 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu45": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma phaeonota e58 LSUMZ80818 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu46": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma phaeonota e54 LSUMZ35603 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu47": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma phaeonota e57 LSUMZ80774 1", 
+"^ot:ottId": 857175, 
+"^ot:ottTaxonName": "Epinecrophylla leucophthalma"
+}, 
+"otu48": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e34 YPM139781 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu49": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e31 YPM137211 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu5": {
+"^ot:originalLabel": "fjeldsaai", 
+"^ot:ottId": 294046, 
+"^ot:ottTaxonName": "Epinecrophylla haematonota"
+}, 
+"otu50": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e35 LSU20398 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu51": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e28 LSU55218 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu52": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e26 USNM587338 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu53": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e33 YPM139633 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu54": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e30 YPM101670 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu55": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e29 LSUMZ71576 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu56": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e24 KU88804 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu57": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e23 KU88801 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu58": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e22 USNM609157 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu59": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e25 USNM586379 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu6": {
+"^ot:originalLabel": "fulviventris", 
+"^ot:ottId": 82228, 
+"^ot:ottTaxonName": "Epinecrophylla fulviventris"
+}, 
+"otu60": {
+"^ot:originalLabel": "Epinecrophylla gutturalis e20 AMNH11921 1", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu61": {
+"^ot:originalLabel": "Epinecrophylla dentei e6 MZUSP80591 1", 
+"^ot:ottId": 5223428, 
+"^ot:ottTaxonName": "Epinecrophylla dentei"
+}, 
+"otu62": {
+"^ot:originalLabel": "Epinecrophylla amazonica e1 LSU9217 1", 
+"^ot:ottId": 6154109, 
+"^ot:ottTaxonName": "Epinecrophylla amazonica"
+}, 
+"otu63": {
+"^ot:originalLabel": "Epinecrophylla amazonica e2 LSUMZ31342 1", 
+"^ot:ottId": 6154109, 
+"^ot:ottTaxonName": "Epinecrophylla amazonica"
+}, 
+"otu64": {
+"^ot:originalLabel": "Epinecrophylla amazonica e3 MZUSP164 1", 
+"^ot:ottId": 6154109, 
+"^ot:ottTaxonName": "Epinecrophylla amazonica"
+}, 
+"otu65": {
+"^ot:originalLabel": "Epinecrophylla spodionota sororia e81 KU113634 1", 
+"^ot:ottId": 857173, 
+"^ot:ottTaxonName": "Epinecrophylla spodionota"
+}, 
+"otu66": {
+"^ot:originalLabel": "Epinecrophylla spodionota sororia e82 LSUMZ2058 1", 
+"^ot:ottId": 857173, 
+"^ot:ottTaxonName": "Epinecrophylla spodionota"
+}, 
+"otu67": {
+"^ot:originalLabel": "Epinecrophylla spodionota spodionota e85 H234 1", 
+"^ot:ottId": 857173, 
+"^ot:ottTaxonName": "Epinecrophylla spodionota"
+}, 
+"otu68": {
+"^ot:originalLabel": "Epinecrophylla spodionota sororia e80 FMNH474124 1", 
+"^ot:ottId": 857173, 
+"^ot:ottTaxonName": "Epinecrophylla spodionota"
+}, 
+"otu69": {
+"^ot:originalLabel": "Epinecrophylla leucophthalma leucophthalma e44 LSUMZ5392 1", 
+"^ot:ottId": 857173, 
+"^ot:ottTaxonName": "Epinecrophylla spodionota"
+}, 
+"otu7": {
+"^ot:originalLabel": "gutturalis", 
+"^ot:ottId": 913359, 
+"^ot:ottTaxonName": "Epinecrophylla gutturalis"
+}, 
+"otu70": {
+"^ot:originalLabel": "Epinecrophylla pyrrhonota e76 LSU4202 1", 
+"^ot:ottId": 7662290, 
+"^ot:ottTaxonName": "Epinecrophylla pyrrhonota"
+}, 
+"otu71": {
+"^ot:originalLabel": "Epinecrophylla pyrrhonota e75 FMNH457014 1", 
+"^ot:ottId": 7662290, 
+"^ot:ottTaxonName": "Epinecrophylla pyrrhonota"
+}, 
+"otu72": {
+"^ot:originalLabel": "Epinecrophylla pyrrhonota e74 AMNH14224 1", 
+"^ot:ottId": 7662290, 
+"^ot:ottTaxonName": "Epinecrophylla pyrrhonota"
+}, 
+"otu73": {
+"^ot:originalLabel": "Epinecrophylla pyrrhonota e78 MZUSP79027 1", 
+"^ot:ottId": 7662290, 
+"^ot:ottTaxonName": "Epinecrophylla pyrrhonota"
+}, 
+"otu74": {
+"^ot:originalLabel": "Epinecrophylla pyrrhonota e77 LSUMZ7505 1", 
+"^ot:ottId": 7662290, 
+"^ot:ottTaxonName": "Epinecrophylla pyrrhonota"
+}, 
+"otu75": {
+"^ot:originalLabel": "Epinecrophylla amazonica e5 LSUMZ75291 1", 
+"^ot:ottId": 6154109, 
+"^ot:ottTaxonName": "Epinecrophylla amazonica"
+}, 
+"otu76": {
+"^ot:originalLabel": "Epinecrophylla haematonota e36 LSU4579 1", 
+"^ot:ottId": 294046, 
+"^ot:ottTaxonName": "Epinecrophylla haematonota"
+}, 
+"otu77": {
+"^ot:originalLabel": "Epinecrophylla haematonota haematonota e39 LSUMZ10790 1", 
+"^ot:ottId": 294046, 
+"^ot:ottTaxonName": "Epinecrophylla haematonota"
+}, 
+"otu78": {
+"^ot:originalLabel": "Epinecrophylla fjeldsaai hybrid e15 LSUMZ42704 1", 
+"^ot:ottId": 294046, 
+"^ot:ottTaxonName": "Epinecrophylla haematonota"
+}, 
+"otu79": {
+"^ot:originalLabel": "Epinecrophylla fjeldsaai e13 KU873 1", 
+"^ot:ottId": 294046, 
+"^ot:ottTaxonName": "Epinecrophylla haematonota"
+}, 
+"otu8": {
+"^ot:originalLabel": "haematonota", 
+"^ot:ottId": 294046, 
+"^ot:ottTaxonName": "Epinecrophylla haematonota"
+}, 
+"otu80": {
+"^ot:originalLabel": "Epinecrophylla haematonota haematonota e42 LSUMZ93087 1", 
+"^ot:ottId": 294046, 
+"^ot:ottTaxonName": "Epinecrophylla haematonota"
+}, 
+"otu81": {
+"^ot:originalLabel": "Epinecrophylla haematonota haematonota e40 LSUMZ27427 1", 
+"^ot:ottId": 294046, 
+"^ot:ottTaxonName": "Epinecrophylla haematonota"
+}, 
+"otu82": {
+"^ot:originalLabel": "Epinecrophylla haematonota haematonota e41 LSUMZ42282 1", 
+"^ot:ottId": 294046, 
+"^ot:ottTaxonName": "Epinecrophylla haematonota"
+}, 
+"otu83": {
+"^ot:originalLabel": "Myrmorchilus strigilatus LSUMZ18722 1", 
+"^ot:ottId": 1078392, 
+"^ot:ottTaxonName": "Myrmorchilus strigilatus"
+}, 
+"otu9": {
+"^ot:originalLabel": "hoffmannsi", 
+"^ot:ottId": 1033816, 
+"^ot:ottTaxonName": "Epinecrophylla ornata"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree2"
+], 
+"treeById": {
+"tree2": {
+"@label": "Epinecrophylla-exabayes-treePL-75p-intree.dated (Fig 2A)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:time", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node36", 
+"^ot:specifiedRoot": "node36", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node100": {
+"edge100": {
+"@length": 0.674012, 
+"@source": "node100", 
+"@target": "node102"
+}, 
+"edge99": {
+"@length": 0.674012, 
+"@source": "node100", 
+"@target": "node101"
+}
+}, 
+"node103": {
+"edge102": {
+"@length": 0.162417, 
+"@source": "node103", 
+"@target": "node104"
+}, 
+"edge105": {
+"@length": 0.108317, 
+"@source": "node103", 
+"@target": "node107"
+}
+}, 
+"node104": {
+"edge103": {
+"@length": 0.553711, 
+"@source": "node104", 
+"@target": "node105"
+}, 
+"edge104": {
+"@length": 0.553711, 
+"@source": "node104", 
+"@target": "node106"
+}
+}, 
+"node107": {
+"edge106": {
+"@length": 0.607811, 
+"@source": "node107", 
+"@target": "node108"
+}, 
+"edge107": {
+"@length": 0.607811, 
+"@source": "node107", 
+"@target": "node109"
+}
+}, 
+"node110": {
+"edge109": {
+"@length": 0.91052, 
+"@source": "node110", 
+"@target": "node111"
+}, 
+"edge110": {
+"@length": 0.083498, 
+"@source": "node110", 
+"@target": "node112"
+}
+}, 
+"node112": {
+"edge111": {
+"@length": 0.115354, 
+"@source": "node112", 
+"@target": "node113"
+}, 
+"edge114": {
+"@length": 0.104283, 
+"@source": "node112", 
+"@target": "node116"
+}
+}, 
+"node113": {
+"edge112": {
+"@length": 0.711667, 
+"@source": "node113", 
+"@target": "node114"
+}, 
+"edge113": {
+"@length": 0.711667, 
+"@source": "node113", 
+"@target": "node115"
+}
+}, 
+"node116": {
+"edge115": {
+"@length": 0.722738, 
+"@source": "node116", 
+"@target": "node117"
+}, 
+"edge116": {
+"@length": 0.155792, 
+"@source": "node116", 
+"@target": "node118"
+}
+}, 
+"node118": {
+"edge117": {
+"@length": 0.566947, 
+"@source": "node118", 
+"@target": "node119"
+}, 
+"edge118": {
+"@length": 0.566947, 
+"@source": "node118", 
+"@target": "node120"
+}
+}, 
+"node121": {
+"edge120": {
+"@length": 0.553467, 
+"@source": "node121", 
+"@target": "node122"
+}, 
+"edge137": {
+"@length": 0.220486, 
+"@source": "node121", 
+"@target": "node139"
+}
+}, 
+"node122": {
+"edge121": {
+"@length": 0.905569, 
+"@source": "node122", 
+"@target": "node123"
+}, 
+"edge128": {
+"@length": 1.325154, 
+"@source": "node122", 
+"@target": "node130"
+}
+}, 
+"node123": {
+"edge122": {
+"@length": 1.415934, 
+"@source": "node123", 
+"@target": "node124"
+}, 
+"edge123": {
+"@length": 0.616154, 
+"@source": "node123", 
+"@target": "node125"
+}
+}, 
+"node125": {
+"edge124": {
+"@length": 0.799781, 
+"@source": "node125", 
+"@target": "node126"
+}, 
+"edge125": {
+"@length": 0.1877, 
+"@source": "node125", 
+"@target": "node127"
+}
+}, 
+"node127": {
+"edge126": {
+"@length": 0.61208, 
+"@source": "node127", 
+"@target": "node128"
+}, 
+"edge127": {
+"@length": 0.61208, 
+"@source": "node127", 
+"@target": "node129"
+}
+}, 
+"node130": {
+"edge129": {
+"@length": 0.256611, 
+"@source": "node130", 
+"@target": "node131"
+}, 
+"edge132": {
+"@length": 0.140164, 
+"@source": "node130", 
+"@target": "node134"
+}
+}, 
+"node131": {
+"edge130": {
+"@length": 0.739738, 
+"@source": "node131", 
+"@target": "node132"
+}, 
+"edge131": {
+"@length": 0.739738, 
+"@source": "node131", 
+"@target": "node133"
+}
+}, 
+"node134": {
+"edge133": {
+"@length": 0.856185, 
+"@source": "node134", 
+"@target": "node135"
+}, 
+"edge134": {
+"@length": 0.136143, 
+"@source": "node134", 
+"@target": "node136"
+}
+}, 
+"node136": {
+"edge135": {
+"@length": 0.720043, 
+"@source": "node136", 
+"@target": "node137"
+}, 
+"edge136": {
+"@length": 0.720043, 
+"@source": "node136", 
+"@target": "node138"
+}
+}, 
+"node139": {
+"edge138": {
+"@length": 1.241259, 
+"@source": "node139", 
+"@target": "node140"
+}, 
+"edge147": {
+"@length": 1.405035, 
+"@source": "node139", 
+"@target": "node149"
+}
+}, 
+"node140": {
+"edge139": {
+"@length": 1.413225, 
+"@source": "node140", 
+"@target": "node141"
+}, 
+"edge140": {
+"@length": 0.737283, 
+"@source": "node140", 
+"@target": "node142"
+}
+}, 
+"node142": {
+"edge141": {
+"@length": 0.183525, 
+"@source": "node142", 
+"@target": "node143"
+}, 
+"edge144": {
+"@length": 0.146068, 
+"@source": "node142", 
+"@target": "node146"
+}
+}, 
+"node143": {
+"edge142": {
+"@length": 0.492417, 
+"@source": "node143", 
+"@target": "node144"
+}, 
+"edge143": {
+"@length": 0.492417, 
+"@source": "node143", 
+"@target": "node145"
+}
+}, 
+"node146": {
+"edge145": {
+"@length": 0.529873, 
+"@source": "node146", 
+"@target": "node147"
+}, 
+"edge146": {
+"@length": 0.529873, 
+"@source": "node146", 
+"@target": "node148"
+}
+}, 
+"node149": {
+"edge148": {
+"@length": 0.291801, 
+"@source": "node149", 
+"@target": "node150"
+}, 
+"edge151": {
+"@length": 0.120929, 
+"@source": "node149", 
+"@target": "node153"
+}
+}, 
+"node150": {
+"edge149": {
+"@length": 0.957649, 
+"@source": "node150", 
+"@target": "node151"
+}, 
+"edge150": {
+"@length": 0.957649, 
+"@source": "node150", 
+"@target": "node152"
+}
+}, 
+"node153": {
+"edge152": {
+"@length": 1.12852, 
+"@source": "node153", 
+"@target": "node154"
+}, 
+"edge153": {
+"@length": 0.145252, 
+"@source": "node153", 
+"@target": "node155"
+}
+}, 
+"node155": {
+"edge154": {
+"@length": 0.235591, 
+"@source": "node155", 
+"@target": "node156"
+}, 
+"edge157": {
+"@length": 0.138926, 
+"@source": "node155", 
+"@target": "node159"
+}
+}, 
+"node156": {
+"edge155": {
+"@length": 0.747677, 
+"@source": "node156", 
+"@target": "node157"
+}, 
+"edge156": {
+"@length": 0.747677, 
+"@source": "node156", 
+"@target": "node158"
+}
+}, 
+"node159": {
+"edge158": {
+"@length": 0.844342, 
+"@source": "node159", 
+"@target": "node160"
+}, 
+"edge159": {
+"@length": 0.104126, 
+"@source": "node159", 
+"@target": "node161"
+}
+}, 
+"node161": {
+"edge160": {
+"@length": 0.740216, 
+"@source": "node161", 
+"@target": "node162"
+}, 
+"edge161": {
+"@length": 0.740216, 
+"@source": "node161", 
+"@target": "node163"
+}
+}, 
+"node36": {
+"edge162": {
+"@length": 16.827301, 
+"@source": "node36", 
+"@target": "node164"
+}, 
+"edge35": {
+"@length": 1.954071, 
+"@source": "node36", 
+"@target": "node37"
+}
+}, 
+"node37": {
+"edge36": {
+"@length": 14.87323, 
+"@source": "node37", 
+"@target": "node38"
+}, 
+"edge37": {
+"@length": 5.014913, 
+"@source": "node37", 
+"@target": "node39"
+}
+}, 
+"node39": {
+"edge38": {
+"@length": 9.189306, 
+"@source": "node39", 
+"@target": "node40"
+}, 
+"edge41": {
+"@length": 1.84453, 
+"@source": "node39", 
+"@target": "node43"
+}
+}, 
+"node40": {
+"edge39": {
+"@length": 0.66901, 
+"@source": "node40", 
+"@target": "node41"
+}, 
+"edge40": {
+"@length": 0.66901, 
+"@source": "node40", 
+"@target": "node42"
+}
+}, 
+"node43": {
+"edge42": {
+"@length": 5.486435, 
+"@source": "node43", 
+"@target": "node44"
+}, 
+"edge57": {
+"@length": 0.851339, 
+"@source": "node43", 
+"@target": "node59"
+}
+}, 
+"node44": {
+"edge43": {
+"@length": 1.611098, 
+"@source": "node44", 
+"@target": "node45"
+}, 
+"edge46": {
+"@length": 1.066993, 
+"@source": "node44", 
+"@target": "node48"
+}
+}, 
+"node45": {
+"edge44": {
+"@length": 0.916254, 
+"@source": "node45", 
+"@target": "node46"
+}, 
+"edge45": {
+"@length": 0.916254, 
+"@source": "node45", 
+"@target": "node47"
+}
+}, 
+"node48": {
+"edge47": {
+"@length": 0.453093, 
+"@source": "node48", 
+"@target": "node49"
+}, 
+"edge52": {
+"@length": 0.615279, 
+"@source": "node48", 
+"@target": "node54"
+}
+}, 
+"node49": {
+"edge48": {
+"@length": 1.007266, 
+"@source": "node49", 
+"@target": "node50"
+}, 
+"edge49": {
+"@length": 0.660113, 
+"@source": "node49", 
+"@target": "node51"
+}
+}, 
+"node51": {
+"edge50": {
+"@length": 0.347153, 
+"@source": "node51", 
+"@target": "node52"
+}, 
+"edge51": {
+"@length": 0.347153, 
+"@source": "node51", 
+"@target": "node53"
+}
+}, 
+"node54": {
+"edge53": {
+"@length": 0.845081, 
+"@source": "node54", 
+"@target": "node55"
+}, 
+"edge54": {
+"@length": 0.205683, 
+"@source": "node54", 
+"@target": "node56"
+}
+}, 
+"node56": {
+"edge55": {
+"@length": 0.639397, 
+"@source": "node56", 
+"@target": "node57"
+}, 
+"edge56": {
+"@length": 0.639397, 
+"@source": "node56", 
+"@target": "node58"
+}
+}, 
+"node59": {
+"edge58": {
+"@length": 2.585672, 
+"@source": "node59", 
+"@target": "node60"
+}, 
+"edge93": {
+"@length": 3.331022, 
+"@source": "node59", 
+"@target": "node95"
+}
+}, 
+"node60": {
+"edge59": {
+"@length": 4.576776, 
+"@source": "node60", 
+"@target": "node61"
+}, 
+"edge60": {
+"@length": 2.028709, 
+"@source": "node60", 
+"@target": "node62"
+}
+}, 
+"node62": {
+"edge61": {
+"@length": 1.372187, 
+"@source": "node62", 
+"@target": "node63"
+}, 
+"edge68": {
+"@length": 1.316991, 
+"@source": "node62", 
+"@target": "node70"
+}
+}, 
+"node63": {
+"edge62": {
+"@length": 1.17588, 
+"@source": "node63", 
+"@target": "node64"
+}, 
+"edge63": {
+"@length": 0.232536, 
+"@source": "node63", 
+"@target": "node65"
+}
+}, 
+"node65": {
+"edge64": {
+"@length": 0.943344, 
+"@source": "node65", 
+"@target": "node66"
+}, 
+"edge65": {
+"@length": 0.177478, 
+"@source": "node65", 
+"@target": "node67"
+}
+}, 
+"node67": {
+"edge66": {
+"@length": 0.765866, 
+"@source": "node67", 
+"@target": "node68"
+}, 
+"edge67": {
+"@length": 0.765866, 
+"@source": "node67", 
+"@target": "node69"
+}
+}, 
+"node70": {
+"edge69": {
+"@length": 0.409327, 
+"@source": "node70", 
+"@target": "node71"
+}, 
+"edge72": {
+"@length": 0.167199, 
+"@source": "node70", 
+"@target": "node74"
+}
+}, 
+"node71": {
+"edge70": {
+"@length": 0.821749, 
+"@source": "node71", 
+"@target": "node72"
+}, 
+"edge71": {
+"@length": 0.821749, 
+"@source": "node71", 
+"@target": "node73"
+}
+}, 
+"node74": {
+"edge73": {
+"@length": 0.14524, 
+"@source": "node74", 
+"@target": "node75"
+}, 
+"edge82": {
+"@length": 0.173822, 
+"@source": "node74", 
+"@target": "node84"
+}
+}, 
+"node75": {
+"edge74": {
+"@length": 0.320704, 
+"@source": "node75", 
+"@target": "node76"
+}, 
+"edge77": {
+"@length": 0.217731, 
+"@source": "node75", 
+"@target": "node79"
+}
+}, 
+"node76": {
+"edge75": {
+"@length": 0.597933, 
+"@source": "node76", 
+"@target": "node77"
+}, 
+"edge76": {
+"@length": 0.597933, 
+"@source": "node76", 
+"@target": "node78"
+}
+}, 
+"node79": {
+"edge78": {
+"@length": 0.700906, 
+"@source": "node79", 
+"@target": "node80"
+}, 
+"edge79": {
+"@length": 0.10604, 
+"@source": "node79", 
+"@target": "node81"
+}
+}, 
+"node81": {
+"edge80": {
+"@length": 0.594866, 
+"@source": "node81", 
+"@target": "node82"
+}, 
+"edge81": {
+"@length": 0.594866, 
+"@source": "node81", 
+"@target": "node83"
+}
+}, 
+"node84": {
+"edge83": {
+"@length": 0.168833, 
+"@source": "node84", 
+"@target": "node85"
+}, 
+"edge86": {
+"@length": 0.104258, 
+"@source": "node84", 
+"@target": "node88"
+}
+}, 
+"node85": {
+"edge84": {
+"@length": 0.721222, 
+"@source": "node85", 
+"@target": "node86"
+}, 
+"edge85": {
+"@length": 0.721222, 
+"@source": "node85", 
+"@target": "node87"
+}
+}, 
+"node88": {
+"edge87": {
+"@length": 0.104919, 
+"@source": "node88", 
+"@target": "node89"
+}, 
+"edge90": {
+"@length": 0.118001, 
+"@source": "node88", 
+"@target": "node92"
+}
+}, 
+"node89": {
+"edge88": {
+"@length": 0.680878, 
+"@source": "node89", 
+"@target": "node90"
+}, 
+"edge89": {
+"@length": 0.680878, 
+"@source": "node89", 
+"@target": "node91"
+}
+}, 
+"node92": {
+"edge91": {
+"@length": 0.667796, 
+"@source": "node92", 
+"@target": "node93"
+}, 
+"edge92": {
+"@length": 0.667796, 
+"@source": "node92", 
+"@target": "node94"
+}
+}, 
+"node95": {
+"edge119": {
+"@length": 0.956456, 
+"@source": "node95", 
+"@target": "node121"
+}, 
+"edge94": {
+"@length": 2.780337, 
+"@source": "node95", 
+"@target": "node96"
+}
+}, 
+"node96": {
+"edge95": {
+"@length": 1.051089, 
+"@source": "node96", 
+"@target": "node97"
+}, 
+"edge96": {
+"@length": 0.08223, 
+"@source": "node96", 
+"@target": "node98"
+}
+}, 
+"node98": {
+"edge108": {
+"@length": 0.05834, 
+"@source": "node98", 
+"@target": "node110"
+}, 
+"edge97": {
+"@length": 0.153442, 
+"@source": "node98", 
+"@target": "node99"
+}
+}, 
+"node99": {
+"edge101": {
+"@length": 0.099289, 
+"@source": "node99", 
+"@target": "node103"
+}, 
+"edge98": {
+"@length": 0.141405, 
+"@source": "node99", 
+"@target": "node100"
+}
+}
+}, 
+"nodeById": {
+"node100": {}, 
+"node101": {
+"@otu": "otu49"
+}, 
+"node102": {
+"@otu": "otu50"
+}, 
+"node103": {}, 
+"node104": {}, 
+"node105": {
+"@otu": "otu51"
+}, 
+"node106": {
+"@otu": "otu52"
+}, 
+"node107": {}, 
+"node108": {
+"@otu": "otu53"
+}, 
+"node109": {
+"@otu": "otu54"
+}, 
+"node110": {}, 
+"node111": {
+"@otu": "otu55"
+}, 
+"node112": {}, 
+"node113": {}, 
+"node114": {
+"@otu": "otu56"
+}, 
+"node115": {
+"@otu": "otu57"
+}, 
+"node116": {}, 
+"node117": {
+"@otu": "otu58"
+}, 
+"node118": {}, 
+"node119": {
+"@otu": "otu59"
+}, 
+"node120": {
+"@otu": "otu60"
+}, 
+"node121": {}, 
+"node122": {}, 
+"node123": {}, 
+"node124": {
+"@otu": "otu61"
+}, 
+"node125": {}, 
+"node126": {
+"@otu": "otu62"
+}, 
+"node127": {}, 
+"node128": {
+"@otu": "otu63"
+}, 
+"node129": {
+"@otu": "otu64"
+}, 
+"node130": {}, 
+"node131": {}, 
+"node132": {
+"@otu": "otu65"
+}, 
+"node133": {
+"@otu": "otu66"
+}, 
+"node134": {}, 
+"node135": {
+"@otu": "otu67"
+}, 
+"node136": {}, 
+"node137": {
+"@otu": "otu68"
+}, 
+"node138": {
+"@otu": "otu69"
+}, 
+"node139": {}, 
+"node140": {}, 
+"node141": {
+"@otu": "otu70"
+}, 
+"node142": {}, 
+"node143": {}, 
+"node144": {
+"@otu": "otu71"
+}, 
+"node145": {
+"@otu": "otu72"
+}, 
+"node146": {}, 
+"node147": {
+"@otu": "otu73"
+}, 
+"node148": {
+"@otu": "otu74"
+}, 
+"node149": {}, 
+"node150": {}, 
+"node151": {
+"@otu": "otu75"
+}, 
+"node152": {
+"@otu": "otu76"
+}, 
+"node153": {}, 
+"node154": {
+"@otu": "otu77"
+}, 
+"node155": {}, 
+"node156": {}, 
+"node157": {
+"@otu": "otu78"
+}, 
+"node158": {
+"@otu": "otu79"
+}, 
+"node159": {}, 
+"node160": {
+"@otu": "otu80"
+}, 
+"node161": {}, 
+"node162": {
+"@otu": "otu81"
+}, 
+"node163": {
+"@otu": "otu82"
+}, 
+"node164": {
+"@otu": "otu83"
+}, 
+"node36": {
+"@root": true
+}, 
+"node37": {}, 
+"node38": {
+"@otu": "otu19"
+}, 
+"node39": {}, 
+"node40": {}, 
+"node41": {
+"@otu": "otu20"
+}, 
+"node42": {
+"@otu": "otu21"
+}, 
+"node43": {}, 
+"node44": {}, 
+"node45": {}, 
+"node46": {
+"@otu": "otu22"
+}, 
+"node47": {
+"@otu": "otu23"
+}, 
+"node48": {}, 
+"node49": {}, 
+"node50": {
+"@otu": "otu24"
+}, 
+"node51": {}, 
+"node52": {
+"@otu": "otu25"
+}, 
+"node53": {
+"@otu": "otu26"
+}, 
+"node54": {}, 
+"node55": {
+"@otu": "otu27"
+}, 
+"node56": {}, 
+"node57": {
+"@otu": "otu28"
+}, 
+"node58": {
+"@otu": "otu29"
+}, 
+"node59": {}, 
+"node60": {}, 
+"node61": {
+"@otu": "otu30"
+}, 
+"node62": {}, 
+"node63": {}, 
+"node64": {
+"@otu": "otu31"
+}, 
+"node65": {}, 
+"node66": {
+"@otu": "otu32"
+}, 
+"node67": {}, 
+"node68": {
+"@otu": "otu33"
+}, 
+"node69": {
+"@otu": "otu34"
+}, 
+"node70": {}, 
+"node71": {}, 
+"node72": {
+"@otu": "otu35"
+}, 
+"node73": {
+"@otu": "otu36"
+}, 
+"node74": {}, 
+"node75": {}, 
+"node76": {}, 
+"node77": {
+"@otu": "otu37"
+}, 
+"node78": {
+"@otu": "otu38"
+}, 
+"node79": {}, 
+"node80": {
+"@otu": "otu39"
+}, 
+"node81": {}, 
+"node82": {
+"@otu": "otu40"
+}, 
+"node83": {
+"@otu": "otu41"
+}, 
+"node84": {}, 
+"node85": {}, 
+"node86": {
+"@otu": "otu42"
+}, 
+"node87": {
+"@otu": "otu43"
+}, 
+"node88": {}, 
+"node89": {}, 
+"node90": {
+"@otu": "otu44"
+}, 
+"node91": {
+"@otu": "otu45"
+}, 
+"node92": {}, 
+"node93": {
+"@otu": "otu46"
+}, 
+"node94": {
+"@otu": "otu47"
+}, 
+"node95": {}, 
+"node96": {}, 
+"node97": {
+"@otu": "otu48"
+}, 
+"node98": {}, 
+"node99": {}
+}
+}
+}
+}
+}
+}
+}

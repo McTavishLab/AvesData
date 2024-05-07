@@ -1,0 +1,1681 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.16"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2022-10-10T15:03:06.399Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "^(\\S*)\\s+\\b"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "^(\\S*)\\s+\\b"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "^(\\S*)\\s+\\b"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-10-10T15:03:06.399Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-10-10T15:03:06.399Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "RAxML_tree.newick", 
+"@size": 7012, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.b23eac83eb327c45.5241784d4c5f747265652e6e657769636b.txt", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"eliotmiller", 
+"Emily Jane McTavish"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 414340, 
+"^ot:focalCladeOTTTaxonName": "Rallidae", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_2160", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.3390/d12020070"
+}, 
+"^ot:studyPublicationReference": "Garcia-R, J. C., Lemmon, E. M., Lemmon, A. R., & French, N. (2020). Phylogenomic Reconstruction Sheds Light on New Relationships and Timescale of Rails (Aves: Rallidae) Evolution. Diversity, 12(2), 70. https://doi.org/10.3390/d12020070\n", 
+"^ot:studyYear": 2020, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "I0263 3569 Gruiformes Psophiidae Psophia crepitans seq1", 
+"^ot:ottId": 915643, 
+"^ot:ottTaxonName": "Psophia crepitans"
+}, 
+"otu10": {
+"^ot:originalLabel": "I25387 Pni 1 Gruiformes Rallidae Pardirallus nigricans seq1", 
+"^ot:ottId": 3599904, 
+"^ot:ottTaxonName": "Pardirallus nigricans"
+}, 
+"otu11": {
+"^ot:originalLabel": "I25389 Ptus 1 Gruiformes Rallidae Pardirallus maculatus seq1", 
+"^ot:ottId": 1024692, 
+"^ot:ottTaxonName": "Pardirallus maculatus"
+}, 
+"otu12": {
+"^ot:originalLabel": "I25398 Amco 1 Gruiformes Rallidae Amaurolimnas concolor seq1", 
+"^ot:ottId": 73837, 
+"^ot:ottTaxonName": "Amaurolimnas concolor"
+}, 
+"otu13": {
+"^ot:originalLabel": "I25363 Aax 1 Gruiformes Rallidae Aramides axillaris seq1", 
+"^ot:ottId": 101222, 
+"^ot:ottTaxonName": "Aramides axillaris"
+}, 
+"otu14": {
+"^ot:originalLabel": "I25366 Arca 1 Gruiformes Rallidae Aramides cajanea seq1", 
+"^ot:ottId": 906602, 
+"^ot:ottTaxonName": "Aramides cajanea"
+}, 
+"otu15": {
+"^ot:originalLabel": "I25400 Asa 2 Gruiformes Rallidae Aramides saracura seq1", 
+"^ot:ottId": 3599925, 
+"^ot:ottTaxonName": "Aramides saracura"
+}, 
+"otu16": {
+"^ot:originalLabel": "I25391 Rli 1 Gruiformes Rallidae Rallus limicola seq1", 
+"^ot:ottId": 502780, 
+"^ot:ottTaxonName": "Rallus limicola"
+}, 
+"otu17": {
+"^ot:originalLabel": "I25392 Rlo 1 Gruiformes Rallidae Rallus longirostris seq1", 
+"^ot:ottId": 440610, 
+"^ot:ottTaxonName": "Rallus longirostris"
+}, 
+"otu18": {
+"^ot:originalLabel": "I25423 Roro 1  Gruiformes Rallidae Rougetius  rougetii seq1", 
+"^ot:ottId": 3599981, 
+"^ot:ottTaxonName": "Rougetius rougetii"
+}, 
+"otu19": {
+"^ot:originalLabel": "I25402 Creg 1 Gruiformes Rallidae Crex egregia seq1", 
+"^ot:ottId": 3599896, 
+"^ot:ottTaxonName": "Crex egregia"
+}, 
+"otu2": {
+"^ot:originalLabel": "I0419 90368 Gruiformes Aramidae Aramus guarauna seq1", 
+"^ot:ottId": 1095362, 
+"^ot:ottTaxonName": "Aramus guarauna"
+}, 
+"otu20": {
+"^ot:originalLabel": "I25369 R11 Gruiformes Rallidae Dryolimnas cuvieri seq1", 
+"^ot:ottId": 3600005, 
+"^ot:ottTaxonName": "Dryolimnas cuvieri"
+}, 
+"otu21": {
+"^ot:originalLabel": "I25367 Cre 1 Gruiformes Rallidae Crex crex seq1", 
+"^ot:ottId": 897460, 
+"^ot:ottTaxonName": "Crex crex"
+}, 
+"otu22": {
+"^ot:originalLabel": "I25407 Gst 7 Gruiformes Rallidae Gallirallus striatus seq1", 
+"^ot:ottId": 374301, 
+"^ot:ottTaxonName": "Gallirallus striatus"
+}, 
+"otu23": {
+"^ot:originalLabel": "I25426 Lpe 5 Gruiformes Rallidae Lewinia pectoralis seq1", 
+"^ot:ottId": 978545, 
+"^ot:ottTaxonName": "Lewinia pectoralis"
+}, 
+"otu24": {
+"^ot:originalLabel": "I25405 Gca 2 Gruiformes Rallidae Gallirallus calayanensis seq1", 
+"^ot:ottId": 872391, 
+"^ot:ottTaxonName": "Gallirallus calayanensis"
+}, 
+"otu25": {
+"^ot:originalLabel": "I25368 Eca 1 Gruiformes Rallidae Eulabeornis castaneoventris seq1", 
+"^ot:ottId": 70700, 
+"^ot:ottTaxonName": "Eulabeornis castaneoventris"
+}, 
+"otu26": {
+"^ot:originalLabel": "I25406 Gto 3 Gruiformes Rallidae Gallirallus torquatus seq1", 
+"^ot:ottId": 872394, 
+"^ot:ottTaxonName": "Gallirallus torquatus"
+}, 
+"otu27": {
+"^ot:originalLabel": "I25396 Gph 2 Gruiformes Rallidae Gallirallus philippensis seq1", 
+"^ot:ottId": 32332, 
+"^ot:ottTaxonName": "Gallirallus philippensis"
+}, 
+"otu28": {
+"^ot:originalLabel": "I25386 Nwo 1 Gruiformes Rallidae Nesoclopeus woodfordi seq1", 
+"^ot:ottId": 872389, 
+"^ot:ottTaxonName": "Nesoclopeus woodfordi"
+}, 
+"otu29": {
+"^ot:originalLabel": "I25422 Gow 3 Gruiformes Rallidae Gallirallus owstoni seq1", 
+"^ot:ottId": 32337, 
+"^ot:ottTaxonName": "Gallirallus owstoni"
+}, 
+"otu3": {
+"^ot:originalLabel": "I0433 6296 Gruiformes Gruidae Balearica regulorum seq1", 
+"^ot:ottId": 191006, 
+"^ot:ottTaxonName": "Balearica regulorum"
+}, 
+"otu30": {
+"^ot:originalLabel": "I25421 Hm 1 Gruiformes Rallidae Himantornis haematopus seq1", 
+"^ot:ottId": 383918, 
+"^ot:ottTaxonName": "Himantornis haematopus"
+}, 
+"otu31": {
+"^ot:originalLabel": "I25390 Ppz 1 Gruiformes Rallidae Porzana porzana seq1", 
+"^ot:ottId": 795161, 
+"^ot:ottTaxonName": "Porzana porzana"
+}, 
+"otu32": {
+"^ot:originalLabel": "I25381 Gve 1 Gruiformes Rallidae Gallinula ventralis seq1", 
+"^ot:ottId": 3599913, 
+"^ot:ottTaxonName": "Gallinula ventralis"
+}, 
+"otu33": {
+"^ot:originalLabel": "I25380 Gmo 1 Gruiformes Rallidae Gallinula mortierii seq1", 
+"^ot:ottId": 3599916, 
+"^ot:ottTaxonName": "Gallinula mortierii"
+}, 
+"otu34": {
+"^ot:originalLabel": "I25376 Gan 1 Gruiformes Rallidae Gallinula angulata seq1", 
+"^ot:ottId": 7659948, 
+"^ot:ottTaxonName": "Paragallinula angulata"
+}, 
+"otu35": {
+"^ot:originalLabel": "I25377 Gchl 1 Gruiformes Rallidae Gallinula chloropus seq1", 
+"^ot:ottId": 1041541, 
+"^ot:ottTaxonName": "Gallinula chloropus"
+}, 
+"otu36": {
+"^ot:originalLabel": "I25379 Gte 1 Gruiformes Rallidae Gallinula tenebrosa seq1", 
+"^ot:ottId": 1012285, 
+"^ot:ottTaxonName": "Gallinula tenebrosa"
+}, 
+"otu37": {
+"^ot:originalLabel": "I25374 Fru 1 Gruiformes Rallidae Fulica rufifrons seq1", 
+"^ot:ottId": 9721, 
+"^ot:ottTaxonName": "Fulica rufifrons"
+}, 
+"otu38": {
+"^ot:originalLabel": "I25375 Fuar 1 Gruiformes Rallidae Fulica armillata seq1", 
+"^ot:ottId": 943093, 
+"^ot:ottTaxonName": "Fulica armillata"
+}, 
+"otu39": {
+"^ot:originalLabel": "I25403 Fgi 1 Gruiformes Rallidae Fulica gigantea seq1", 
+"^ot:ottId": 943091, 
+"^ot:ottTaxonName": "Fulica gigantea"
+}, 
+"otu4": {
+"^ot:originalLabel": "I0405 21897 Gruiformes Gruidae Grus canadensis seq1", 
+"^ot:ottId": 257929, 
+"^ot:ottTaxonName": "Antigone canadensis"
+}, 
+"otu40": {
+"^ot:originalLabel": "I25404 Fcr 4 Gruiformes Rallidae Fulica cristata seq1", 
+"^ot:ottId": 521836, 
+"^ot:ottTaxonName": "Fulica cristata"
+}, 
+"otu41": {
+"^ot:originalLabel": "I25371 Fat 2 Gruiformes Rallidae Fulica atra seq1", 
+"^ot:ottId": 1041538, 
+"^ot:ottTaxonName": "Fulica atra"
+}, 
+"otu42": {
+"^ot:originalLabel": "I25370 Fala 1 Gruiformes Rallidae Fulica americana seq1", 
+"^ot:ottId": 570965, 
+"^ot:ottTaxonName": "Fulica americana"
+}, 
+"otu43": {
+"^ot:originalLabel": "I25373 Fle 1 Gruiformes Rallidae Fulica leucoptera seq1", 
+"^ot:ottId": 664905, 
+"^ot:ottTaxonName": "Fulica leucoptera"
+}, 
+"otu44": {
+"^ot:originalLabel": "I25372 Far 1 Gruiformes Rallidae Fulica ardesiaca seq1", 
+"^ot:ottId": 943088, 
+"^ot:ottTaxonName": "Fulica ardesiaca"
+}, 
+"otu45": {
+"^ot:originalLabel": "I25395 Pmar 1 Gruiformes Rallidae Porphyrio martinica seq1", 
+"^ot:ottId": 381387, 
+"^ot:ottTaxonName": "Porphyrio martinica"
+}, 
+"otu46": {
+"^ot:originalLabel": "I25425 Peni 5 Gruiformes Rallidae Porphyrio alleni seq1", 
+"^ot:ottId": 3599935, 
+"^ot:ottTaxonName": "Porphyrio alleni"
+}, 
+"otu47": {
+"^ot:originalLabel": "I25424 Ppo 80 Gruiformes Rallidae Porphyrio melanotus seq1", 
+"^ot:ottId": 380192, 
+"^ot:ottTaxonName": "Porphyrio melanotus"
+}, 
+"otu48": {
+"^ot:originalLabel": "I25416 Pmad 6 Gruiformes Rallidae Porphyrio madagascariensis seq1", 
+"^ot:ottId": 485731, 
+"^ot:ottTaxonName": "Porphyrio madagascariensis"
+}, 
+"otu49": {
+"^ot:originalLabel": "I25412 Msc 1 Gruiformes Rallidae Micropygia  schomburgkii seq1", 
+"^ot:ottId": 971968, 
+"^ot:ottTaxonName": "Micropygia schomburgkii"
+}, 
+"otu5": {
+"^ot:originalLabel": "I0378 3087 Gruiformes Heliornithidae Heliornis fulica seq1", 
+"^ot:ottId": 440618, 
+"^ot:ottTaxonName": "Heliornis fulica"
+}, 
+"otu50": {
+"^ot:originalLabel": "I25384 Lvi 3 Gruiformes Rallidae Laterallus viridis seq1", 
+"^ot:ottId": 595231, 
+"^ot:ottTaxonName": "Anurolimnas viridis"
+}, 
+"otu51": {
+"^ot:originalLabel": "I25401 Cno 3 Gruiformes Rallidae Coturnicops noveboracensis seq1", 
+"^ot:ottId": 242758, 
+"^ot:ottTaxonName": "Coturnicops noveboracensis"
+}, 
+"otu52": {
+"^ot:originalLabel": "I25382 Lex 3 Gruiformes Rallidae Laterallus exilis seq1", 
+"^ot:ottId": 105691, 
+"^ot:ottTaxonName": "Laterallus exilis"
+}, 
+"otu53": {
+"^ot:originalLabel": "I25420 Aro 1 Gruiformes Rallidae Atlantisia rogersi seq1", 
+"^ot:ottId": 3599985, 
+"^ot:ottTaxonName": "Atlantisia rogersi"
+}, 
+"otu54": {
+"^ot:originalLabel": "I25410 Lja 2 Gruiformes Rallidae Laterallus jamaicaensis seq1", 
+"^ot:ottId": 425438, 
+"^ot:ottTaxonName": "Laterallus jamaicensis"
+}, 
+"otu55": {
+"^ot:originalLabel": "I25408 Lal 1 Gruiformes Rallidae Laterallus albigularis seq1", 
+"^ot:ottId": 1044555, 
+"^ot:ottTaxonName": "Laterallus albigularis"
+}, 
+"otu56": {
+"^ot:originalLabel": "I25383 Lme 3 Gruiformes Rallidae Laterallus melanophaius seq1", 
+"^ot:ottId": 440613, 
+"^ot:ottTaxonName": "Laterallus melanophaius"
+}, 
+"otu57": {
+"^ot:originalLabel": "I25409 Leu 1 Gruiformes Rallidae Laterallus leucopyrrhus seq1", 
+"^ot:ottId": 3599955, 
+"^ot:ottTaxonName": "Laterallus leucopyrrhus"
+}, 
+"otu58": {
+"^ot:originalLabel": "I25411 Min 1 Gruiformes Rallidae Megacrex inepta seq1", 
+"^ot:ottId": 553404, 
+"^ot:ottTaxonName": "Megacrex inepta"
+}, 
+"otu59": {
+"^ot:originalLabel": "I25413 Pci 6 Gruiformes Rallidae Porzana cinerea seq1", 
+"^ot:ottId": 3599939, 
+"^ot:ottTaxonName": "Porzana cinerea"
+}, 
+"otu6": {
+"^ot:originalLabel": "I25419 Rfo 1 Gruiformes Rallidae Rallina forbesi seq1", 
+"^ot:ottId": 3599901, 
+"^ot:ottTaxonName": "Rallina forbesi"
+}, 
+"otu60": {
+"^ot:originalLabel": "I25397 Aem 1 Gruiformes Rallidae Aenigmatolimnas marginalis seq1"
+}, 
+"otu61": {
+"^ot:originalLabel": "I25378 Gci 1 Gruiformes Rallidae Gallicrex cinerea seq1", 
+"^ot:ottId": 943596, 
+"^ot:ottTaxonName": "Gallicrex cinerea"
+}, 
+"otu62": {
+"^ot:originalLabel": "I25399 Amol 2 Gruiformes Rallidae Amaurornis moluccana  seq1", 
+"^ot:ottId": 3599919, 
+"^ot:ottTaxonName": "Amaurornis moluccana"
+}, 
+"otu63": {
+"^ot:originalLabel": "I25365 Aph 1 Gruiformes Rallidae Amaurornis phoenicurus seq1", 
+"^ot:ottId": 318444, 
+"^ot:ottTaxonName": "Amaurornis phoenicurus"
+}, 
+"otu64": {
+"^ot:originalLabel": "I25364 Afl 1 Gruiformes Rallidae Amaurornis flavirostris seq1"
+}, 
+"otu65": {
+"^ot:originalLabel": "I25417 Ppv 2 Gruiformes Rallidae Porzana parva seq1", 
+"^ot:ottId": 3599944, 
+"^ot:ottTaxonName": "Porzana parva"
+}, 
+"otu66": {
+"^ot:originalLabel": "I25415 Pfu 2 Gruiformes Rallidae Porzana fusca fusca seq1"
+}, 
+"otu67": {
+"^ot:originalLabel": "I25418 Reu 1 Gruiformes Rallidae Rallina eurizonoides seq1", 
+"^ot:ottId": 765966, 
+"^ot:ottTaxonName": "Rallina eurizonoides"
+}, 
+"otu68": {
+"^ot:originalLabel": "I25393 Rfa 1 Gruiformes Rallidae Rallina fasciata seq1", 
+"^ot:ottId": 3599899, 
+"^ot:ottTaxonName": "Rallina fasciata"
+}, 
+"otu69": {
+"^ot:originalLabel": "I25394 Rtr 1 Gruiformes Rallidae Rallina tricolor seq1", 
+"^ot:ottId": 3599902, 
+"^ot:ottTaxonName": "Rallina tricolor"
+}, 
+"otu7": {
+"^ot:originalLabel": "I0365 384805 Gruiformes Rallidae Sarothrura rufa elizabethae seq1", 
+"^ot:ottId": 591541, 
+"^ot:ottTaxonName": "Sarothrura rufa"
+}, 
+"otu8": {
+"^ot:originalLabel": "I25385 Ner 1 Gruiformes Rallidae Neocrex erythrops seq1", 
+"^ot:ottId": 3599983, 
+"^ot:ottTaxonName": "Neocrex erythrops"
+}, 
+"otu9": {
+"^ot:originalLabel": "I25388 Psa 1 Gruiformes Rallidae Pardirallus Ortygonax sanguinolentus seq1"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig 1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node9", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 0.010929, 
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge8": {
+"@length": 0.010929, 
+"@source": "node1", 
+"@target": "node9"
+}
+}, 
+"node10": {
+"edge10": {
+"@length": 0.041127, 
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge11": {
+"@length": 0.035089, 
+"@source": "node10", 
+"@target": "node12"
+}
+}, 
+"node102": {
+"edge102": {
+"@length": 0.008135, 
+"@source": "node102", 
+"@target": "node103"
+}, 
+"edge103": {
+"@length": 0.001173, 
+"@source": "node102", 
+"@target": "node104"
+}
+}, 
+"node104": {
+"edge104": {
+"@length": 0.004809, 
+"@source": "node104", 
+"@target": "node105"
+}, 
+"edge105": {
+"@length": 0.001046, 
+"@source": "node104", 
+"@target": "node106"
+}
+}, 
+"node106": {
+"edge106": {
+"@length": 0.002719, 
+"@source": "node106", 
+"@target": "node107"
+}, 
+"edge109": {
+"@length": 0.000544, 
+"@source": "node106", 
+"@target": "node110"
+}
+}, 
+"node107": {
+"edge107": {
+"@length": 0.002867, 
+"@source": "node107", 
+"@target": "node108"
+}, 
+"edge108": {
+"@length": 0.001949, 
+"@source": "node107", 
+"@target": "node109"
+}
+}, 
+"node110": {
+"edge110": {
+"@length": 0.003299, 
+"@source": "node110", 
+"@target": "node111"
+}, 
+"edge111": {
+"@length": 0.002113, 
+"@source": "node110", 
+"@target": "node112"
+}
+}, 
+"node112": {
+"edge112": {
+"@length": 0.000501, 
+"@source": "node112", 
+"@target": "node113"
+}, 
+"edge113": {
+"@length": 0.000388, 
+"@source": "node112", 
+"@target": "node114"
+}
+}, 
+"node115": {
+"edge115": {
+"@length": 0.005953, 
+"@source": "node115", 
+"@target": "node116"
+}, 
+"edge126": {
+"@length": 0.002745, 
+"@source": "node115", 
+"@target": "node127"
+}
+}, 
+"node116": {
+"edge116": {
+"@length": 0.001183, 
+"@source": "node116", 
+"@target": "node117"
+}, 
+"edge119": {
+"@length": 0.001484, 
+"@source": "node116", 
+"@target": "node120"
+}
+}, 
+"node117": {
+"edge117": {
+"@length": 0.006344, 
+"@source": "node117", 
+"@target": "node118"
+}, 
+"edge118": {
+"@length": 0.006096, 
+"@source": "node117", 
+"@target": "node119"
+}
+}, 
+"node12": {
+"edge12": {
+"@length": 0.014169, 
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge13": {
+"@length": 0.019601, 
+"@source": "node12", 
+"@target": "node14"
+}
+}, 
+"node120": {
+"edge120": {
+"@length": 0.011815, 
+"@source": "node120", 
+"@target": "node121"
+}, 
+"edge121": {
+"@length": 0.003766, 
+"@source": "node120", 
+"@target": "node122"
+}
+}, 
+"node122": {
+"edge122": {
+"@length": 0.002829, 
+"@source": "node122", 
+"@target": "node123"
+}, 
+"edge123": {
+"@length": 0.001455, 
+"@source": "node122", 
+"@target": "node124"
+}
+}, 
+"node124": {
+"edge124": {
+"@length": 0.001941, 
+"@source": "node124", 
+"@target": "node125"
+}, 
+"edge125": {
+"@length": 0.001712, 
+"@source": "node124", 
+"@target": "node126"
+}
+}, 
+"node127": {
+"edge127": {
+"@length": 0.005495, 
+"@source": "node127", 
+"@target": "node128"
+}, 
+"edge132": {
+"@length": 0.007257, 
+"@source": "node127", 
+"@target": "node133"
+}
+}, 
+"node128": {
+"edge128": {
+"@length": 0.004681, 
+"@source": "node128", 
+"@target": "node129"
+}, 
+"edge129": {
+"@length": 0.001268, 
+"@source": "node128", 
+"@target": "node130"
+}
+}, 
+"node130": {
+"edge130": {
+"@length": 0.006665, 
+"@source": "node130", 
+"@target": "node131"
+}, 
+"edge131": {
+"@length": 0.005479, 
+"@source": "node130", 
+"@target": "node132"
+}
+}, 
+"node133": {
+"edge133": {
+"@length": 0.007172, 
+"@source": "node133", 
+"@target": "node134"
+}, 
+"edge134": {
+"@length": 0.004109, 
+"@source": "node133", 
+"@target": "node135"
+}
+}, 
+"node135": {
+"edge135": {
+"@length": 0.002657, 
+"@source": "node135", 
+"@target": "node136"
+}, 
+"edge136": {
+"@length": 0.00252, 
+"@source": "node135", 
+"@target": "node137"
+}
+}, 
+"node15": {
+"edge15": {
+"@length": 0.000917, 
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge58": {
+"@length": 0.000717, 
+"@source": "node15", 
+"@target": "node59"
+}
+}, 
+"node16": {
+"edge16": {
+"@length": 0.008102, 
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge31": {
+"@length": 0.011846, 
+"@source": "node16", 
+"@target": "node32"
+}
+}, 
+"node17": {
+"edge17": {
+"@length": 0.001159, 
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge24": {
+"@length": 0.000976, 
+"@source": "node17", 
+"@target": "node25"
+}
+}, 
+"node18": {
+"edge18": {
+"@length": 0.008637, 
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge19": {
+"@length": 0.00407, 
+"@source": "node18", 
+"@target": "node20"
+}
+}, 
+"node2": {
+"edge2": {
+"@length": 0.031338, 
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge3": {
+"@length": 0.00967, 
+"@source": "node2", 
+"@target": "node4"
+}
+}, 
+"node20": {
+"edge20": {
+"@length": 0.002889, 
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge21": {
+"@length": 0.000793, 
+"@source": "node20", 
+"@target": "node22"
+}
+}, 
+"node22": {
+"edge22": {
+"@length": 0.002803, 
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge23": {
+"@length": 0.003347, 
+"@source": "node22", 
+"@target": "node24"
+}
+}, 
+"node25": {
+"edge25": {
+"@length": 0.008187, 
+"@source": "node25", 
+"@target": "node26"
+}, 
+"edge26": {
+"@length": 0.003175, 
+"@source": "node25", 
+"@target": "node27"
+}
+}, 
+"node27": {
+"edge27": {
+"@length": 0.004455, 
+"@source": "node27", 
+"@target": "node28"
+}, 
+"edge28": {
+"@length": 0.001038, 
+"@source": "node27", 
+"@target": "node29"
+}
+}, 
+"node29": {
+"edge29": {
+"@length": 0.002461, 
+"@source": "node29", 
+"@target": "node30"
+}, 
+"edge30": {
+"@length": 0.002929, 
+"@source": "node29", 
+"@target": "node31"
+}
+}, 
+"node32": {
+"edge32": {
+"@length": 0.004122, 
+"@source": "node32", 
+"@target": "node33"
+}, 
+"edge35": {
+"@length": 0.000672, 
+"@source": "node32", 
+"@target": "node36"
+}
+}, 
+"node33": {
+"edge33": {
+"@length": 0.003725, 
+"@source": "node33", 
+"@target": "node34"
+}, 
+"edge34": {
+"@length": 0.005542, 
+"@source": "node33", 
+"@target": "node35"
+}
+}, 
+"node36": {
+"edge36": {
+"@length": 0.000864, 
+"@source": "node36", 
+"@target": "node37"
+}, 
+"edge39": {
+"@length": 0.000496, 
+"@source": "node36", 
+"@target": "node40"
+}
+}, 
+"node37": {
+"edge37": {
+"@length": 0.005757, 
+"@source": "node37", 
+"@target": "node38"
+}, 
+"edge38": {
+"@length": 0.006236, 
+"@source": "node37", 
+"@target": "node39"
+}
+}, 
+"node4": {
+"edge4": {
+"@length": 0.01625, 
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge5": {
+"@length": 0.00516, 
+"@source": "node4", 
+"@target": "node6"
+}
+}, 
+"node40": {
+"edge40": {
+"@length": 0.001193, 
+"@source": "node40", 
+"@target": "node41"
+}, 
+"edge47": {
+"@length": 0.003135, 
+"@source": "node40", 
+"@target": "node48"
+}
+}, 
+"node41": {
+"edge41": {
+"@length": 0.006112, 
+"@source": "node41", 
+"@target": "node42"
+}, 
+"edge42": {
+"@length": 0.001135, 
+"@source": "node41", 
+"@target": "node43"
+}
+}, 
+"node43": {
+"edge43": {
+"@length": 0.006677, 
+"@source": "node43", 
+"@target": "node44"
+}, 
+"edge44": {
+"@length": 0.003947, 
+"@source": "node43", 
+"@target": "node45"
+}
+}, 
+"node45": {
+"edge45": {
+"@length": 0.001923, 
+"@source": "node45", 
+"@target": "node46"
+}, 
+"edge46": {
+"@length": 0.002005, 
+"@source": "node45", 
+"@target": "node47"
+}
+}, 
+"node48": {
+"edge48": {
+"@length": 0.003945, 
+"@source": "node48", 
+"@target": "node49"
+}, 
+"edge49": {
+"@length": 0.000703, 
+"@source": "node48", 
+"@target": "node50"
+}
+}, 
+"node50": {
+"edge50": {
+"@length": 0.00407, 
+"@source": "node50", 
+"@target": "node51"
+}, 
+"edge51": {
+"@length": 0.000906, 
+"@source": "node50", 
+"@target": "node52"
+}
+}, 
+"node52": {
+"edge52": {
+"@length": 0.002668, 
+"@source": "node52", 
+"@target": "node53"
+}, 
+"edge53": {
+"@length": 0.001038, 
+"@source": "node52", 
+"@target": "node54"
+}
+}, 
+"node54": {
+"edge54": {
+"@length": 0.000942, 
+"@source": "node54", 
+"@target": "node55"
+}, 
+"edge55": {
+"@length": 0.000339, 
+"@source": "node54", 
+"@target": "node56"
+}
+}, 
+"node56": {
+"edge56": {
+"@length": 0.002301, 
+"@source": "node56", 
+"@target": "node57"
+}, 
+"edge57": {
+"@length": 0.00224, 
+"@source": "node56", 
+"@target": "node58"
+}
+}, 
+"node59": {
+"edge59": {
+"@length": 0.001567, 
+"@source": "node59", 
+"@target": "node60"
+}, 
+"edge88": {
+"@length": 0.002985, 
+"@source": "node59", 
+"@target": "node89"
+}
+}, 
+"node6": {
+"edge6": {
+"@length": 0.009606, 
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge7": {
+"@length": 0.007373, 
+"@source": "node6", 
+"@target": "node8"
+}
+}, 
+"node60": {
+"edge60": {
+"@length": 0.017014, 
+"@source": "node60", 
+"@target": "node61"
+}, 
+"edge61": {
+"@length": 0.010052, 
+"@source": "node60", 
+"@target": "node62"
+}
+}, 
+"node62": {
+"edge62": {
+"@length": 0.009308, 
+"@source": "node62", 
+"@target": "node63"
+}, 
+"edge63": {
+"@length": 0.00057, 
+"@source": "node62", 
+"@target": "node64"
+}
+}, 
+"node64": {
+"edge64": {
+"@length": 0.00527, 
+"@source": "node64", 
+"@target": "node65"
+}, 
+"edge67": {
+"@length": 0.003195, 
+"@source": "node64", 
+"@target": "node68"
+}
+}, 
+"node65": {
+"edge65": {
+"@length": 0.001922, 
+"@source": "node65", 
+"@target": "node66"
+}, 
+"edge66": {
+"@length": 0.003309, 
+"@source": "node65", 
+"@target": "node67"
+}
+}, 
+"node68": {
+"edge68": {
+"@length": 0.006257, 
+"@source": "node68", 
+"@target": "node69"
+}, 
+"edge69": {
+"@length": 0.000947, 
+"@source": "node68", 
+"@target": "node70"
+}
+}, 
+"node70": {
+"edge70": {
+"@length": 0.002468, 
+"@source": "node70", 
+"@target": "node71"
+}, 
+"edge73": {
+"@length": 0.001828, 
+"@source": "node70", 
+"@target": "node74"
+}
+}, 
+"node71": {
+"edge71": {
+"@length": 0.002547, 
+"@source": "node71", 
+"@target": "node72"
+}, 
+"edge72": {
+"@length": 0.00322, 
+"@source": "node71", 
+"@target": "node73"
+}
+}, 
+"node74": {
+"edge74": {
+"@length": 0.00337, 
+"@source": "node74", 
+"@target": "node75"
+}, 
+"edge75": {
+"@length": 0.001178, 
+"@source": "node74", 
+"@target": "node76"
+}
+}, 
+"node76": {
+"edge76": {
+"@length": 0.000542, 
+"@source": "node76", 
+"@target": "node77"
+}, 
+"edge79": {
+"@length": 0.000608, 
+"@source": "node76", 
+"@target": "node80"
+}
+}, 
+"node77": {
+"edge77": {
+"@length": 0.001055, 
+"@source": "node77", 
+"@target": "node78"
+}, 
+"edge78": {
+"@length": 0.002188, 
+"@source": "node77", 
+"@target": "node79"
+}
+}, 
+"node80": {
+"edge80": {
+"@length": 0.000867, 
+"@source": "node80", 
+"@target": "node81"
+}, 
+"edge83": {
+"@length": 0.000791, 
+"@source": "node80", 
+"@target": "node84"
+}
+}, 
+"node81": {
+"edge81": {
+"@length": 0.000821, 
+"@source": "node81", 
+"@target": "node82"
+}, 
+"edge82": {
+"@length": 0.000937, 
+"@source": "node81", 
+"@target": "node83"
+}
+}, 
+"node84": {
+"edge84": {
+"@length": 0.000835, 
+"@source": "node84", 
+"@target": "node85"
+}, 
+"edge85": {
+"@length": 0.000365, 
+"@source": "node84", 
+"@target": "node86"
+}
+}, 
+"node86": {
+"edge86": {
+"@length": 0.000522, 
+"@source": "node86", 
+"@target": "node87"
+}, 
+"edge87": {
+"@length": 0.000826, 
+"@source": "node86", 
+"@target": "node88"
+}
+}, 
+"node89": {
+"edge89": {
+"@length": 0.010499, 
+"@source": "node89", 
+"@target": "node90"
+}, 
+"edge96": {
+"@length": 0.002322, 
+"@source": "node89", 
+"@target": "node97"
+}
+}, 
+"node9": {
+"edge14": {
+"@length": 0.024241, 
+"@source": "node9", 
+"@target": "node15"
+}, 
+"edge9": {
+"@length": 0.007781, 
+"@source": "node9", 
+"@target": "node10"
+}
+}, 
+"node90": {
+"edge90": {
+"@length": 0.005305, 
+"@source": "node90", 
+"@target": "node91"
+}, 
+"edge91": {
+"@length": 0.000638, 
+"@source": "node90", 
+"@target": "node92"
+}
+}, 
+"node92": {
+"edge92": {
+"@length": 0.004808, 
+"@source": "node92", 
+"@target": "node93"
+}, 
+"edge93": {
+"@length": 0.002362, 
+"@source": "node92", 
+"@target": "node94"
+}
+}, 
+"node94": {
+"edge94": {
+"@length": 0.00101, 
+"@source": "node94", 
+"@target": "node95"
+}, 
+"edge95": {
+"@length": 0.00242, 
+"@source": "node94", 
+"@target": "node96"
+}
+}, 
+"node97": {
+"edge114": {
+"@length": 0.001371, 
+"@source": "node97", 
+"@target": "node115"
+}, 
+"edge97": {
+"@length": 0.004146, 
+"@source": "node97", 
+"@target": "node98"
+}
+}, 
+"node98": {
+"edge101": {
+"@length": 0.006028, 
+"@source": "node98", 
+"@target": "node102"
+}, 
+"edge98": {
+"@length": 0.006286, 
+"@source": "node98", 
+"@target": "node99"
+}
+}, 
+"node99": {
+"edge100": {
+"@length": 0.004169, 
+"@source": "node99", 
+"@target": "node101"
+}, 
+"edge99": {
+"@length": 0.004882, 
+"@source": "node99", 
+"@target": "node100"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node100": {
+"@otu": "otu49"
+}, 
+"node101": {
+"@otu": "otu50"
+}, 
+"node102": {}, 
+"node103": {
+"@otu": "otu51"
+}, 
+"node104": {}, 
+"node105": {
+"@otu": "otu52"
+}, 
+"node106": {}, 
+"node107": {}, 
+"node108": {
+"@otu": "otu53"
+}, 
+"node109": {
+"@otu": "otu54"
+}, 
+"node11": {
+"@otu": "otu5"
+}, 
+"node110": {}, 
+"node111": {
+"@otu": "otu55"
+}, 
+"node112": {}, 
+"node113": {
+"@otu": "otu56"
+}, 
+"node114": {
+"@otu": "otu57"
+}, 
+"node115": {}, 
+"node116": {}, 
+"node117": {}, 
+"node118": {
+"@otu": "otu58"
+}, 
+"node119": {
+"@otu": "otu59"
+}, 
+"node12": {}, 
+"node120": {}, 
+"node121": {
+"@otu": "otu60"
+}, 
+"node122": {}, 
+"node123": {
+"@otu": "otu61"
+}, 
+"node124": {}, 
+"node125": {
+"@otu": "otu62"
+}, 
+"node126": {
+"@otu": "otu63"
+}, 
+"node127": {}, 
+"node128": {}, 
+"node129": {
+"@otu": "otu64"
+}, 
+"node13": {
+"@otu": "otu6"
+}, 
+"node130": {}, 
+"node131": {
+"@otu": "otu65"
+}, 
+"node132": {
+"@otu": "otu66"
+}, 
+"node133": {}, 
+"node134": {
+"@otu": "otu67"
+}, 
+"node135": {}, 
+"node136": {
+"@otu": "otu68"
+}, 
+"node137": {
+"@otu": "otu69"
+}, 
+"node14": {
+"@otu": "otu7"
+}, 
+"node15": {}, 
+"node16": {}, 
+"node17": {}, 
+"node18": {}, 
+"node19": {
+"@otu": "otu8"
+}, 
+"node2": {}, 
+"node20": {}, 
+"node21": {
+"@otu": "otu9"
+}, 
+"node22": {}, 
+"node23": {
+"@otu": "otu10"
+}, 
+"node24": {
+"@otu": "otu11"
+}, 
+"node25": {}, 
+"node26": {
+"@otu": "otu12"
+}, 
+"node27": {}, 
+"node28": {
+"@otu": "otu13"
+}, 
+"node29": {}, 
+"node3": {
+"@otu": "otu1"
+}, 
+"node30": {
+"@otu": "otu14"
+}, 
+"node31": {
+"@otu": "otu15"
+}, 
+"node32": {}, 
+"node33": {}, 
+"node34": {
+"@otu": "otu16"
+}, 
+"node35": {
+"@otu": "otu17"
+}, 
+"node36": {}, 
+"node37": {}, 
+"node38": {
+"@otu": "otu18"
+}, 
+"node39": {
+"@otu": "otu19"
+}, 
+"node4": {}, 
+"node40": {}, 
+"node41": {}, 
+"node42": {
+"@otu": "otu20"
+}, 
+"node43": {}, 
+"node44": {
+"@otu": "otu21"
+}, 
+"node45": {}, 
+"node46": {
+"@otu": "otu22"
+}, 
+"node47": {
+"@otu": "otu23"
+}, 
+"node48": {}, 
+"node49": {
+"@otu": "otu24"
+}, 
+"node5": {
+"@otu": "otu2"
+}, 
+"node50": {}, 
+"node51": {
+"@otu": "otu25"
+}, 
+"node52": {}, 
+"node53": {
+"@otu": "otu26"
+}, 
+"node54": {}, 
+"node55": {
+"@otu": "otu27"
+}, 
+"node56": {}, 
+"node57": {
+"@otu": "otu28"
+}, 
+"node58": {
+"@otu": "otu29"
+}, 
+"node59": {}, 
+"node6": {}, 
+"node60": {}, 
+"node61": {
+"@otu": "otu30"
+}, 
+"node62": {}, 
+"node63": {
+"@otu": "otu31"
+}, 
+"node64": {}, 
+"node65": {}, 
+"node66": {
+"@otu": "otu32"
+}, 
+"node67": {
+"@otu": "otu33"
+}, 
+"node68": {}, 
+"node69": {
+"@otu": "otu34"
+}, 
+"node7": {
+"@otu": "otu3"
+}, 
+"node70": {}, 
+"node71": {}, 
+"node72": {
+"@otu": "otu35"
+}, 
+"node73": {
+"@otu": "otu36"
+}, 
+"node74": {}, 
+"node75": {
+"@otu": "otu37"
+}, 
+"node76": {}, 
+"node77": {}, 
+"node78": {
+"@otu": "otu38"
+}, 
+"node79": {
+"@otu": "otu39"
+}, 
+"node8": {
+"@otu": "otu4"
+}, 
+"node80": {}, 
+"node81": {}, 
+"node82": {
+"@otu": "otu40"
+}, 
+"node83": {
+"@otu": "otu41"
+}, 
+"node84": {}, 
+"node85": {
+"@otu": "otu42"
+}, 
+"node86": {}, 
+"node87": {
+"@otu": "otu43"
+}, 
+"node88": {
+"@otu": "otu44"
+}, 
+"node89": {}, 
+"node9": {}, 
+"node90": {}, 
+"node91": {
+"@otu": "otu45"
+}, 
+"node92": {}, 
+"node93": {
+"@otu": "otu46"
+}, 
+"node94": {}, 
+"node95": {
+"@otu": "otu47"
+}, 
+"node96": {
+"@otu": "otu48"
+}, 
+"node97": {}, 
+"node98": {}, 
+"node99": {}
+}
+}
+}
+}
+}
+}
+}

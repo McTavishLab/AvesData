@@ -1,0 +1,679 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.9"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-10-11T09:18:35.639Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-11T09:18:35.639Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre", 
+"@size": 785, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.952e8d976ef118fa.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Yan Wong", 
+"Mark T. Holder", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 1041547, 
+"^ot:focalCladeOTTTaxonName": "Passeriformes", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_891", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1038/nature14181"
+}, 
+"^ot:studyPublicationReference": "Sangeet Lamichhaney, Jonas Berglund, Markus S\u00e4llman Alm\u00e9n, Khurram Maqbool, Manfred Grabherr, Alvaro Martinez-Barrio, Marta Promerov\u00e1, Carl-Johan Rubin, Chao Wang, Neda Zamani, B. Rosemary Grant, Peter R. Grant, Matthew T. Webster, Leif Andersson, 2015, 'Evolution of Darwin\u2019s finches and their beaks revealed by genome sequencing', Nature, vol. 518, no. 7539, pp. 371-375", 
+"^ot:studyYear": 2015, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Certhidea olivacea S", 
+"^ot:ottId": 589949, 
+"^ot:ottTaxonName": "Certhidea olivacea"
+}, 
+"otu10": {
+"^ot:originalLabel": "Camarhynchus psittacula P", 
+"^ot:ottId": 419363, 
+"^ot:ottTaxonName": "Camarhynchus psittacula"
+}, 
+"otu11": {
+"^ot:originalLabel": "Camarhynchus parvulus Z", 
+"^ot:ottId": 419367, 
+"^ot:ottTaxonName": "Camarhynchus parvulus"
+}, 
+"otu12": {
+"^ot:originalLabel": "Camarhynchus pallidus Z", 
+"^ot:ottId": 963505, 
+"^ot:ottTaxonName": "Camarhynchus pallidus"
+}, 
+"otu13": {
+"^ot:originalLabel": "Camarhynchus heliobates I", 
+"^ot:ottId": 3597306, 
+"^ot:ottTaxonName": "Camarhynchus heliobates"
+}, 
+"otu14": {
+"^ot:originalLabel": "Geospiza septentrionalis D", 
+"^ot:ottId": 5859950, 
+"^ot:ottTaxonName": "Geospiza difficilis septentrionalis"
+}, 
+"otu15": {
+"^ot:originalLabel": "Geospiza septentrionalis W", 
+"^ot:ottId": 5859950, 
+"^ot:ottTaxonName": "Geospiza difficilis septentrionalis"
+}, 
+"otu16": {
+"^ot:originalLabel": "Geospiza fuliginosa Z", 
+"^ot:ottId": 589956, 
+"^ot:ottTaxonName": "Geospiza fuliginosa"
+}, 
+"otu17": {
+"^ot:originalLabel": "Geospiza fuliginosa S", 
+"^ot:ottId": 589956, 
+"^ot:ottTaxonName": "Geospiza fuliginosa"
+}, 
+"otu18": {
+"^ot:originalLabel": "Geospiza fortis M", 
+"^ot:ottId": 589951, 
+"^ot:ottTaxonName": "Geospiza fortis"
+}, 
+"otu19": {
+"^ot:originalLabel": "Geospiza acutirostris G", 
+"^ot:ottId": 5991469, 
+"^ot:ottTaxonName": "Geospiza acutirostris"
+}, 
+"otu2": {
+"^ot:originalLabel": "Certhidea fusca E", 
+"^ot:ottId": 527327, 
+"^ot:ottTaxonName": "Certhidea fusca"
+}, 
+"otu20": {
+"^ot:originalLabel": "Geospiza scandens M", 
+"^ot:ottId": 589959, 
+"^ot:ottTaxonName": "Geospiza scandens"
+}, 
+"otu21": {
+"^ot:originalLabel": "Geospiza propinqua G", 
+"^ot:ottId": 5991470, 
+"^ot:ottTaxonName": "Geospiza propinqua"
+}, 
+"otu22": {
+"^ot:originalLabel": "Geospiza magnirostris G", 
+"^ot:ottId": 589955, 
+"^ot:ottTaxonName": "Geospiza magnirostris"
+}, 
+"otu23": {
+"^ot:originalLabel": "Geospiza conirostris E", 
+"^ot:ottId": 589953, 
+"^ot:ottTaxonName": "Geospiza conirostris"
+}, 
+"otu3": {
+"^ot:originalLabel": "Certhidea fusca L", 
+"^ot:ottId": 527327, 
+"^ot:ottTaxonName": "Certhidea fusca"
+}, 
+"otu4": {
+"^ot:originalLabel": "Platyspiza crassirostris Z", 
+"^ot:ottId": 589943, 
+"^ot:ottTaxonName": "Platyspiza crassirostris"
+}, 
+"otu5": {
+"^ot:originalLabel": "Pinaroloxias inornata C", 
+"^ot:ottId": 992256, 
+"^ot:ottTaxonName": "Pinaroloxias inornata"
+}, 
+"otu6": {
+"^ot:originalLabel": "Geospiza difficilis F", 
+"^ot:ottId": 419376, 
+"^ot:ottTaxonName": "Geospiza difficilis"
+}, 
+"otu7": {
+"^ot:originalLabel": "Geospiza difficilis S", 
+"^ot:ottId": 419376, 
+"^ot:ottTaxonName": "Geospiza difficilis"
+}, 
+"otu8": {
+"^ot:originalLabel": "Geospiza difficilis P", 
+"^ot:ottId": 419376, 
+"^ot:ottTaxonName": "Geospiza difficilis"
+}, 
+"otu9": {
+"^ot:originalLabel": "Camarhynchus pauper F", 
+"^ot:ottId": 422530, 
+"^ot:ottTaxonName": "Camarhynchus pauper"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Figure 2a", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:time", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node7", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 0.083, 
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge6": {
+"@length": 0.355, 
+"@source": "node1", 
+"@target": "node7"
+}
+}, 
+"node11": {
+"edge11": {
+"@length": 0.238, 
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge16": {
+"@length": 0.057, 
+"@source": "node11", 
+"@target": "node17"
+}
+}, 
+"node12": {
+"edge12": {
+"@length": 0.231, 
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge13": {
+"@length": 0, 
+"@source": "node12", 
+"@target": "node14"
+}
+}, 
+"node14": {
+"edge14": {
+"@length": 0.231, 
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge15": {
+"@length": 0.231, 
+"@source": "node14", 
+"@target": "node16"
+}
+}, 
+"node17": {
+"edge17": {
+"@length": 0.207, 
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge26": {
+"@length": 0.052, 
+"@source": "node17", 
+"@target": "node27"
+}
+}, 
+"node18": {
+"edge18": {
+"@length": 0.031, 
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge21": {
+"@length": 0.001, 
+"@source": "node18", 
+"@target": "node22"
+}
+}, 
+"node19": {
+"edge19": {
+"@length": 0.174, 
+"@source": "node19", 
+"@target": "node20"
+}, 
+"edge20": {
+"@length": 0.174, 
+"@source": "node19", 
+"@target": "node21"
+}
+}, 
+"node2": {
+"edge2": {
+"@length": 0.827, 
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge3": {
+"@length": 0.536, 
+"@source": "node2", 
+"@target": "node4"
+}
+}, 
+"node22": {
+"edge22": {
+"@length": 0.204, 
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge23": {
+"@length": 0.033, 
+"@source": "node22", 
+"@target": "node24"
+}
+}, 
+"node24": {
+"edge24": {
+"@length": 0.171, 
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge25": {
+"@length": 0.171, 
+"@source": "node24", 
+"@target": "node26"
+}
+}, 
+"node27": {
+"edge27": {
+"@length": 0.226, 
+"@source": "node27", 
+"@target": "node28"
+}, 
+"edge30": {
+"@length": 0.102, 
+"@source": "node27", 
+"@target": "node31"
+}
+}, 
+"node28": {
+"edge28": {
+"@length": 0.134, 
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge29": {
+"@length": 0.134, 
+"@source": "node28", 
+"@target": "node30"
+}
+}, 
+"node31": {
+"edge31": {
+"@length": 0.008, 
+"@source": "node31", 
+"@target": "node32"
+}, 
+"edge38": {
+"@length": 0.022, 
+"@source": "node31", 
+"@target": "node39"
+}
+}, 
+"node32": {
+"edge32": {
+"@length": 0.011, 
+"@source": "node32", 
+"@target": "node33"
+}, 
+"edge35": {
+"@length": 0.01, 
+"@source": "node32", 
+"@target": "node36"
+}
+}, 
+"node33": {
+"edge33": {
+"@length": 0.239, 
+"@source": "node33", 
+"@target": "node34"
+}, 
+"edge34": {
+"@length": 0.239, 
+"@source": "node33", 
+"@target": "node35"
+}
+}, 
+"node36": {
+"edge36": {
+"@length": 0.24, 
+"@source": "node36", 
+"@target": "node37"
+}, 
+"edge37": {
+"@length": 0.24, 
+"@source": "node36", 
+"@target": "node38"
+}
+}, 
+"node39": {
+"edge39": {
+"@length": 0.009, 
+"@source": "node39", 
+"@target": "node40"
+}, 
+"edge42": {
+"@length": 0.066, 
+"@source": "node39", 
+"@target": "node43"
+}
+}, 
+"node4": {
+"edge4": {
+"@length": 0.291, 
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge5": {
+"@length": 0.291, 
+"@source": "node4", 
+"@target": "node6"
+}
+}, 
+"node40": {
+"edge40": {
+"@length": 0.227, 
+"@source": "node40", 
+"@target": "node41"
+}, 
+"edge41": {
+"@length": 0.227, 
+"@source": "node40", 
+"@target": "node42"
+}
+}, 
+"node43": {
+"edge43": {
+"@length": 0.17, 
+"@source": "node43", 
+"@target": "node44"
+}, 
+"edge44": {
+"@length": 0.17, 
+"@source": "node43", 
+"@target": "node45"
+}
+}, 
+"node7": {
+"edge7": {
+"@length": 0.546, 
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@length": 0.017, 
+"@source": "node7", 
+"@target": "node9"
+}
+}, 
+"node9": {
+"edge10": {
+"@length": 0.06, 
+"@source": "node9", 
+"@target": "node11"
+}, 
+"edge9": {
+"@length": 0.529, 
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu5"
+}, 
+"node11": {}, 
+"node12": {}, 
+"node13": {
+"@otu": "otu6", 
+"^ot:isTaxonExemplar": true
+}, 
+"node14": {}, 
+"node15": {
+"@otu": "otu7", 
+"^ot:isTaxonExemplar": false
+}, 
+"node16": {
+"@otu": "otu8", 
+"^ot:isTaxonExemplar": false
+}, 
+"node17": {}, 
+"node18": {}, 
+"node19": {}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu9"
+}, 
+"node21": {
+"@otu": "otu10"
+}, 
+"node22": {}, 
+"node23": {
+"@otu": "otu11"
+}, 
+"node24": {}, 
+"node25": {
+"@otu": "otu12"
+}, 
+"node26": {
+"@otu": "otu13"
+}, 
+"node27": {}, 
+"node28": {}, 
+"node29": {
+"@otu": "otu14", 
+"^ot:isTaxonExemplar": true
+}, 
+"node3": {
+"@otu": "otu1"
+}, 
+"node30": {
+"@otu": "otu15", 
+"^ot:isTaxonExemplar": false
+}, 
+"node31": {}, 
+"node32": {}, 
+"node33": {}, 
+"node34": {
+"@otu": "otu16", 
+"^ot:isTaxonExemplar": true
+}, 
+"node35": {
+"@otu": "otu17", 
+"^ot:isTaxonExemplar": false
+}, 
+"node36": {}, 
+"node37": {
+"@otu": "otu18"
+}, 
+"node38": {
+"@otu": "otu19"
+}, 
+"node39": {}, 
+"node4": {}, 
+"node40": {}, 
+"node41": {
+"@otu": "otu20"
+}, 
+"node42": {
+"@otu": "otu21"
+}, 
+"node43": {}, 
+"node44": {
+"@otu": "otu22"
+}, 
+"node45": {
+"@otu": "otu23"
+}, 
+"node5": {
+"@otu": "otu2", 
+"^ot:isTaxonExemplar": true
+}, 
+"node6": {
+"@otu": "otu3", 
+"^ot:isTaxonExemplar": false
+}, 
+"node7": {}, 
+"node8": {
+"@otu": "otu4"
+}, 
+"node9": {}
+}
+}
+}
+}
+}
+}
+}

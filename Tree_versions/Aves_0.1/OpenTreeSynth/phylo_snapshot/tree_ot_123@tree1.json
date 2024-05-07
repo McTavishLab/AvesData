@@ -1,0 +1,518 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-02T03:10:58.898Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-02T03:10:58.898Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 450, 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=uad54a28b-8cd9-41b3-9e3e-804f460aa182", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-10-18T02:49:54.323Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "modified the author list by Ning", 
+"^ot:curatorName": [
+"Joseph W. Brown", 
+"ningwang83", 
+"eliotmiller"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 540029, 
+"^ot:focalCladeOTTTaxonName": "Aegotheles", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_123", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/s1055-7903(03)00135-0"
+}, 
+"^ot:studyPublicationReference": "Dumbacher, J., Pratt, T.K., Fleischer, R.C. 2003. Phylogeny of the owlet-nightjars (Aves: Aegothelidae) based on mitochondrial DNA sequence. Molecular Phylogenetics and Evolution 29 (3): 540-549.", 
+"^ot:studyYear": 2003, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Aegotheles archboldi", 
+"^ot:ottId": 705938, 
+"^ot:ottTaxonName": "Aegotheles archboldi"
+}, 
+"otu10": {
+"^ot:originalLabel": "Aegotheles bennettii terborghi", 
+"^ot:ottId": 563569, 
+"^ot:ottTaxonName": "Aegotheles bennettii terborghi"
+}, 
+"otu11": {
+"^ot:originalLabel": "Aegotheles cristatus", 
+"^ot:ottId": 540033, 
+"^ot:ottTaxonName": "Aegotheles cristatus"
+}, 
+"otu12": {
+"^ot:originalLabel": "Aegotheles crinifrons", 
+"^ot:ottId": 331489, 
+"^ot:ottTaxonName": "Euaegotheles crinifrons"
+}, 
+"otu13": {
+"^ot:originalLabel": "Aegotheles insignis", 
+"^ot:ottId": 331487, 
+"^ot:ottTaxonName": "Euaegotheles insignis"
+}, 
+"otu14": {
+"^ot:originalLabel": "Aegotheles tatei", 
+"^ot:ottId": 331479, 
+"^ot:ottTaxonName": "Euaegotheles tatei"
+}, 
+"otu15": {
+"^ot:originalLabel": "Aegotheles novaezealandiae", 
+"^ot:ottId": 705942, 
+"^ot:ottTaxonName": "Aegotheles novaezealandiae"
+}, 
+"otu16": {
+"^ot:originalLabel": "Aegotheles savesi", 
+"^ot:ottId": 705947, 
+"^ot:ottTaxonName": "Aegotheles savesi"
+}, 
+"otu2": {
+"^ot:originalLabel": "Aegotheles albertisi albertisi", 
+"^ot:ottId": 563584, 
+"^ot:ottTaxonName": "Aegotheles albertisi albertisi"
+}, 
+"otu3": {
+"^ot:originalLabel": "Aegotheles wallacii gigas", 
+"^ot:ottId": 259045, 
+"^ot:ottTaxonName": "Aegotheles wallacii gigas"
+}, 
+"otu4": {
+"^ot:originalLabel": "Aegotheles wallacii wallacii", 
+"^ot:ottId": 590139, 
+"^ot:ottTaxonName": "Aegotheles wallacii wallacii"
+}, 
+"otu5": {
+"^ot:originalLabel": "Aegotheles albertisi salvadorii", 
+"^ot:ottId": 563580, 
+"^ot:ottTaxonName": "Aegotheles albertisi salvadori"
+}, 
+"otu6": {
+"^ot:originalLabel": "Aegotheles bennettii bennettii", 
+"^ot:ottId": 563571, 
+"^ot:ottTaxonName": "Aegotheles bennettii bennettii"
+}, 
+"otu7": {
+"^ot:originalLabel": "Aegotheles bennettii wiedenfeldi", 
+"^ot:ottId": 563568, 
+"^ot:ottTaxonName": "Aegotheles bennettii wiedenfeldi"
+}, 
+"otu8": {
+"^ot:originalLabel": "Aegotheles bennettii plumiferus", 
+"^ot:ottId": 563570, 
+"^ot:ottTaxonName": "Aegotheles bennettii plumiferus"
+}, 
+"otu9": {
+"^ot:originalLabel": "Aegotheles bennettii affinis", 
+"^ot:ottId": 68112, 
+"^ot:ottTaxonName": "Aegotheles bennettii affinis"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 1a", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge28": {
+"@source": "node1", 
+"@target": "node29"
+}
+}, 
+"node10": {
+"edge10": {
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge11": {
+"@source": "node10", 
+"@target": "node12"
+}
+}, 
+"node14": {
+"edge14": {
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge23": {
+"@source": "node14", 
+"@target": "node24"
+}
+}, 
+"node15": {
+"edge15": {
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge20": {
+"@source": "node15", 
+"@target": "node21"
+}
+}, 
+"node16": {
+"edge16": {
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge19": {
+"@source": "node16", 
+"@target": "node20"
+}
+}, 
+"node17": {
+"edge17": {
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge18": {
+"@source": "node17", 
+"@target": "node19"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge25": {
+"@source": "node2", 
+"@target": "node26"
+}
+}, 
+"node21": {
+"edge21": {
+"@source": "node21", 
+"@target": "node22"
+}, 
+"edge22": {
+"@source": "node21", 
+"@target": "node23"
+}
+}, 
+"node26": {
+"edge26": {
+"@source": "node26", 
+"@target": "node27"
+}, 
+"edge27": {
+"@source": "node26", 
+"@target": "node28"
+}
+}, 
+"node29": {
+"edge29": {
+"@source": "node29", 
+"@target": "node30"
+}, 
+"edge30": {
+"@source": "node29", 
+"@target": "node31"
+}
+}, 
+"node3": {
+"edge24": {
+"@source": "node3", 
+"@target": "node25"
+}, 
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node4": {
+"edge13": {
+"@source": "node4", 
+"@target": "node14"
+}, 
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node5": {
+"edge12": {
+"@source": "node5", 
+"@target": "node13"
+}, 
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node6": {
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge9": {
+"@source": "node6", 
+"@target": "node10"
+}
+}, 
+"node7": {
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@source": "node7", 
+"@target": "node9"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node11": {
+"@otu": "otu3"
+}, 
+"node12": {
+"@otu": "otu4"
+}, 
+"node13": {
+"@otu": "otu5"
+}, 
+"node14": {}, 
+"node15": {}, 
+"node16": {}, 
+"node17": {}, 
+"node18": {
+"@otu": "otu6"
+}, 
+"node19": {
+"@otu": "otu7"
+}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu8"
+}, 
+"node21": {}, 
+"node22": {
+"@otu": "otu9"
+}, 
+"node23": {
+"@otu": "otu10"
+}, 
+"node24": {
+"@otu": "otu11"
+}, 
+"node25": {
+"@otu": "otu12"
+}, 
+"node26": {}, 
+"node27": {
+"@otu": "otu13"
+}, 
+"node28": {
+"@otu": "otu14"
+}, 
+"node29": {}, 
+"node3": {}, 
+"node30": {
+"@otu": "otu15"
+}, 
+"node31": {
+"@otu": "otu16"
+}, 
+"node4": {}, 
+"node5": {}, 
+"node6": {}, 
+"node7": {}, 
+"node8": {
+"@otu": "otu1"
+}, 
+"node9": {
+"@otu": "otu2"
+}
+}
+}
+}
+}
+}
+}
+}

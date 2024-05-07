@@ -1,0 +1,553 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [
+"--embed", 
+"--agent-only"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-07-01T16:51:03.270Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-01T16:51:03.270Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6628"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 263138, 
+"^ot:focalCladeOTTTaxonName": "Gyps", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus2857"
+], 
+"^ot:studyId": "pg_2857", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1007/s10336-008-0359-x"
+}, 
+"^ot:studyPublicationReference": "Arshad, Muhammad, Javier Gonzalez, Abdel Aziz El-Sayed, Tim Osborne, Michael Wink. 2009. Phylogeny and phylogeography of critically endangered Gyps species based on nuclear and mitochondrial markers. Journal of Ornithology 150 (2): 419-430.", 
+"^ot:studyYear": 2009, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees2857"
+], 
+"otusById": {
+"otus2857": {
+"otuById": {
+"otu425633": {
+"^ot:originalLabel": "Gyps fulvus Spain", 
+"^ot:ottId": 549517, 
+"^ot:ottTaxonName": "Gyps fulvus"
+}, 
+"otu425634": {
+"^ot:originalLabel": "Gyps fulvus Israel", 
+"^ot:ottId": 549517, 
+"^ot:ottTaxonName": "Gyps fulvus"
+}, 
+"otu425635": {
+"^ot:originalLabel": "Gyps rueppellii captive", 
+"^ot:ottId": 263132, 
+"^ot:ottTaxonName": "Gyps rueppellii"
+}, 
+"otu425636": {
+"^ot:originalLabel": "Gyps rueppellii Africa", 
+"^ot:ottId": 263132, 
+"^ot:ottTaxonName": "Gyps rueppellii"
+}, 
+"otu425637": {
+"^ot:originalLabel": "Gyps coprotheres", 
+"^ot:ottId": 263136, 
+"^ot:ottTaxonName": "Gyps coprotheres"
+}, 
+"otu425638": {
+"^ot:originalLabel": "Gyps indicus", 
+"^ot:ottId": 796905, 
+"^ot:ottTaxonName": "Gyps indicus"
+}, 
+"otu425639": {
+"^ot:originalLabel": "Gyps africanus Namibia1", 
+"^ot:ottId": 315690, 
+"^ot:ottTaxonName": "Gyps africanus"
+}, 
+"otu425640": {
+"^ot:originalLabel": "Gyps africanus Namibia2", 
+"^ot:ottId": 315690, 
+"^ot:ottTaxonName": "Gyps africanus"
+}, 
+"otu425641": {
+"^ot:originalLabel": "Gyps himalayensis", 
+"^ot:ottId": 549509, 
+"^ot:ottTaxonName": "Gyps himalayensis"
+}, 
+"otu425642": {
+"^ot:originalLabel": "Gyps bengalensis Pakistan1", 
+"^ot:ottId": 315688, 
+"^ot:ottTaxonName": "Gyps bengalensis"
+}, 
+"otu425643": {
+"^ot:originalLabel": "Gyps bengalensis Pakistan2", 
+"^ot:ottId": 315688, 
+"^ot:ottTaxonName": "Gyps bengalensis"
+}, 
+"otu425644": {
+"^ot:originalLabel": "Necrosyrtes monachus", 
+"^ot:ottId": 707369, 
+"^ot:ottTaxonName": "Necrosyrtes monachus"
+}, 
+"otu425645": {
+"^ot:originalLabel": "Torgos tracheliotos", 
+"^ot:ottId": 3596185, 
+"^ot:ottTaxonName": "Torgos tracheliotos"
+}, 
+"otu425646": {
+"^ot:originalLabel": "Trigonoceps occipitalis", 
+"^ot:ottId": 837582, 
+"^ot:ottTaxonName": "Trigonoceps occipitalis"
+}, 
+"otu425647": {
+"^ot:originalLabel": "Aegypius monachus", 
+"^ot:ottId": 786449, 
+"^ot:ottTaxonName": "Aegypius monachus"
+}, 
+"otu425648": {
+"^ot:originalLabel": "Sarcogyps calvus", 
+"^ot:ottId": 985504, 
+"^ot:ottTaxonName": "Sarcogyps calvus"
+}, 
+"otu425649": {
+"^ot:originalLabel": "Gypaetus barbatus", 
+"^ot:ottId": 317001, 
+"^ot:ottTaxonName": "Gypaetus barbatus"
+}, 
+"otu425650": {
+"^ot:originalLabel": "Neophron percnopterus", 
+"^ot:ottId": 891414, 
+"^ot:ottTaxonName": "Neophron percnopterus"
+}, 
+"otu425651": {
+"^ot:originalLabel": "Gypohierax angolensis", 
+"^ot:ottId": 677101, 
+"^ot:ottTaxonName": "Gypohierax angolensis"
+}, 
+"otu425652": {
+"^ot:originalLabel": "Sagittarius serpentarius", 
+"^ot:ottId": 1036186, 
+"^ot:ottTaxonName": "Sagittarius serpentarius"
+}
+}
+}
+}, 
+"treesById": {
+"trees2857": {
+"@otus": "otus2857", 
+"^ot:treeElementOrder": [
+"tree6628"
+], 
+"treeById": {
+"tree6628": {
+"@label": "Fig. 3 Bayesian (topology)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1156979", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1156975", 
+"^ot:specifiedRoot": "node1156975", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1156975": {
+"edge1156976": {
+"@source": "node1156975", 
+"@target": "node1156976"
+}, 
+"edge1157013": {
+"@source": "node1156975", 
+"@target": "node1157013"
+}
+}, 
+"node1156976": {
+"edge1156977": {
+"@source": "node1156976", 
+"@target": "node1156977"
+}, 
+"edge1157008": {
+"@source": "node1156976", 
+"@target": "node1157008"
+}
+}, 
+"node1156977": {
+"edge1156978": {
+"@source": "node1156977", 
+"@target": "node1156978"
+}, 
+"edge1157001": {
+"@source": "node1156977", 
+"@target": "node1157001"
+}
+}, 
+"node1156978": {
+"edge1156979": {
+"@source": "node1156978", 
+"@target": "node1156979"
+}, 
+"edge1157000": {
+"@source": "node1156978", 
+"@target": "node1157000"
+}
+}, 
+"node1156979": {
+"edge1156980": {
+"@source": "node1156979", 
+"@target": "node1156980"
+}, 
+"edge1156997": {
+"@source": "node1156979", 
+"@target": "node1156997"
+}
+}, 
+"node1156980": {
+"edge1156981": {
+"@source": "node1156980", 
+"@target": "node1156981"
+}, 
+"edge1156996": {
+"@source": "node1156980", 
+"@target": "node1156996"
+}
+}, 
+"node1156981": {
+"edge1156982": {
+"@source": "node1156981", 
+"@target": "node1156982"
+}, 
+"edge1156993": {
+"@source": "node1156981", 
+"@target": "node1156993"
+}
+}, 
+"node1156982": {
+"edge1156983": {
+"@source": "node1156982", 
+"@target": "node1156983"
+}, 
+"edge1156990": {
+"@source": "node1156982", 
+"@target": "node1156990"
+}
+}, 
+"node1156983": {
+"edge1156984": {
+"@source": "node1156983", 
+"@target": "node1156984"
+}, 
+"edge1156987": {
+"@source": "node1156983", 
+"@target": "node1156987"
+}
+}, 
+"node1156984": {
+"edge1156985": {
+"@source": "node1156984", 
+"@target": "node1156985"
+}, 
+"edge1156986": {
+"@source": "node1156984", 
+"@target": "node1156986"
+}
+}, 
+"node1156987": {
+"edge1156988": {
+"@source": "node1156987", 
+"@target": "node1156988"
+}, 
+"edge1156989": {
+"@source": "node1156987", 
+"@target": "node1156989"
+}
+}, 
+"node1156990": {
+"edge1156991": {
+"@source": "node1156990", 
+"@target": "node1156991"
+}, 
+"edge1156992": {
+"@source": "node1156990", 
+"@target": "node1156992"
+}
+}, 
+"node1156993": {
+"edge1156994": {
+"@source": "node1156993", 
+"@target": "node1156994"
+}, 
+"edge1156995": {
+"@source": "node1156993", 
+"@target": "node1156995"
+}
+}, 
+"node1156997": {
+"edge1156998": {
+"@source": "node1156997", 
+"@target": "node1156998"
+}, 
+"edge1156999": {
+"@source": "node1156997", 
+"@target": "node1156999"
+}
+}, 
+"node1157001": {
+"edge1157002": {
+"@source": "node1157001", 
+"@target": "node1157002"
+}, 
+"edge1157007": {
+"@source": "node1157001", 
+"@target": "node1157007"
+}
+}, 
+"node1157002": {
+"edge1157003": {
+"@source": "node1157002", 
+"@target": "node1157003"
+}, 
+"edge1157006": {
+"@source": "node1157002", 
+"@target": "node1157006"
+}
+}, 
+"node1157003": {
+"edge1157004": {
+"@source": "node1157003", 
+"@target": "node1157004"
+}, 
+"edge1157005": {
+"@source": "node1157003", 
+"@target": "node1157005"
+}
+}, 
+"node1157008": {
+"edge1157009": {
+"@source": "node1157008", 
+"@target": "node1157009"
+}, 
+"edge1157012": {
+"@source": "node1157008", 
+"@target": "node1157012"
+}
+}, 
+"node1157009": {
+"edge1157010": {
+"@source": "node1157009", 
+"@target": "node1157010"
+}, 
+"edge1157011": {
+"@source": "node1157009", 
+"@target": "node1157011"
+}
+}
+}, 
+"nodeById": {
+"node1156975": {
+"@root": true
+}, 
+"node1156976": {}, 
+"node1156977": {}, 
+"node1156978": {}, 
+"node1156979": {}, 
+"node1156980": {}, 
+"node1156981": {}, 
+"node1156982": {}, 
+"node1156983": {}, 
+"node1156984": {}, 
+"node1156985": {
+"@otu": "otu425633"
+}, 
+"node1156986": {
+"@otu": "otu425634"
+}, 
+"node1156987": {}, 
+"node1156988": {
+"@otu": "otu425635"
+}, 
+"node1156989": {
+"@otu": "otu425636"
+}, 
+"node1156990": {}, 
+"node1156991": {
+"@otu": "otu425637"
+}, 
+"node1156992": {
+"@otu": "otu425638"
+}, 
+"node1156993": {}, 
+"node1156994": {
+"@otu": "otu425639"
+}, 
+"node1156995": {
+"@otu": "otu425640"
+}, 
+"node1156996": {
+"@otu": "otu425641"
+}, 
+"node1156997": {}, 
+"node1156998": {
+"@otu": "otu425642"
+}, 
+"node1156999": {
+"@otu": "otu425643"
+}, 
+"node1157000": {
+"@otu": "otu425644"
+}, 
+"node1157001": {}, 
+"node1157002": {}, 
+"node1157003": {}, 
+"node1157004": {
+"@otu": "otu425645"
+}, 
+"node1157005": {
+"@otu": "otu425646"
+}, 
+"node1157006": {
+"@otu": "otu425647"
+}, 
+"node1157007": {
+"@otu": "otu425648"
+}, 
+"node1157008": {}, 
+"node1157009": {}, 
+"node1157010": {
+"@otu": "otu425649"
+}, 
+"node1157011": {
+"@otu": "otu425650"
+}, 
+"node1157012": {
+"@otu": "otu425651"
+}, 
+"node1157013": {
+"@otu": "otu425652"
+}
+}
+}
+}
+}
+}
+}
+}
