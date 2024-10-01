@@ -1,0 +1,522 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.9"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2018-05-28T13:15:04.253Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-05-28T13:15:04.253Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre", 
+"@size": 363, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.b623277e3e0320d4.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}, 
+{
+"@filename": "PASTED.tre", 
+"@size": 385, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.8126634e704bf1b4.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-12-19T15:55:53.252Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"LukeKlicka", 
+"eliotmiller"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 244696, 
+"^ot:focalCladeOTTTaxonName": "Coraciidae", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_1285", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2018.03.030"
+}, 
+"^ot:studyPublicationReference": "Ulf S. Johansson, Martin Irestedt, Yanhua Qu, Per G.P. Ericson, 2018, 'Phylogenetic relationships of rollers (Coraciidae) based on complete mitochondrial genomes and fifteen nuclear genes', Molecular Phylogenetics and Evolution, vol. 126, pp. 17-22", 
+"^ot:studyYear": 2018, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Coracias temminckii", 
+"^ot:ottId": 3596440, 
+"^ot:ottTaxonName": "Coracias temminckii"
+}, 
+"otu10": {
+"^ot:originalLabel": "Eurystomus orientalis pacificus", 
+"^ot:ottId": 897864, 
+"^ot:ottTaxonName": "Eurystomus orientalis"
+}, 
+"otu11": {
+"^ot:originalLabel": "Eurystomus orientalis waigiouensis", 
+"^ot:ottId": 897864, 
+"^ot:ottTaxonName": "Eurystomus orientalis"
+}, 
+"otu12": {
+"^ot:originalLabel": "Eurystomus azureus", 
+"^ot:ottId": 3596436, 
+"^ot:ottTaxonName": "Eurystomus azureus"
+}, 
+"otu13": {
+"^ot:originalLabel": "Eurystomus orientalis orientalis", 
+"^ot:ottId": 897864, 
+"^ot:ottTaxonName": "Eurystomus orientalis"
+}, 
+"otu14": {
+"^ot:originalLabel": "Eurystomus gularis", 
+"^ot:ottId": 704138, 
+"^ot:ottTaxonName": "Eurystomus gularis"
+}, 
+"otu15": {
+"^ot:originalLabel": "Eurystomus glaucurus", 
+"^ot:ottId": 897863, 
+"^ot:ottTaxonName": "Eurystomus glaucurus"
+}, 
+"otu2": {
+"^ot:originalLabel": "Coracias affinis", 
+"^ot:ottId": 6151371, 
+"^ot:ottTaxonName": "Coracias affinis"
+}, 
+"otu3": {
+"^ot:originalLabel": "Coracias benghalensis", 
+"^ot:ottId": 3596441, 
+"^ot:ottTaxonName": "Coracias benghalensis"
+}, 
+"otu31": {
+"^ot:originalLabel": "Atelornis pittoides", 
+"^ot:ottId": 372536, 
+"^ot:ottTaxonName": "Atelornis pittoides"
+}, 
+"otu4": {
+"^ot:originalLabel": "Coracias garulus", 
+"^ot:ottId": 372551, 
+"^ot:ottTaxonName": "Coracias garrulus"
+}, 
+"otu5": {
+"^ot:originalLabel": "Coracias abyssinica", 
+"^ot:ottId": 704139, 
+"^ot:ottTaxonName": "Coracias abyssinicus"
+}, 
+"otu6": {
+"^ot:originalLabel": "Coracias caudatus lorti", 
+"^ot:ottId": 244691, 
+"^ot:ottTaxonName": "Coracias caudatus"
+}, 
+"otu7": {
+"^ot:originalLabel": "Coracias spatulatus", 
+"^ot:ottId": 5857415, 
+"^ot:ottTaxonName": "Coracias spatulatus"
+}, 
+"otu8": {
+"^ot:originalLabel": "Coracias naevius", 
+"^ot:ottId": 3596437, 
+"^ot:ottTaxonName": "Coracias naevius"
+}, 
+"otu9": {
+"^ot:originalLabel": "Coracias cyanogaster", 
+"^ot:ottId": 3596438, 
+"^ot:ottTaxonName": "Coracias cyanogaster"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig 1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node2", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge29": {
+"@source": "node1", 
+"@target": "node30"
+}
+}, 
+"node11": {
+"edge11": {
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge12": {
+"@source": "node11", 
+"@target": "node13"
+}
+}, 
+"node15": {
+"edge15": {
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge16": {
+"@source": "node15", 
+"@target": "node17"
+}
+}, 
+"node19": {
+"edge19": {
+"@source": "node19", 
+"@target": "node20"
+}, 
+"edge26": {
+"@source": "node19", 
+"@target": "node27"
+}
+}, 
+"node2": {
+"edge18": {
+"@source": "node2", 
+"@target": "node19"
+}, 
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}
+}, 
+"node20": {
+"edge20": {
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge25": {
+"@source": "node20", 
+"@target": "node26"
+}
+}, 
+"node21": {
+"edge21": {
+"@source": "node21", 
+"@target": "node22"
+}, 
+"edge24": {
+"@source": "node21", 
+"@target": "node25"
+}
+}, 
+"node22": {
+"edge22": {
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge23": {
+"@source": "node22", 
+"@target": "node24"
+}
+}, 
+"node27": {
+"edge27": {
+"@source": "node27", 
+"@target": "node28"
+}, 
+"edge28": {
+"@source": "node27", 
+"@target": "node29"
+}
+}, 
+"node3": {
+"edge17": {
+"@source": "node3", 
+"@target": "node18"
+}, 
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node4": {
+"edge14": {
+"@source": "node4", 
+"@target": "node15"
+}, 
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node5": {
+"edge10": {
+"@source": "node5", 
+"@target": "node11"
+}, 
+"edge13": {
+"@source": "node5", 
+"@target": "node14"
+}, 
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node6": {
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge9": {
+"@source": "node6", 
+"@target": "node10"
+}
+}, 
+"node7": {
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@source": "node7", 
+"@target": "node9"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu3"
+}, 
+"node11": {}, 
+"node12": {
+"@otu": "otu4"
+}, 
+"node13": {
+"@otu": "otu5"
+}, 
+"node14": {
+"@otu": "otu6"
+}, 
+"node15": {}, 
+"node16": {
+"@otu": "otu7"
+}, 
+"node17": {
+"@otu": "otu8"
+}, 
+"node18": {
+"@otu": "otu9"
+}, 
+"node19": {}, 
+"node2": {}, 
+"node20": {}, 
+"node21": {}, 
+"node22": {}, 
+"node23": {
+"@otu": "otu10"
+}, 
+"node24": {
+"@otu": "otu11"
+}, 
+"node25": {
+"@otu": "otu12"
+}, 
+"node26": {
+"@otu": "otu13"
+}, 
+"node27": {}, 
+"node28": {
+"@otu": "otu14"
+}, 
+"node29": {
+"@otu": "otu15"
+}, 
+"node3": {}, 
+"node30": {
+"@otu": "otu31"
+}, 
+"node4": {}, 
+"node5": {}, 
+"node6": {}, 
+"node7": {}, 
+"node8": {
+"@otu": "otu1"
+}, 
+"node9": {
+"@otu": "otu2"
+}
+}
+}
+}
+}
+}
+}
+}

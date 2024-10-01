@@ -1,0 +1,576 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.9"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-10-05T00:43:39.911Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-05T00:43:39.911Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre", 
+"@size": 820, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.8fe323dd1a1ae5f5.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "Subspecies mapped to species, because not yet in taxonomy. REDO mapping when they are (JWB).", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 452459, 
+"^ot:focalCladeOTTTaxonName": "Podicipedidae", 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_864", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1642/auk-14-259.1"
+}, 
+"^ot:studyPublicationReference": "Ogawa, Lisa M., Paulo C. Pulgarin, Donald A. Vance, Jon Fjelds\u00e5, Marcel van Tuinen. 2015. Opposing demographic histories reveal rapid evolution in grebes (Aves: Podicipedidae). The Auk 132 (4): 771-786", 
+"^ot:studyYear": 2015, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Podiceps taczanowskii UMMZ157233", 
+"^ot:ottId": 3595567, 
+"^ot:ottTaxonName": "Podiceps taczanowskii"
+}, 
+"otu10": {
+"^ot:originalLabel": "Podiceps nigricollis californicus DMNH35693", 
+"^ot:ottId": 651477, 
+"^ot:ottTaxonName": "Podiceps nigricollis"
+}, 
+"otu11": {
+"^ot:originalLabel": "Podiceps andinus ICN14229", 
+"^ot:ottId": 3595575, 
+"^ot:ottTaxonName": "Podiceps andinus"
+}, 
+"otu12": {
+"^ot:originalLabel": "Podiceps andinus ICN8361", 
+"^ot:ottId": 3595575, 
+"^ot:ottTaxonName": "Podiceps andinus"
+}, 
+"otu13": {
+"^ot:originalLabel": "Podiceps gallardoi ZUMC200382", 
+"^ot:ottId": 799136, 
+"^ot:ottTaxonName": "Podiceps gallardoi"
+}, 
+"otu14": {
+"^ot:originalLabel": "Rollandia rolland chilensis YPM101152", 
+"^ot:ottId": 547308, 
+"^ot:ottTaxonName": "Rollandia rolland"
+}, 
+"otu15": {
+"^ot:originalLabel": "Rollandia rolland morrisoni ZUMC050178", 
+"^ot:ottId": 547308, 
+"^ot:ottTaxonName": "Rollandia rolland"
+}, 
+"otu16": {
+"^ot:originalLabel": "Podiceps auritus USNMB13508", 
+"^ot:ottId": 726164, 
+"^ot:ottTaxonName": "Podiceps auritus"
+}, 
+"otu17": {
+"^ot:originalLabel": "Podiceps grisegena ANSP22181", 
+"^ot:ottId": 740071, 
+"^ot:ottTaxonName": "Podiceps grisegena"
+}, 
+"otu2": {
+"^ot:originalLabel": "Podiceps occipitalis occipitalis UMMZ157233", 
+"^ot:ottId": 3595565, 
+"^ot:ottTaxonName": "Podiceps occipitalis"
+}, 
+"otu3": {
+"^ot:originalLabel": "Podiceps taczanowskii ZUMC140178", 
+"^ot:ottId": 3595567, 
+"^ot:ottTaxonName": "Podiceps taczanowskii"
+}, 
+"otu4": {
+"^ot:originalLabel": "Podiceps occipitalis juninensis ZUMC100178", 
+"^ot:ottId": 3595565, 
+"^ot:ottTaxonName": "Podiceps occipitalis"
+}, 
+"otu5": {
+"^ot:originalLabel": "Podiceps occipitalis juninensis ZUMC1611277", 
+"^ot:ottId": 3595565, 
+"^ot:ottTaxonName": "Podiceps occipitalis"
+}, 
+"otu6": {
+"^ot:originalLabel": "Podiceps nigricollis gurneyi UMMZ94965", 
+"^ot:ottId": 651477, 
+"^ot:ottTaxonName": "Podiceps nigricollis"
+}, 
+"otu7": {
+"^ot:originalLabel": "Podiceps nigricollis nigricollis Juan Amat", 
+"^ot:ottId": 651477, 
+"^ot:ottTaxonName": "Podiceps nigricollis"
+}, 
+"otu8": {
+"^ot:originalLabel": "Podiceps nigricollis nigricollis UWBM73209", 
+"^ot:ottId": 651477, 
+"^ot:ottTaxonName": "Podiceps nigricollis"
+}, 
+"otu9": {
+"^ot:originalLabel": "Podiceps nigricollis californicus Joseph Jehl", 
+"^ot:ottId": 651477, 
+"^ot:ottTaxonName": "Podiceps nigricollis"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 2A (chronogram)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:time", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node3", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 1.12, 
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge30": {
+"@length": 5.53, 
+"@source": "node1", 
+"@target": "node31"
+}
+}, 
+"node14": {
+"edge14": {
+"@length": 0.62, 
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge19": {
+"@length": 0.38, 
+"@source": "node14", 
+"@target": "node20"
+}
+}, 
+"node15": {
+"edge15": {
+"@length": 0.11, 
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge18": {
+"@length": 0.35, 
+"@source": "node15", 
+"@target": "node19"
+}
+}, 
+"node16": {
+"edge16": {
+"@length": 0.24, 
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge17": {
+"@length": 0.24, 
+"@source": "node16", 
+"@target": "node18"
+}
+}, 
+"node2": {
+"edge2": {
+"@length": 3.82, 
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge27": {
+"@length": 7.49, 
+"@source": "node2", 
+"@target": "node28"
+}
+}, 
+"node20": {
+"edge20": {
+"@length": 0.2, 
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge23": {
+"@length": 0.16, 
+"@source": "node20", 
+"@target": "node24"
+}
+}, 
+"node21": {
+"edge21": {
+"@length": 0.39, 
+"@source": "node21", 
+"@target": "node22"
+}, 
+"edge22": {
+"@length": 0.39, 
+"@source": "node21", 
+"@target": "node23"
+}
+}, 
+"node24": {
+"edge24": {
+"@length": 0.43, 
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge25": {
+"@length": 0.43, 
+"@source": "node24", 
+"@target": "node26"
+}
+}, 
+"node28": {
+"edge28": {
+"@length": 0.3, 
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge29": {
+"@length": 0.3, 
+"@source": "node28", 
+"@target": "node30"
+}
+}, 
+"node3": {
+"edge26": {
+"@length": 3.97, 
+"@source": "node3", 
+"@target": "node27"
+}, 
+"edge3": {
+"@length": 2.06, 
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node31": {
+"edge31": {
+"@length": 3.38, 
+"@source": "node31", 
+"@target": "node32"
+}, 
+"edge32": {
+"@length": 3.38, 
+"@source": "node31", 
+"@target": "node33"
+}
+}, 
+"node4": {
+"edge13": {
+"@length": 0.94, 
+"@source": "node4", 
+"@target": "node14"
+}, 
+"edge4": {
+"@length": 0.47, 
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node5": {
+"edge12": {
+"@length": 1.44, 
+"@source": "node5", 
+"@target": "node13"
+}, 
+"edge5": {
+"@length": 0.29, 
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node6": {
+"edge11": {
+"@length": 1.15, 
+"@source": "node6", 
+"@target": "node12"
+}, 
+"edge6": {
+"@length": 0.26, 
+"@source": "node6", 
+"@target": "node7"
+}
+}, 
+"node7": {
+"edge10": {
+"@length": 0.89, 
+"@source": "node7", 
+"@target": "node11"
+}, 
+"edge7": {
+"@length": 0.32, 
+"@source": "node7", 
+"@target": "node8"
+}
+}, 
+"node8": {
+"edge8": {
+"@length": 0.57, 
+"@source": "node8", 
+"@target": "node9"
+}, 
+"edge9": {
+"@length": 0.57, 
+"@source": "node8", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu2", 
+"^ot:isTaxonExemplar": true
+}, 
+"node11": {
+"@otu": "otu3", 
+"^ot:isTaxonExemplar": false
+}, 
+"node12": {
+"@otu": "otu4", 
+"^ot:isTaxonExemplar": false
+}, 
+"node13": {
+"@otu": "otu5", 
+"^ot:isTaxonExemplar": false
+}, 
+"node14": {}, 
+"node15": {}, 
+"node16": {}, 
+"node17": {
+"@otu": "otu6", 
+"^ot:isTaxonExemplar": false
+}, 
+"node18": {
+"@otu": "otu7", 
+"^ot:isTaxonExemplar": false
+}, 
+"node19": {
+"@otu": "otu8", 
+"^ot:isTaxonExemplar": false
+}, 
+"node2": {}, 
+"node20": {}, 
+"node21": {}, 
+"node22": {
+"@otu": "otu9", 
+"^ot:isTaxonExemplar": true
+}, 
+"node23": {
+"@otu": "otu10", 
+"^ot:isTaxonExemplar": false
+}, 
+"node24": {}, 
+"node25": {
+"@otu": "otu11", 
+"^ot:isTaxonExemplar": true
+}, 
+"node26": {
+"@otu": "otu12", 
+"^ot:isTaxonExemplar": false
+}, 
+"node27": {
+"@otu": "otu13"
+}, 
+"node28": {}, 
+"node29": {
+"@otu": "otu14", 
+"^ot:isTaxonExemplar": true
+}, 
+"node3": {}, 
+"node30": {
+"@otu": "otu15", 
+"^ot:isTaxonExemplar": false
+}, 
+"node31": {}, 
+"node32": {
+"@otu": "otu16"
+}, 
+"node33": {
+"@otu": "otu17"
+}, 
+"node4": {}, 
+"node5": {}, 
+"node6": {}, 
+"node7": {}, 
+"node8": {}, 
+"node9": {
+"@otu": "otu1", 
+"^ot:isTaxonExemplar": true
+}
+}
+}
+}
+}
+}
+}
+}

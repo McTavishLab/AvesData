@@ -1,0 +1,821 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [
+"--embed", 
+"--agent-only"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-07-29T15:55:32.016Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-29T15:55:32.016Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6667"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 711863, 
+"^ot:focalCladeOTTTaxonName": "Carpodacus", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus2874"
+], 
+"^ot:studyId": "pg_2874", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/zoj.12057"
+}, 
+"^ot:studyPublicationReference": "Tietze, Dieter Thomas, Martin P\u00e4ckert, Jochen Martens, Henriette Lehmann, Yue-Hua Sun. 2013. Complete phylogeny and historical biogeography of true rosefinches (Aves: Carpodacus) . Zoological Journal of the Linnean Society 169 (1): 215-234.", 
+"^ot:studyYear": 2013, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees2874"
+], 
+"otusById": {
+"otus2874": {
+"otuById": {
+"otu427126": {
+"^ot:originalLabel": "Carpodacus thura dubius", 
+"^ot:ottId": 3597376, 
+"^ot:ottTaxonName": "Carpodacus dubius"
+}, 
+"otu427127": {
+"^ot:originalLabel": "Carpodacus thura thura", 
+"^ot:ottId": 157599, 
+"^ot:ottTaxonName": "Carpodacus thura"
+}, 
+"otu427128": {
+"^ot:originalLabel": "Carpodacus trifasciatus", 
+"^ot:ottId": 815421, 
+"^ot:ottTaxonName": "Carpodacus trifasciatus"
+}, 
+"otu427129": {
+"^ot:originalLabel": "Carpodacus roseus", 
+"^ot:ottId": 815419, 
+"^ot:ottTaxonName": "Carpodacus roseus"
+}, 
+"otu427130": {
+"^ot:originalLabel": "Carpodacus puniceus", 
+"^ot:ottId": 473007, 
+"^ot:ottTaxonName": "Carpodacus puniceus"
+}, 
+"otu427131": {
+"^ot:originalLabel": "Pinicola subhimachala", 
+"^ot:ottId": 1031951, 
+"^ot:ottTaxonName": "Pinicola subhimachala"
+}, 
+"otu427132": {
+"^ot:originalLabel": "Uragus sibiricus", 
+"^ot:ottId": 253382, 
+"^ot:ottTaxonName": "Uragus sibiricus"
+}, 
+"otu427133": {
+"^ot:originalLabel": "Carpodacus rubicilla rubicilla", 
+"^ot:ottId": 235455, 
+"^ot:ottTaxonName": "Carpodacus rubicilla"
+}, 
+"otu427134": {
+"^ot:originalLabel": "Carpodacus rubicilla severtzovi", 
+"^ot:ottId": 3597380, 
+"^ot:ottTaxonName": "Carpodacus severtzovi"
+}, 
+"otu427135": {
+"^ot:originalLabel": "Carpodacus rubicilloides", 
+"^ot:ottId": 815422, 
+"^ot:ottTaxonName": "Carpodacus rubicilloides"
+}, 
+"otu427136": {
+"^ot:originalLabel": "Kozlowia roborowskii", 
+"^ot:ottId": 405224, 
+"^ot:ottTaxonName": "Kozlowia roborowskii"
+}, 
+"otu427137": {
+"^ot:originalLabel": "Carpodacus synoicus", 
+"^ot:ottId": 873486, 
+"^ot:ottTaxonName": "Carpodacus synoicus"
+}, 
+"otu427138": {
+"^ot:originalLabel": "Carpodacus synoicus synoicus", 
+"^ot:ottId": 873486, 
+"^ot:ottTaxonName": "Carpodacus synoicus"
+}, 
+"otu427139": {
+"^ot:originalLabel": "Carpodacus vinaceus formosanus", 
+"^ot:ottId": 977524, 
+"^ot:ottTaxonName": "Carpodacus formosanus"
+}, 
+"otu427140": {
+"^ot:originalLabel": "Carpodacus vinaceus vinaceus", 
+"^ot:ottId": 977522, 
+"^ot:ottTaxonName": "Carpodacus vinaceus vinaceus"
+}, 
+"otu427141": {
+"^ot:originalLabel": "Carpodacus rodopeplus rodopeplus", 
+"^ot:ottId": 277039, 
+"^ot:ottTaxonName": "Carpodacus rodopeplus"
+}, 
+"otu427142": {
+"^ot:originalLabel": "Carpodacus rodopeplus verreauxii", 
+"^ot:ottId": 3597378, 
+"^ot:ottTaxonName": "Carpodacus verreauxii"
+}, 
+"otu427143": {
+"^ot:originalLabel": "Carpodacus rodochroa", 
+"^ot:ottId": 747629, 
+"^ot:ottTaxonName": "Carpodacus rodochroa"
+}, 
+"otu427144": {
+"^ot:originalLabel": "Carpodacus edwardsii", 
+"^ot:ottId": 473006, 
+"^ot:ottTaxonName": "Carpodacus edwardsii"
+}, 
+"otu427145": {
+"^ot:originalLabel": "Carpodacus pulcherrimus waltoni"
+}, 
+"otu427146": {
+"^ot:originalLabel": "Carpodacus eos", 
+"^ot:ottId": 3597373, 
+"^ot:ottTaxonName": "Carpodacus eos"
+}, 
+"otu427147": {
+"^ot:originalLabel": "Carpodacus pulcherrimus davidianus", 
+"^ot:ottId": 3597375, 
+"^ot:ottTaxonName": "Carpodacus davidianus"
+}, 
+"otu427148": {
+"^ot:originalLabel": "Carpodacus pulcherrimus pulcherrimus", 
+"^ot:ottId": 563259, 
+"^ot:ottTaxonName": "Carpodacus pulcherrimus"
+}, 
+"otu427149": {
+"^ot:originalLabel": "Carpodacus grandis", 
+"^ot:ottId": 3597377, 
+"^ot:ottTaxonName": "Carpodacus grandis"
+}, 
+"otu427150": {
+"^ot:originalLabel": "Carpodacus rhodochlamys", 
+"^ot:ottId": 405217, 
+"^ot:ottTaxonName": "Carpodacus rhodochlamys"
+}, 
+"otu427151": {
+"^ot:originalLabel": "Chaunoproctus ferreorostris", 
+"^ot:ottId": 242220, 
+"^ot:ottTaxonName": "Chaunoproctus ferreorostris"
+}, 
+"otu427152": {
+"^ot:originalLabel": "Haematospiza sipahi", 
+"^ot:ottId": 341467, 
+"^ot:ottTaxonName": "Haematospiza sipahi"
+}, 
+"otu427153": {
+"^ot:originalLabel": "Carpodacus erythrinus", 
+"^ot:ottId": 815418, 
+"^ot:ottTaxonName": "Carpodacus erythrinus"
+}, 
+"otu427154": {
+"^ot:originalLabel": "Hemignathus virens", 
+"^ot:ottId": 157610, 
+"^ot:ottTaxonName": "Hemignathus virens"
+}, 
+"otu427155": {
+"^ot:originalLabel": "Leucosticte nemoricola", 
+"^ot:ottId": 235457, 
+"^ot:ottTaxonName": "Leucosticte nemoricola"
+}, 
+"otu427156": {
+"^ot:originalLabel": "Carpodacus nipalensis", 
+"^ot:ottId": 815420, 
+"^ot:ottTaxonName": "Carpodacus nipalensis"
+}, 
+"otu427157": {
+"^ot:originalLabel": "Pinicola enucleator", 
+"^ot:ottId": 341471, 
+"^ot:ottTaxonName": "Pinicola enucleator"
+}, 
+"otu427158": {
+"^ot:originalLabel": "Carpodacus cassinii", 
+"^ot:ottId": 664801, 
+"^ot:ottTaxonName": "Carpodacus cassinii"
+}, 
+"otu427159": {
+"^ot:originalLabel": "Fringilla coelebs", 
+"^ot:ottId": 828694, 
+"^ot:ottTaxonName": "Fringilla coelebs"
+}
+}
+}
+}, 
+"treesById": {
+"trees2874": {
+"@otus": "otus2874", 
+"^ot:treeElementOrder": [
+"tree6667"
+], 
+"treeById": {
+"tree6667": {
+"@label": "Fig. 1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1162138", 
+"^ot:nearestTaxonMRCAName": "Fringillidae", 
+"^ot:nearestTaxonMRCAOttId": "839319", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1162135", 
+"^ot:specifiedRoot": "node1162135", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1162135": {
+"edge1162136": {
+"@source": "node1162135", 
+"@target": "node1162136"
+}, 
+"edge1162201": {
+"@source": "node1162135", 
+"@target": "node1162201"
+}
+}, 
+"node1162136": {
+"edge1162137": {
+"@source": "node1162136", 
+"@target": "node1162137"
+}, 
+"edge1162194": {
+"@source": "node1162136", 
+"@target": "node1162194"
+}
+}, 
+"node1162137": {
+"edge1162138": {
+"@source": "node1162137", 
+"@target": "node1162138"
+}, 
+"edge1162193": {
+"@source": "node1162137", 
+"@target": "node1162193"
+}
+}, 
+"node1162138": {
+"edge1162139": {
+"@source": "node1162138", 
+"@target": "node1162139"
+}, 
+"edge1162190": {
+"@source": "node1162138", 
+"@target": "node1162190"
+}
+}, 
+"node1162139": {
+"edge1162140": {
+"@source": "node1162139", 
+"@target": "node1162140"
+}, 
+"edge1162189": {
+"@source": "node1162139", 
+"@target": "node1162189"
+}
+}, 
+"node1162140": {
+"edge1162141": {
+"@source": "node1162140", 
+"@target": "node1162141"
+}, 
+"edge1162166": {
+"@source": "node1162140", 
+"@target": "node1162166"
+}
+}, 
+"node1162141": {
+"edge1162142": {
+"@source": "node1162141", 
+"@target": "node1162142"
+}, 
+"edge1162163": {
+"@source": "node1162141", 
+"@target": "node1162163"
+}
+}, 
+"node1162142": {
+"edge1162143": {
+"@source": "node1162142", 
+"@target": "node1162143"
+}, 
+"edge1162156": {
+"@source": "node1162142", 
+"@target": "node1162156"
+}
+}, 
+"node1162143": {
+"edge1162144": {
+"@source": "node1162143", 
+"@target": "node1162144"
+}, 
+"edge1162155": {
+"@source": "node1162143", 
+"@target": "node1162155"
+}
+}, 
+"node1162144": {
+"edge1162145": {
+"@source": "node1162144", 
+"@target": "node1162145"
+}, 
+"edge1162152": {
+"@source": "node1162144", 
+"@target": "node1162152"
+}
+}, 
+"node1162145": {
+"edge1162146": {
+"@source": "node1162145", 
+"@target": "node1162146"
+}, 
+"edge1162151": {
+"@source": "node1162145", 
+"@target": "node1162151"
+}
+}, 
+"node1162146": {
+"edge1162147": {
+"@source": "node1162146", 
+"@target": "node1162147"
+}, 
+"edge1162150": {
+"@source": "node1162146", 
+"@target": "node1162150"
+}
+}, 
+"node1162147": {
+"edge1162148": {
+"@source": "node1162147", 
+"@target": "node1162148"
+}, 
+"edge1162149": {
+"@source": "node1162147", 
+"@target": "node1162149"
+}
+}, 
+"node1162152": {
+"edge1162153": {
+"@source": "node1162152", 
+"@target": "node1162153"
+}, 
+"edge1162154": {
+"@source": "node1162152", 
+"@target": "node1162154"
+}
+}, 
+"node1162156": {
+"edge1162157": {
+"@source": "node1162156", 
+"@target": "node1162157"
+}, 
+"edge1162162": {
+"@source": "node1162156", 
+"@target": "node1162162"
+}
+}, 
+"node1162157": {
+"edge1162158": {
+"@source": "node1162157", 
+"@target": "node1162158"
+}, 
+"edge1162161": {
+"@source": "node1162157", 
+"@target": "node1162161"
+}
+}, 
+"node1162158": {
+"edge1162159": {
+"@source": "node1162158", 
+"@target": "node1162159"
+}, 
+"edge1162160": {
+"@source": "node1162158", 
+"@target": "node1162160"
+}
+}, 
+"node1162163": {
+"edge1162164": {
+"@source": "node1162163", 
+"@target": "node1162164"
+}, 
+"edge1162165": {
+"@source": "node1162163", 
+"@target": "node1162165"
+}
+}, 
+"node1162166": {
+"edge1162167": {
+"@source": "node1162166", 
+"@target": "node1162167"
+}, 
+"edge1162186": {
+"@source": "node1162166", 
+"@target": "node1162186"
+}
+}, 
+"node1162167": {
+"edge1162168": {
+"@source": "node1162167", 
+"@target": "node1162168"
+}, 
+"edge1162179": {
+"@source": "node1162167", 
+"@target": "node1162179"
+}
+}, 
+"node1162168": {
+"edge1162169": {
+"@source": "node1162168", 
+"@target": "node1162169"
+}, 
+"edge1162178": {
+"@source": "node1162168", 
+"@target": "node1162178"
+}
+}, 
+"node1162169": {
+"edge1162170": {
+"@source": "node1162169", 
+"@target": "node1162170"
+}, 
+"edge1162175": {
+"@source": "node1162169", 
+"@target": "node1162175"
+}
+}, 
+"node1162170": {
+"edge1162171": {
+"@source": "node1162170", 
+"@target": "node1162171"
+}, 
+"edge1162174": {
+"@source": "node1162170", 
+"@target": "node1162174"
+}
+}, 
+"node1162171": {
+"edge1162172": {
+"@source": "node1162171", 
+"@target": "node1162172"
+}, 
+"edge1162173": {
+"@source": "node1162171", 
+"@target": "node1162173"
+}
+}, 
+"node1162175": {
+"edge1162176": {
+"@source": "node1162175", 
+"@target": "node1162176"
+}, 
+"edge1162177": {
+"@source": "node1162175", 
+"@target": "node1162177"
+}
+}, 
+"node1162179": {
+"edge1162180": {
+"@source": "node1162179", 
+"@target": "node1162180"
+}, 
+"edge1162183": {
+"@source": "node1162179", 
+"@target": "node1162183"
+}
+}, 
+"node1162180": {
+"edge1162181": {
+"@source": "node1162180", 
+"@target": "node1162181"
+}, 
+"edge1162182": {
+"@source": "node1162180", 
+"@target": "node1162182"
+}
+}, 
+"node1162183": {
+"edge1162184": {
+"@source": "node1162183", 
+"@target": "node1162184"
+}, 
+"edge1162185": {
+"@source": "node1162183", 
+"@target": "node1162185"
+}
+}, 
+"node1162186": {
+"edge1162187": {
+"@source": "node1162186", 
+"@target": "node1162187"
+}, 
+"edge1162188": {
+"@source": "node1162186", 
+"@target": "node1162188"
+}
+}, 
+"node1162190": {
+"edge1162191": {
+"@source": "node1162190", 
+"@target": "node1162191"
+}, 
+"edge1162192": {
+"@source": "node1162190", 
+"@target": "node1162192"
+}
+}, 
+"node1162194": {
+"edge1162195": {
+"@source": "node1162194", 
+"@target": "node1162195"
+}, 
+"edge1162200": {
+"@source": "node1162194", 
+"@target": "node1162200"
+}
+}, 
+"node1162195": {
+"edge1162196": {
+"@source": "node1162195", 
+"@target": "node1162196"
+}, 
+"edge1162199": {
+"@source": "node1162195", 
+"@target": "node1162199"
+}
+}, 
+"node1162196": {
+"edge1162197": {
+"@source": "node1162196", 
+"@target": "node1162197"
+}, 
+"edge1162198": {
+"@source": "node1162196", 
+"@target": "node1162198"
+}
+}
+}, 
+"nodeById": {
+"node1162135": {
+"@root": true
+}, 
+"node1162136": {}, 
+"node1162137": {}, 
+"node1162138": {}, 
+"node1162139": {}, 
+"node1162140": {}, 
+"node1162141": {}, 
+"node1162142": {}, 
+"node1162143": {}, 
+"node1162144": {}, 
+"node1162145": {}, 
+"node1162146": {}, 
+"node1162147": {}, 
+"node1162148": {
+"@otu": "otu427126"
+}, 
+"node1162149": {
+"@otu": "otu427127"
+}, 
+"node1162150": {
+"@otu": "otu427128"
+}, 
+"node1162151": {
+"@otu": "otu427129"
+}, 
+"node1162152": {}, 
+"node1162153": {
+"@otu": "otu427130"
+}, 
+"node1162154": {
+"@otu": "otu427131"
+}, 
+"node1162155": {
+"@otu": "otu427132"
+}, 
+"node1162156": {}, 
+"node1162157": {}, 
+"node1162158": {}, 
+"node1162159": {
+"@otu": "otu427133"
+}, 
+"node1162160": {
+"@otu": "otu427134"
+}, 
+"node1162161": {
+"@otu": "otu427135"
+}, 
+"node1162162": {
+"@otu": "otu427136"
+}, 
+"node1162163": {}, 
+"node1162164": {
+"@otu": "otu427137", 
+"^ot:isTaxonExemplar": true
+}, 
+"node1162165": {
+"@otu": "otu427138", 
+"^ot:isTaxonExemplar": false
+}, 
+"node1162166": {}, 
+"node1162167": {}, 
+"node1162168": {}, 
+"node1162169": {}, 
+"node1162170": {}, 
+"node1162171": {}, 
+"node1162172": {
+"@otu": "otu427139"
+}, 
+"node1162173": {
+"@otu": "otu427140"
+}, 
+"node1162174": {
+"@otu": "otu427141"
+}, 
+"node1162175": {}, 
+"node1162176": {
+"@otu": "otu427142"
+}, 
+"node1162177": {
+"@otu": "otu427143"
+}, 
+"node1162178": {
+"@otu": "otu427144"
+}, 
+"node1162179": {}, 
+"node1162180": {}, 
+"node1162181": {
+"@otu": "otu427145"
+}, 
+"node1162182": {
+"@otu": "otu427146"
+}, 
+"node1162183": {}, 
+"node1162184": {
+"@otu": "otu427147"
+}, 
+"node1162185": {
+"@otu": "otu427148"
+}, 
+"node1162186": {}, 
+"node1162187": {
+"@otu": "otu427149"
+}, 
+"node1162188": {
+"@otu": "otu427150"
+}, 
+"node1162189": {
+"@otu": "otu427151"
+}, 
+"node1162190": {}, 
+"node1162191": {
+"@otu": "otu427152"
+}, 
+"node1162192": {
+"@otu": "otu427153"
+}, 
+"node1162193": {
+"@otu": "otu427154"
+}, 
+"node1162194": {}, 
+"node1162195": {}, 
+"node1162196": {}, 
+"node1162197": {
+"@otu": "otu427155"
+}, 
+"node1162198": {
+"@otu": "otu427156"
+}, 
+"node1162199": {
+"@otu": "otu427157"
+}, 
+"node1162200": {
+"@otu": "otu427158"
+}, 
+"node1162201": {
+"@otu": "otu427159"
+}
+}
+}
+}
+}
+}
+}
+}
