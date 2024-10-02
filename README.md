@@ -13,11 +13,17 @@ Each taxonomy_year directory contains:
     
                     
 ## Trees:
-This directory contains folders for each synth tree run, labelled by their version identifier (e.g. Aves_1.0)  
-Each tree version directory contains:
+This directory contains folders for each synth tree run, labelled by their version identifier (e.g. Aves_1.0) 
+
+- Aves_1.3 
+
+The most recent tree is Aves_1.3 and that directory contains all of these files. 
+(Older trees folders have most of these files, and have a readme inculded in each folder)
+
 For more details and code for how each of these files were generated see: https://github.com/McTavishLab/AvesTreeCode 
 * dates_citations.txt <-input studies used to estimate dates  
 * tree_citations.txt <- input studies used to estimate tree  
+* all_node_ages.json <- a json file storing the age estimates for each internal node in the phylogeny only tree, with the metadata about what input study suggested that node age.
 * OpenTree_synth <- folder containing the direct outputs of OpenTree Synthesis  
     - full tree  
     - phylo only tree  
@@ -31,7 +37,6 @@ For more details and code for how each of these files were generated see: https:
     - dated_rand_sample_clements.tre <- dated taxon addition tree cloud, 100 topologies from the taxon addition treeset using random selections from the node dates age for each dated node calibration.  
     - dated_mean_sample_clements.tre <- dated taxon addition tree cloud, 100 topologies from the taxon addition treeset using the mean node age for each node calibration. 
     - MCC.tre <- Maximim clade credibility tree including all taxa in this version of the taxonomy summarized from the dated trees using random selections for the node calibrations. Labelled with Clements taxonomy labels.
-            
 
 
 
