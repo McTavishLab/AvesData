@@ -22,9 +22,9 @@ The most recent tree is Aves_1.3 and that directory contains all of these files.
 
 For more details and code for how each of these files were generated see: https://github.com/McTavishLab/AvesTreeCode 
 * dates_citations.txt <-input studies used to estimate dates  
-* tree_citations.txt <- input studies used to estimate tree  
+* tree_citations.txt <- input studies used to estimate the phylogeny tree  
 * all_node_ages.json <- a json file storing the age estimates for each internal node in the phylogeny only tree, with the metadata about what input study suggested that node age.
-* OpenTree_synth <- folder containing the direct outputs of OpenTree Synthesis  
+* OpenTree_synth <- folder containing the direct outputs of OpenTree Synthesis  (this is identical between Aves 1.2 and Aves 1.3) 
     - full tree  
     - phylo only tree  
     - dated tree  
