@@ -40,10 +40,11 @@ Also includes mapping from species in Clements to their Avibase id, and to the n
 ## Trees:
 This directory contains folders for each synth tree run, labelled by their version identifier (e.g. Aves_1.0) 
 
-- Aves_1.3 
 
 The most recent tree is Aves_1.3 and that directory contains all of these files. 
-(Older trees folders have most of these files, and have a readme inculded in each folder)
+(Older trees folders have some but not all of these files, and have a readme inculded in each folder)
+
+**Aves_1.3**
 
 For more details and code for how each of these files were generated see: https://github.com/McTavishLab/AvesTreeCode 
 * dates_citations.txt <-input studies used to estimate dates  
