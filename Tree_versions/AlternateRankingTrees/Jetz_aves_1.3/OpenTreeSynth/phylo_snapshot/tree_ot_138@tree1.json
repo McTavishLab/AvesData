@@ -1,0 +1,610 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-06T02:51:16.773Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-06T02:51:16.773Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}, 
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 363013, 
+"^ot:focalCladeOTTTaxonName": "Ciconiidae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_138", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1006/mpev.1997.0431"
+}, 
+"^ot:studyPublicationReference": "Slikas, Beth. 1997. Phylogeny of the avian family Ciconiidae (storks) based on cytochrome b sequences and DNA\u2013DNA hybridization distances. Molecular Phylogenetics and Evolution 8 (3): 275-300.", 
+"^ot:studyYear": 1997, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Leptoptilos crumenifer", 
+"^ot:ottId": 3596802, 
+"^ot:ottTaxonName": "Leptoptilos crumenifer"
+}, 
+"otu10": {
+"^ot:originalLabel": "Mycteria cinerea", 
+"^ot:ottId": 848606, 
+"^ot:ottTaxonName": "Mycteria cinerea"
+}, 
+"otu11": {
+"^ot:originalLabel": "Mycteria leucocephala", 
+"^ot:ottId": 848605, 
+"^ot:ottTaxonName": "Mycteria leucocephala"
+}, 
+"otu12": {
+"^ot:originalLabel": "Mycteria ibis", 
+"^ot:ottId": 464693, 
+"^ot:ottTaxonName": "Mycteria ibis"
+}, 
+"otu13": {
+"^ot:originalLabel": "Mycteria americana", 
+"^ot:ottId": 464695, 
+"^ot:ottTaxonName": "Mycteria americana"
+}, 
+"otu14": {
+"^ot:originalLabel": "Ephippiorhynchus asiaticus", 
+"^ot:ottId": 848607, 
+"^ot:ottTaxonName": "Ephippiorhynchus asiaticus"
+}, 
+"otu15": {
+"^ot:originalLabel": "Ephippiorhynchus senegalensis", 
+"^ot:ottId": 848594, 
+"^ot:ottTaxonName": "Ephippiorhynchus senegalensis"
+}, 
+"otu16": {
+"^ot:originalLabel": "Jabiru mycteria", 
+"^ot:ottId": 1041424, 
+"^ot:ottTaxonName": "Jabiru mycteria"
+}, 
+"otu17": {
+"^ot:originalLabel": "Cathartes aura", 
+"^ot:ottId": 9106, 
+"^ot:ottTaxonName": "Cathartes aura"
+}, 
+"otu18": {
+"^ot:originalLabel": "Vultur gryphus", 
+"^ot:ottId": 363015, 
+"^ot:ottTaxonName": "Vultur gryphus"
+}, 
+"otu19": {
+"^ot:originalLabel": "Sarcoramphus papa", 
+"^ot:ottId": 819160, 
+"^ot:ottTaxonName": "Sarcoramphus papa"
+}, 
+"otu2": {
+"^ot:originalLabel": "Leptoptilos javanicus", 
+"^ot:ottId": 324163, 
+"^ot:ottTaxonName": "Leptoptilos javanicus"
+}, 
+"otu3": {
+"^ot:originalLabel": "Ciconia episcopus", 
+"^ot:ottId": 324160, 
+"^ot:ottTaxonName": "Ciconia episcopus"
+}, 
+"otu36": {
+"^ot:originalLabel": "Plegadis falcinellus", 
+"^ot:ottId": 848593, 
+"^ot:ottTaxonName": "Plegadis falcinellus"
+}, 
+"otu4": {
+"^ot:originalLabel": "Ciconia stormi", 
+"^ot:ottId": 324162, 
+"^ot:ottTaxonName": "Ciconia stormi"
+}, 
+"otu5": {
+"^ot:originalLabel": "Ciconia abdimii", 
+"^ot:ottId": 563490, 
+"^ot:ottTaxonName": "Ciconia abdimii"
+}, 
+"otu6": {
+"^ot:originalLabel": "Ciconia ciconia", 
+"^ot:ottId": 363031, 
+"^ot:ottTaxonName": "Ciconia ciconia"
+}, 
+"otu7": {
+"^ot:originalLabel": "Ciconia boyciana", 
+"^ot:ottId": 324158, 
+"^ot:ottTaxonName": "Ciconia boyciana"
+}, 
+"otu8": {
+"^ot:originalLabel": "Ciconia maguari", 
+"^ot:ottId": 324161, 
+"^ot:ottTaxonName": "Ciconia maguari"
+}, 
+"otu9": {
+"^ot:originalLabel": "Ciconia nigra", 
+"^ot:ottId": 549527, 
+"^ot:ottTaxonName": "Ciconia nigra"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 6", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node3", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageu916c7540-9d23-4dbf-b0b0-cf360d388647", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 411, 
+"@sourceForTree": "tree1", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u916c7540-9d23-4dbf-b0b0-cf360d388647", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:nearestTaxonMRCAName": "Ciconiidae", 
+"^ot:nearestTaxonMRCAOttId": "363013", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge34": {
+"@source": "node1", 
+"@target": "node35"
+}
+}, 
+"node10": {
+"edge10": {
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge11": {
+"@source": "node10", 
+"@target": "node12"
+}
+}, 
+"node14": {
+"edge14": {
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge19": {
+"@source": "node14", 
+"@target": "node20"
+}
+}, 
+"node15": {
+"edge15": {
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge18": {
+"@source": "node15", 
+"@target": "node19"
+}
+}, 
+"node16": {
+"edge16": {
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge17": {
+"@source": "node16", 
+"@target": "node18"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge33": {
+"@source": "node2", 
+"@target": "node34"
+}
+}, 
+"node21": {
+"edge21": {
+"@source": "node21", 
+"@target": "node22"
+}, 
+"edge28": {
+"@source": "node21", 
+"@target": "node29"
+}
+}, 
+"node22": {
+"edge22": {
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge27": {
+"@source": "node22", 
+"@target": "node28"
+}
+}, 
+"node23": {
+"edge23": {
+"@source": "node23", 
+"@target": "node24"
+}, 
+"edge26": {
+"@source": "node23", 
+"@target": "node27"
+}
+}, 
+"node24": {
+"edge24": {
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge25": {
+"@source": "node24", 
+"@target": "node26"
+}
+}, 
+"node29": {
+"edge29": {
+"@source": "node29", 
+"@target": "node30"
+}, 
+"edge32": {
+"@source": "node29", 
+"@target": "node33"
+}
+}, 
+"node3": {
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge6": {
+"@source": "node3", 
+"@target": "node7"
+}
+}, 
+"node30": {
+"edge30": {
+"@source": "node30", 
+"@target": "node31"
+}, 
+"edge31": {
+"@source": "node30", 
+"@target": "node32"
+}
+}, 
+"node35": {
+"edge35": {
+"@source": "node35", 
+"@target": "node36"
+}, 
+"edge38": {
+"@source": "node35", 
+"@target": "node39"
+}
+}, 
+"node36": {
+"edge36": {
+"@source": "node36", 
+"@target": "node37"
+}, 
+"edge37": {
+"@source": "node36", 
+"@target": "node38"
+}
+}, 
+"node4": {
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge5": {
+"@source": "node4", 
+"@target": "node6"
+}
+}, 
+"node7": {
+"edge20": {
+"@source": "node7", 
+"@target": "node21"
+}, 
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}
+}, 
+"node8": {
+"edge13": {
+"@source": "node8", 
+"@target": "node14"
+}, 
+"edge8": {
+"@source": "node8", 
+"@target": "node9"
+}
+}, 
+"node9": {
+"edge12": {
+"@source": "node9", 
+"@target": "node13"
+}, 
+"edge9": {
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node11": {
+"@otu": "otu3"
+}, 
+"node12": {
+"@otu": "otu4"
+}, 
+"node13": {
+"@otu": "otu5"
+}, 
+"node14": {}, 
+"node15": {}, 
+"node16": {}, 
+"node17": {
+"@otu": "otu6"
+}, 
+"node18": {
+"@otu": "otu7"
+}, 
+"node19": {
+"@otu": "otu8"
+}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu9"
+}, 
+"node21": {}, 
+"node22": {}, 
+"node23": {}, 
+"node24": {}, 
+"node25": {
+"@otu": "otu10"
+}, 
+"node26": {
+"@otu": "otu11"
+}, 
+"node27": {
+"@otu": "otu12"
+}, 
+"node28": {
+"@otu": "otu13"
+}, 
+"node29": {}, 
+"node3": {}, 
+"node30": {}, 
+"node31": {
+"@otu": "otu14"
+}, 
+"node32": {
+"@otu": "otu15"
+}, 
+"node33": {
+"@otu": "otu16"
+}, 
+"node34": {
+"@otu": "otu36"
+}, 
+"node35": {}, 
+"node36": {}, 
+"node37": {
+"@otu": "otu17"
+}, 
+"node38": {
+"@otu": "otu18"
+}, 
+"node39": {
+"@otu": "otu19"
+}, 
+"node4": {}, 
+"node5": {
+"@otu": "otu1"
+}, 
+"node6": {
+"@otu": "otu2"
+}, 
+"node7": {}, 
+"node8": {}, 
+"node9": {}
+}
+}
+}
+}
+}
+}
+}

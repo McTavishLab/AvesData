@@ -1,0 +1,463 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-06T03:00:38.427Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-06T03:00:38.427Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 480157, 
+"^ot:focalCladeOTTTaxonName": "Threskiornithidae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_139", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.4238/2013.july.30.11"
+}, 
+"^ot:studyPublicationReference": "Ramirez, J.L., C.Y. Miyaki, S.N. Del Lama. 2013. Molecular phylogeny of Threskiornithidae (Aves: Pelecaniformes) based on nuclear and mitochondrial DNA. Genetics and Molecular Research 12 (3): 2740-2750.", 
+"^ot:studyYear": 2013, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Platalea alba", 
+"^ot:ottId": 1057477, 
+"^ot:ottTaxonName": "Platalea alba"
+}, 
+"otu10": {
+"^ot:originalLabel": "Eudocimus albus", 
+"^ot:ottId": 425447, 
+"^ot:ottTaxonName": "Eudocimus albus"
+}, 
+"otu11": {
+"^ot:originalLabel": "Eudocimus ruber", 
+"^ot:ottId": 689773, 
+"^ot:ottTaxonName": "Eudocimus ruber"
+}, 
+"otu12": {
+"^ot:originalLabel": "Ardea alba", 
+"^ot:ottId": 625779, 
+"^ot:ottTaxonName": "Ardea alba"
+}, 
+"otu13": {
+"^ot:originalLabel": "Mycteria americana", 
+"^ot:ottId": 464695, 
+"^ot:ottTaxonName": "Mycteria americana"
+}, 
+"otu2": {
+"^ot:originalLabel": "Platalea ajaja", 
+"^ot:ottId": 951123, 
+"^ot:ottTaxonName": "Platalea ajaja"
+}, 
+"otu3": {
+"^ot:originalLabel": "Threskiornis molucca", 
+"^ot:ottId": 293724, 
+"^ot:ottTaxonName": "Threskiornis molucca"
+}, 
+"otu4": {
+"^ot:originalLabel": "Plegadis chihi", 
+"^ot:ottId": 242774, 
+"^ot:ottTaxonName": "Plegadis chihi"
+}, 
+"otu5": {
+"^ot:originalLabel": "Plegadis falcinellus", 
+"^ot:ottId": 848593, 
+"^ot:ottTaxonName": "Plegadis falcinellus"
+}, 
+"otu6": {
+"^ot:originalLabel": "Theristicus caudatus", 
+"^ot:ottId": 575316, 
+"^ot:ottTaxonName": "Theristicus caudatus"
+}, 
+"otu7": {
+"^ot:originalLabel": "Theristicus melanopis", 
+"^ot:ottId": 1073495, 
+"^ot:ottTaxonName": "Theristicus melanopis"
+}, 
+"otu8": {
+"^ot:originalLabel": "Theristicus caerulescens", 
+"^ot:ottId": 979992, 
+"^ot:ottTaxonName": "Theristicus caerulescens"
+}, 
+"otu9": {
+"^ot:originalLabel": "Phimosus infuscatus", 
+"^ot:ottId": 497204, 
+"^ot:ottTaxonName": "Phimosus infuscatus"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 3", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node3", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageu5f1f1240-b13f-4b22-b11f-78f501635c5f", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 262, 
+"@sourceForTree": "tree1", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u5f1f1240-b13f-4b22-b11f-78f501635c5f", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:nearestTaxonMRCAName": "Threskiornithidae", 
+"^ot:nearestTaxonMRCAOttId": "480157", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge24": {
+"@source": "node1", 
+"@target": "node25"
+}
+}, 
+"node10": {
+"edge10": {
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge11": {
+"@source": "node10", 
+"@target": "node12"
+}
+}, 
+"node13": {
+"edge13": {
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge20": {
+"@source": "node13", 
+"@target": "node21"
+}
+}, 
+"node14": {
+"edge14": {
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge19": {
+"@source": "node14", 
+"@target": "node20"
+}
+}, 
+"node15": {
+"edge15": {
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge18": {
+"@source": "node15", 
+"@target": "node19"
+}
+}, 
+"node16": {
+"edge16": {
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge17": {
+"@source": "node16", 
+"@target": "node18"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge23": {
+"@source": "node2", 
+"@target": "node24"
+}
+}, 
+"node21": {
+"edge21": {
+"@source": "node21", 
+"@target": "node22"
+}, 
+"edge22": {
+"@source": "node21", 
+"@target": "node23"
+}
+}, 
+"node3": {
+"edge12": {
+"@source": "node3", 
+"@target": "node13"
+}, 
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node4": {
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge9": {
+"@source": "node4", 
+"@target": "node10"
+}
+}, 
+"node5": {
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}, 
+"edge8": {
+"@source": "node5", 
+"@target": "node9"
+}
+}, 
+"node6": {
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge7": {
+"@source": "node6", 
+"@target": "node8"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node11": {
+"@otu": "otu4"
+}, 
+"node12": {
+"@otu": "otu5"
+}, 
+"node13": {}, 
+"node14": {}, 
+"node15": {}, 
+"node16": {}, 
+"node17": {
+"@otu": "otu6"
+}, 
+"node18": {
+"@otu": "otu7"
+}, 
+"node19": {
+"@otu": "otu8"
+}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu9"
+}, 
+"node21": {}, 
+"node22": {
+"@otu": "otu10"
+}, 
+"node23": {
+"@otu": "otu11"
+}, 
+"node24": {
+"@otu": "otu12"
+}, 
+"node25": {
+"@otu": "otu13"
+}, 
+"node3": {}, 
+"node4": {}, 
+"node5": {}, 
+"node6": {}, 
+"node7": {
+"@otu": "otu1"
+}, 
+"node8": {
+"@otu": "otu2"
+}, 
+"node9": {
+"@otu": "otu3"
+}
+}
+}
+}
+}
+}
+}
+}

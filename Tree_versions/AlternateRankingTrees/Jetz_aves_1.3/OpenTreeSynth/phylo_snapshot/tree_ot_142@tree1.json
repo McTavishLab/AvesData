@@ -1,0 +1,758 @@
+{
+"nexml": {
+"@about": "#study",
+"@generator": "Open Tree API",
+"@id": "study",
+"@nexml2json": "1.2.1",
+"@nexmljson": "http://purl.org/opentree/nexson",
+"@version": "0.9",
+"@xmlns": {
+"$": "http://www.nexml.org/2009",
+"nex": "http://www.nexml.org/2009",
+"ot": "http://purl.org/opentree-terms#",
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+},
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation",
+"@id": "peyotl-validator",
+"@name": "api.opentreeoflife.org/validate",
+"@url": "https://github.com/OpenTreeOfLife/peyotl",
+"@version": "0.0.4a",
+"invocation": {
+"commandLine": [],
+"otherProperty": [
+{
+"name": "pythonVersion",
+"value": "2.7.3"
+},
+{
+"name": "pythonImplementation",
+"value": "CPython"
+}
+]
+}
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
+}
+]
+},
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-06T03:25:35.943Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "Birds"
+},
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2014-08-06T03:25:35.943Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>",
+"@size": 692,
+"@type": "newick",
+"@url": "/curator/default/to_nexson?output=input&uploadid=u95a49d87-bf68-4c98-bfec-87882f3e4d6d",
+"description": {
+"$": "Source data for tree 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2023-08-11T03:26:46.068Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+],
+"^ot:comment": "Thalassarche chrysostoma is not mapping. Suggested synonym of Diomedea chrysostoma is not generally accepted (http://avibase.bsc-eoc.org/species.jsp?lang=EN&avibaseid=0E4475F65B2A8060).",
+"^ot:curatorName": [
+"Joseph W. Brown",
+"James Waterford"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 85277,
+"^ot:focalCladeOTTTaxonName": "Diomedeidae",
+"^ot:otusElementOrder": [
+"otus1"
+],
+"^ot:studyId": "ot_142",
+"^ot:studyPublication": {
+"@href": "http://notornis.osnz.org.nz/phylogenetic-analysis-24-named-albatross-taxa-based-full-mitochondrial-cytochrome-b-dna-sequences"
+},
+"^ot:studyPublicationReference": "Chambers, GK, Moeke, C, Steel, R, Trueman, JWH. 2009. Phylogenetic analysis of the 24 named albatross taxa based on full mitochondrial cytochrome b DNA sequences. Notornis 56 (2): 82-94.",
+"^ot:studyYear": 2009,
+"^ot:tag": [],
+"^ot:treesElementOrder": [
+"trees1"
+],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 54,
+"message": 0,
+"node": 55,
+"otu": 28,
+"otus": 1,
+"tree": 1,
+"trees": 1
+},
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Macronectes giganteus U48941",
+"^ot:ottId": 854608,
+"^ot:ottTaxonName": "Macronectes giganteus"
+},
+"otu10": {
+"^ot:originalLabel": "Thalassarche steadi",
+"^ot:ottId": 320278,
+"^ot:ottTaxonName": "Thalassarche cauta"
+},
+"otu11": {
+"^ot:originalLabel": "Thalassarche bulleri bulleri",
+"^ot:ottId": 592670,
+"^ot:ottTaxonName": "Thalassarche bulleri bulleri"
+},
+"otu12": {
+"^ot:originalLabel": "Thalassarche bulleri platei",
+"^ot:ottId": 1016643,
+"^ot:ottTaxonName": "Thalassarche bulleri platei"
+},
+"otu13": {
+"^ot:originalLabel": "Thalassarche impavida",
+"^ot:ottId": 320271,
+"^ot:ottTaxonName": "Thalassarche melanophrys"
+},
+"otu14": {
+"^ot:originalLabel": "Thalassarche melanophris",
+"^ot:ottId": 320271,
+"^ot:ottTaxonName": "Thalassarche melanophrys"
+},
+"otu15": {
+"^ot:originalLabel": "Thalassarche chrysostoma"
+},
+"otu16": {
+"^ot:originalLabel": "Thalassarche carteri",
+"^ot:ottId": 663145,
+"^ot:ottTaxonName": "Thalassarche chlororhynchos"
+},
+"otu17": {
+"^ot:originalLabel": "Thalassarche chlororhynchos",
+"^ot:ottId": 663145,
+"^ot:ottTaxonName": "Thalassarche chlororhynchos"
+},
+"otu18": {
+"^ot:originalLabel": "Phoebastria albatrus",
+"^ot:ottId": 320284,
+"^ot:ottTaxonName": "Phoebastria albatrus"
+},
+"otu19": {
+"^ot:originalLabel": "Phoebastria irrorata",
+"^ot:ottId": 320282,
+"^ot:ottTaxonName": "Phoebastria irrorata"
+},
+"otu2": {
+"^ot:originalLabel": "Macronectes giganteus AF076060",
+"^ot:ottId": 854608,
+"^ot:ottTaxonName": "Macronectes giganteus"
+},
+"otu20": {
+"^ot:originalLabel": "Phoebastria immutabilis",
+"^ot:ottId": 320286,
+"^ot:ottTaxonName": "Phoebastria immutabilis"
+},
+"otu21": {
+"^ot:originalLabel": "Phoebastria nigripes",
+"^ot:ottId": 320288,
+"^ot:ottTaxonName": "Phoebastria nigripes"
+},
+"otu22": {
+"^ot:originalLabel": "Diomedea amsterdamensis",
+"^ot:ottId": 71459,
+"^ot:ottTaxonName": "Diomedea exulans"
+},
+"otu23": {
+"^ot:originalLabel": "Diomedea exulans",
+"^ot:ottId": 71459,
+"^ot:ottTaxonName": "Diomedea exulans"
+},
+"otu24": {
+"^ot:originalLabel": "Diomedea antipodensis",
+"^ot:ottId": 71459,
+"^ot:ottTaxonName": "Diomedea exulans"
+},
+"otu25": {
+"^ot:originalLabel": "Diomedea gibsoni",
+"^ot:ottId": 71459,
+"^ot:ottTaxonName": "Diomedea exulans"
+},
+"otu26": {
+"^ot:originalLabel": "Diomedea dabbenena",
+"^ot:ottId": 71459,
+"^ot:ottTaxonName": "Diomedea exulans"
+},
+"otu27": {
+"^ot:originalLabel": "Diomedea epomophora",
+"^ot:ottId": 904499,
+"^ot:ottTaxonName": "Diomedea epomophora"
+},
+"otu28": {
+"^ot:originalLabel": "Diomedea sanfordi",
+"^ot:ottId": 3595652,
+"^ot:ottTaxonName": "Diomedea sanfordi"
+},
+"otu3": {
+"^ot:originalLabel": "Procellaria cinerea U48940",
+"^ot:ottId": 592656,
+"^ot:ottTaxonName": "Procellaria cinerea"
+},
+"otu4": {
+"^ot:originalLabel": "Procellaria cinerea AP009191",
+"^ot:ottId": 592656,
+"^ot:ottTaxonName": "Procellaria cinerea"
+},
+"otu5": {
+"^ot:originalLabel": "Phoebetria fusca",
+"^ot:ottId": 592673,
+"^ot:ottTaxonName": "Phoebetria fusca"
+},
+"otu6": {
+"^ot:originalLabel": "Phoebetria palpebrata",
+"^ot:ottId": 592674,
+"^ot:ottTaxonName": "Phoebetria palpebrata"
+},
+"otu7": {
+"^ot:originalLabel": "Thalassarche eremita",
+"^ot:ottId": 134477,
+"^ot:ottTaxonName": "Thalassarche eremita"
+},
+"otu8": {
+"^ot:originalLabel": "Thalassarche salvini",
+"^ot:ottId": 514671,
+"^ot:ottTaxonName": "Thalassarche salvini"
+},
+"otu9": {
+"^ot:originalLabel": "Thalassarche cauta",
+"^ot:ottId": 320278,
+"^ot:ottTaxonName": "Thalassarche cauta"
+}
+}
+}
+},
+"treesById": {
+"trees1": {
+"@otus": "otus1",
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Fig. 1",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "Maximum likelihood ",
+"^ot:inGroupClade": "node9",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1",
+"@target": "node2"
+},
+"edge8": {
+"@source": "node1",
+"@target": "node9"
+}
+},
+"node10": {
+"edge10": {
+"@source": "node10",
+"@target": "node11"
+},
+"edge13": {
+"@source": "node10",
+"@target": "node14"
+}
+},
+"node11": {
+"edge11": {
+"@source": "node11",
+"@target": "node12"
+},
+"edge12": {
+"@source": "node11",
+"@target": "node13"
+}
+},
+"node14": {
+"edge14": {
+"@source": "node14",
+"@target": "node15"
+},
+"edge31": {
+"@source": "node14",
+"@target": "node32"
+}
+},
+"node15": {
+"edge15": {
+"@source": "node15",
+"@target": "node16"
+},
+"edge26": {
+"@source": "node15",
+"@target": "node27"
+}
+},
+"node16": {
+"edge16": {
+"@source": "node16",
+"@target": "node17"
+},
+"edge23": {
+"@source": "node16",
+"@target": "node24"
+}
+},
+"node17": {
+"edge17": {
+"@source": "node17",
+"@target": "node18"
+},
+"edge20": {
+"@source": "node17",
+"@target": "node21"
+}
+},
+"node18": {
+"edge18": {
+"@source": "node18",
+"@target": "node19"
+},
+"edge19": {
+"@source": "node18",
+"@target": "node20"
+}
+},
+"node2": {
+"edge2": {
+"@source": "node2",
+"@target": "node3"
+},
+"edge5": {
+"@source": "node2",
+"@target": "node6"
+}
+},
+"node21": {
+"edge21": {
+"@source": "node21",
+"@target": "node22"
+},
+"edge22": {
+"@source": "node21",
+"@target": "node23"
+}
+},
+"node24": {
+"edge24": {
+"@source": "node24",
+"@target": "node25"
+},
+"edge25": {
+"@source": "node24",
+"@target": "node26"
+}
+},
+"node27": {
+"edge27": {
+"@source": "node27",
+"@target": "node28"
+},
+"edge30": {
+"@source": "node27",
+"@target": "node31"
+}
+},
+"node28": {
+"edge28": {
+"@source": "node28",
+"@target": "node29"
+},
+"edge29": {
+"@source": "node28",
+"@target": "node30"
+}
+},
+"node3": {
+"edge3": {
+"@source": "node3",
+"@target": "node4"
+},
+"edge4": {
+"@source": "node3",
+"@target": "node5"
+}
+},
+"node32": {
+"edge32": {
+"@source": "node32",
+"@target": "node33"
+},
+"edge33": {
+"@source": "node32",
+"@target": "node34"
+}
+},
+"node35": {
+"edge35": {
+"@source": "node35",
+"@target": "node36"
+},
+"edge42": {
+"@source": "node35",
+"@target": "node43"
+}
+},
+"node36": {
+"edge36": {
+"@source": "node36",
+"@target": "node37"
+},
+"edge39": {
+"@source": "node36",
+"@target": "node40"
+}
+},
+"node37": {
+"edge37": {
+"@source": "node37",
+"@target": "node38"
+},
+"edge38": {
+"@source": "node37",
+"@target": "node39"
+}
+},
+"node40": {
+"edge40": {
+"@source": "node40",
+"@target": "node41"
+},
+"edge41": {
+"@source": "node40",
+"@target": "node42"
+}
+},
+"node43": {
+"edge43": {
+"@source": "node43",
+"@target": "node44"
+},
+"edge52": {
+"@source": "node43",
+"@target": "node53"
+}
+},
+"node44": {
+"edge44": {
+"@source": "node44",
+"@target": "node45"
+},
+"edge51": {
+"@source": "node44",
+"@target": "node52"
+}
+},
+"node45": {
+"edge45": {
+"@source": "node45",
+"@target": "node46"
+},
+"edge48": {
+"@source": "node45",
+"@target": "node49"
+}
+},
+"node46": {
+"edge46": {
+"@source": "node46",
+"@target": "node47"
+},
+"edge47": {
+"@source": "node46",
+"@target": "node48"
+}
+},
+"node49": {
+"edge49": {
+"@source": "node49",
+"@target": "node50"
+},
+"edge50": {
+"@source": "node49",
+"@target": "node51"
+}
+},
+"node53": {
+"edge53": {
+"@source": "node53",
+"@target": "node54"
+},
+"edge54": {
+"@source": "node53",
+"@target": "node55"
+}
+},
+"node6": {
+"edge6": {
+"@source": "node6",
+"@target": "node7"
+},
+"edge7": {
+"@source": "node6",
+"@target": "node8"
+}
+},
+"node9": {
+"edge34": {
+"@source": "node9",
+"@target": "node35"
+},
+"edge9": {
+"@source": "node9",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {},
+"node11": {},
+"node12": {
+"@otu": "otu5"
+},
+"node13": {
+"@otu": "otu6"
+},
+"node14": {},
+"node15": {},
+"node16": {},
+"node17": {},
+"node18": {},
+"node19": {
+"@otu": "otu7"
+},
+"node2": {},
+"node20": {
+"@otu": "otu8"
+},
+"node21": {},
+"node22": {
+"@otu": "otu9"
+},
+"node23": {
+"@otu": "otu10"
+},
+"node24": {},
+"node25": {
+"@otu": "otu11"
+},
+"node26": {
+"@otu": "otu12"
+},
+"node27": {},
+"node28": {},
+"node29": {
+"@otu": "otu13"
+},
+"node3": {},
+"node30": {
+"@otu": "otu14"
+},
+"node31": {
+"@otu": "otu15"
+},
+"node32": {},
+"node33": {
+"@otu": "otu16"
+},
+"node34": {
+"@otu": "otu17"
+},
+"node35": {},
+"node36": {},
+"node37": {},
+"node38": {
+"@otu": "otu18"
+},
+"node39": {
+"@otu": "otu19"
+},
+"node4": {
+"@otu": "otu1",
+"^ot:isTaxonExemplar": true
+},
+"node40": {},
+"node41": {
+"@otu": "otu20"
+},
+"node42": {
+"@otu": "otu21"
+},
+"node43": {},
+"node44": {},
+"node45": {},
+"node46": {},
+"node47": {
+"@otu": "otu22"
+},
+"node48": {
+"@otu": "otu23"
+},
+"node49": {},
+"node5": {
+"@otu": "otu2",
+"^ot:isTaxonExemplar": false
+},
+"node50": {
+"@otu": "otu24"
+},
+"node51": {
+"@otu": "otu25"
+},
+"node52": {
+"@otu": "otu26"
+},
+"node53": {},
+"node54": {
+"@otu": "otu27"
+},
+"node55": {
+"@otu": "otu28"
+},
+"node6": {},
+"node7": {
+"@otu": "otu3",
+"^ot:isTaxonExemplar": true
+},
+"node8": {
+"@otu": "otu4",
+"^ot:isTaxonExemplar": false
+},
+"node9": {}
+}
+}
+}
+}
+}
+}
+}

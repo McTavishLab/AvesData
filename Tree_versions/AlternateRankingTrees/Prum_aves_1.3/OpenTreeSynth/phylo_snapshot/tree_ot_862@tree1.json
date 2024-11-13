@@ -1,0 +1,703 @@
+{
+"nexml": {
+"@about": "#study",
+"@generator": "Open Tree API",
+"@id": "study",
+"@nexml2json": "1.2.1",
+"@nexmljson": "http://purl.org/opentree/nexson",
+"@version": "0.9",
+"@xmlns": {
+"$": "http://www.nexml.org/2009",
+"nex": "http://www.nexml.org/2009",
+"ot": "http://purl.org/opentree-terms#",
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+},
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation",
+"@id": "peyotl-validator",
+"@name": "api.opentreeoflife.org/validate",
+"@url": "https://github.com/OpenTreeOfLife/peyotl",
+"@version": "0.0.4a",
+"invocation": {
+"commandLine": [],
+"otherProperty": [
+{
+"name": "pythonVersion",
+"value": "2.7.9"
+},
+{
+"name": "pythonImplementation",
+"value": "CPython"
+}
+]
+}
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
+}
+]
+},
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-10-04T18:31:41.882Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "Birds"
+},
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2016-10-04T18:31:41.882Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre",
+"@size": 563,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.b9c04ee0b05b39b6.5041535445442e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2023-08-11T03:15:32.623Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+],
+"^ot:comment": "",
+"^ot:curatorName": [
+"Joseph W. Brown",
+"James Waterford"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 609781,
+"^ot:focalCladeOTTTaxonName": "Ardeidae",
+"^ot:otusElementOrder": [
+"otus1"
+],
+"^ot:studyId": "ot_862",
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1007/s10336-015-1297-z"
+},
+"^ot:studyPublicationReference": "Zhou, Xiaoping, Chengte Yao, Qingxian Lin, Wenzhen Fang, Xiaolin Chen. 2015. Complete mitochondrial genomes render the Night Heron genus Gorsachius non-monophyletic. Journal of Ornithology 157 (2): 505-513",
+"^ot:studyYear": 2015,
+"^ot:tag": [],
+"^ot:treesElementOrder": [
+"trees1"
+],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 46,
+"message": 0,
+"node": 47,
+"otu": 24,
+"otus": 1,
+"tree": 1,
+"trees": 1
+},
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Ardea cinerea",
+"^ot:ottId": 119222,
+"^ot:ottTaxonName": "Ardea cinerea"
+},
+"otu10": {
+"^ot:originalLabel": "Egretta garzetta",
+"^ot:ottId": 273425,
+"^ot:ottTaxonName": "Egretta garzetta"
+},
+"otu11": {
+"^ot:originalLabel": "Egretta novaehollandiae",
+"^ot:ottId": 1032052,
+"^ot:ottTaxonName": "Ardea novaehollandiae"
+},
+"otu12": {
+"^ot:originalLabel": "Gorsachius magnificus",
+"^ot:ottId": 628056,
+"^ot:ottTaxonName": "Gorsachius magnificus"
+},
+"otu13": {
+"^ot:originalLabel": "Gorsachius goisagi",
+"^ot:ottId": 3596773,
+"^ot:ottTaxonName": "Gorsachius goisagi"
+},
+"otu14": {
+"^ot:originalLabel": "Gorsachius melanolophus",
+"^ot:ottId": 3596771,
+"^ot:ottTaxonName": "Gorsachius melanolophus"
+},
+"otu15": {
+"^ot:originalLabel": "Nycticorax nycticorax",
+"^ot:ottId": 313126,
+"^ot:ottTaxonName": "Nycticorax nycticorax"
+},
+"otu16": {
+"^ot:originalLabel": "Ixobrychus eurhythmus",
+"^ot:ottId": 208441,
+"^ot:ottTaxonName": "Ixobrychus eurhythmus"
+},
+"otu17": {
+"^ot:originalLabel": "Ixobrychus cinnamomeus",
+"^ot:ottId": 105533,
+"^ot:ottTaxonName": "Ixobrychus cinnamomeus"
+},
+"otu18": {
+"^ot:originalLabel": "Ixobrychus flavicollis",
+"^ot:ottId": 928976,
+"^ot:ottTaxonName": "Dupetor flavicollis"
+},
+"otu19": {
+"^ot:originalLabel": "Ixobrychus sinensis",
+"^ot:ottId": 105531,
+"^ot:ottTaxonName": "Ixobrychus sinensis"
+},
+"otu2": {
+"^ot:originalLabel": "Ardea purpurea",
+"^ot:ottId": 273431,
+"^ot:ottTaxonName": "Ardea purpurea"
+},
+"otu20": {
+"^ot:originalLabel": "Botaurus stellaris",
+"^ot:ottId": 273438,
+"^ot:ottTaxonName": "Botaurus stellaris"
+},
+"otu21": {
+"^ot:originalLabel": "Platalea leucorodia",
+"^ot:ottId": 317305,
+"^ot:ottTaxonName": "Platalea leucorodia"
+},
+"otu22": {
+"^ot:originalLabel": "Platalea minor",
+"^ot:ottId": 738327,
+"^ot:ottTaxonName": "Platalea minor"
+},
+"otu23": {
+"^ot:originalLabel": "Threskiornis aethiopicus",
+"^ot:ottId": 413795,
+"^ot:ottTaxonName": "Threskiornis aethiopicus"
+},
+"otu24": {
+"^ot:originalLabel": "Nipponia nippon",
+"^ot:ottId": 946418,
+"^ot:ottTaxonName": "Nipponia nippon"
+},
+"otu3": {
+"^ot:originalLabel": "Ardea intermedia",
+"^ot:ottId": 868637,
+"^ot:ottTaxonName": "Ardea intermedia"
+},
+"otu4": {
+"^ot:originalLabel": "Ardea modesta",
+"^ot:ottId": 625779,
+"^ot:ottTaxonName": "Ardea alba"
+},
+"otu5": {
+"^ot:originalLabel": "Ardea ibis",
+"^ot:ottId": 729476,
+"^ot:ottTaxonName": "Bubulcus ibis"
+},
+"otu6": {
+"^ot:originalLabel": "Ardeola bacchus",
+"^ot:ottId": 273439,
+"^ot:ottTaxonName": "Ardeola bacchus"
+},
+"otu7": {
+"^ot:originalLabel": "Butorides striatus",
+"^ot:ottId": 618202,
+"^ot:ottTaxonName": "Butorides striata"
+},
+"otu8": {
+"^ot:originalLabel": "Egretta eulophotes",
+"^ot:ottId": 981451,
+"^ot:ottTaxonName": "Egretta eulophotes"
+},
+"otu9": {
+"^ot:originalLabel": "Egretta sacra",
+"^ot:ottId": 55044,
+"^ot:ottTaxonName": "Egretta sacra"
+}
+}
+}
+},
+"treesById": {
+"trees1": {
+"@otus": "otus1",
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Fig. 3",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "Bayesian inference ",
+"^ot:inGroupClade": "node2",
+"^ot:nodeLabelDescription": "",
+"^ot:nodeLabelMode": "ot:posteriorSupport",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1",
+"@target": "node2",
+"^ot:posteriorSupport": 1
+},
+"edge40": {
+"@source": "node1",
+"@target": "node41"
+}
+},
+"node11": {
+"edge11": {
+"@source": "node11",
+"@target": "node12"
+},
+"edge12": {
+"@source": "node11",
+"@target": "node13"
+}
+},
+"node15": {
+"edge15": {
+"@source": "node15",
+"@target": "node16"
+},
+"edge16": {
+"@source": "node15",
+"@target": "node17"
+}
+},
+"node18": {
+"edge18": {
+"@source": "node18",
+"@target": "node19",
+"^ot:posteriorSupport": 1
+},
+"edge25": {
+"@source": "node18",
+"@target": "node26"
+}
+},
+"node19": {
+"edge19": {
+"@source": "node19",
+"@target": "node20",
+"^ot:posteriorSupport": 1
+},
+"edge24": {
+"@source": "node19",
+"@target": "node25"
+}
+},
+"node2": {
+"edge2": {
+"@source": "node2",
+"@target": "node3",
+"^ot:posteriorSupport": 1
+},
+"edge31": {
+"@source": "node2",
+"@target": "node32",
+"^ot:posteriorSupport": 1
+}
+},
+"node20": {
+"edge20": {
+"@source": "node20",
+"@target": "node21",
+"^ot:posteriorSupport": 1
+},
+"edge23": {
+"@source": "node20",
+"@target": "node24"
+}
+},
+"node21": {
+"edge21": {
+"@source": "node21",
+"@target": "node22"
+},
+"edge22": {
+"@source": "node21",
+"@target": "node23"
+}
+},
+"node27": {
+"edge27": {
+"@source": "node27",
+"@target": "node28",
+"^ot:posteriorSupport": 1
+},
+"edge30": {
+"@source": "node27",
+"@target": "node31"
+}
+},
+"node28": {
+"edge28": {
+"@source": "node28",
+"@target": "node29"
+},
+"edge29": {
+"@source": "node28",
+"@target": "node30"
+}
+},
+"node3": {
+"edge26": {
+"@source": "node3",
+"@target": "node27",
+"^ot:posteriorSupport": 0.94
+},
+"edge3": {
+"@source": "node3",
+"@target": "node4",
+"^ot:posteriorSupport": 0.94
+}
+},
+"node32": {
+"edge32": {
+"@source": "node32",
+"@target": "node33",
+"^ot:posteriorSupport": 0.87
+},
+"edge39": {
+"@source": "node32",
+"@target": "node40"
+}
+},
+"node33": {
+"edge33": {
+"@source": "node33",
+"@target": "node34",
+"^ot:posteriorSupport": 1
+},
+"edge38": {
+"@source": "node33",
+"@target": "node39"
+}
+},
+"node34": {
+"edge34": {
+"@source": "node34",
+"@target": "node35",
+"^ot:posteriorSupport": 1
+},
+"edge37": {
+"@source": "node34",
+"@target": "node38"
+}
+},
+"node35": {
+"edge35": {
+"@source": "node35",
+"@target": "node36"
+},
+"edge36": {
+"@source": "node35",
+"@target": "node37"
+}
+},
+"node4": {
+"edge17": {
+"@source": "node4",
+"@target": "node18",
+"^ot:posteriorSupport": 1
+},
+"edge4": {
+"@source": "node4",
+"@target": "node5",
+"^ot:posteriorSupport": 1
+}
+},
+"node41": {
+"edge41": {
+"@source": "node41",
+"@target": "node42",
+"^ot:posteriorSupport": 1
+},
+"edge46": {
+"@source": "node41",
+"@target": "node47"
+}
+},
+"node42": {
+"edge42": {
+"@source": "node42",
+"@target": "node43",
+"^ot:posteriorSupport": 1
+},
+"edge45": {
+"@source": "node42",
+"@target": "node46"
+}
+},
+"node43": {
+"edge43": {
+"@source": "node43",
+"@target": "node44"
+},
+"edge44": {
+"@source": "node43",
+"@target": "node45"
+}
+},
+"node5": {
+"edge14": {
+"@source": "node5",
+"@target": "node15",
+"^ot:posteriorSupport": 1
+},
+"edge5": {
+"@source": "node5",
+"@target": "node6",
+"^ot:posteriorSupport": 1
+}
+},
+"node6": {
+"edge13": {
+"@source": "node6",
+"@target": "node14"
+},
+"edge6": {
+"@source": "node6",
+"@target": "node7",
+"^ot:posteriorSupport": 0.99
+}
+},
+"node7": {
+"edge10": {
+"@source": "node7",
+"@target": "node11",
+"^ot:posteriorSupport": 1
+},
+"edge7": {
+"@source": "node7",
+"@target": "node8",
+"^ot:posteriorSupport": 1
+}
+},
+"node8": {
+"edge8": {
+"@source": "node8",
+"@target": "node9"
+},
+"edge9": {
+"@source": "node8",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {
+"@otu": "otu2"
+},
+"node11": {},
+"node12": {
+"@otu": "otu3"
+},
+"node13": {
+"@otu": "otu4"
+},
+"node14": {
+"@otu": "otu5"
+},
+"node15": {},
+"node16": {
+"@otu": "otu6"
+},
+"node17": {
+"@otu": "otu7"
+},
+"node18": {},
+"node19": {},
+"node2": {},
+"node20": {},
+"node21": {},
+"node22": {
+"@otu": "otu8"
+},
+"node23": {
+"@otu": "otu9"
+},
+"node24": {
+"@otu": "otu10"
+},
+"node25": {
+"@otu": "otu11"
+},
+"node26": {
+"@otu": "otu12"
+},
+"node27": {},
+"node28": {},
+"node29": {
+"@otu": "otu13"
+},
+"node3": {},
+"node30": {
+"@otu": "otu14"
+},
+"node31": {
+"@otu": "otu15"
+},
+"node32": {},
+"node33": {},
+"node34": {},
+"node35": {},
+"node36": {
+"@otu": "otu16"
+},
+"node37": {
+"@otu": "otu17"
+},
+"node38": {
+"@otu": "otu18"
+},
+"node39": {
+"@otu": "otu19"
+},
+"node4": {},
+"node40": {
+"@otu": "otu20"
+},
+"node41": {},
+"node42": {},
+"node43": {},
+"node44": {
+"@otu": "otu21"
+},
+"node45": {
+"@otu": "otu22"
+},
+"node46": {
+"@otu": "otu23"
+},
+"node47": {
+"@otu": "otu24"
+},
+"node5": {},
+"node6": {},
+"node7": {},
+"node8": {},
+"node9": {
+"@otu": "otu1"
+}
+}
+}
+}
+}
+}
+}
+}

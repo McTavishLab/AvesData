@@ -1,0 +1,539 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-07T04:10:35.755Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-07T04:10:35.755Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 1020136, 
+"^ot:focalCladeOTTTaxonName": "Colaptes", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_158", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2010.09.011"
+}, 
+"^ot:studyPublicationReference": "Moore, William S., Lowell C. Overton, Kathleen J. Miglia. 2011. Mitochondrial DNA based phylogeny of the woodpecker genera Colaptes and Piculus, and implications for the history of woodpecker diversification in South America. Molecular Phylogenetics and Evolution 58 (1): 76-84.", 
+"^ot:studyYear": 2011, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Colaptes rubiginosus MEX", 
+"^ot:ottId": 3600178, 
+"^ot:ottTaxonName": "Colaptes rubiginosus"
+}, 
+"otu10": {
+"^ot:originalLabel": "Colaptes rupicola", 
+"^ot:ottId": 1020134, 
+"^ot:ottTaxonName": "Colaptes rupicola"
+}, 
+"otu11": {
+"^ot:originalLabel": "Colaptes auratus", 
+"^ot:ottId": 733990, 
+"^ot:ottTaxonName": "Colaptes auratus"
+}, 
+"otu12": {
+"^ot:originalLabel": "Colaptes fernandinae", 
+"^ot:ottId": 838427, 
+"^ot:ottTaxonName": "Colaptes fernandinae"
+}, 
+"otu13": {
+"^ot:originalLabel": "Piculus leucolalemus", 
+"^ot:ottId": 3600208, 
+"^ot:ottTaxonName": "Piculus leucolalemus"
+}, 
+"otu14": {
+"^ot:originalLabel": "Piculus flavigula", 
+"^ot:ottId": 876872, 
+"^ot:ottTaxonName": "Piculus flavigula"
+}, 
+"otu15": {
+"^ot:originalLabel": "Piculus chrysochloros", 
+"^ot:ottId": 149826, 
+"^ot:ottTaxonName": "Piculus chrysochloros"
+}, 
+"otu16": {
+"^ot:originalLabel": "Celeus elegans", 
+"^ot:ottId": 724183, 
+"^ot:ottTaxonName": "Celeus elegans"
+}, 
+"otu17": {
+"^ot:originalLabel": "Celeus flavus", 
+"^ot:ottId": 524497, 
+"^ot:ottTaxonName": "Celeus flavus"
+}, 
+"otu2": {
+"^ot:originalLabel": "Colaptes auricularis", 
+"^ot:ottId": 3600179, 
+"^ot:ottTaxonName": "Colaptes auricularis"
+}, 
+"otu3": {
+"^ot:originalLabel": "Colaptes atricollis", 
+"^ot:ottId": 290736, 
+"^ot:ottTaxonName": "Colaptes atricollis"
+}, 
+"otu4": {
+"^ot:originalLabel": "Colaptes rubiginosus PERU", 
+"^ot:ottId": 3600178, 
+"^ot:ottTaxonName": "Colaptes rubiginosus"
+}, 
+"otu5": {
+"^ot:originalLabel": "Colaptes punctigula", 
+"^ot:ottId": 923815, 
+"^ot:ottTaxonName": "Colaptes punctigula"
+}, 
+"otu6": {
+"^ot:originalLabel": "Colaptes campestris", 
+"^ot:ottId": 994349, 
+"^ot:ottTaxonName": "Colaptes campestris"
+}, 
+"otu7": {
+"^ot:originalLabel": "Colaptes rivolii", 
+"^ot:ottId": 3600177, 
+"^ot:ottTaxonName": "Colaptes rivolii"
+}, 
+"otu8": {
+"^ot:originalLabel": "Colaptes melanochloros", 
+"^ot:ottId": 499950, 
+"^ot:ottTaxonName": "Colaptes melanochloros"
+}, 
+"otu9": {
+"^ot:originalLabel": "Colaptes pitius", 
+"^ot:ottId": 994333, 
+"^ot:ottTaxonName": "Colaptes pitius"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node3", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageu825ad056-03a9-4888-9c4b-38b14018d6b6", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 366, 
+"@sourceForTree": "tree1", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u825ad056-03a9-4888-9c4b-38b14018d6b6", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:nearestTaxonMRCAName": "Colaptes", 
+"^ot:nearestTaxonMRCAOttId": "1020136", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge30": {
+"@source": "node1", 
+"@target": "node31"
+}
+}, 
+"node11": {
+"edge11": {
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge12": {
+"@source": "node11", 
+"@target": "node13"
+}
+}, 
+"node14": {
+"edge14": {
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge15": {
+"@source": "node14", 
+"@target": "node16"
+}
+}, 
+"node17": {
+"edge17": {
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge20": {
+"@source": "node17", 
+"@target": "node21"
+}
+}, 
+"node18": {
+"edge18": {
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge19": {
+"@source": "node18", 
+"@target": "node20"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge25": {
+"@source": "node2", 
+"@target": "node26"
+}
+}, 
+"node21": {
+"edge21": {
+"@source": "node21", 
+"@target": "node22"
+}, 
+"edge22": {
+"@source": "node21", 
+"@target": "node23"
+}
+}, 
+"node26": {
+"edge26": {
+"@source": "node26", 
+"@target": "node27"
+}, 
+"edge29": {
+"@source": "node26", 
+"@target": "node30"
+}
+}, 
+"node27": {
+"edge27": {
+"@source": "node27", 
+"@target": "node28"
+}, 
+"edge28": {
+"@source": "node27", 
+"@target": "node29"
+}
+}, 
+"node3": {
+"edge24": {
+"@source": "node3", 
+"@target": "node25"
+}, 
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node31": {
+"edge31": {
+"@source": "node31", 
+"@target": "node32"
+}, 
+"edge32": {
+"@source": "node31", 
+"@target": "node33"
+}
+}, 
+"node4": {
+"edge23": {
+"@source": "node4", 
+"@target": "node24"
+}, 
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node5": {
+"edge16": {
+"@source": "node5", 
+"@target": "node17"
+}, 
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node6": {
+"edge13": {
+"@source": "node6", 
+"@target": "node14"
+}, 
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}
+}, 
+"node7": {
+"edge10": {
+"@source": "node7", 
+"@target": "node11"
+}, 
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}
+}, 
+"node8": {
+"edge8": {
+"@source": "node8", 
+"@target": "node9"
+}, 
+"edge9": {
+"@source": "node8", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu2"
+}, 
+"node11": {}, 
+"node12": {
+"@otu": "otu3"
+}, 
+"node13": {
+"@otu": "otu4"
+}, 
+"node14": {}, 
+"node15": {
+"@otu": "otu5"
+}, 
+"node16": {
+"@otu": "otu6"
+}, 
+"node17": {}, 
+"node18": {}, 
+"node19": {
+"@otu": "otu7"
+}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu8"
+}, 
+"node21": {}, 
+"node22": {
+"@otu": "otu9"
+}, 
+"node23": {
+"@otu": "otu10"
+}, 
+"node24": {
+"@otu": "otu11"
+}, 
+"node25": {
+"@otu": "otu12"
+}, 
+"node26": {}, 
+"node27": {}, 
+"node28": {
+"@otu": "otu13"
+}, 
+"node29": {
+"@otu": "otu14"
+}, 
+"node3": {}, 
+"node30": {
+"@otu": "otu15"
+}, 
+"node31": {}, 
+"node32": {
+"@otu": "otu16"
+}, 
+"node33": {
+"@otu": "otu17"
+}, 
+"node4": {}, 
+"node5": {}, 
+"node6": {}, 
+"node7": {}, 
+"node8": {}, 
+"node9": {
+"@otu": "otu1"
+}
+}
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,384 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.9"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-09-27T15:00:15.392Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-09-27T15:00:15.392Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre", 
+"@size": 187, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.84a1a2401bcf9e76.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}, 
+{
+"@filename": "PASTED.tre", 
+"@size": 207, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.b140a180fb76e186.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree2'"
+}, 
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree2"
+], 
+"^ot:comment": "tree from Davis 2014.", 
+"^ot:curatorName": [
+"ningwang83", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 838239, 
+"^ot:focalCladeOTTTaxonName": "Pterodroma", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_820", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.1474-919x.2007.00794.x"
+}, 
+"^ot:studyPublicationReference": "Zino, Francis, Ruth Brown, Manuel Biscoito. 2008. The separation of Pterodroma madeira (Zino's Petrel) from Pterodroma feae (Fea's Petrel) (Aves: Procellariidae). Ibis 150 (2): 326-334", 
+"^ot:studyYear": 2008, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Pterodroma mollis", 
+"^ot:ottId": 271030, 
+"^ot:ottTaxonName": "Pterodroma mollis"
+}, 
+"otu10": {
+"^ot:originalLabel": "Pterodroma mollis molllis", 
+"^ot:ottId": 271030, 
+"^ot:ottTaxonName": "Pterodroma mollis"
+}, 
+"otu2": {
+"^ot:originalLabel": "Pterodroma hasitata", 
+"^ot:ottId": 271036, 
+"^ot:ottTaxonName": "Pterodroma hasitata"
+}, 
+"otu3": {
+"^ot:originalLabel": "Pterodroma cahow", 
+"^ot:ottId": 845408, 
+"^ot:ottTaxonName": "Pterodroma cahow"
+}, 
+"otu4": {
+"^ot:originalLabel": "Pterodroma madeira", 
+"^ot:ottId": 713614, 
+"^ot:ottTaxonName": "Pterodroma madeira"
+}, 
+"otu5": {
+"^ot:originalLabel": "Pterodroma feae", 
+"^ot:ottId": 950182, 
+"^ot:ottTaxonName": "Pterodroma feae"
+}, 
+"otu6": {
+"^ot:originalLabel": "Pterodroma magentae", 
+"^ot:ottId": 271029, 
+"^ot:ottTaxonName": "Pterodroma magentae"
+}, 
+"otu7": {
+"^ot:originalLabel": "Pterodroma incerta", 
+"^ot:ottId": 271033, 
+"^ot:ottTaxonName": "Pterodroma incerta"
+}, 
+"otu8": {
+"^ot:originalLabel": "Pterodroma macroptera", 
+"^ot:ottId": 271032, 
+"^ot:ottTaxonName": "Pterodroma macroptera"
+}, 
+"otu9": {
+"^ot:originalLabel": "Pterodroma lessonii", 
+"^ot:ottId": 271034, 
+"^ot:ottTaxonName": "Pterodroma lessonii"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree2"
+], 
+"treeById": {
+"tree2": {
+"@label": "Fig. 4", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "node18", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node18", 
+"^ot:specifiedRoot": "node18", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node18": {
+"edge17": {
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge18": {
+"@source": "node18", 
+"@target": "node20"
+}
+}, 
+"node20": {
+"edge19": {
+"@source": "node20", 
+"@target": "node21", 
+"^ot:bootstrapValues": 96
+}, 
+"edge26": {
+"@source": "node20", 
+"@target": "node28", 
+"^ot:bootstrapValues": 97
+}
+}, 
+"node21": {
+"edge20": {
+"@source": "node21", 
+"@target": "node22"
+}, 
+"edge21": {
+"@source": "node21", 
+"@target": "node23", 
+"^ot:bootstrapValues": 57
+}
+}, 
+"node23": {
+"edge22": {
+"@source": "node23", 
+"@target": "node24"
+}, 
+"edge23": {
+"@source": "node23", 
+"@target": "node25", 
+"^ot:bootstrapValues": 52
+}
+}, 
+"node25": {
+"edge24": {
+"@source": "node25", 
+"@target": "node26"
+}, 
+"edge25": {
+"@source": "node25", 
+"@target": "node27"
+}
+}, 
+"node28": {
+"edge27": {
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge28": {
+"@source": "node28", 
+"@target": "node30", 
+"^ot:bootstrapValues": 72
+}
+}, 
+"node30": {
+"edge29": {
+"@source": "node30", 
+"@target": "node31"
+}, 
+"edge30": {
+"@source": "node30", 
+"@target": "node32", 
+"^ot:bootstrapValues": 78
+}
+}, 
+"node32": {
+"edge31": {
+"@source": "node32", 
+"@target": "node33"
+}, 
+"edge32": {
+"@source": "node32", 
+"@target": "node34"
+}
+}
+}, 
+"nodeById": {
+"node18": {
+"@root": true
+}, 
+"node19": {
+"@otu": "otu10"
+}, 
+"node20": {}, 
+"node21": {}, 
+"node22": {
+"@otu": "otu2"
+}, 
+"node23": {}, 
+"node24": {
+"@otu": "otu3"
+}, 
+"node25": {}, 
+"node26": {
+"@otu": "otu4"
+}, 
+"node27": {
+"@otu": "otu5"
+}, 
+"node28": {}, 
+"node29": {
+"@otu": "otu6"
+}, 
+"node30": {}, 
+"node31": {
+"@otu": "otu7"
+}, 
+"node32": {}, 
+"node33": {
+"@otu": "otu8"
+}, 
+"node34": {
+"@otu": "otu9"
+}
+}
+}
+}
+}
+}
+}
+}

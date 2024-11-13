@@ -1,0 +1,653 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-03T02:58:22.332Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-03T02:58:22.332Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 539141, 
+"^ot:focalCladeOTTTaxonName": "Musophagidae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_129", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.2989/ostrich.2009.80.1.1.759"
+}, 
+"^ot:studyPublicationReference": "Njabo, Kevin Y, Michael D Sorenson. 2009. Origin of Bannerman's Turaco Tauraco bannermani in relation to historical climate change and the distribution of West African montane forests. Ostrich 80 (1): 1-7.", 
+"^ot:studyYear": 2009, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Corythaixoides personata", 
+"^ot:ottId": 198673, 
+"^ot:ottTaxonName": "Corythaixoides personata"
+}, 
+"otu10": {
+"^ot:originalLabel": "Tauraco macrorhynchus", 
+"^ot:ottId": 772727, 
+"^ot:ottTaxonName": "Tauraco macrorhynchus"
+}, 
+"otu11": {
+"^ot:originalLabel": "Tauraco erythrolophus", 
+"^ot:ottId": 487306, 
+"^ot:ottTaxonName": "Tauraco erythrolophus"
+}, 
+"otu12": {
+"^ot:originalLabel": "Tauraco leucolophus", 
+"^ot:ottId": 772747, 
+"^ot:ottTaxonName": "Tauraco leucolophus"
+}, 
+"otu13": {
+"^ot:originalLabel": "Tauraco bannermani", 
+"^ot:ottId": 331533, 
+"^ot:ottTaxonName": "Tauraco bannermani"
+}, 
+"otu14": {
+"^ot:originalLabel": "Tauraco hartlaubi", 
+"^ot:ottId": 539134, 
+"^ot:ottTaxonName": "Tauraco hartlaubi"
+}, 
+"otu15": {
+"^ot:originalLabel": "Tauraco schalowi", 
+"^ot:ottId": 772729, 
+"^ot:ottTaxonName": "Tauraco schalowi"
+}, 
+"otu16": {
+"^ot:originalLabel": "Tauraco schuetti", 
+"^ot:ottId": 487308, 
+"^ot:ottTaxonName": "Tauraco schuetti"
+}, 
+"otu17": {
+"^ot:originalLabel": "Tauraco persa zenkeri", 
+"^ot:ottId": 487313, 
+"^ot:ottTaxonName": "Tauraco persa zenkeri"
+}, 
+"otu18": {
+"^ot:originalLabel": "Tauraco persa buffoni", 
+"^ot:ottId": 487311, 
+"^ot:ottTaxonName": "Tauraco persa buffoni"
+}, 
+"otu19": {
+"^ot:originalLabel": "Tauraco fischeri", 
+"^ot:ottId": 772745, 
+"^ot:ottTaxonName": "Tauraco fischeri"
+}, 
+"otu2": {
+"^ot:originalLabel": "Corythaixoides concolor", 
+"^ot:ottId": 842342, 
+"^ot:ottTaxonName": "Corythaixoides concolor"
+}, 
+"otu20": {
+"^ot:originalLabel": "Tauraco livingstoni", 
+"^ot:ottId": 3600772, 
+"^ot:ottTaxonName": "Tauraco livingstoni"
+}, 
+"otu21": {
+"^ot:originalLabel": "Tauraco corythaix", 
+"^ot:ottId": 772743, 
+"^ot:ottTaxonName": "Tauraco corythaix"
+}, 
+"otu22": {
+"^ot:originalLabel": "Tauraco leucotis", 
+"^ot:ottId": 772749, 
+"^ot:ottTaxonName": "Tauraco leucotis"
+}, 
+"otu23": {
+"^ot:originalLabel": "Corythaeola cristata", 
+"^ot:ottId": 842345, 
+"^ot:ottTaxonName": "Corythaeola cristata"
+}, 
+"otu3": {
+"^ot:originalLabel": "Crinifer piscator", 
+"^ot:ottId": 198692, 
+"^ot:ottTaxonName": "Crinifer piscator"
+}, 
+"otu4": {
+"^ot:originalLabel": "Crinifer zonurus", 
+"^ot:ottId": 198690, 
+"^ot:ottTaxonName": "Crinifer zonurus"
+}, 
+"otu5": {
+"^ot:originalLabel": "Criniferoides leucogaster", 
+"^ot:ottId": 1013325, 
+"^ot:ottTaxonName": "Criniferoides leucogaster"
+}, 
+"otu6": {
+"^ot:originalLabel": "Gallirex porphyreolophus", 
+"^ot:ottId": 772738, 
+"^ot:ottTaxonName": "Gallirex porphyreolophus"
+}, 
+"otu7": {
+"^ot:originalLabel": "Ruwenzorornis johnstoni", 
+"^ot:ottId": 1013340, 
+"^ot:ottTaxonName": "Ruwenzorornis johnstoni"
+}, 
+"otu8": {
+"^ot:originalLabel": "Musophaga rossae", 
+"^ot:ottId": 772741, 
+"^ot:ottTaxonName": "Musophaga rossae"
+}, 
+"otu9": {
+"^ot:originalLabel": "Musophaga violacea", 
+"^ot:ottId": 650221, 
+"^ot:ottTaxonName": "Musophaga violacea"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageu0f424a34-18b4-429e-bc6a-2c5b6baab98f", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 511, 
+"@sourceForTree": "tree1", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u0f424a34-18b4-429e-bc6a-2c5b6baab98f", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:nearestTaxonMRCAName": "Musophagidae", 
+"^ot:nearestTaxonMRCAOttId": "539141", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge10": {
+"@source": "node1", 
+"@target": "node11"
+}
+}, 
+"node11": {
+"edge11": {
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge44": {
+"@source": "node11", 
+"@target": "node45"
+}
+}, 
+"node12": {
+"edge12": {
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge15": {
+"@source": "node12", 
+"@target": "node16"
+}
+}, 
+"node13": {
+"edge13": {
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge14": {
+"@source": "node13", 
+"@target": "node15"
+}
+}, 
+"node16": {
+"edge16": {
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge43": {
+"@source": "node16", 
+"@target": "node44"
+}
+}, 
+"node17": {
+"edge17": {
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge22": {
+"@source": "node17", 
+"@target": "node23"
+}
+}, 
+"node18": {
+"edge18": {
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge21": {
+"@source": "node18", 
+"@target": "node22"
+}
+}, 
+"node19": {
+"edge19": {
+"@source": "node19", 
+"@target": "node20"
+}, 
+"edge20": {
+"@source": "node19", 
+"@target": "node21"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge9": {
+"@source": "node2", 
+"@target": "node10"
+}
+}, 
+"node23": {
+"edge23": {
+"@source": "node23", 
+"@target": "node24"
+}, 
+"edge28": {
+"@source": "node23", 
+"@target": "node29"
+}
+}, 
+"node24": {
+"edge24": {
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge27": {
+"@source": "node24", 
+"@target": "node28"
+}
+}, 
+"node25": {
+"edge25": {
+"@source": "node25", 
+"@target": "node26"
+}, 
+"edge26": {
+"@source": "node25", 
+"@target": "node27"
+}
+}, 
+"node29": {
+"edge29": {
+"@source": "node29", 
+"@target": "node30"
+}, 
+"edge42": {
+"@source": "node29", 
+"@target": "node43"
+}
+}, 
+"node3": {
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge6": {
+"@source": "node3", 
+"@target": "node7"
+}
+}, 
+"node30": {
+"edge30": {
+"@source": "node30", 
+"@target": "node31"
+}, 
+"edge35": {
+"@source": "node30", 
+"@target": "node36"
+}
+}, 
+"node31": {
+"edge31": {
+"@source": "node31", 
+"@target": "node32"
+}, 
+"edge34": {
+"@source": "node31", 
+"@target": "node35"
+}
+}, 
+"node32": {
+"edge32": {
+"@source": "node32", 
+"@target": "node33"
+}, 
+"edge33": {
+"@source": "node32", 
+"@target": "node34"
+}
+}, 
+"node36": {
+"edge36": {
+"@source": "node36", 
+"@target": "node37"
+}, 
+"edge39": {
+"@source": "node36", 
+"@target": "node40"
+}
+}, 
+"node37": {
+"edge37": {
+"@source": "node37", 
+"@target": "node38"
+}, 
+"edge38": {
+"@source": "node37", 
+"@target": "node39"
+}
+}, 
+"node4": {
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge5": {
+"@source": "node4", 
+"@target": "node6"
+}
+}, 
+"node40": {
+"edge40": {
+"@source": "node40", 
+"@target": "node41"
+}, 
+"edge41": {
+"@source": "node40", 
+"@target": "node42"
+}
+}, 
+"node7": {
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@source": "node7", 
+"@target": "node9"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu5"
+}, 
+"node11": {}, 
+"node12": {}, 
+"node13": {}, 
+"node14": {
+"@otu": "otu6"
+}, 
+"node15": {
+"@otu": "otu7"
+}, 
+"node16": {}, 
+"node17": {}, 
+"node18": {}, 
+"node19": {}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu8"
+}, 
+"node21": {
+"@otu": "otu9"
+}, 
+"node22": {
+"@otu": "otu10"
+}, 
+"node23": {}, 
+"node24": {}, 
+"node25": {}, 
+"node26": {
+"@otu": "otu11"
+}, 
+"node27": {
+"@otu": "otu12"
+}, 
+"node28": {
+"@otu": "otu13"
+}, 
+"node29": {}, 
+"node3": {}, 
+"node30": {}, 
+"node31": {}, 
+"node32": {}, 
+"node33": {
+"@otu": "otu14"
+}, 
+"node34": {
+"@otu": "otu15"
+}, 
+"node35": {
+"@otu": "otu16"
+}, 
+"node36": {}, 
+"node37": {}, 
+"node38": {
+"@otu": "otu17"
+}, 
+"node39": {
+"@otu": "otu18"
+}, 
+"node4": {}, 
+"node40": {}, 
+"node41": {
+"@otu": "otu19"
+}, 
+"node42": {
+"@otu": "otu20"
+}, 
+"node43": {
+"@otu": "otu21"
+}, 
+"node44": {
+"@otu": "otu22"
+}, 
+"node45": {
+"@otu": "otu23"
+}, 
+"node5": {
+"@otu": "otu1"
+}, 
+"node6": {
+"@otu": "otu2"
+}, 
+"node7": {}, 
+"node8": {
+"@otu": "otu3"
+}, 
+"node9": {
+"@otu": "otu4"
+}
+}
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,805 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-06T05:12:52.526Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-06T05:12:52.526Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 539129, 
+"^ot:focalCladeOTTTaxonName": "Trogonidae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_147", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.1420-9101.2008.01679.x"
+}, 
+"^ot:studyPublicationReference": "Ornelas, J. F., C. Gonzalez, and A. Espinosa De Los Monteros. 2009. Uncorrelated evolution between vocal and plumage coloration traits in the trogons: a comparative study. Journal of Evolutionary Biology 22 (3): 471-484.", 
+"^ot:studyYear": 2009, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Trogon melanocephalus", 
+"^ot:ottId": 236084, 
+"^ot:ottTaxonName": "Trogon melanocephalus"
+}, 
+"otu10": {
+"^ot:originalLabel": "Trogon aurantiventris", 
+"^ot:ottId": 3600779, 
+"^ot:ottTaxonName": "Trogon aurantiventris"
+}, 
+"otu11": {
+"^ot:originalLabel": "Trogon collaris", 
+"^ot:ottId": 917904, 
+"^ot:ottTaxonName": "Trogon collaris"
+}, 
+"otu12": {
+"^ot:originalLabel": "Trogon personatus", 
+"^ot:ottId": 284302, 
+"^ot:ottTaxonName": "Trogon personatus"
+}, 
+"otu13": {
+"^ot:originalLabel": "Trogon mexicanus", 
+"^ot:ottId": 917900, 
+"^ot:ottTaxonName": "Trogon mexicanus"
+}, 
+"otu14": {
+"^ot:originalLabel": "Trogon elegans", 
+"^ot:ottId": 917899, 
+"^ot:ottTaxonName": "Trogon elegans"
+}, 
+"otu15": {
+"^ot:originalLabel": "Trogon rufus", 
+"^ot:ottId": 917901, 
+"^ot:ottTaxonName": "Trogon rufus"
+}, 
+"otu16": {
+"^ot:originalLabel": "Priotelus roseigaster", 
+"^ot:ottId": 452902, 
+"^ot:ottTaxonName": "Priotelus roseigaster"
+}, 
+"otu17": {
+"^ot:originalLabel": "Priotelus temnurus", 
+"^ot:ottId": 412121, 
+"^ot:ottTaxonName": "Priotelus temnurus"
+}, 
+"otu18": {
+"^ot:originalLabel": "Pharomachrus pavoninus", 
+"^ot:ottId": 917903, 
+"^ot:ottTaxonName": "Pharomachrus pavoninus"
+}, 
+"otu19": {
+"^ot:originalLabel": "Pharomachrus auriceps", 
+"^ot:ottId": 917902, 
+"^ot:ottTaxonName": "Pharomachrus auriceps"
+}, 
+"otu2": {
+"^ot:originalLabel": "Trogon citreolus", 
+"^ot:ottId": 196945, 
+"^ot:ottTaxonName": "Trogon citreolus"
+}, 
+"otu20": {
+"^ot:originalLabel": "Pharomachrus antisianus", 
+"^ot:ottId": 412119, 
+"^ot:ottTaxonName": "Pharomachrus antisianus"
+}, 
+"otu21": {
+"^ot:originalLabel": "Pharomachrus mocinno", 
+"^ot:ottId": 832746, 
+"^ot:ottTaxonName": "Pharomachrus mocinno"
+}, 
+"otu22": {
+"^ot:originalLabel": "Euptilotis neoxenus", 
+"^ot:ottId": 462555, 
+"^ot:ottTaxonName": "Euptilotis neoxenus"
+}, 
+"otu23": {
+"^ot:originalLabel": "Harpactes erythrocephalus", 
+"^ot:ottId": 452900, 
+"^ot:ottTaxonName": "Harpactes erythrocephalus"
+}, 
+"otu24": {
+"^ot:originalLabel": "Harpactes diardii", 
+"^ot:ottId": 392091, 
+"^ot:ottTaxonName": "Harpactes diardii"
+}, 
+"otu25": {
+"^ot:originalLabel": "Harpactes ardens", 
+"^ot:ottId": 392094, 
+"^ot:ottTaxonName": "Harpactes ardens"
+}, 
+"otu26": {
+"^ot:originalLabel": "Harpactes oreskios", 
+"^ot:ottId": 462543, 
+"^ot:ottTaxonName": "Harpactes oreskios"
+}, 
+"otu27": {
+"^ot:originalLabel": "Harpactes duvaucelii", 
+"^ot:ottId": 452894, 
+"^ot:ottTaxonName": "Harpactes duvaucelii"
+}, 
+"otu28": {
+"^ot:originalLabel": "Harpactes orrhophaeus", 
+"^ot:ottId": 452898, 
+"^ot:ottTaxonName": "Harpactes orrhophaeus"
+}, 
+"otu29": {
+"^ot:originalLabel": "Apaloderma narina", 
+"^ot:ottId": 392077, 
+"^ot:ottTaxonName": "Apaloderma narina"
+}, 
+"otu3": {
+"^ot:originalLabel": "Trogon viridis", 
+"^ot:ottId": 917894, 
+"^ot:ottTaxonName": "Trogon viridis"
+}, 
+"otu30": {
+"^ot:originalLabel": "Apaloderma vittatum", 
+"^ot:ottId": 291857, 
+"^ot:ottTaxonName": "Apaloderma vittatum"
+}, 
+"otu31": {
+"^ot:originalLabel": "Coliidae", 
+"^ot:ottId": 815971, 
+"^ot:ottTaxonName": "Coliidae"
+}, 
+"otu4": {
+"^ot:originalLabel": "Trogon violaceus", 
+"^ot:ottId": 917893, 
+"^ot:ottTaxonName": "Trogon violaceus"
+}, 
+"otu5": {
+"^ot:originalLabel": "Trogon curucui", 
+"^ot:ottId": 917898, 
+"^ot:ottTaxonName": "Trogon curucui"
+}, 
+"otu6": {
+"^ot:originalLabel": "Trogon surrucura", 
+"^ot:ottId": 452892, 
+"^ot:ottTaxonName": "Trogon surrucura"
+}, 
+"otu7": {
+"^ot:originalLabel": "Trogon massena", 
+"^ot:ottId": 452890, 
+"^ot:ottTaxonName": "Trogon massena"
+}, 
+"otu8": {
+"^ot:originalLabel": "Trogon melanurus", 
+"^ot:ottId": 1065612, 
+"^ot:ottTaxonName": "Trogon melanurus"
+}, 
+"otu9": {
+"^ot:originalLabel": "Trogon comptus", 
+"^ot:ottId": 917905, 
+"^ot:ottTaxonName": "Trogon comptus"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 3", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node2", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageu0b196d5e-e433-4ac3-ba95-980ba1a6aea5", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 632, 
+"@sourceForTree": "tree1", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u0b196d5e-e433-4ac3-ba95-980ba1a6aea5", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:nearestTaxonMRCAName": "Trogonidae", 
+"^ot:nearestTaxonMRCAOttId": "539129", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge60": {
+"@source": "node1", 
+"@target": "node61"
+}
+}, 
+"node10": {
+"edge10": {
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge11": {
+"@source": "node10", 
+"@target": "node12"
+}
+}, 
+"node14": {
+"edge14": {
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge17": {
+"@source": "node14", 
+"@target": "node18"
+}
+}, 
+"node15": {
+"edge15": {
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge16": {
+"@source": "node15", 
+"@target": "node17"
+}
+}, 
+"node19": {
+"edge19": {
+"@source": "node19", 
+"@target": "node20"
+}, 
+"edge22": {
+"@source": "node19", 
+"@target": "node23"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge57": {
+"@source": "node2", 
+"@target": "node58"
+}
+}, 
+"node20": {
+"edge20": {
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge21": {
+"@source": "node20", 
+"@target": "node22"
+}
+}, 
+"node24": {
+"edge24": {
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge33": {
+"@source": "node24", 
+"@target": "node34"
+}
+}, 
+"node25": {
+"edge25": {
+"@source": "node25", 
+"@target": "node26"
+}, 
+"edge32": {
+"@source": "node25", 
+"@target": "node33"
+}
+}, 
+"node26": {
+"edge26": {
+"@source": "node26", 
+"@target": "node27"
+}, 
+"edge31": {
+"@source": "node26", 
+"@target": "node32"
+}
+}, 
+"node27": {
+"edge27": {
+"@source": "node27", 
+"@target": "node28"
+}, 
+"edge30": {
+"@source": "node27", 
+"@target": "node31"
+}
+}, 
+"node28": {
+"edge28": {
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge29": {
+"@source": "node28", 
+"@target": "node30"
+}
+}, 
+"node3": {
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge46": {
+"@source": "node3", 
+"@target": "node47"
+}
+}, 
+"node35": {
+"edge35": {
+"@source": "node35", 
+"@target": "node36"
+}, 
+"edge36": {
+"@source": "node35", 
+"@target": "node37"
+}
+}, 
+"node38": {
+"edge38": {
+"@source": "node38", 
+"@target": "node39"
+}, 
+"edge45": {
+"@source": "node38", 
+"@target": "node46"
+}
+}, 
+"node39": {
+"edge39": {
+"@source": "node39", 
+"@target": "node40"
+}, 
+"edge44": {
+"@source": "node39", 
+"@target": "node45"
+}
+}, 
+"node4": {
+"edge37": {
+"@source": "node4", 
+"@target": "node38"
+}, 
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node40": {
+"edge40": {
+"@source": "node40", 
+"@target": "node41"
+}, 
+"edge43": {
+"@source": "node40", 
+"@target": "node44"
+}
+}, 
+"node41": {
+"edge41": {
+"@source": "node41", 
+"@target": "node42"
+}, 
+"edge42": {
+"@source": "node41", 
+"@target": "node43"
+}
+}, 
+"node47": {
+"edge47": {
+"@source": "node47", 
+"@target": "node48"
+}, 
+"edge54": {
+"@source": "node47", 
+"@target": "node55"
+}
+}, 
+"node48": {
+"edge48": {
+"@source": "node48", 
+"@target": "node49"
+}, 
+"edge53": {
+"@source": "node48", 
+"@target": "node54"
+}
+}, 
+"node49": {
+"edge49": {
+"@source": "node49", 
+"@target": "node50"
+}, 
+"edge52": {
+"@source": "node49", 
+"@target": "node53"
+}
+}, 
+"node5": {
+"edge34": {
+"@source": "node5", 
+"@target": "node35"
+}, 
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node50": {
+"edge50": {
+"@source": "node50", 
+"@target": "node51"
+}, 
+"edge51": {
+"@source": "node50", 
+"@target": "node52"
+}
+}, 
+"node55": {
+"edge55": {
+"@source": "node55", 
+"@target": "node56"
+}, 
+"edge56": {
+"@source": "node55", 
+"@target": "node57"
+}
+}, 
+"node58": {
+"edge58": {
+"@source": "node58", 
+"@target": "node59"
+}, 
+"edge59": {
+"@source": "node58", 
+"@target": "node60"
+}
+}, 
+"node6": {
+"edge23": {
+"@source": "node6", 
+"@target": "node24"
+}, 
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}
+}, 
+"node7": {
+"edge18": {
+"@source": "node7", 
+"@target": "node19"
+}, 
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}
+}, 
+"node8": {
+"edge13": {
+"@source": "node8", 
+"@target": "node14"
+}, 
+"edge8": {
+"@source": "node8", 
+"@target": "node9"
+}
+}, 
+"node9": {
+"edge12": {
+"@source": "node9", 
+"@target": "node13"
+}, 
+"edge9": {
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node11": {
+"@otu": "otu1"
+}, 
+"node12": {
+"@otu": "otu2"
+}, 
+"node13": {
+"@otu": "otu3"
+}, 
+"node14": {}, 
+"node15": {}, 
+"node16": {
+"@otu": "otu4"
+}, 
+"node17": {
+"@otu": "otu5"
+}, 
+"node18": {
+"@otu": "otu6"
+}, 
+"node19": {}, 
+"node2": {}, 
+"node20": {}, 
+"node21": {
+"@otu": "otu7"
+}, 
+"node22": {
+"@otu": "otu8"
+}, 
+"node23": {
+"@otu": "otu9"
+}, 
+"node24": {}, 
+"node25": {}, 
+"node26": {}, 
+"node27": {}, 
+"node28": {}, 
+"node29": {
+"@otu": "otu10"
+}, 
+"node3": {}, 
+"node30": {
+"@otu": "otu11"
+}, 
+"node31": {
+"@otu": "otu12"
+}, 
+"node32": {
+"@otu": "otu13"
+}, 
+"node33": {
+"@otu": "otu14"
+}, 
+"node34": {
+"@otu": "otu15"
+}, 
+"node35": {}, 
+"node36": {
+"@otu": "otu16"
+}, 
+"node37": {
+"@otu": "otu17"
+}, 
+"node38": {}, 
+"node39": {}, 
+"node4": {}, 
+"node40": {}, 
+"node41": {}, 
+"node42": {
+"@otu": "otu18"
+}, 
+"node43": {
+"@otu": "otu19"
+}, 
+"node44": {
+"@otu": "otu20"
+}, 
+"node45": {
+"@otu": "otu21"
+}, 
+"node46": {
+"@otu": "otu22"
+}, 
+"node47": {}, 
+"node48": {}, 
+"node49": {}, 
+"node5": {}, 
+"node50": {}, 
+"node51": {
+"@otu": "otu23"
+}, 
+"node52": {
+"@otu": "otu24"
+}, 
+"node53": {
+"@otu": "otu25"
+}, 
+"node54": {
+"@otu": "otu26"
+}, 
+"node55": {}, 
+"node56": {
+"@otu": "otu27"
+}, 
+"node57": {
+"@otu": "otu28"
+}, 
+"node58": {}, 
+"node59": {
+"@otu": "otu29"
+}, 
+"node6": {}, 
+"node60": {
+"@otu": "otu30"
+}, 
+"node61": {
+"@otu": "otu31"
+}, 
+"node7": {}, 
+"node8": {}, 
+"node9": {}
+}
+}
+}
+}
+}
+}
+}

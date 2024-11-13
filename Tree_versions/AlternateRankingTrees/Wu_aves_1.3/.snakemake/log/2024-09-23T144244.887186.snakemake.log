@@ -1,0 +1,102 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+config            1              1              1
+otc_config        1              1              1
+total             2              1              1
+
+Select jobs to execute...
+
+[Mon Sep 23 14:42:44 2024]
+rule config:
+    output: config
+    log: logs/config
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Mon Sep 23 14:42:44 2024]
+rule otc_config:
+    output: otc-config
+    log: logs/config
+    jobid: 1
+    resources: tmpdir=/tmp
+
+[Mon Sep 23 14:42:45 2024]
+Finished job 0.
+1 of 2 steps (50%) done
+[Mon Sep 23 14:42:45 2024]
+Finished job 1.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2024-09-23T144244.887186.snakemake.log
+Executing subworkflow s01_snapshot.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count    min threads    max threads
+----------------  -------  -------------  -------------
+collections_pull        1              1              1
+phylesystem_pull        1              1              1
+total                   2              1              1
+
+Select jobs to execute...
+
+[Mon Sep 23 14:42:45 2024]
+rule phylesystem_pull:
+    input: config
+    output: phylo_snapshot/ps_shard_shas.txt
+    log: logs/phylesystem_pull
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Mon Sep 23 14:42:45 2024]
+rule collections_pull:
+    input: config
+    output: phylo_snapshot/collections_shard_shas.txt
+    log: logs/collections_pull
+    jobid: 1
+    resources: tmpdir=/tmp
+
+[Mon Sep 23 14:42:45 2024]
+Finished job 1.
+1 of 2 steps (50%) done
+[Mon Sep 23 14:42:45 2024]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2024-09-23T144245.169835.snakemake.log
+Subworkflow s02_clean_ott: Nothing to be done (all requested files are present and up to date).
+Subworkflow s03_clean_phylo: Nothing to be done (all requested files are present and up to date).
+Subworkflow s04_modify_taxonomy: Nothing to be done (all requested files are present and up to date).
+Subworkflow s05_exemplify: Nothing to be done (all requested files are present and up to date).
+Subworkflow s06_subproblems: Nothing to be done (all requested files are present and up to date).
+Subworkflow s07_subproblems_deg_dist: Nothing to be done (all requested files are present and up to date).
+Subworkflow s08_graft: Nothing to be done (all requested files are present and up to date).
+Subworkflow s09_unprune_taxa: Nothing to be done (all requested files are present and up to date).
+Subworkflow s10_finish: Nothing to be done (all requested files are present and up to date).
+Executing main workflow.
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count    min threads    max threads
+------------------  -------  -------------  -------------
+prechecksum_inputs        1              1              1
+total                     1              1              1
+
+Select jobs to execute...
+
+[Mon Sep 23 14:42:45 2024]
+localrule prechecksum_inputs:
+    input: /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves-2_81461_tmpz5k3wyw7/config, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves-2_81461_tmpz5k3wyw7/otc-config, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves-2_81461_tmpz5k3wyw7/phylo_snapshot/ps_shard_shas.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves-2_81461_tmpz5k3wyw7/phylo_snapshot/collections_shard_shas.txt
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Mon Sep 23 14:42:45 2024]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2024-09-23T144245.169835.snakemake.log

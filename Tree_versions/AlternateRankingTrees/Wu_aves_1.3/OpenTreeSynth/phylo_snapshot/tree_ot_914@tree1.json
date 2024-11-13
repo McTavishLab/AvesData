@@ -1,0 +1,383 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.9"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-10-19T15:18:16.034Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-19T15:18:16.034Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre", 
+"@size": 249, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.ab4831f414513f99.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "tree from Davis 2014. ", 
+"^ot:curatorName": [
+"ningwang83"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 800679, 
+"^ot:focalCladeOTTTaxonName": "Acrocephalus (genus in Opisthokonta)", 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_914", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.1474-919x.2008.00800.x"
+}, 
+"^ot:studyPublicationReference": "ALICE CIBOIS, JEAN-CLAUDE THIBAULT, ERIC PASQUET, 2008, 'Systematics of the extinct reed warblers Acrocephalus of the Society Islands of eastern Polynesia', Ibis, vol. 150, no. 2, pp. 365-376", 
+"^ot:studyYear": 2008, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Acrocephalus arundinaceus", 
+"^ot:ottId": 800677, 
+"^ot:ottTaxonName": "Acrocephalus arundinaceus"
+}, 
+"otu10": {
+"^ot:originalLabel": "Acrocephalus rimitarea", 
+"^ot:ottId": 3598131, 
+"^ot:ottTaxonName": "Acrocephalus rimatarae"
+}, 
+"otu2": {
+"^ot:originalLabel": "Acrocephalus orientalis", 
+"^ot:ottId": 1010421, 
+"^ot:ottTaxonName": "Acrocephalus orientalis"
+}, 
+"otu3": {
+"^ot:originalLabel": "Acrocephalus aequinoctialis", 
+"^ot:ottId": 481196, 
+"^ot:ottTaxonName": "Acrocephalus aequinoctialis"
+}, 
+"otu4": {
+"^ot:originalLabel": "Acrocephalus australis", 
+"^ot:ottId": 1010420, 
+"^ot:ottTaxonName": "Acrocephalus australis"
+}, 
+"otu5": {
+"^ot:originalLabel": "Acrocephalus mendanae", 
+"^ot:ottId": 481198, 
+"^ot:ottTaxonName": "Acrocephalus mendanae"
+}, 
+"otu6": {
+"^ot:originalLabel": "Acrocephalus caffer", 
+"^ot:ottId": 481197, 
+"^ot:ottTaxonName": "Acrocephalus caffer"
+}, 
+"otu7": {
+"^ot:originalLabel": "Acrocephalus atyphus", 
+"^ot:ottId": 481199, 
+"^ot:ottTaxonName": "Acrocephalus atyphus"
+}, 
+"otu8": {
+"^ot:originalLabel": "Acrocephalus taiti", 
+"^ot:ottId": 956610, 
+"^ot:ottTaxonName": "Acrocephalus taiti"
+}, 
+"otu9": {
+"^ot:originalLabel": "Acrocephalus kerearako", 
+"^ot:ottId": 956608, 
+"^ot:ottTaxonName": "Acrocephalus kerearako"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Untitled (tree1)", 
+"@xsi:type": "nex:IntTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node5", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge2": {
+"@source": "node1", 
+"@target": "node3"
+}
+}, 
+"node11": {
+"edge11": {
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge16": {
+"@source": "node11", 
+"@target": "node17"
+}
+}, 
+"node12": {
+"edge12": {
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge13": {
+"@source": "node12", 
+"@target": "node14"
+}
+}, 
+"node14": {
+"edge14": {
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge15": {
+"@source": "node14", 
+"@target": "node16"
+}
+}, 
+"node17": {
+"edge17": {
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge18": {
+"@source": "node17", 
+"@target": "node19"
+}
+}, 
+"node3": {
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge4": {
+"@source": "node3", 
+"@target": "node5"
+}
+}, 
+"node5": {
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}, 
+"edge8": {
+"@source": "node5", 
+"@target": "node9"
+}
+}, 
+"node6": {
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge7": {
+"@source": "node6", 
+"@target": "node8"
+}
+}, 
+"node9": {
+"edge10": {
+"@source": "node9", 
+"@target": "node11"
+}, 
+"edge9": {
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu5"
+}, 
+"node11": {}, 
+"node12": {}, 
+"node13": {
+"@otu": "otu6"
+}, 
+"node14": {}, 
+"node15": {
+"@otu": "otu7"
+}, 
+"node16": {
+"@otu": "otu8"
+}, 
+"node17": {}, 
+"node18": {
+"@otu": "otu9"
+}, 
+"node19": {
+"@otu": "otu10"
+}, 
+"node2": {
+"@otu": "otu1"
+}, 
+"node3": {}, 
+"node4": {
+"@otu": "otu2"
+}, 
+"node5": {}, 
+"node6": {}, 
+"node7": {
+"@otu": "otu3"
+}, 
+"node8": {
+"@otu": "otu4"
+}, 
+"node9": {}
+}, 
+"rootedge": [
+{
+"@id": "enode1", 
+"@length": "0", 
+"@target": "node1"
+}
+]
+}
+}
+}
+}
+}
+}
