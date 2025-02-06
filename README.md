@@ -60,7 +60,7 @@ For more details and code for how each of these files were generated see: https:
     - dated_rand_sample_clements.tre <- dated taxon addition tree cloud, 100 topologies from the taxon addition treeset using random selections from the node dates age for each dated node calibration. First line is a header line containing the text "trees", followed by one newick tree per line.
     - dated_mean_sample_clements.tre <- dated taxon addition tree cloud, 100 topologies from the taxon addition treeset using the mean node age for each node calibration. 
     First line is a header line containing the text "trees", followed by one newick tree per line.
-    - MCC_clements.tre <- Maximim clade credibility tree including all taxa in this version of the taxonomy summarized from the dated trees using random selections for the node calibrations. Labelled with Clements taxonomy labels.
+    - summary_dated_clements.nex <- Maximum clade credibility tree including all taxa in this version of the taxonomy summarized from the dated trees using random selections for the node calibrations. Labelled with Clements taxonomy labels. (was accidentally posted in some years as MCC_clements.tre, so that file is identical)
 
 
 
