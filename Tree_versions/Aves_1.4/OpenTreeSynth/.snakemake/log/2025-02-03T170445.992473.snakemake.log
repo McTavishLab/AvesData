@@ -1,0 +1,323 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                               count    min threads    max threads
+------------------------------  -------  -------------  -------------
+full_deg_dist                         1              1              1
+full_labelled_tree                    1              1              1
+ott_for_regraft                       1              1              1
+pruned_tax_dd                         1              1              1
+relabel_full_tree                     1              1              1
+remove_monotypic                      1              1              1
+simplify_full_tree_labels             1              1              1
+simplify_sans_monotypic_labels        1              1              1
+total                                 8              1              1
+
+Select jobs to execute...
+
+[Mon Feb  3 17:04:46 2025]
+rule ott_for_regraft:
+    input: bumped_ott/forwards.tsv, bumped_ott/synonyms.tsv, bumped_ott/taxonomy.tsv, bumped_ott/version.txt, exemplified_phylo/taxonomy.tre, config
+    output: exemplified_phylo/regraft_cleaned_ott.tre, exemplified_phylo/pruned_for_regraft_cleaned_ott.json
+    jobid: 2
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:46 2025]
+rule pruned_tax_dd:
+    input: exemplified_phylo/taxonomy.tre
+    output: exemplified_phylo/pruned_taxonomy_degree_distribution.txt
+    jobid: 5
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:46 2025]
+Finished job 5.
+1 of 8 steps (12%) done
+[Mon Feb  3 17:04:46 2025]
+Finished job 2.
+2 of 8 steps (25%) done
+Select jobs to execute...
+
+[Mon Feb  3 17:04:46 2025]
+rule full_labelled_tree:
+    input: config, otc-config, grafted_solution/grafted_solution.tre, exemplified_phylo/regraft_cleaned_ott.tre, exemplified_phylo/incertae_sedis.txt
+    output: labelled_supertree/labelled_supertree.tre, labelled_supertree/broken_taxa.json, labelled_supertree/input_output_stats.json
+    jobid: 1
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:46 2025]
+Finished job 1.
+3 of 8 steps (38%) done
+Select jobs to execute...
+
+[Mon Feb  3 17:04:46 2025]
+rule remove_monotypic:
+    input: bumped_ott/forwards.tsv, bumped_ott/synonyms.tsv, bumped_ott/taxonomy.tsv, bumped_ott/version.txt, labelled_supertree/labelled_supertree.tre
+    output: labelled_supertree/labelled_supertree_ottnames_without_monotypic.tre
+    jobid: 3
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:46 2025]
+rule full_deg_dist:
+    input: labelled_supertree/labelled_supertree.tre
+    output: labelled_supertree/labelled_supertree_out_degree_distribution.txt
+    jobid: 7
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:46 2025]
+rule relabel_full_tree:
+    input: bumped_ott/forwards.tsv, bumped_ott/synonyms.tsv, bumped_ott/taxonomy.tsv, bumped_ott/version.txt, labelled_supertree/labelled_supertree.tre
+    output: labelled_supertree/labelled_supertree_ottnames.tre
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:47 2025]
+Finished job 7.
+4 of 8 steps (50%) done
+[Mon Feb  3 17:04:47 2025]
+Finished job 3.
+5 of 8 steps (62%) done
+Select jobs to execute...
+
+[Mon Feb  3 17:04:47 2025]
+rule simplify_sans_monotypic_labels:
+    input: labelled_supertree/labelled_supertree_ottnames_without_monotypic.tre
+    output: labelled_supertree/labelled_supertree_simplified_ottnames_without_monotypic.tre, labelled_supertree/simplified_ottnames_without_monotypic.log
+    jobid: 6
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:47 2025]
+Finished job 0.
+6 of 8 steps (75%) done
+Select jobs to execute...
+
+[Mon Feb  3 17:04:47 2025]
+rule simplify_full_tree_labels:
+    input: labelled_supertree/labelled_supertree_ottnames.tre
+    output: labelled_supertree/labelled_supertree_simplified_ottnames.tre, labelled_supertree/simplified_ottnames.log
+    jobid: 4
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:47 2025]
+Finished job 6.
+7 of 8 steps (88%) done
+[Mon Feb  3 17:04:47 2025]
+Finished job 4.
+8 of 8 steps (100%) done
+Complete log: .snakemake/log/2025-02-03T170445.992473.snakemake.log
+Executing subworkflow s10_finish.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                            count    min threads    max threads
+---------------------------  -------  -------------  -------------
+annotate                           1              1              1
+annotate_1                         1              1              1
+annotate_2                         1              1              1
+assess                             1              1              1
+assess_lost_taxa                   1              1              1
+calc_tips_for_ott_internals        1              1              1
+combine_ott_logs                   1              1              1
+create_indented_tip_count          1              1              1
+format_subpr_size_as_table         1              1              1
+html                               1              1              1
+normalize_tree_names               1              1              1
+summarize_subpr_size               1              1              1
+supertree_deg_dist                 1              1              1
+tax_deg_dist                       1              1              1
+templates                          1              1              1
+total                             15              1              1
+
+Select jobs to execute...
+
+[Mon Feb  3 17:04:47 2025]
+rule normalize_tree_names:
+    input: exemplified_phylo/nonempty_trees.txt
+    output: exemplified_phylo/nonempty_normalized_names_trees.txt
+    jobid: 5
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:47 2025]
+rule tax_deg_dist:
+    input: exemplified_phylo/regraft_cleaned_ott.tre
+    output: assessments/taxonomy_degree_distribution.txt
+    jobid: 7
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:47 2025]
+rule assess_lost_taxa:
+    input: exemplified_phylo/regraft_cleaned_ott.tre, labelled_supertree/labelled_supertree.tre
+    output: assessments/lost_taxa.txt
+    jobid: 9
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:47 2025]
+rule templates:
+    output: logs/templates/annotated_supertree_index.pt, logs/templates/assessments_index.pt, logs/templates/bumped_ott_index.pt, logs/templates/cleaned_ott_index.pt, logs/templates/cleaned_phylo_index.pt, logs/templates/exemplified_phylo_index.pt, logs/templates/grafted_solution_index.pt, logs/templates/head.pt, logs/templates/labelled_supertree_index.pt, logs/templates/phylo_input_index.pt, logs/templates/phylo_snapshot_index.pt, logs/templates/reversed_subproblems_index.pt, logs/templates/reversed_subproblem_solutions_index.pt, logs/templates/subott_dir_index.pt, logs/templates/subproblems_index.pt, logs/templates/subproblem_solutions_index.pt, logs/templates/top_index.pt
+    jobid: 1
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:47 2025]
+rule supertree_deg_dist:
+    input: labelled_supertree/labelled_supertree.tre
+    output: assessments/supertree_degree_distribution.txt
+    jobid: 8
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:47 2025]
+rule combine_ott_logs:
+    input: cleaned_ott/cleaned_ott_1.json, cleaned_ott/cleaned_ott_pruned_nonflagged.json
+    output: cleaned_ott/cleaned_ott.json
+    jobid: 10
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:47 2025]
+rule create_indented_tip_count:
+    input: labelled_supertree/labelled_supertree_simplified_ottnames.tre
+    output: labelled_supertree/labelled-tree-tip-count-indented-table.txt
+    jobid: 12
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:47 2025]
+Finished job 7.
+1 of 15 steps (7%) done
+[Mon Feb  3 17:04:48 2025]
+Finished job 1.
+2 of 15 steps (13%) done
+[Mon Feb  3 17:04:48 2025]
+Finished job 10.
+3 of 15 steps (20%) done
+[Mon Feb  3 17:04:48 2025]
+Finished job 5.
+4 of 15 steps (27%) done
+Select jobs to execute...
+
+[Mon Feb  3 17:04:48 2025]
+rule annotate_1:
+    input: exemplified_phylo/nonempty_normalized_names_trees.txt, subproblems/dumped_subproblem_ids.txt, labelled_supertree/labelled_supertree.tre
+    output: annotated_supertree/annotations1.json
+    jobid: 4
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:48 2025]
+Finished job 8.
+5 of 15 steps (33%) done
+[Mon Feb  3 17:04:48 2025]
+Finished job 12.
+6 of 15 steps (40%) done
+Select jobs to execute...
+
+[Mon Feb  3 17:04:48 2025]
+rule calc_tips_for_ott_internals:
+    input: labelled_supertree/labelled-tree-tip-count-indented-table.txt
+    output: labelled_supertree/num_tips_for_ott_internals_in_labelled_tree.json
+    jobid: 11
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:48 2025]
+Finished job 9.
+7 of 15 steps (47%) done
+[Mon Feb  3 17:04:48 2025]
+Finished job 11.
+8 of 15 steps (53%) done
+[Mon Feb  3 17:04:49 2025]
+Finished job 4.
+9 of 15 steps (60%) done
+Select jobs to execute...
+
+[Mon Feb  3 17:04:49 2025]
+rule annotate_2:
+    input: exemplified_phylo/pruned_taxonomy_degree_distribution.txt, annotated_supertree/annotations1.json
+    output: annotated_supertree/annotations2.json
+    jobid: 6
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:54 2025]
+Finished job 6.
+10 of 15 steps (67%) done
+Select jobs to execute...
+
+[Mon Feb  3 17:04:54 2025]
+rule annotate:
+    input: annotated_supertree/annotations1.json, annotated_supertree/annotations2.json
+    output: annotated_supertree/annotations.json
+    jobid: 3
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:55 2025]
+Finished job 3.
+11 of 15 steps (73%) done
+Select jobs to execute...
+
+[Mon Feb  3 17:04:55 2025]
+rule assess:
+    input: annotated_supertree/annotations.json, assessments/taxonomy_degree_distribution.txt, assessments/supertree_degree_distribution.txt, assessments/lost_taxa.txt, exemplified_phylo/regraft_cleaned_ott.tre, cleaned_ott/cleaned_ott.json
+    output: assessments/summary.json
+    jobid: 2
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:04:55 2025]
+Finished job 2.
+12 of 15 steps (80%) done
+Select jobs to execute...
+
+[Mon Feb  3 17:04:55 2025]
+rule html:
+    input: logs/templates/annotated_supertree_index.pt, logs/templates/assessments_index.pt, logs/templates/bumped_ott_index.pt, logs/templates/cleaned_ott_index.pt, logs/templates/cleaned_phylo_index.pt, logs/templates/exemplified_phylo_index.pt, logs/templates/grafted_solution_index.pt, logs/templates/head.pt, logs/templates/labelled_supertree_index.pt, logs/templates/phylo_input_index.pt, logs/templates/phylo_snapshot_index.pt, logs/templates/reversed_subproblems_index.pt, logs/templates/reversed_subproblem_solutions_index.pt, logs/templates/subott_dir_index.pt, logs/templates/subproblems_index.pt, logs/templates/subproblem_solutions_index.pt, logs/templates/top_index.pt, assessments/summary.json, subproblems/contesting_trees.json, subproblems/dumped_subproblem_ids.txt, labelled_supertree/num_tips_for_ott_internals_in_labelled_tree.json
+    output: index.html, subproblems/index.json
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:05:04 2025]
+Finished job 0.
+13 of 15 steps (87%) done
+Select jobs to execute...
+
+[Mon Feb  3 17:05:04 2025]
+rule summarize_subpr_size:
+    input: subproblems/index.json, subproblems/.all_deg_dist_calculated.txt, labelled_supertree/num_tips_for_ott_internals_in_labelled_tree.json, subproblems/deg-dist
+    output: subproblems/subproblem_size_summary.json
+    jobid: 14
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:05:04 2025]
+Finished job 14.
+14 of 15 steps (93%) done
+Select jobs to execute...
+
+[Mon Feb  3 17:05:04 2025]
+rule format_subpr_size_as_table:
+    input: subproblems/subproblem_size_summary.json
+    output: subproblems/subproblem_size_summary_table.tsv
+    jobid: 13
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:05:05 2025]
+Finished job 13.
+15 of 15 steps (100%) done
+Complete log: .snakemake/log/2025-02-03T170447.619813.snakemake.log
+Executing main workflow.
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+all          1              1              1
+total        1              1              1
+
+Select jobs to execute...
+
+[Mon Feb  3 17:05:05 2025]
+localrule all:
+    input: /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/config, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/otc-config, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/checksum_for_run.md5, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/cleaned_ott/cleaned_not_updated_ott.tre, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/exemplified_phylo/args.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/cleaned_phylo/phylo_inputs_cleaned.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/bumped_ott/cleaned_ott.tre, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/exemplified_phylo/incertae_sedis.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/subproblems/raw_contesting_trees.json, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/subproblems/contesting_trees.json, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/subproblem_solutions/subproblems-scaffold.tre, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/subproblem_solutions/subproblems-scaffold-only.tre, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/subproblem_solutions/solution-ids.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/reversed_subproblem_solutions/solution-ids.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/subproblem_solutions/solution-degree-distributions.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/reversed_subproblem_solutions/solution-degree-distributions.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/subproblems/.all_deg_dist_calculated.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/grafted_solution/grafted_solution_ottnames.tre, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/labelled_supertree/labelled_supertree.tre, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/labelled_supertree/labelled_supertree_out_degree_distribution.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/labelled_supertree/labelled_supertree_ottnames.tre, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/labelled_supertree/labelled_supertree_simplified_ottnames.tre, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/labelled_supertree/labelled_supertree_ottnames_without_monotypic.tre, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/labelled_supertree/labelled_supertree_simplified_ottnames_without_monotypic.tre, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/exemplified_phylo/pruned_taxonomy_degree_distribution.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/annotated_supertree/annotations.json, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/index.html, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpuyndrohq/subproblems/subproblem_size_summary_table.tsv
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Mon Feb  3 17:05:05 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2025-02-03T170447.619813.snakemake.log

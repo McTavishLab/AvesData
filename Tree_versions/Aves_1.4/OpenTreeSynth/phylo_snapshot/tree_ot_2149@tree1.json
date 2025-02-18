@@ -1,0 +1,313 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.16"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2022-09-20T02:04:49.024Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-09-20T02:04:49.024Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-09-20T02:04:49.024Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "cinclidae.tre", 
+"@size": 99, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.9d38f1585640b911.63696e636c696461652e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"eliotmiller"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 267845, 
+"^ot:focalCladeOTTTaxonName": "Cinclus", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_2149", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1046/j.1474-919x.2002.00084.x"
+}, 
+"^ot:studyPublicationReference": "Voelker, G. (2002). Molecular phylogenetics and the historical biogeography of dippers (Cinclus). Ibis, 144(4), 577\u2013584. https://doi.org/10.1046/j.1474-919x.2002.00084.x\n", 
+"^ot:studyYear": 2002, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Cinclus leucocephalus", 
+"^ot:ottId": 3598841, 
+"^ot:ottTaxonName": "Cinclus leucocephalus"
+}, 
+"otu2": {
+"^ot:originalLabel": "Cinclus schulzi", 
+"^ot:ottId": 6152109, 
+"^ot:ottTaxonName": "Cinclus schulzii"
+}, 
+"otu3": {
+"^ot:originalLabel": "Cinclus mexicanus", 
+"^ot:ottId": 606627, 
+"^ot:ottTaxonName": "Cinclus mexicanus"
+}, 
+"otu4": {
+"^ot:originalLabel": "Cinclus pallasii", 
+"^ot:ottId": 968660, 
+"^ot:ottTaxonName": "Cinclus pallasii"
+}, 
+"otu5": {
+"^ot:originalLabel": "Cinclus cinclus", 
+"^ot:ottId": 496009, 
+"^ot:ottTaxonName": "Cinclus cinclus"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Text Wrangler tree", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "node1", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge7": {
+"@source": "node1", 
+"@target": "node8"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge5": {
+"@source": "node2", 
+"@target": "node6"
+}
+}, 
+"node3": {
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge4": {
+"@source": "node3", 
+"@target": "node5"
+}
+}, 
+"node6": {
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}
+}, 
+"node8": {
+"edge8": {
+"@source": "node8", 
+"@target": "node9"
+}, 
+"edge9": {
+"@source": "node8", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu5"
+}, 
+"node2": {}, 
+"node3": {}, 
+"node4": {
+"@otu": "otu1"
+}, 
+"node5": {
+"@otu": "otu2"
+}, 
+"node6": {}, 
+"node7": {
+"@otu": "otu3"
+}, 
+"node8": {}, 
+"node9": {
+"@otu": "otu4"
+}
+}
+}
+}
+}
+}
+}
+}
