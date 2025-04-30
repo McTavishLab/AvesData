@@ -1,11 +1,14 @@
 README:
+These data are easily accessed using the `clootl` R package. Available on CRAN, example usage on github: https://github.com/eliotmiller/clootl
+
 
 # Data stucture
 ## Taxonomy:
 This directory contains folders for each year of the Clements taxonomy.  
 - Clements_2021  
 - Clements_2022  
-- Clements_2023  
+- Clements_2023
+- Clements_2024 (Work in progress - incomplete)
 
 Each taxonomy_year directory contains:  
 - OTT_crosswalk_YEAR.csv
@@ -41,7 +44,8 @@ Also includes mapping from species in Clements to their Avibase id, and to the n
 This directory contains folders for each synth tree run, labelled by their version identifier (e.g. Aves_1.0) 
 
 
-The most recent tree is Aves_1.3 and that directory contains all of these files. 
+The tree published in McTavish et al. 2024 PNAS is Aves_1.3 and that directory contains all of these files. 
+Subsequent updates have higher version numbers.
 (Older trees folders have some but not all of these files, and have a readme inculded in each folder)
 
 **Aves_1.3**
@@ -60,8 +64,10 @@ For more details and code for how each of these files were generated see: https:
     - dated_rand_sample_clements.tre <- dated taxon addition tree cloud, 100 topologies from the taxon addition treeset using random selections from the node dates age for each dated node calibration. First line is a header line containing the text "trees", followed by one newick tree per line.
     - dated_mean_sample_clements.tre <- dated taxon addition tree cloud, 100 topologies from the taxon addition treeset using the mean node age for each node calibration. 
     First line is a header line containing the text "trees", followed by one newick tree per line.
-    - summary_dated_clements.nex <- Maximum clade credibility tree including all taxa in this version of the taxonomy summarized from the dated trees using random selections for the node calibrations. Labelled with Clements taxonomy labels. (was accidentally posted in some years as MCC_clements.tre, so that file is identical)
+    - summary_dated_clements.nex <- Maximum clade credibility tree including all taxa in this version of the taxonomy summarized from the dated trees using random selections for the node calibrations. Labelled with Clements taxonomy labels. (was accidentally posted in some years as MCC_clements.tre, so that file is identical) **This is the summary tree file people are most often looking for**
 
+
+LICENSE: CC-BY https://creativecommons.org/licenses/by/4.0/
 
 
 
