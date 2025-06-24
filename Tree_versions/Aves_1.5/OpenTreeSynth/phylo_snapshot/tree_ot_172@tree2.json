@@ -1,0 +1,1087 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-09T21:01:44.340Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-09T21:01:44.340Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 375, 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u3ca80f6d-04fb-4ce7-9c19-30899feccfca", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}, 
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 377, 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u00bb1219-ef71-4e48-b3d2-c63456a42502", 
+"description": {
+"$": "Source data for tree 'tree2'"
+}, 
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}, 
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 437, 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u90fbd390-0fbd-4277-8710-1340603bb18d", 
+"description": {
+"$": "Source data for tree 'tree3'"
+}, 
+"sourceForTree": [
+{
+"$": "tree3"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2023-05-31T21:34:09.053Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1", 
+"tree2", 
+"tree3"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown", 
+"jwaterford"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 1041547, 
+"^ot:focalCladeOTTTaxonName": "Passeriformes", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_172", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.1365-2699.2011.02606.x"
+}, 
+"^ot:studyPublicationReference": "P\u00e4ckert, Martin, Jochen Martens, Yue-Hua Sun, Lucia Liu Severinghaus, Alexander A. Nazarenko, Ji Ting, Till T\u00f6pfer, Dieter Thomas Tietze. 2011. Horizontal and elevational phylogeographic patterns of Himalayan and Southeast Asian forest passerines (Aves: Passeriformes). Journal of Biogeography 39 (3): 556-573.", 
+"^ot:studyYear": 2011, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Certhia brachydactyla", 
+"^ot:ottId": 1007172, 
+"^ot:ottTaxonName": "Certhia brachydactyla"
+}, 
+"otu10": {
+"^ot:originalLabel": "Certhia himalayana yunnanensis", 
+"^ot:ottId": 785709, 
+"^ot:ottTaxonName": "Certhia himalayana yunnanensis"
+}, 
+"otu11": {
+"^ot:originalLabel": "Certhia discolor", 
+"^ot:ottId": 856514, 
+"^ot:ottTaxonName": "Certhia discolor"
+}, 
+"otu12": {
+"^ot:originalLabel": "Certhia manipurensis", 
+"^ot:ottId": 856515, 
+"^ot:ottTaxonName": "Certhia manipurensis"
+}, 
+"otu13": {
+"^ot:originalLabel": "Certhia nipalensis", 
+"^ot:ottId": 737469, 
+"^ot:ottTaxonName": "Certhia nipalensis"
+}, 
+"otu14": {
+"^ot:originalLabel": "Certhia tianquanensis", 
+"^ot:ottId": 856513, 
+"^ot:ottTaxonName": "Certhia tianquanensis"
+}, 
+"otu15": {
+"^ot:originalLabel": "Pinicola enucleator", 
+"^ot:ottId": 341471, 
+"^ot:ottTaxonName": "Pinicola enucleator"
+}, 
+"otu16": {
+"^ot:originalLabel": "Pyrrhula pyrrhula iberiae", 
+"^ot:ottId": 388146, 
+"^ot:ottTaxonName": "Pyrrhula pyrrhula iberiae"
+}, 
+"otu17": {
+"^ot:originalLabel": "Pyrrhula pyrrhula pyrrhula", 
+"^ot:ottId": 927473, 
+"^ot:ottTaxonName": "Pyrrhula pyrrhula pyrrhula"
+}, 
+"otu18": {
+"^ot:originalLabel": "Pyrrhula pyrrhula pileata", 
+"^ot:ottId": 927475, 
+"^ot:ottTaxonName": "Pyrrhula pyrrhula pileata"
+}, 
+"otu19": {
+"^ot:originalLabel": "Pyrrhula pyrrhula cineracea", 
+"^ot:ottId": 526863, 
+"^ot:ottTaxonName": "Pyrrhula pyrrhula cineracea"
+}, 
+"otu2": {
+"^ot:originalLabel": "Certhia brachydactyla mauritanica", 
+"^ot:ottId": 785711, 
+"^ot:ottTaxonName": "Certhia brachydactyla mauritanica"
+}, 
+"otu20": {
+"^ot:originalLabel": "Pyrrhula pyrrhula griseiventris", 
+"^ot:ottId": 978803, 
+"^ot:ottTaxonName": "Pyrrhula pyrrhula griseiventris"
+}, 
+"otu21": {
+"^ot:originalLabel": "Pyrrhula murina", 
+"^ot:ottId": 927470, 
+"^ot:ottTaxonName": "Pyrrhula murina"
+}, 
+"otu22": {
+"^ot:originalLabel": "Pyrrhula erythaca erythaca", 
+"^ot:ottId": 653290, 
+"^ot:ottTaxonName": "Pyrrhula erythaca erythaca"
+}, 
+"otu23": {
+"^ot:originalLabel": "Pyrrhula erythaca owstoni", 
+"^ot:ottId": 368828, 
+"^ot:ottTaxonName": "Pyrrhula erythaca owstoni"
+}, 
+"otu24": {
+"^ot:originalLabel": "Pyrrhula erythrocephala", 
+"^ot:ottId": 901358, 
+"^ot:ottTaxonName": "Pyrrhula erythrocephala"
+}, 
+"otu25": {
+"^ot:originalLabel": "Pyrrhula aurantiaca", 
+"^ot:ottId": 977520, 
+"^ot:ottTaxonName": "Pyrrhula aurantiaca"
+}, 
+"otu26": {
+"^ot:originalLabel": "Pyrrhula leucogenis leucogenis", 
+"^ot:ottId": 1009956, 
+"^ot:ottTaxonName": "Pyrrhula leucogenis leucogenis"
+}, 
+"otu27": {
+"^ot:originalLabel": "Pyrrhula leucogenis steerei", 
+"^ot:ottId": 351893, 
+"^ot:ottTaxonName": "Pyrrhula leucogenis steerei"
+}, 
+"otu28": {
+"^ot:originalLabel": "Pyrrhula nipalensis", 
+"^ot:ottId": 815423, 
+"^ot:ottTaxonName": "Pyrrhula nipalensis"
+}, 
+"otu29": {
+"^ot:originalLabel": "Aegithalos concinnus concinnus", 
+"^ot:ottId": 538174, 
+"^ot:ottTaxonName": "Aegithalos concinnus concinnus"
+}, 
+"otu3": {
+"^ot:originalLabel": "Certhia americana", 
+"^ot:ottId": 697024, 
+"^ot:ottTaxonName": "Certhia americana"
+}, 
+"otu30": {
+"^ot:originalLabel": "Aegithalos concinnus manipurensis", 
+"^ot:ottId": 538176, 
+"^ot:ottTaxonName": "Aegithalos concinnus manipurensis"
+}, 
+"otu31": {
+"^ot:originalLabel": "Aegithalos concinnus iredalei", 
+"^ot:ottId": 684391, 
+"^ot:ottTaxonName": "Aegithalos concinnus iredalei"
+}, 
+"otu32": {
+"^ot:originalLabel": "Aegithalos leucogenys", 
+"^ot:ottId": 538164, 
+"^ot:ottTaxonName": "Aegithalos leucogenys"
+}, 
+"otu33": {
+"^ot:originalLabel": "Aegithalos iouschistos bonvaloti", 
+"^ot:ottId": 538184, 
+"^ot:ottTaxonName": "Aegithalos iouschistos"
+}, 
+"otu34": {
+"^ot:originalLabel": "Aegithalos fuliginosus", 
+"^ot:ottId": 538171, 
+"^ot:ottTaxonName": "Aegithalos fuliginosus"
+}, 
+"otu35": {
+"^ot:originalLabel": "Aegithalos iouschistos sharpei", 
+"^ot:ottId": 538184, 
+"^ot:ottTaxonName": "Aegithalos iouschistos"
+}, 
+"otu36": {
+"^ot:originalLabel": "Aegithalos iouschistos iouschistos", 
+"^ot:ottId": 538178, 
+"^ot:ottTaxonName": "Aegithalos iouschistos iouschistos"
+}, 
+"otu37": {
+"^ot:originalLabel": "Aegithalos niveogularis", 
+"^ot:ottId": 1014281, 
+"^ot:ottTaxonName": "Aegithalos niveogularis"
+}, 
+"otu38": {
+"^ot:originalLabel": "Aegithalos caudatus", 
+"^ot:ottId": 467867, 
+"^ot:ottTaxonName": "Aegithalos caudatus"
+}, 
+"otu39": {
+"^ot:originalLabel": "Aegithalos glaucogularis", 
+"^ot:ottId": 905410, 
+"^ot:ottTaxonName": "Aegithalos glaucogularis"
+}, 
+"otu4": {
+"^ot:originalLabel": "Certhia hodgsoni khamensis", 
+"^ot:ottId": 785707, 
+"^ot:ottTaxonName": "Certhia hodgsoni khamensis"
+}, 
+"otu40": {
+"^ot:originalLabel": "Psaltriparus minimus minimus", 
+"^ot:ottId": 1014277, 
+"^ot:ottTaxonName": "Psaltriparus minimus minimus"
+}, 
+"otu41": {
+"^ot:originalLabel": "Psaltriparus minimus plumbeus", 
+"^ot:ottId": 1014284, 
+"^ot:ottTaxonName": "Psaltriparus minimus plumbeus"
+}, 
+"otu42": {
+"^ot:originalLabel": "Leptopoecile sophiae", 
+"^ot:ottId": 1044590, 
+"^ot:ottTaxonName": "Leptopoecile sophiae"
+}, 
+"otu43": {
+"^ot:originalLabel": "Leptopoecile elegans", 
+"^ot:ottId": 931419, 
+"^ot:ottTaxonName": "Leptopoecile elegans"
+}, 
+"otu5": {
+"^ot:originalLabel": "Certhia hodgsoni mandellii", 
+"^ot:ottId": 157232, 
+"^ot:ottTaxonName": "Certhia hodgsoni mandellii"
+}, 
+"otu6": {
+"^ot:originalLabel": "Certhia hodgsoni hodgsoni", 
+"^ot:ottId": 5861453, 
+"^ot:ottTaxonName": "Certhia hodgsoni hodgsoni"
+}, 
+"otu7": {
+"^ot:originalLabel": "Certhia familiaris bianchii", 
+"^ot:ottId": 391157, 
+"^ot:ottTaxonName": "Certhia familiaris bianchii"
+}, 
+"otu8": {
+"^ot:originalLabel": "Certhia familiaris daurica", 
+"^ot:ottId": 659655, 
+"^ot:ottTaxonName": "Certhia familiaris daurica"
+}, 
+"otu9": {
+"^ot:originalLabel": "Certhia himalayana himalayana", 
+"^ot:ottId": 785713, 
+"^ot:ottTaxonName": "Certhia himalayana himalayana"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1", 
+"tree2", 
+"tree3"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 4e (Certhia)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge16": {
+"@source": "node1", 
+"@target": "node17"
+}
+}, 
+"node10": {
+"edge10": {
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge11": {
+"@source": "node10", 
+"@target": "node12"
+}
+}, 
+"node14": {
+"edge14": {
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge15": {
+"@source": "node14", 
+"@target": "node16"
+}
+}, 
+"node17": {
+"edge17": {
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge24": {
+"@source": "node17", 
+"@target": "node25"
+}
+}, 
+"node18": {
+"edge18": {
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge21": {
+"@source": "node18", 
+"@target": "node22"
+}
+}, 
+"node19": {
+"edge19": {
+"@source": "node19", 
+"@target": "node20"
+}, 
+"edge20": {
+"@source": "node19", 
+"@target": "node21"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge7": {
+"@source": "node2", 
+"@target": "node8"
+}
+}, 
+"node22": {
+"edge22": {
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge23": {
+"@source": "node22", 
+"@target": "node24"
+}
+}, 
+"node25": {
+"edge25": {
+"@source": "node25", 
+"@target": "node26"
+}, 
+"edge26": {
+"@source": "node25", 
+"@target": "node27"
+}
+}, 
+"node3": {
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge6": {
+"@source": "node3", 
+"@target": "node7"
+}
+}, 
+"node4": {
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge5": {
+"@source": "node4", 
+"@target": "node6"
+}
+}, 
+"node8": {
+"edge13": {
+"@source": "node8", 
+"@target": "node14"
+}, 
+"edge8": {
+"@source": "node8", 
+"@target": "node9"
+}
+}, 
+"node9": {
+"edge12": {
+"@source": "node9", 
+"@target": "node13"
+}, 
+"edge9": {
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node11": {
+"@otu": "otu4"
+}, 
+"node12": {
+"@otu": "otu5"
+}, 
+"node13": {
+"@otu": "otu6"
+}, 
+"node14": {}, 
+"node15": {
+"@otu": "otu7"
+}, 
+"node16": {
+"@otu": "otu8"
+}, 
+"node17": {}, 
+"node18": {}, 
+"node19": {}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu9"
+}, 
+"node21": {
+"@otu": "otu10"
+}, 
+"node22": {}, 
+"node23": {
+"@otu": "otu11"
+}, 
+"node24": {
+"@otu": "otu12"
+}, 
+"node25": {}, 
+"node26": {
+"@otu": "otu13"
+}, 
+"node27": {
+"@otu": "otu14"
+}, 
+"node3": {}, 
+"node4": {}, 
+"node5": {
+"@otu": "otu1"
+}, 
+"node6": {
+"@otu": "otu2"
+}, 
+"node7": {
+"@otu": "otu3"
+}, 
+"node8": {}, 
+"node9": {}
+}
+}, 
+"tree2": {
+"@label": "Fig. 4d (Pinicola+Pyrrhula)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node28", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node28", 
+"^ot:specifiedRoot": "node28", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node28": {
+"edge27": {
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge28": {
+"@source": "node28", 
+"@target": "node30"
+}
+}, 
+"node30": {
+"edge29": {
+"@source": "node30", 
+"@target": "node31"
+}, 
+"edge48": {
+"@source": "node30", 
+"@target": "node50"
+}
+}, 
+"node31": {
+"edge30": {
+"@source": "node31", 
+"@target": "node32"
+}, 
+"edge41": {
+"@source": "node31", 
+"@target": "node43"
+}
+}, 
+"node32": {
+"edge31": {
+"@source": "node32", 
+"@target": "node33"
+}, 
+"edge40": {
+"@source": "node32", 
+"@target": "node42"
+}
+}, 
+"node33": {
+"edge32": {
+"@source": "node33", 
+"@target": "node34"
+}, 
+"edge39": {
+"@source": "node33", 
+"@target": "node41"
+}
+}, 
+"node34": {
+"edge33": {
+"@source": "node34", 
+"@target": "node35"
+}, 
+"edge38": {
+"@source": "node34", 
+"@target": "node40"
+}
+}, 
+"node35": {
+"edge34": {
+"@source": "node35", 
+"@target": "node36"
+}, 
+"edge37": {
+"@source": "node35", 
+"@target": "node39"
+}
+}, 
+"node36": {
+"edge35": {
+"@source": "node36", 
+"@target": "node37"
+}, 
+"edge36": {
+"@source": "node36", 
+"@target": "node38"
+}
+}, 
+"node43": {
+"edge42": {
+"@source": "node43", 
+"@target": "node44"
+}, 
+"edge47": {
+"@source": "node43", 
+"@target": "node49"
+}
+}, 
+"node44": {
+"edge43": {
+"@source": "node44", 
+"@target": "node45"
+}, 
+"edge46": {
+"@source": "node44", 
+"@target": "node48"
+}
+}, 
+"node45": {
+"edge44": {
+"@source": "node45", 
+"@target": "node46"
+}, 
+"edge45": {
+"@source": "node45", 
+"@target": "node47"
+}
+}, 
+"node50": {
+"edge49": {
+"@source": "node50", 
+"@target": "node51"
+}, 
+"edge52": {
+"@source": "node50", 
+"@target": "node54"
+}
+}, 
+"node51": {
+"edge50": {
+"@source": "node51", 
+"@target": "node52"
+}, 
+"edge51": {
+"@source": "node51", 
+"@target": "node53"
+}
+}
+}, 
+"nodeById": {
+"node28": {
+"@root": true
+}, 
+"node29": {
+"@otu": "otu15"
+}, 
+"node30": {}, 
+"node31": {}, 
+"node32": {}, 
+"node33": {}, 
+"node34": {}, 
+"node35": {}, 
+"node36": {}, 
+"node37": {
+"@otu": "otu16"
+}, 
+"node38": {
+"@otu": "otu17"
+}, 
+"node39": {
+"@otu": "otu18"
+}, 
+"node40": {
+"@otu": "otu19"
+}, 
+"node41": {
+"@otu": "otu20"
+}, 
+"node42": {
+"@otu": "otu21"
+}, 
+"node43": {}, 
+"node44": {}, 
+"node45": {}, 
+"node46": {
+"@otu": "otu22"
+}, 
+"node47": {
+"@otu": "otu23"
+}, 
+"node48": {
+"@otu": "otu24"
+}, 
+"node49": {
+"@otu": "otu25"
+}, 
+"node50": {}, 
+"node51": {}, 
+"node52": {
+"@otu": "otu26"
+}, 
+"node53": {
+"@otu": "otu27"
+}, 
+"node54": {
+"@otu": "otu28"
+}
+}
+}, 
+"tree3": {
+"@label": "Fig. 4c (Aegithalos+Psaltriparus+Leptopoecile)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node55", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node55", 
+"^ot:specifiedRoot": "node55", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node55": {
+"edge53": {
+"@source": "node55", 
+"@target": "node56"
+}, 
+"edge78": {
+"@source": "node55", 
+"@target": "node81"
+}
+}, 
+"node56": {
+"edge54": {
+"@source": "node56", 
+"@target": "node57"
+}, 
+"edge75": {
+"@source": "node56", 
+"@target": "node78"
+}
+}, 
+"node57": {
+"edge55": {
+"@source": "node57", 
+"@target": "node58"
+}, 
+"edge62": {
+"@source": "node57", 
+"@target": "node65"
+}
+}, 
+"node58": {
+"edge56": {
+"@source": "node58", 
+"@target": "node59"
+}, 
+"edge61": {
+"@source": "node58", 
+"@target": "node64"
+}
+}, 
+"node59": {
+"edge57": {
+"@source": "node59", 
+"@target": "node60"
+}, 
+"edge60": {
+"@source": "node59", 
+"@target": "node63"
+}
+}, 
+"node60": {
+"edge58": {
+"@source": "node60", 
+"@target": "node61"
+}, 
+"edge59": {
+"@source": "node60", 
+"@target": "node62"
+}
+}, 
+"node65": {
+"edge63": {
+"@source": "node65", 
+"@target": "node66"
+}, 
+"edge72": {
+"@source": "node65", 
+"@target": "node75"
+}
+}, 
+"node66": {
+"edge64": {
+"@source": "node66", 
+"@target": "node67"
+}, 
+"edge71": {
+"@source": "node66", 
+"@target": "node74"
+}
+}, 
+"node67": {
+"edge65": {
+"@source": "node67", 
+"@target": "node68"
+}, 
+"edge70": {
+"@source": "node67", 
+"@target": "node73"
+}
+}, 
+"node68": {
+"edge66": {
+"@source": "node68", 
+"@target": "node69"
+}, 
+"edge69": {
+"@source": "node68", 
+"@target": "node72"
+}
+}, 
+"node69": {
+"edge67": {
+"@source": "node69", 
+"@target": "node70"
+}, 
+"edge68": {
+"@source": "node69", 
+"@target": "node71"
+}
+}, 
+"node75": {
+"edge73": {
+"@source": "node75", 
+"@target": "node76"
+}, 
+"edge74": {
+"@source": "node75", 
+"@target": "node77"
+}
+}, 
+"node78": {
+"edge76": {
+"@source": "node78", 
+"@target": "node79"
+}, 
+"edge77": {
+"@source": "node78", 
+"@target": "node80"
+}
+}, 
+"node81": {
+"edge79": {
+"@source": "node81", 
+"@target": "node82"
+}, 
+"edge80": {
+"@source": "node81", 
+"@target": "node83"
+}
+}
+}, 
+"nodeById": {
+"node55": {
+"@root": true
+}, 
+"node56": {}, 
+"node57": {}, 
+"node58": {}, 
+"node59": {}, 
+"node60": {}, 
+"node61": {
+"@otu": "otu29"
+}, 
+"node62": {
+"@otu": "otu30"
+}, 
+"node63": {
+"@otu": "otu31"
+}, 
+"node64": {
+"@otu": "otu32"
+}, 
+"node65": {}, 
+"node66": {}, 
+"node67": {}, 
+"node68": {}, 
+"node69": {}, 
+"node70": {
+"@otu": "otu33"
+}, 
+"node71": {
+"@otu": "otu34"
+}, 
+"node72": {
+"@otu": "otu35"
+}, 
+"node73": {
+"@otu": "otu36"
+}, 
+"node74": {
+"@otu": "otu37"
+}, 
+"node75": {}, 
+"node76": {
+"@otu": "otu38"
+}, 
+"node77": {
+"@otu": "otu39"
+}, 
+"node78": {}, 
+"node79": {
+"@otu": "otu40"
+}, 
+"node80": {
+"@otu": "otu41"
+}, 
+"node81": {}, 
+"node82": {
+"@otu": "otu42"
+}, 
+"node83": {
+"@otu": "otu43"
+}
+}
+}
+}
+}
+}
+}
+}

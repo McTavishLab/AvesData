@@ -1,0 +1,372 @@
+{
+"nexml": {
+"@about": "#study",
+"@generator": "Open Tree API",
+"@id": "study",
+"@nexml2json": "1.2.1",
+"@nexmljson": "http://purl.org/opentree/nexson",
+"@version": "0.9",
+"@xmlns": {
+"$": "http://www.nexml.org/2009",
+"nex": "http://www.nexml.org/2009",
+"ot": "http://purl.org/opentree-terms#",
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+},
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation",
+"@id": "peyotl-validator",
+"@name": "api.opentreeoflife.org/validate",
+"@url": "https://github.com/OpenTreeOfLife/peyotl",
+"@version": "0.0.4a",
+"invocation": {
+"commandLine": [],
+"otherProperty": [
+{
+"name": "pythonVersion",
+"value": "3.10.12"
+},
+{
+"name": "pythonImplementation",
+"value": "CPython"
+}
+]
+}
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
+}
+]
+},
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2025-01-21T03:39:48.165Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "All life"
+},
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-01-21T03:39:48.165Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-01-21T03:39:48.165Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "fig2.tre",
+"@size": 183,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.9bbbae3ee9f762a5.666967322e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree2'"
+},
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"eliotmiller"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalCladeOTTTaxonName": "",
+"^ot:otusElementOrder": [
+"otus1"
+],
+"^ot:studyId": "ot_2374",
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.25226/bboc.v139i1.2019.a3"
+},
+"^ot:studyPublicationReference": "A cryptic new species of bulbul from Borneo",
+"^ot:studyYear": 2019,
+"^ot:tag": [],
+"^ot:treesElementOrder": [
+"trees1"
+],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 15,
+"message": 0,
+"node": 16,
+"otu": 10,
+"otus": 4,
+"tree": 2,
+"trees": 3
+},
+"otusById": {
+"otus1": {
+"otuById": {
+"otu10": {
+"^ot:originalLabel": "Iole charlottae",
+"^ot:ottId": 1010885,
+"^ot:ottTaxonName": "Iole charlottae"
+},
+"otu3": {
+"^ot:originalLabel": "Pycnonotus simplex1",
+"^ot:ottId": 631583,
+"^ot:ottTaxonName": "Pycnonotus simplex"
+},
+"otu4": {
+"^ot:originalLabel": "Pycnonotus cinereifrons",
+"^ot:ottId": 3598320,
+"^ot:ottTaxonName": "Pycnonotus cinereifrons"
+},
+"otu5": {
+"^ot:originalLabel": "Pycnonotus zeylanicus",
+"^ot:ottId": 284401,
+"^ot:ottTaxonName": "Pycnonotus zeylanicus"
+},
+"otu6": {
+"^ot:originalLabel": "Pycnonotus erythropthalmos",
+"^ot:ottId": 597115,
+"^ot:ottTaxonName": "Pycnonotus erythropthalmos"
+},
+"otu7": {
+"^ot:originalLabel": "Pycnonotus brunneus",
+"^ot:ottId": 202629,
+"^ot:ottTaxonName": "Pycnonotus brunneus"
+},
+"otu8": {
+"^ot:originalLabel": "Pycnonotus simplex2",
+"^ot:ottId": 631583,
+"^ot:ottTaxonName": "Pycnonotus simplex"
+},
+"otu9": {
+"^ot:originalLabel": "Pycnonotus plumosus",
+"^ot:ottId": 108244,
+"^ot:ottTaxonName": "Pycnonotus plumosus"
+}
+}
+}
+},
+"treesById": {
+"trees1": {
+"@otus": "otus1",
+"^ot:treeElementOrder": [
+"tree2"
+],
+"treeById": {
+"tree2": {
+"@label": "Untitled (tree2)",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "node3",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node2",
+"^ot:specifiedRoot": "node2",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node10": {
+"edge10": {
+"@source": "node10",
+"@target": "node11"
+},
+"edge11": {
+"@source": "node10",
+"@target": "node12"
+}
+},
+"node2": {
+"edge15": {
+"@source": "node2",
+"@target": "node16"
+},
+"edge2": {
+"@source": "node2",
+"@target": "node3"
+}
+},
+"node3": {
+"edge14": {
+"@source": "node3",
+"@target": "node15"
+},
+"edge3": {
+"@source": "node3",
+"@target": "node4"
+}
+},
+"node4": {
+"edge13": {
+"@source": "node4",
+"@target": "node14"
+},
+"edge4": {
+"@source": "node4",
+"@target": "node5"
+}
+},
+"node5": {
+"edge12": {
+"@source": "node5",
+"@target": "node13"
+},
+"edge5": {
+"@source": "node5",
+"@target": "node6"
+}
+},
+"node6": {
+"edge6": {
+"@source": "node6",
+"@target": "node7"
+},
+"edge9": {
+"@source": "node6",
+"@target": "node10"
+}
+},
+"node7": {
+"edge7": {
+"@source": "node7",
+"@target": "node8"
+},
+"edge8": {
+"@source": "node7",
+"@target": "node9"
+}
+}
+},
+"nodeById": {
+"node10": {},
+"node11": {
+"@otu": "otu5"
+},
+"node12": {
+"@otu": "otu6"
+},
+"node13": {
+"@otu": "otu7"
+},
+"node14": {
+"@otu": "otu8"
+},
+"node15": {
+"@otu": "otu9"
+},
+"node16": {
+"@otu": "otu10"
+},
+"node2": {
+"@root": true
+},
+"node3": {},
+"node4": {},
+"node5": {},
+"node6": {},
+"node7": {},
+"node8": {
+"@otu": "otu3"
+},
+"node9": {
+"@otu": "otu4"
+}
+}
+}
+}
+}
+}
+}
+}

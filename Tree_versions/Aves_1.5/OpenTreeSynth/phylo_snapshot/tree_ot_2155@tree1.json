@@ -1,0 +1,624 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.16"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2022-10-07T15:50:43.045Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-10-07T15:50:43.045Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-10-07T15:50:43.045Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "test.tre", 
+"@size": 806, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.aa278fc4b09acf39.746573742e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree3'"
+}, 
+"sourceForTree": [
+{
+"$": "tree3"
+}
+]
+}, 
+{
+"@filename": "test2.tre", 
+"@size": 770, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.b8fde7404e508f5d.74657374322e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"eliotmiller"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 1092345, 
+"^ot:focalCladeOTTTaxonName": "Meliphagidae", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_2155", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/zsc.12350"
+}, 
+"^ot:studyPublicationReference": "McCullough, J. M., Joseph, L., Moyle, R. G., & Andersen, M. J. (2019). Ultraconserved elements put the final nail in the coffin of traditional use of the genus\n            Meliphaga\n            (Aves: Meliphagidae). Zoologica Scripta, 48(4), 411\u2013418. Portico. https://doi.org/10.1111/zsc.12350\n", 
+"^ot:studyYear": 2019, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu10": {
+"^ot:originalLabel": "meliphaga mimikae anwcb52704", 
+"^ot:ottId": 195232, 
+"^ot:ottTaxonName": "Meliphaga mimikae"
+}, 
+"otu11": {
+"^ot:originalLabel": "meliphaga montana kunhm12276", 
+"^ot:ottId": 765825, 
+"^ot:ottTaxonName": "Meliphaga montana"
+}, 
+"otu12": {
+"^ot:originalLabel": "oreornis chrysogenysypm76401", 
+"^ot:ottId": 3599640, 
+"^ot:ottTaxonName": "Oreornis chrysogenys"
+}, 
+"otu13": {
+"^ot:originalLabel": "oreornis chrysogenysypm76402", 
+"^ot:ottId": 3599640, 
+"^ot:ottTaxonName": "Oreornis chrysogenys"
+}, 
+"otu14": {
+"^ot:originalLabel": "meliphaga albilineata mv37164", 
+"^ot:ottId": 191556, 
+"^ot:ottTaxonName": "Meliphaga albilineata"
+}, 
+"otu15": {
+"^ot:originalLabel": "meliphaga albilineata mv24564", 
+"^ot:ottId": 191556, 
+"^ot:ottTaxonName": "Meliphaga albilineata"
+}, 
+"otu16": {
+"^ot:originalLabel": "meliphaga fordiana mv24310", 
+"^ot:ottId": 191563, 
+"^ot:ottTaxonName": "Meliphaga fordiana"
+}, 
+"otu17": {
+"^ot:originalLabel": "meliphaga reticulata anwcb30056", 
+"^ot:ottId": 191562, 
+"^ot:ottTaxonName": "Meliphaga reticulata"
+}, 
+"otu18": {
+"^ot:originalLabel": "meliphaga aruensis anwcb52683", 
+"^ot:ottId": 765834, 
+"^ot:ottTaxonName": "Meliphaga aruensis"
+}, 
+"otu19": {
+"^ot:originalLabel": "meliphaga lewinii anwcb56990", 
+"^ot:ottId": 191557, 
+"^ot:ottTaxonName": "Meliphaga lewinii"
+}, 
+"otu20": {
+"^ot:originalLabel": "meliphaga notata anwcb57382", 
+"^ot:ottId": 195262, 
+"^ot:ottTaxonName": "Meliphaga notata"
+}, 
+"otu21": {
+"^ot:originalLabel": "stomiopera unicolor anwcb57540", 
+"^ot:ottId": 45233, 
+"^ot:ottTaxonName": "Stomiopera unicolor"
+}, 
+"otu22": {
+"^ot:originalLabel": "manorina melanocephala anwcb53776"
+}, 
+"otu5": {
+"^ot:originalLabel": "meliphaga gracilis anwcb57472", 
+"^ot:ottId": 196942, 
+"^ot:ottTaxonName": "Meliphaga gracilis"
+}, 
+"otu6": {
+"^ot:originalLabel": "meliphaga cinereifrons anwcb55930", 
+"^ot:ottId": 191552, 
+"^ot:ottTaxonName": "Meliphaga cinereifrons"
+}, 
+"otu7": {
+"^ot:originalLabel": "meliphaga albonotata kunhm16474", 
+"^ot:ottId": 58052, 
+"^ot:ottTaxonName": "Meliphaga albonotata"
+}, 
+"otu8": {
+"^ot:originalLabel": "meliphaga orientalis kunhm4864", 
+"^ot:ottId": 765833, 
+"^ot:ottTaxonName": "Meliphaga orientalis"
+}, 
+"otu9": {
+"^ot:originalLabel": "meliphaga flavirictus anwcb52456", 
+"^ot:ottId": 191560, 
+"^ot:ottTaxonName": "Meliphaga flavirictus"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Set BLs to 1", 
+"@xsi:type": "nex:IntTree", 
+"^ot:branchLengthDescription": "I set to 1, do not use for anything", 
+"^ot:branchLengthMode": "ot:other", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "node1", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 1, 
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge32": {
+"@length": 1, 
+"@source": "node1", 
+"@target": "node33"
+}
+}, 
+"node12": {
+"edge12": {
+"@length": 1, 
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge15": {
+"@length": 1, 
+"@source": "node12", 
+"@target": "node16"
+}
+}, 
+"node13": {
+"edge13": {
+"@length": 1, 
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge14": {
+"@length": 1, 
+"@source": "node13", 
+"@target": "node15"
+}
+}, 
+"node18": {
+"edge18": {
+"@length": 1, 
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge19": {
+"@length": 1, 
+"@source": "node18", 
+"@target": "node20"
+}
+}, 
+"node2": {
+"edge2": {
+"@length": 1, 
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge27": {
+"@length": 1, 
+"@source": "node2", 
+"@target": "node28"
+}
+}, 
+"node21": {
+"edge21": {
+"@length": 1, 
+"@source": "node21", 
+"@target": "node22"
+}, 
+"edge26": {
+"@length": 1, 
+"@source": "node21", 
+"@target": "node27"
+}
+}, 
+"node22": {
+"edge22": {
+"@length": 1, 
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge25": {
+"@length": 1, 
+"@source": "node22", 
+"@target": "node26"
+}
+}, 
+"node23": {
+"edge23": {
+"@length": 1, 
+"@source": "node23", 
+"@target": "node24"
+}, 
+"edge24": {
+"@length": 1, 
+"@source": "node23", 
+"@target": "node25"
+}
+}, 
+"node28": {
+"edge28": {
+"@length": 1, 
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge29": {
+"@length": 1, 
+"@source": "node28", 
+"@target": "node30"
+}
+}, 
+"node3": {
+"edge20": {
+"@length": 1, 
+"@source": "node3", 
+"@target": "node21"
+}, 
+"edge3": {
+"@length": 1, 
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node30": {
+"edge30": {
+"@length": 1, 
+"@source": "node30", 
+"@target": "node31"
+}, 
+"edge31": {
+"@length": 1, 
+"@source": "node30", 
+"@target": "node32"
+}
+}, 
+"node4": {
+"edge17": {
+"@length": 1, 
+"@source": "node4", 
+"@target": "node18"
+}, 
+"edge4": {
+"@length": 1, 
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node5": {
+"edge16": {
+"@length": 1, 
+"@source": "node5", 
+"@target": "node17"
+}, 
+"edge5": {
+"@length": 1, 
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node6": {
+"edge11": {
+"@length": 1, 
+"@source": "node6", 
+"@target": "node12"
+}, 
+"edge6": {
+"@length": 1, 
+"@source": "node6", 
+"@target": "node7"
+}
+}, 
+"node7": {
+"edge10": {
+"@length": 1, 
+"@source": "node7", 
+"@target": "node11"
+}, 
+"edge7": {
+"@length": 1, 
+"@source": "node7", 
+"@target": "node8"
+}
+}, 
+"node8": {
+"edge8": {
+"@length": 1, 
+"@source": "node8", 
+"@target": "node9"
+}, 
+"edge9": {
+"@length": 1, 
+"@source": "node8", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@label": "1.00000000", 
+"@root": true
+}, 
+"node10": {
+"@otu": "otu6"
+}, 
+"node11": {
+"@otu": "otu7"
+}, 
+"node12": {
+"@label": "1.00000000"
+}, 
+"node13": {
+"@label": "0.00000000"
+}, 
+"node14": {
+"@otu": "otu8"
+}, 
+"node15": {
+"@otu": "otu9"
+}, 
+"node16": {
+"@otu": "otu10"
+}, 
+"node17": {
+"@otu": "otu11"
+}, 
+"node18": {
+"@label": "1.00000000"
+}, 
+"node19": {
+"@otu": "otu12"
+}, 
+"node2": {
+"@label": "1.00000000"
+}, 
+"node20": {
+"@otu": "otu13"
+}, 
+"node21": {
+"@label": "1.00000000"
+}, 
+"node22": {
+"@label": "1.00000000"
+}, 
+"node23": {
+"@label": "1.00000000"
+}, 
+"node24": {
+"@otu": "otu14"
+}, 
+"node25": {
+"@otu": "otu15"
+}, 
+"node26": {
+"@otu": "otu16"
+}, 
+"node27": {
+"@otu": "otu17"
+}, 
+"node28": {
+"@label": "1.00000000"
+}, 
+"node29": {
+"@otu": "otu18"
+}, 
+"node3": {
+"@label": "1.00000000"
+}, 
+"node30": {
+"@label": "1.00000000"
+}, 
+"node31": {
+"@otu": "otu19"
+}, 
+"node32": {
+"@otu": "otu20"
+}, 
+"node33": {
+"@otu": "otu21"
+}, 
+"node4": {
+"@label": "1.00000000"
+}, 
+"node5": {
+"@label": "1.00000000"
+}, 
+"node6": {
+"@label": "1.00000000"
+}, 
+"node7": {
+"@label": "1.00000000"
+}, 
+"node8": {
+"@label": "0.79800000"
+}, 
+"node9": {
+"@otu": "otu5"
+}
+}
+}
+}
+}
+}
+}
+}

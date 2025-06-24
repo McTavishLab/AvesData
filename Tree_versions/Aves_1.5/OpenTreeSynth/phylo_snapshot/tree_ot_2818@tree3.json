@@ -1,0 +1,370 @@
+{
+"nexml": {
+"@about": "#study",
+"@generator": "Open Tree API",
+"@id": "study",
+"@nexml2json": "1.2.1",
+"@nexmljson": "http://purl.org/opentree/nexson",
+"@version": "0.9",
+"@xmlns": {
+"$": "http://www.nexml.org/2009",
+"nex": "http://www.nexml.org/2009",
+"ot": "http://purl.org/opentree-terms#",
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+},
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation",
+"@id": "peyotl-validator",
+"@name": "api.opentreeoflife.org/validate",
+"@url": "https://github.com/OpenTreeOfLife/peyotl",
+"@version": "0.0.4a",
+"invocation": {
+"commandLine": [],
+"otherProperty": [
+{
+"name": "pythonVersion",
+"value": "3.10.12"
+},
+{
+"name": "pythonImplementation",
+"value": "CPython"
+}
+]
+}
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
+}
+]
+},
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2025-05-15T15:07:02.203Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "All life"
+},
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-05-15T15:07:02.203Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-05-15T15:07:02.203Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre",
+"@size": 182,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.8eb806cc3a51534a.5041535445442e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree3'"
+},
+"sourceForTree": [
+{
+"$": "tree3"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"eliotmiller"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalCladeOTTTaxonName": "",
+"^ot:otusElementOrder": [
+"otus1"
+],
+"^ot:studyId": "ot_2818",
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.1111/ibi.13340"
+},
+"^ot:studyPublicationReference": "King, B. F., Sangster, G., Trainor, C. R., Irestedt, M., Prawiradilaga, D. M., & Ericson, P. G. P. (2024). A new species of nightjar (Caprimulgus) from Timor and Wetar, Lesser Sunda Islands, Wallacea. Ibis, 166(4), 1241\u20131263. Portico. https://doi.org/10.1111/ibi.13340\n",
+"^ot:studyYear": 2024,
+"^ot:tag": [],
+"^ot:treesElementOrder": [
+"trees1"
+],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 16,
+"message": 0,
+"node": 17,
+"otu": 12,
+"otus": 6,
+"tree": 3,
+"trees": 4
+},
+"otusById": {
+"otus1": {
+"otuById": {
+"otu10": {
+"^ot:originalLabel": "Caprimulgus manillensis",
+"^ot:ottId": 604420,
+"^ot:ottTaxonName": "Caprimulgus manillensis"
+},
+"otu11": {
+"^ot:originalLabel": "Antrostomus carolinensis",
+"^ot:ottId": 416426,
+"^ot:ottTaxonName": "Antrostomus carolinensis"
+},
+"otu12": {
+"^ot:originalLabel": "Chordeiles nacunda",
+"^ot:ottId": 741570,
+"^ot:ottTaxonName": "Podager nacunda"
+},
+"otu5": {
+"^ot:originalLabel": "Caprimulgus ritae"
+},
+"otu6": {
+"^ot:originalLabel": "Caprimulgus meesi",
+"^ot:ottId": 3597074,
+"^ot:ottTaxonName": "Caprimulgus meesi"
+},
+"otu7": {
+"^ot:originalLabel": "Caprimulgus macrurus",
+"^ot:ottId": 624319,
+"^ot:ottTaxonName": "Caprimulgus macrurus"
+},
+"otu8": {
+"^ot:originalLabel": "Caprimulgus atripennis",
+"^ot:ottId": 3597072,
+"^ot:ottTaxonName": "Caprimulgus atripennis"
+},
+"otu9": {
+"^ot:originalLabel": "Caprimulgus indicus",
+"^ot:ottId": 618206,
+"^ot:ottTaxonName": "Caprimulgus indicus"
+}
+}
+}
+},
+"treesById": {
+"trees1": {
+"@otus": "otus1",
+"^ot:treeElementOrder": [
+"tree3"
+],
+"treeById": {
+"tree3": {
+"@label": "Hand-coded topology",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "node4",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node3",
+"^ot:specifiedRoot": "node3",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node15": {
+"edge15": {
+"@source": "node15",
+"@target": "node16"
+},
+"edge16": {
+"@source": "node15",
+"@target": "node17"
+}
+},
+"node3": {
+"edge14": {
+"@source": "node3",
+"@target": "node15"
+},
+"edge3": {
+"@source": "node3",
+"@target": "node4"
+}
+},
+"node4": {
+"edge13": {
+"@source": "node4",
+"@target": "node14"
+},
+"edge4": {
+"@source": "node4",
+"@target": "node5"
+}
+},
+"node5": {
+"edge12": {
+"@source": "node5",
+"@target": "node13"
+},
+"edge5": {
+"@source": "node5",
+"@target": "node6"
+}
+},
+"node6": {
+"edge11": {
+"@source": "node6",
+"@target": "node12"
+},
+"edge6": {
+"@source": "node6",
+"@target": "node7"
+}
+},
+"node7": {
+"edge10": {
+"@source": "node7",
+"@target": "node11"
+},
+"edge7": {
+"@source": "node7",
+"@target": "node8"
+}
+},
+"node8": {
+"edge8": {
+"@source": "node8",
+"@target": "node9"
+},
+"edge9": {
+"@source": "node8",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node10": {
+"@otu": "otu6"
+},
+"node11": {
+"@otu": "otu7"
+},
+"node12": {
+"@otu": "otu8"
+},
+"node13": {
+"@otu": "otu9"
+},
+"node14": {
+"@otu": "otu10"
+},
+"node15": {},
+"node16": {
+"@otu": "otu11"
+},
+"node17": {
+"@otu": "otu12"
+},
+"node3": {
+"@root": true
+},
+"node4": {},
+"node5": {},
+"node6": {},
+"node7": {},
+"node8": {},
+"node9": {
+"@otu": "otu5"
+}
+}
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,93 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                    count    min threads    max threads
+-----------------------------------  -------  -------------  -------------
+concrete_tree_list                         1              1              1
+copy_collections                           1              1              1
+run_md5                                    1              1              1
+snapshot_trees_and_collection_items        1              1              1
+total                                      4              1              1
+
+Select jobs to execute...
+
+[Fri May 30 11:38:41 2025]
+rule copy_collections:
+    input: phylo_snapshot/collections_shard_shas.txt, /home/deploy/synthesis/phylesystem/shards/collections-1/collections-by-owner/snacktavish/aves.json
+    output: phylo_input/rank_collection.json
+    jobid: 5
+    resources: tmpdir=/tmp
+
+[Fri May 30 11:38:41 2025]
+Finished job 5.
+1 of 4 steps (25%) done
+Select jobs to execute...
+
+[Fri May 30 11:38:41 2025]
+rule snapshot_trees_and_collection_items:
+    input: phylo_snapshot/collections_shard_shas.txt, phylo_input/rank_collection.json
+    output: phylo_snapshot/concrete_rank_collection.json
+    jobid: 3
+    resources: tmpdir=/tmp
+
+[Fri May 30 11:38:50 2025]
+Finished job 3.
+2 of 4 steps (50%) done
+Select jobs to execute...
+
+[Fri May 30 11:38:50 2025]
+rule concrete_tree_list:
+    input: phylo_snapshot/concrete_rank_collection.json
+    output: phylo_input/study_tree_pairs.txt, phylo_input/blob_shas.txt
+    jobid: 2
+    resources: tmpdir=/tmp
+
+[Fri May 30 11:38:50 2025]
+Finished job 2.
+3 of 4 steps (75%) done
+Select jobs to execute...
+
+[Fri May 30 11:38:50 2025]
+rule run_md5:
+    input: phylo_input/blob_shas.txt, config
+    output: checksum_for_run.md5
+    jobid: 1
+    resources: tmpdir=/tmp
+
+[Fri May 30 11:38:50 2025]
+Finished job 1.
+4 of 4 steps (100%) done
+Complete log: .snakemake/log/2025-05-30T113841.073683.snakemake.log
+Subworkflow s02_clean_ott: Nothing to be done (all requested files are present and up to date).
+Subworkflow s03_clean_phylo: Nothing to be done (all requested files are present and up to date).
+Subworkflow s04_modify_taxonomy: Nothing to be done (all requested files are present and up to date).
+Subworkflow s05_exemplify: Nothing to be done (all requested files are present and up to date).
+Subworkflow s06_subproblems: Nothing to be done (all requested files are present and up to date).
+Subworkflow s07_subproblems_deg_dist: Nothing to be done (all requested files are present and up to date).
+Subworkflow s08_graft: Nothing to be done (all requested files are present and up to date).
+Subworkflow s09_unprune_taxa: Nothing to be done (all requested files are present and up to date).
+Subworkflow s10_finish: Nothing to be done (all requested files are present and up to date).
+Executing main workflow.
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count    min threads    max threads
+---------------  -------  -------------  -------------
+checksum_inputs        1              1              1
+total                  1              1              1
+
+Select jobs to execute...
+
+[Fri May 30 11:38:50 2025]
+localrule checksum_inputs:
+    input: /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpz2x0hf3e/config, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpz2x0hf3e/otc-config, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpz2x0hf3e/phylo_snapshot/ps_shard_shas.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpz2x0hf3e/phylo_snapshot/collections_shard_shas.txt, /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmpz2x0hf3e/checksum_for_run.md5
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Fri May 30 11:38:50 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2025-05-30T113841.073683.snakemake.log

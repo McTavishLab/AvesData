@@ -1,0 +1,656 @@
+{
+"nexml": {
+"@about": "#study",
+"@generator": "Open Tree API",
+"@id": "study",
+"@nexml2json": "1.2.1",
+"@nexmljson": "http://purl.org/opentree/nexson",
+"@version": "0.9",
+"@xmlns": {
+"$": "http://www.nexml.org/2009",
+"nex": "http://www.nexml.org/2009",
+"ot": "http://purl.org/opentree-terms#",
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+},
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation",
+"@id": "peyotl-validator",
+"@name": "api.opentreeoflife.org/validate",
+"@url": "https://github.com/OpenTreeOfLife/peyotl",
+"@version": "0.0.4a",
+"invocation": {
+"commandLine": [],
+"otherProperty": [
+{
+"name": "pythonVersion",
+"value": "2.7.3"
+},
+{
+"name": "pythonImplementation",
+"value": "CPython"
+}
+]
+}
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
+}
+]
+},
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-06T19:59:02.881Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "Birds"
+},
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2014-08-06T19:59:02.881Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>",
+"@size": 630,
+"@type": "newick",
+"@url": "/curator/default/to_nexson?output=input&uploadid=u1619b73c-53f3-42c5-bfcc-f2767d918be3",
+"description": {
+"$": "Source data for tree 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+},
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>",
+"@size": 630,
+"@type": "newick",
+"@url": "/curator/default/to_nexson?output=input&uploadid=u1619b73c-53f3-42c5-bfcc-f2767d918be3",
+"description": {
+"$": "Source data for tree 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2023-08-01T01:03:32.498Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+],
+"^ot:comment": "",
+"^ot:curatorName": [
+"Joseph W. Brown",
+"James Waterford"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 1068261,
+"^ot:focalCladeOTTTaxonName": "Ramphastos",
+"^ot:otusElementOrder": [
+"otus1"
+],
+"^ot:studyId": "ot_152",
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2009.08.017"
+},
+"^ot:studyPublicationReference": "Patan\u00e9, Jos\u00e9 S.L., Jason D. Weckstein, Alexandre Aleixo, John M. Bates. 2009. Evolutionary history of Ramphastos toucans: molecular phylogenetics, temporal diversification, and biogeography. Molecular Phylogenetics and Evolution 53 (3): 923-934.",
+"^ot:studyYear": 2009,
+"^ot:tag": [],
+"^ot:treesElementOrder": [
+"trees1"
+],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 42,
+"message": 0,
+"node": 43,
+"otu": 22,
+"otus": 1,
+"tree": 1,
+"trees": 1
+},
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Ramphastos vitellinus culminatus 1",
+"^ot:ottId": 541991,
+"^ot:ottTaxonName": "Ramphastos vitellinus"
+},
+"otu10": {
+"^ot:originalLabel": "Ramphastos tucanus cuvieri 1",
+"^ot:ottId": 61819,
+"^ot:ottTaxonName": "Ramphastos tucanus"
+},
+"otu11": {
+"^ot:originalLabel": "Ramphastos tucanus tucanus 2",
+"^ot:ottId": 179929,
+"^ot:ottTaxonName": "Ramphastos tucanus tucanus"
+},
+"otu12": {
+"^ot:originalLabel": "Ramphastos tucanus cuvieri 2",
+"^ot:ottId": 61819,
+"^ot:ottTaxonName": "Ramphastos tucanus"
+},
+"otu13": {
+"^ot:originalLabel": "Ramphastos tucanus tucanus 1",
+"^ot:ottId": 179929,
+"^ot:ottTaxonName": "Ramphastos tucanus tucanus"
+},
+"otu14": {
+"^ot:originalLabel": "Ramphastos ambiguus swainsonii",
+"^ot:ottId": 967515,
+"^ot:ottTaxonName": "Ramphastos ambiguus"
+},
+"otu15": {
+"^ot:originalLabel": "Ramphastos ambiguus ambiguus",
+"^ot:ottId": 866604,
+"^ot:ottTaxonName": "Ramphastos ambiguus ambiguus"
+},
+"otu16": {
+"^ot:originalLabel": "Selenidera",
+"^ot:ottId": 1068266,
+"^ot:ottTaxonName": "Selenidera"
+},
+"otu17": {
+"^ot:originalLabel": "Andigena",
+"^ot:ottId": 815702,
+"^ot:ottTaxonName": "Andigena"
+},
+"otu18": {
+"^ot:originalLabel": "Aulacorhynchus prasinus atrogularis",
+"^ot:ottId": 288964,
+"^ot:ottTaxonName": "Aulacorhynchus atrogularis"
+},
+"otu19": {
+"^ot:originalLabel": "Aulacorhynchus prasinus caeruleogularis",
+"^ot:ottId": 564506,
+"^ot:ottTaxonName": "Aulacorhynchus caeruleogularis"
+},
+"otu2": {
+"^ot:originalLabel": "Ramphastos vitellinus ariel N 1",
+"^ot:ottId": 541991,
+"^ot:ottTaxonName": "Ramphastos vitellinus"
+},
+"otu20": {
+"^ot:originalLabel": "Pteroglossus",
+"^ot:ottId": 291645,
+"^ot:ottTaxonName": "Pteroglossus"
+},
+"otu21": {
+"^ot:originalLabel": "Semnornis frantzii",
+"^ot:ottId": 542000,
+"^ot:ottTaxonName": "Semnornis frantzii"
+},
+"otu22": {
+"^ot:originalLabel": "Semnornis ramphastinus",
+"^ot:ottId": 1068256,
+"^ot:ottTaxonName": "Semnornis ramphastinus"
+},
+"otu3": {
+"^ot:originalLabel": "Ramphastos vitellinus ariel N 2",
+"^ot:ottId": 541991,
+"^ot:ottTaxonName": "Ramphastos vitellinus"
+},
+"otu4": {
+"^ot:originalLabel": "Ramphastos vitellinus culminatus 2",
+"^ot:ottId": 541991,
+"^ot:ottTaxonName": "Ramphastos vitellinus"
+},
+"otu5": {
+"^ot:originalLabel": "Ramphastos vitellinus vitellinus",
+"^ot:ottId": 179925,
+"^ot:ottTaxonName": "Ramphastos vitellinus vitellinus"
+},
+"otu6": {
+"^ot:originalLabel": "Ramphastos vitellinus ariel SE",
+"^ot:ottId": 541991,
+"^ot:ottTaxonName": "Ramphastos vitellinus"
+},
+"otu7": {
+"^ot:originalLabel": "Ramphastos brevis",
+"^ot:ottId": 397816,
+"^ot:ottTaxonName": "Ramphastos brevis"
+},
+"otu8": {
+"^ot:originalLabel": "Ramphastos dicolorus",
+"^ot:ottId": 1030675,
+"^ot:ottTaxonName": "Ramphastos dicolorus"
+},
+"otu9": {
+"^ot:originalLabel": "Ramphastos sulfuratus",
+"^ot:ottId": 1030674,
+"^ot:ottTaxonName": "Ramphastos sulfuratus"
+}
+}
+}
+},
+"treesById": {
+"trees1": {
+"@otus": "otus1",
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Fig. 6",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "Bayesian inference ",
+"^ot:inGroupClade": "node3",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1",
+"@target": "node2"
+},
+"edge40": {
+"@source": "node1",
+"@target": "node41"
+}
+},
+"node10": {
+"edge10": {
+"@source": "node10",
+"@target": "node11"
+},
+"edge13": {
+"@source": "node10",
+"@target": "node14"
+}
+},
+"node11": {
+"edge11": {
+"@source": "node11",
+"@target": "node12"
+},
+"edge12": {
+"@source": "node11",
+"@target": "node13"
+}
+},
+"node2": {
+"edge2": {
+"@source": "node2",
+"@target": "node3"
+},
+"edge31": {
+"@source": "node2",
+"@target": "node32"
+}
+},
+"node21": {
+"edge21": {
+"@source": "node21",
+"@target": "node22"
+},
+"edge28": {
+"@source": "node21",
+"@target": "node29"
+}
+},
+"node22": {
+"edge22": {
+"@source": "node22",
+"@target": "node23"
+},
+"edge27": {
+"@source": "node22",
+"@target": "node28"
+}
+},
+"node23": {
+"edge23": {
+"@source": "node23",
+"@target": "node24"
+},
+"edge26": {
+"@source": "node23",
+"@target": "node27"
+}
+},
+"node24": {
+"edge24": {
+"@source": "node24",
+"@target": "node25"
+},
+"edge25": {
+"@source": "node24",
+"@target": "node26"
+}
+},
+"node29": {
+"edge29": {
+"@source": "node29",
+"@target": "node30"
+},
+"edge30": {
+"@source": "node29",
+"@target": "node31"
+}
+},
+"node3": {
+"edge20": {
+"@source": "node3",
+"@target": "node21"
+},
+"edge3": {
+"@source": "node3",
+"@target": "node4"
+}
+},
+"node32": {
+"edge32": {
+"@source": "node32",
+"@target": "node33"
+},
+"edge39": {
+"@source": "node32",
+"@target": "node40"
+}
+},
+"node33": {
+"edge33": {
+"@source": "node33",
+"@target": "node34"
+},
+"edge36": {
+"@source": "node33",
+"@target": "node37"
+}
+},
+"node34": {
+"edge34": {
+"@source": "node34",
+"@target": "node35"
+},
+"edge35": {
+"@source": "node34",
+"@target": "node36"
+}
+},
+"node37": {
+"edge37": {
+"@source": "node37",
+"@target": "node38"
+},
+"edge38": {
+"@source": "node37",
+"@target": "node39"
+}
+},
+"node4": {
+"edge19": {
+"@source": "node4",
+"@target": "node20"
+},
+"edge4": {
+"@source": "node4",
+"@target": "node5"
+}
+},
+"node41": {
+"edge41": {
+"@source": "node41",
+"@target": "node42"
+},
+"edge42": {
+"@source": "node41",
+"@target": "node43"
+}
+},
+"node5": {
+"edge18": {
+"@source": "node5",
+"@target": "node19"
+},
+"edge5": {
+"@source": "node5",
+"@target": "node6"
+}
+},
+"node6": {
+"edge17": {
+"@source": "node6",
+"@target": "node18"
+},
+"edge6": {
+"@source": "node6",
+"@target": "node7"
+}
+},
+"node7": {
+"edge16": {
+"@source": "node7",
+"@target": "node17"
+},
+"edge7": {
+"@source": "node7",
+"@target": "node8"
+}
+},
+"node8": {
+"edge15": {
+"@source": "node8",
+"@target": "node16"
+},
+"edge8": {
+"@source": "node8",
+"@target": "node9"
+}
+},
+"node9": {
+"edge14": {
+"@source": "node9",
+"@target": "node15"
+},
+"edge9": {
+"@source": "node9",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {},
+"node11": {},
+"node12": {
+"@otu": "otu1"
+},
+"node13": {
+"@otu": "otu2"
+},
+"node14": {
+"@otu": "otu3"
+},
+"node15": {
+"@otu": "otu4"
+},
+"node16": {
+"@otu": "otu5"
+},
+"node17": {
+"@otu": "otu6"
+},
+"node18": {
+"@otu": "otu7"
+},
+"node19": {
+"@otu": "otu8"
+},
+"node2": {},
+"node20": {
+"@otu": "otu9"
+},
+"node21": {},
+"node22": {},
+"node23": {},
+"node24": {},
+"node25": {
+"@otu": "otu10"
+},
+"node26": {
+"@otu": "otu11"
+},
+"node27": {
+"@otu": "otu12"
+},
+"node28": {
+"@otu": "otu13"
+},
+"node29": {},
+"node3": {},
+"node30": {
+"@otu": "otu14"
+},
+"node31": {
+"@otu": "otu15"
+},
+"node32": {},
+"node33": {},
+"node34": {},
+"node35": {
+"@otu": "otu16"
+},
+"node36": {
+"@otu": "otu17"
+},
+"node37": {},
+"node38": {
+"@otu": "otu18"
+},
+"node39": {
+"@otu": "otu19"
+},
+"node4": {},
+"node40": {
+"@otu": "otu20"
+},
+"node41": {},
+"node42": {
+"@otu": "otu21"
+},
+"node43": {
+"@otu": "otu22"
+},
+"node5": {},
+"node6": {},
+"node7": {},
+"node8": {},
+"node9": {}
+}
+}
+}
+}
+}
+}
+}
