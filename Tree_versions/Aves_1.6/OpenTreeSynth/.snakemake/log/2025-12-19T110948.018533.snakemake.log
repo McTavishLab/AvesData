@@ -1,0 +1,218 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: otree2
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                                count
+-----------------------------------------------  -------
+clean_ott_clean_ott_based_on_flags                     1
+clean_ott_subset_ott                                   1
+clean_ott_write_ott_cleaning_flags                     1
+clean_ott_write_ott_root                               1
+clean_ott_write_ott_version                            1
+clean_phylo_clean_phylo_tre                            1
+exemplify_exemplify                                    1
+exemplify_write_inc_sed                                1
+modify_taxonomy_clean_bumped_ott_based_on_flags        1
+modify_taxonomy_create_cleaned_bump_taxonomy           1
+modify_taxonomy_create_extinct_bump_file               1
+modify_taxonomy_link_bumped_clean_ott_tree             1
+presolve                                               1
+subproblems_common_cleancontest                        1
+subproblems_common_decompose                           1
+subproblems_deg_dist_force_all_subr_dd                 1
+subproblems_expand_path_to_nonempty_phylo              1
+total                                                 17
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmp4jb7osnf
+Execute 4 jobs...
+[Fri Dec 19 11:09:48 2025]
+localrule clean_ott_subset_ott:
+    input: config
+    output: subott_dir/forwards.tsv, subott_dir/synonyms.tsv, subott_dir/taxonomy.tsv, subott_dir/version.txt, subott_dir
+    jobid: 9
+    reason: Missing output files: subott_dir/forwards.tsv, subott_dir/synonyms.tsv, subott_dir/taxonomy.tsv, subott_dir/version.txt
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:09:48 2025]
+localrule clean_ott_write_ott_root:
+    input: config
+    output: cleaned_ott/root_ott_id.txt
+    jobid: 12
+    reason: Missing output files: cleaned_ott/root_ott_id.txt
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:09:48 2025]
+localrule clean_ott_write_ott_cleaning_flags:
+    input: config
+    output: cleaned_ott/cleaning_flags.txt
+    jobid: 11
+    reason: Missing output files: cleaned_ott/cleaning_flags.txt
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:09:48 2025]
+localrule subproblems_deg_dist_force_all_subr_dd:
+    output: subproblems/.all_deg_dist_calculated.txt
+    jobid: 23
+    reason: Missing output files: subproblems/.all_deg_dist_calculated.txt
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:09:49 2025]
+Finished jobid: 23 (Rule: subproblems_deg_dist_force_all_subr_dd)
+1 of 17 steps (6%) done
+[Fri Dec 19 11:09:49 2025]
+Finished jobid: 12 (Rule: clean_ott_write_ott_root)
+2 of 17 steps (12%) done
+[Fri Dec 19 11:09:49 2025]
+Finished jobid: 11 (Rule: clean_ott_write_ott_cleaning_flags)
+3 of 17 steps (18%) done
+[Fri Dec 19 11:09:51 2025]
+Finished jobid: 9 (Rule: clean_ott_subset_ott)
+4 of 17 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Dec 19 11:09:51 2025]
+localrule clean_ott_write_ott_version:
+    input: subott_dir/version.txt
+    output: cleaned_ott/ott_version.txt
+    jobid: 10
+    reason: Missing output files: cleaned_ott/ott_version.txt; Input files updated by another job: subott_dir/version.txt
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:09:53 2025]
+Finished jobid: 10 (Rule: clean_ott_write_ott_version)
+5 of 17 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Dec 19 11:09:53 2025]
+localrule clean_ott_clean_ott_based_on_flags:
+    input: subott_dir/forwards.tsv, subott_dir/synonyms.tsv, subott_dir/taxonomy.tsv, subott_dir/version.txt, cleaned_ott/ott_version.txt, cleaned_ott/cleaning_flags.txt, cleaned_ott/root_ott_id.txt
+    output: cleaned_ott/cleaned_ott_with_hiddenbarren.tre, cleaned_ott/cleaned_not_updated_ott.tre, cleaned_ott/cleaned_ott_1.json, cleaned_ott/cleaned_ott_pruned_nonflagged.json, cleaned_ott/flagged_in_cleaned.json
+    jobid: 8
+    reason: Missing output files: cleaned_ott/cleaned_ott_pruned_nonflagged.json, cleaned_ott/flagged_in_cleaned.json, cleaned_ott/cleaned_ott_with_hiddenbarren.tre, cleaned_ott/cleaned_ott_1.json, cleaned_ott/cleaned_not_updated_ott.tre; Input files updated by another job: subott_dir/version.txt, cleaned_ott/cleaning_flags.txt, subott_dir/synonyms.tsv, subott_dir/taxonomy.tsv, subott_dir/forwards.tsv, cleaned_ott/ott_version.txt, cleaned_ott/root_ott_id.txt
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:09:55 2025]
+Finished jobid: 8 (Rule: clean_ott_clean_ott_based_on_flags)
+6 of 17 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Dec 19 11:09:55 2025]
+localrule clean_phylo_clean_phylo_tre:
+    input: config, cleaned_ott/cleaned_ott_pruned_nonflagged.json, phylo_input/study_tree_pairs.txt
+    output: cleaned_phylo/phylo_inputs_cleaned.txt, exemplified_phylo/args.txt
+    jobid: 13
+    reason: Missing output files: exemplified_phylo/args.txt, cleaned_phylo/phylo_inputs_cleaned.txt; Input files updated by another job: cleaned_ott/cleaned_ott_pruned_nonflagged.json
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:09:57 2025]
+Finished jobid: 13 (Rule: clean_phylo_clean_phylo_tre)
+7 of 17 steps (41%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Dec 19 11:09:57 2025]
+localrule modify_taxonomy_create_extinct_bump_file:
+    input: config, otc-config, exemplified_phylo/args.txt, cleaned_ott/cleaned_not_updated_ott.tre, cleaned_phylo/phylo_inputs_cleaned.txt, cleaned_ott/flagged_in_cleaned.json
+    output: cleaned_ott/move_extinct_higher_log.json
+    jobid: 17
+    reason: Missing output files: cleaned_ott/move_extinct_higher_log.json; Input files updated by another job: exemplified_phylo/args.txt, cleaned_ott/cleaned_not_updated_ott.tre, cleaned_ott/flagged_in_cleaned.json, cleaned_phylo/phylo_inputs_cleaned.txt
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:10:20 2025]
+Finished jobid: 17 (Rule: modify_taxonomy_create_extinct_bump_file)
+8 of 17 steps (47%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Dec 19 11:10:20 2025]
+localrule modify_taxonomy_create_cleaned_bump_taxonomy:
+    input: config, otc-config, cleaned_ott/move_extinct_higher_log.json, subott_dir/taxonomy.tsv, subott_dir/synonyms.tsv, subott_dir/forwards.tsv, subott_dir/version.txt, subott_dir/version.txt
+    output: bumped_ott/taxonomy.tsv, bumped_ott/synonyms.tsv, bumped_ott/forwards.tsv, bumped_ott/version.txt, bumped_ott/ott_version.txt
+    jobid: 16
+    reason: Missing output files: bumped_ott/synonyms.tsv, bumped_ott/forwards.tsv, bumped_ott/version.txt, bumped_ott/taxonomy.tsv, bumped_ott/ott_version.txt; Input files updated by another job: subott_dir/version.txt, cleaned_ott/move_extinct_higher_log.json, subott_dir/synonyms.tsv, subott_dir/forwards.tsv, subott_dir/taxonomy.tsv
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:10:21 2025]
+Finished jobid: 16 (Rule: modify_taxonomy_create_cleaned_bump_taxonomy)
+9 of 17 steps (53%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Dec 19 11:10:21 2025]
+localrule modify_taxonomy_clean_bumped_ott_based_on_flags:
+    input: bumped_ott/forwards.tsv, bumped_ott/synonyms.tsv, bumped_ott/taxonomy.tsv, bumped_ott/version.txt, cleaned_ott/move_extinct_higher_log.json, bumped_ott/ott_version.txt, cleaned_ott/cleaning_flags.txt, cleaned_ott/root_ott_id.txt, cleaned_ott/cleaned_ott_with_hiddenbarren.tre, cleaned_ott/cleaned_not_updated_ott.tre, cleaned_ott/cleaned_ott_1.json, cleaned_ott/cleaned_ott_pruned_nonflagged.json, cleaned_ott/flagged_in_cleaned.json
+    output: bumped_ott/cleaned_ott_with_hiddenbarren.tre, bumped_ott/cleaned_not_updated_ott.tre, bumped_ott/cleaned_ott_1.json, bumped_ott/cleaned_ott_pruned_nonflagged.json, bumped_ott/flagged_in_cleaned.json
+    jobid: 15
+    reason: Missing output files: bumped_ott/cleaned_not_updated_ott.tre; Input files updated by another job: cleaned_ott/cleaning_flags.txt, cleaned_ott/root_ott_id.txt, bumped_ott/synonyms.tsv, bumped_ott/forwards.tsv, cleaned_ott/cleaned_ott_pruned_nonflagged.json, bumped_ott/version.txt, cleaned_ott/flagged_in_cleaned.json, cleaned_ott/move_extinct_higher_log.json, cleaned_ott/cleaned_ott_with_hiddenbarren.tre, bumped_ott/taxonomy.tsv, bumped_ott/ott_version.txt, cleaned_ott/cleaned_ott_1.json, cleaned_ott/cleaned_not_updated_ott.tre
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:10:23 2025]
+Finished jobid: 15 (Rule: modify_taxonomy_clean_bumped_ott_based_on_flags)
+10 of 17 steps (59%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Dec 19 11:10:23 2025]
+localrule modify_taxonomy_link_bumped_clean_ott_tree:
+    input: bumped_ott/cleaned_not_updated_ott.tre
+    output: bumped_ott/cleaned_ott.tre
+    jobid: 14
+    reason: Missing output files: bumped_ott/cleaned_ott.tre; Input files updated by another job: bumped_ott/cleaned_not_updated_ott.tre
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:10:24 2025]
+Finished jobid: 14 (Rule: modify_taxonomy_link_bumped_clean_ott_tree)
+11 of 17 steps (65%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Dec 19 11:10:24 2025]
+localrule exemplify_exemplify:
+    input: config, otc-config, exemplified_phylo/args.txt, bumped_ott/cleaned_ott.tre
+    output: exemplified_phylo/nonempty_trees.txt, exemplified_phylo/exemplified_log.json, exemplified_phylo/taxonomy.tre
+    jobid: 19
+    reason: Missing output files: exemplified_phylo/nonempty_trees.txt, exemplified_phylo/taxonomy.tre; Input files updated by another job: exemplified_phylo/args.txt, bumped_ott/cleaned_ott.tre
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:10:26 2025]
+Finished jobid: 19 (Rule: exemplify_exemplify)
+12 of 17 steps (71%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Fri Dec 19 11:10:26 2025]
+localrule exemplify_write_inc_sed:
+    input: config, otc-config, exemplified_phylo/taxonomy.tre, bumped_ott/taxonomy.tsv, bumped_ott/synonyms.tsv, bumped_ott/forwards.tsv, bumped_ott/version.txt, bumped_ott/ott_version.txt
+    output: exemplified_phylo/incertae_sedis.txt
+    jobid: 18
+    reason: Missing output files: exemplified_phylo/incertae_sedis.txt; Input files updated by another job: bumped_ott/taxonomy.tsv, bumped_ott/synonyms.tsv, bumped_ott/forwards.tsv, bumped_ott/ott_version.txt, bumped_ott/version.txt, exemplified_phylo/taxonomy.tre
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:10:26 2025]
+localrule subproblems_expand_path_to_nonempty_phylo:
+    input: config, exemplified_phylo/nonempty_trees.txt
+    output: subproblems/scratch/args.txt
+    jobid: 21
+    reason: Missing output files: subproblems/scratch/args.txt; Input files updated by another job: exemplified_phylo/nonempty_trees.txt
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:10:27 2025]
+Finished jobid: 18 (Rule: exemplify_write_inc_sed)
+13 of 17 steps (76%) done
+[Fri Dec 19 11:10:27 2025]
+Finished jobid: 21 (Rule: subproblems_expand_path_to_nonempty_phylo)
+14 of 17 steps (82%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Dec 19 11:10:27 2025]
+localcheckpoint subproblems_common_decompose:
+    input: config, otc-config, subproblems/scratch/args.txt, exemplified_phylo/taxonomy.tre
+    output: subproblems/dumped_subproblem_ids.txt, subproblems/raw_contesting_trees.json, subproblems/subproblem-ids.txt
+    jobid: 20
+    reason: Missing output files: subproblems/raw_contesting_trees.json; Input files updated by another job: subproblems/scratch/args.txt, exemplified_phylo/taxonomy.tre
+    resources: tmpdir=/tmp
+DAG of jobs will be updated after completion.
+[Fri Dec 19 11:10:50 2025]
+Finished jobid: 20 (Rule: subproblems_common_decompose)
+15 of 17 steps (88%) done
+Updating checkpoint dependencies.
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Dec 19 11:10:50 2025]
+localcheckpoint subproblems_common_cleancontest:
+    input: config, otc-config, subproblems/raw_contesting_trees.json
+    output: subproblems/contesting_trees.json, subproblems/contesting-trees.json
+    jobid: 22
+    reason: Missing output files: subproblems/contesting_trees.json
+    resources: tmpdir=/tmp
+DAG of jobs will be updated after completion.
+[Fri Dec 19 11:10:51 2025]
+Finished jobid: 22 (Rule: subproblems_common_cleancontest)
+16 of 17 steps (94%) done
+Updating checkpoint dependencies.
+Complete log(s): /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmp4jb7osnf/.snakemake/log/2025-12-19T110948.018533.snakemake.log

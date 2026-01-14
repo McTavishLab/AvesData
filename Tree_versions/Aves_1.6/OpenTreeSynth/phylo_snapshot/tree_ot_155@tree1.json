@@ -1,0 +1,1600 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-06T22:47:55.178Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-06T22:47:55.178Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 3068, 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=uafbb697e-5795-4143-b380-672aa8127b67", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2023-06-05T18:13:55.560Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown", 
+"jwaterford"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 291853, 
+"^ot:focalCladeOTTTaxonName": "Aulacorhynchus", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_155", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.1463-6409.2011.00475.x"
+}, 
+"^ot:studyPublicationReference": "Bonaccorso, Elisa, Juan M. Guayasamin, A. Townsend Peterson, Adolfo G. Navarro-Sig\u00fcenza. 2011. Molecular phylogeny and systematics of Neotropical toucanets in the genus Aulacorhynchus (Aves, Ramphastidae). Zoologica Scripta 40 (4): 336-349.", 
+"^ot:studyYear": 2011, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Aulacorhynchus prasinus prasinus 1", 
+"^ot:ottId": 291850, 
+"^ot:ottTaxonName": "Aulacorhynchus prasinus"
+}, 
+"otu10": {
+"^ot:originalLabel": "Aulacorhynchus prasinus griseogularis 1", 
+"^ot:ottId": 3600283, 
+"^ot:ottTaxonName": "Aulacorhynchus griseigularis"
+}, 
+"otu11": {
+"^ot:originalLabel": "Aulacorhynchus prasinus griseogularis 2", 
+"^ot:ottId": 3600283, 
+"^ot:ottTaxonName": "Aulacorhynchus griseigularis"
+}, 
+"otu12": {
+"^ot:originalLabel": "Aulacorhynchus prasinus griseogularis 3", 
+"^ot:ottId": 3600283, 
+"^ot:ottTaxonName": "Aulacorhynchus griseigularis"
+}, 
+"otu13": {
+"^ot:originalLabel": "Aulacorhynchus prasinus atrogularis", 
+"^ot:ottId": 3600280, 
+"^ot:ottTaxonName": "Aulacorhynchus albivitta"
+}, 
+"otu14": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus calorhynchus 1", 
+"^ot:ottId": 3600277, 
+"^ot:ottTaxonName": "Aulacorhynchus calorhynchus"
+}, 
+"otu15": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus calorhynchus 2", 
+"^ot:ottId": 3600277, 
+"^ot:ottTaxonName": "Aulacorhynchus calorhynchus"
+}, 
+"otu16": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus calorhynchus 3", 
+"^ot:ottId": 3600277, 
+"^ot:ottTaxonName": "Aulacorhynchus calorhynchus"
+}, 
+"otu17": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus calorhynchus 4", 
+"^ot:ottId": 3600277, 
+"^ot:ottTaxonName": "Aulacorhynchus calorhynchus"
+}, 
+"otu18": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus calorhynchus 5", 
+"^ot:ottId": 3600277, 
+"^ot:ottTaxonName": "Aulacorhynchus calorhynchus"
+}, 
+"otu19": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus calorhynchus 6", 
+"^ot:ottId": 3600277, 
+"^ot:ottTaxonName": "Aulacorhynchus calorhynchus"
+}, 
+"otu2": {
+"^ot:originalLabel": "Aulacorhynchus prasinus prasinus 2", 
+"^ot:ottId": 291850, 
+"^ot:ottTaxonName": "Aulacorhynchus prasinus"
+}, 
+"otu20": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus erythrognathus 1"
+}, 
+"otu21": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus erythrognathus 2"
+}, 
+"otu22": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus erythrognathus 3"
+}, 
+"otu23": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus erythrognathus 4"
+}, 
+"otu24": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus sulcatus x calorhynchus 1"
+}, 
+"otu25": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus sulcatus x calorhynchus 2"
+}, 
+"otu26": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus erythrognathus 5"
+}, 
+"otu27": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus erythrognathus 6"
+}, 
+"otu28": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus sulcatus 1", 
+"^ot:ottId": 818159, 
+"^ot:ottTaxonName": "Aulacorhynchus sulcatus"
+}, 
+"otu29": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus sulcatus 2", 
+"^ot:ottId": 818159, 
+"^ot:ottTaxonName": "Aulacorhynchus sulcatus"
+}, 
+"otu3": {
+"^ot:originalLabel": "Aulacorhynchus prasinus wagleri", 
+"^ot:ottId": 291850, 
+"^ot:ottTaxonName": "Aulacorhynchus prasinus"
+}, 
+"otu30": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus sulcatus 3", 
+"^ot:ottId": 818159, 
+"^ot:ottTaxonName": "Aulacorhynchus sulcatus"
+}, 
+"otu31": {
+"^ot:originalLabel": "Aulacorhynchus sulcatus sulcatus 4", 
+"^ot:ottId": 818159, 
+"^ot:ottTaxonName": "Aulacorhynchus sulcatus"
+}, 
+"otu32": {
+"^ot:originalLabel": "Aulacorhynchus derbianus derbianus 1", 
+"^ot:ottId": 764291, 
+"^ot:ottTaxonName": "Aulacorhynchus derbianus"
+}, 
+"otu33": {
+"^ot:originalLabel": "Aulacorhynchus derbianus derbianus 2", 
+"^ot:ottId": 764291, 
+"^ot:ottTaxonName": "Aulacorhynchus derbianus"
+}, 
+"otu34": {
+"^ot:originalLabel": "Aulacorhynchus derbianus derbianus 3", 
+"^ot:ottId": 764291, 
+"^ot:ottTaxonName": "Aulacorhynchus derbianus"
+}, 
+"otu35": {
+"^ot:originalLabel": "Aulacorhynchus derbianus derbianus 4", 
+"^ot:ottId": 764291, 
+"^ot:ottTaxonName": "Aulacorhynchus derbianus"
+}, 
+"otu36": {
+"^ot:originalLabel": "Aulacorhynchus derbianus derbianus 5", 
+"^ot:ottId": 764291, 
+"^ot:ottTaxonName": "Aulacorhynchus derbianus"
+}, 
+"otu37": {
+"^ot:originalLabel": "Aulacorhynchus derbianus derbianus 6", 
+"^ot:ottId": 764291, 
+"^ot:ottTaxonName": "Aulacorhynchus derbianus"
+}, 
+"otu38": {
+"^ot:originalLabel": "Aulacorhynchus derbianus derbianus 7", 
+"^ot:ottId": 764291, 
+"^ot:ottTaxonName": "Aulacorhynchus derbianus"
+}, 
+"otu39": {
+"^ot:originalLabel": "Aulacorhynchus derbianus derbianus 8", 
+"^ot:ottId": 764291, 
+"^ot:ottTaxonName": "Aulacorhynchus derbianus"
+}, 
+"otu4": {
+"^ot:originalLabel": "Aulacorhynchus prasinus caeruleogularis", 
+"^ot:ottId": 291850, 
+"^ot:ottTaxonName": "Aulacorhynchus prasinus"
+}, 
+"otu40": {
+"^ot:originalLabel": "Aulacorhynchus derbianus derbianus 9", 
+"^ot:ottId": 764291, 
+"^ot:ottTaxonName": "Aulacorhynchus derbianus"
+}, 
+"otu41": {
+"^ot:originalLabel": "Aulacorhynchus derbianus derbianus 10", 
+"^ot:ottId": 764291, 
+"^ot:ottTaxonName": "Aulacorhynchus derbianus"
+}, 
+"otu42": {
+"^ot:originalLabel": "Aulacorhynchus derbianus derbianus 11", 
+"^ot:ottId": 764291, 
+"^ot:ottTaxonName": "Aulacorhynchus derbianus"
+}, 
+"otu43": {
+"^ot:originalLabel": "Aulacorhynchus derbianus whitelianus 1", 
+"^ot:ottId": 3600281, 
+"^ot:ottTaxonName": "Aulacorhynchus whitelianus"
+}, 
+"otu44": {
+"^ot:originalLabel": "Aulacorhynchus derbianus whitelianus 2", 
+"^ot:ottId": 3600281, 
+"^ot:ottTaxonName": "Aulacorhynchus whitelianus"
+}, 
+"otu45": {
+"^ot:originalLabel": "Aulacorhynchus derbianus whitelianus 3", 
+"^ot:ottId": 3600281, 
+"^ot:ottTaxonName": "Aulacorhynchus whitelianus"
+}, 
+"otu46": {
+"^ot:originalLabel": "Aulacorhynchus derbianus whitelianus 4", 
+"^ot:ottId": 3600281, 
+"^ot:ottTaxonName": "Aulacorhynchus whitelianus"
+}, 
+"otu47": {
+"^ot:originalLabel": "Aulacorhynchus derbianus osgoodi 1"
+}, 
+"otu48": {
+"^ot:originalLabel": "Aulacorhynchus derbianus osgoodi 2"
+}, 
+"otu49": {
+"^ot:originalLabel": "Aulacorhynchus derbianus duidae 1"
+}, 
+"otu5": {
+"^ot:originalLabel": "Aulacorhynchus prasinus albivitta 1", 
+"^ot:ottId": 3600280, 
+"^ot:ottTaxonName": "Aulacorhynchus albivitta"
+}, 
+"otu50": {
+"^ot:originalLabel": "Aulacorhynchus derbianus duidae 2"
+}, 
+"otu51": {
+"^ot:originalLabel": "Aulacorhynchus derbianus duidae 3"
+}, 
+"otu52": {
+"^ot:originalLabel": "Aulacorhynchus derbianus osgoodi 3"
+}, 
+"otu53": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 1"
+}, 
+"otu54": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 2"
+}, 
+"otu55": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 3"
+}, 
+"otu56": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus haematopygus", 
+"^ot:ottId": 818175, 
+"^ot:ottTaxonName": "Aulacorhynchus haematopygus"
+}, 
+"otu57": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 4"
+}, 
+"otu58": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 5"
+}, 
+"otu59": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 6"
+}, 
+"otu6": {
+"^ot:originalLabel": "Aulacorhynchus prasinus albivitta 2", 
+"^ot:ottId": 3600280, 
+"^ot:ottTaxonName": "Aulacorhynchus albivitta"
+}, 
+"otu60": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 7"
+}, 
+"otu61": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 8"
+}, 
+"otu62": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 9"
+}, 
+"otu63": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 10"
+}, 
+"otu64": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 11"
+}, 
+"otu65": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 12"
+}, 
+"otu66": {
+"^ot:originalLabel": "Aulacorhynchus haematopygus sexnotatus 13"
+}, 
+"otu67": {
+"^ot:originalLabel": "Aulacorhynchus coeruleicinctis 1", 
+"^ot:ottId": 818176, 
+"^ot:ottTaxonName": "Aulacorhynchus coeruleicinctis"
+}, 
+"otu68": {
+"^ot:originalLabel": "Aulacorhynchus coeruleicinctis 2", 
+"^ot:ottId": 818176, 
+"^ot:ottTaxonName": "Aulacorhynchus coeruleicinctis"
+}, 
+"otu69": {
+"^ot:originalLabel": "Aulacorhynchus coeruleicinctis 3", 
+"^ot:ottId": 818176, 
+"^ot:ottTaxonName": "Aulacorhynchus coeruleicinctis"
+}, 
+"otu7": {
+"^ot:originalLabel": "Aulacorhynchus prasinus albivitta 3", 
+"^ot:ottId": 3600280, 
+"^ot:ottTaxonName": "Aulacorhynchus albivitta"
+}, 
+"otu70": {
+"^ot:originalLabel": "Aulacorhynchus coeruleicinctis 4", 
+"^ot:ottId": 818176, 
+"^ot:ottTaxonName": "Aulacorhynchus coeruleicinctis"
+}, 
+"otu71": {
+"^ot:originalLabel": "Aulacorhynchus coeruleicinctis 5", 
+"^ot:ottId": 818176, 
+"^ot:ottTaxonName": "Aulacorhynchus coeruleicinctis"
+}, 
+"otu72": {
+"^ot:originalLabel": "Aulacorhynchus coeruleicinctis 6", 
+"^ot:ottId": 818176, 
+"^ot:ottTaxonName": "Aulacorhynchus coeruleicinctis"
+}, 
+"otu73": {
+"^ot:originalLabel": "Aulacorhynchus coeruleicinctis 7", 
+"^ot:ottId": 818176, 
+"^ot:ottTaxonName": "Aulacorhynchus coeruleicinctis"
+}, 
+"otu74": {
+"^ot:originalLabel": "Aulacorhynchus coeruleicinctis 8", 
+"^ot:ottId": 818176, 
+"^ot:ottTaxonName": "Aulacorhynchus coeruleicinctis"
+}, 
+"otu75": {
+"^ot:originalLabel": "Aulacorhynchus coeruleicinctis 9", 
+"^ot:ottId": 818176, 
+"^ot:ottTaxonName": "Aulacorhynchus coeruleicinctis"
+}, 
+"otu76": {
+"^ot:originalLabel": "Andigena cucullata", 
+"^ot:ottId": 485268, 
+"^ot:ottTaxonName": "Andigena cucullata"
+}, 
+"otu77": {
+"^ot:originalLabel": "Andigena hypoglauca", 
+"^ot:ottId": 815703, 
+"^ot:ottTaxonName": "Andigena hypoglauca"
+}, 
+"otu78": {
+"^ot:originalLabel": "Selenidera gouldii", 
+"^ot:ottId": 1068267, 
+"^ot:ottTaxonName": "Selenidera gouldii"
+}, 
+"otu79": {
+"^ot:originalLabel": "Pteroglossus azara", 
+"^ot:ottId": 355345, 
+"^ot:ottTaxonName": "Pteroglossus azara"
+}, 
+"otu8": {
+"^ot:originalLabel": "Aulacorhynchus prasinus albivitta 4", 
+"^ot:ottId": 3600280, 
+"^ot:ottTaxonName": "Aulacorhynchus albivitta"
+}, 
+"otu80": {
+"^ot:originalLabel": "Ramphastos sulfuratus", 
+"^ot:ottId": 1030674, 
+"^ot:ottTaxonName": "Ramphastos sulfuratus"
+}, 
+"otu9": {
+"^ot:originalLabel": "Aulacorhynchus prasinus albivitta 5", 
+"^ot:ottId": 3600280, 
+"^ot:ottTaxonName": "Aulacorhynchus albivitta"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 2", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node4", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge141": {
+"@source": "node1", 
+"@target": "node142"
+}
+}, 
+"node104": {
+"edge104": {
+"@source": "node104", 
+"@target": "node105"
+}, 
+"edge105": {
+"@source": "node104", 
+"@target": "node106"
+}
+}, 
+"node107": {
+"edge107": {
+"@source": "node107", 
+"@target": "node108"
+}, 
+"edge118": {
+"@source": "node107", 
+"@target": "node119"
+}
+}, 
+"node108": {
+"edge108": {
+"@source": "node108", 
+"@target": "node109"
+}, 
+"edge111": {
+"@source": "node108", 
+"@target": "node112"
+}, 
+"edge116": {
+"@source": "node108", 
+"@target": "node117"
+}, 
+"edge117": {
+"@source": "node108", 
+"@target": "node118"
+}
+}, 
+"node109": {
+"edge109": {
+"@source": "node109", 
+"@target": "node110"
+}, 
+"edge110": {
+"@source": "node109", 
+"@target": "node111"
+}
+}, 
+"node112": {
+"edge112": {
+"@source": "node112", 
+"@target": "node113"
+}, 
+"edge115": {
+"@source": "node112", 
+"@target": "node116"
+}
+}, 
+"node113": {
+"edge113": {
+"@source": "node113", 
+"@target": "node114"
+}, 
+"edge114": {
+"@source": "node113", 
+"@target": "node115"
+}
+}, 
+"node120": {
+"edge120": {
+"@source": "node120", 
+"@target": "node121"
+}, 
+"edge127": {
+"@source": "node120", 
+"@target": "node128"
+}
+}, 
+"node121": {
+"edge121": {
+"@source": "node121", 
+"@target": "node122"
+}, 
+"edge126": {
+"@source": "node121", 
+"@target": "node127"
+}
+}, 
+"node122": {
+"edge122": {
+"@source": "node122", 
+"@target": "node123"
+}, 
+"edge125": {
+"@source": "node122", 
+"@target": "node126"
+}
+}, 
+"node123": {
+"edge123": {
+"@source": "node123", 
+"@target": "node124"
+}, 
+"edge124": {
+"@source": "node123", 
+"@target": "node125"
+}
+}, 
+"node128": {
+"edge128": {
+"@source": "node128", 
+"@target": "node129"
+}, 
+"edge131": {
+"@source": "node128", 
+"@target": "node132"
+}
+}, 
+"node129": {
+"edge129": {
+"@source": "node129", 
+"@target": "node130"
+}, 
+"edge130": {
+"@source": "node129", 
+"@target": "node131"
+}
+}, 
+"node13": {
+"edge13": {
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge22": {
+"@source": "node13", 
+"@target": "node23"
+}
+}, 
+"node132": {
+"edge132": {
+"@source": "node132", 
+"@target": "node133"
+}, 
+"edge133": {
+"@source": "node132", 
+"@target": "node134"
+}, 
+"edge134": {
+"@source": "node132", 
+"@target": "node135"
+}
+}, 
+"node136": {
+"edge136": {
+"@source": "node136", 
+"@target": "node137"
+}, 
+"edge139": {
+"@source": "node136", 
+"@target": "node140"
+}
+}, 
+"node137": {
+"edge137": {
+"@source": "node137", 
+"@target": "node138"
+}, 
+"edge138": {
+"@source": "node137", 
+"@target": "node139"
+}
+}, 
+"node14": {
+"edge14": {
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge19": {
+"@source": "node14", 
+"@target": "node20"
+}
+}, 
+"node15": {
+"edge15": {
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge18": {
+"@source": "node15", 
+"@target": "node19"
+}
+}, 
+"node16": {
+"edge16": {
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge17": {
+"@source": "node16", 
+"@target": "node18"
+}
+}, 
+"node2": {
+"edge140": {
+"@source": "node2", 
+"@target": "node141"
+}, 
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}
+}, 
+"node20": {
+"edge20": {
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge21": {
+"@source": "node20", 
+"@target": "node22"
+}
+}, 
+"node23": {
+"edge23": {
+"@source": "node23", 
+"@target": "node24"
+}, 
+"edge28": {
+"@source": "node23", 
+"@target": "node29"
+}
+}, 
+"node24": {
+"edge24": {
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge27": {
+"@source": "node24", 
+"@target": "node28"
+}
+}, 
+"node25": {
+"edge25": {
+"@source": "node25", 
+"@target": "node26"
+}, 
+"edge26": {
+"@source": "node25", 
+"@target": "node27"
+}
+}, 
+"node3": {
+"edge135": {
+"@source": "node3", 
+"@target": "node136"
+}, 
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node30": {
+"edge119": {
+"@source": "node30", 
+"@target": "node120"
+}, 
+"edge30": {
+"@source": "node30", 
+"@target": "node31"
+}
+}, 
+"node31": {
+"edge31": {
+"@source": "node31", 
+"@target": "node32"
+}, 
+"edge95": {
+"@source": "node31", 
+"@target": "node96"
+}
+}, 
+"node32": {
+"edge32": {
+"@source": "node32", 
+"@target": "node33"
+}, 
+"edge80": {
+"@source": "node32", 
+"@target": "node81"
+}
+}, 
+"node33": {
+"edge33": {
+"@source": "node33", 
+"@target": "node34"
+}, 
+"edge63": {
+"@source": "node33", 
+"@target": "node64"
+}
+}, 
+"node34": {
+"edge34": {
+"@source": "node34", 
+"@target": "node35"
+}, 
+"edge57": {
+"@source": "node34", 
+"@target": "node58"
+}
+}, 
+"node35": {
+"edge35": {
+"@source": "node35", 
+"@target": "node36"
+}, 
+"edge48": {
+"@source": "node35", 
+"@target": "node49"
+}, 
+"edge51": {
+"@source": "node35", 
+"@target": "node52"
+}, 
+"edge54": {
+"@source": "node35", 
+"@target": "node55"
+}, 
+"edge55": {
+"@source": "node35", 
+"@target": "node56"
+}, 
+"edge56": {
+"@source": "node35", 
+"@target": "node57"
+}
+}, 
+"node36": {
+"edge36": {
+"@source": "node36", 
+"@target": "node37"
+}, 
+"edge47": {
+"@source": "node36", 
+"@target": "node48"
+}
+}, 
+"node37": {
+"edge37": {
+"@source": "node37", 
+"@target": "node38"
+}, 
+"edge42": {
+"@source": "node37", 
+"@target": "node43"
+}
+}, 
+"node38": {
+"edge38": {
+"@source": "node38", 
+"@target": "node39"
+}, 
+"edge41": {
+"@source": "node38", 
+"@target": "node42"
+}
+}, 
+"node39": {
+"edge39": {
+"@source": "node39", 
+"@target": "node40"
+}, 
+"edge40": {
+"@source": "node39", 
+"@target": "node41"
+}
+}, 
+"node4": {
+"edge29": {
+"@source": "node4", 
+"@target": "node30"
+}, 
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node43": {
+"edge43": {
+"@source": "node43", 
+"@target": "node44"
+}, 
+"edge46": {
+"@source": "node43", 
+"@target": "node47"
+}
+}, 
+"node44": {
+"edge44": {
+"@source": "node44", 
+"@target": "node45"
+}, 
+"edge45": {
+"@source": "node44", 
+"@target": "node46"
+}
+}, 
+"node49": {
+"edge49": {
+"@source": "node49", 
+"@target": "node50"
+}, 
+"edge50": {
+"@source": "node49", 
+"@target": "node51"
+}
+}, 
+"node5": {
+"edge12": {
+"@source": "node5", 
+"@target": "node13"
+}, 
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node52": {
+"edge52": {
+"@source": "node52", 
+"@target": "node53"
+}, 
+"edge53": {
+"@source": "node52", 
+"@target": "node54"
+}
+}, 
+"node58": {
+"edge58": {
+"@source": "node58", 
+"@target": "node59"
+}, 
+"edge62": {
+"@source": "node58", 
+"@target": "node63"
+}
+}, 
+"node59": {
+"edge59": {
+"@source": "node59", 
+"@target": "node60"
+}, 
+"edge60": {
+"@source": "node59", 
+"@target": "node61"
+}, 
+"edge61": {
+"@source": "node59", 
+"@target": "node62"
+}
+}, 
+"node6": {
+"edge11": {
+"@source": "node6", 
+"@target": "node12"
+}, 
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}
+}, 
+"node64": {
+"edge64": {
+"@source": "node64", 
+"@target": "node65"
+}, 
+"edge68": {
+"@source": "node64", 
+"@target": "node69"
+}, 
+"edge75": {
+"@source": "node64", 
+"@target": "node76"
+}
+}, 
+"node65": {
+"edge65": {
+"@source": "node65", 
+"@target": "node66"
+}, 
+"edge66": {
+"@source": "node65", 
+"@target": "node67"
+}, 
+"edge67": {
+"@source": "node65", 
+"@target": "node68"
+}
+}, 
+"node69": {
+"edge69": {
+"@source": "node69", 
+"@target": "node70"
+}, 
+"edge73": {
+"@source": "node69", 
+"@target": "node74"
+}, 
+"edge74": {
+"@source": "node69", 
+"@target": "node75"
+}
+}, 
+"node7": {
+"edge10": {
+"@source": "node7", 
+"@target": "node11"
+}, 
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}
+}, 
+"node70": {
+"edge70": {
+"@source": "node70", 
+"@target": "node71"
+}, 
+"edge71": {
+"@source": "node70", 
+"@target": "node72"
+}, 
+"edge72": {
+"@source": "node70", 
+"@target": "node73"
+}
+}, 
+"node76": {
+"edge76": {
+"@source": "node76", 
+"@target": "node77"
+}, 
+"edge79": {
+"@source": "node76", 
+"@target": "node80"
+}
+}, 
+"node77": {
+"edge77": {
+"@source": "node77", 
+"@target": "node78"
+}, 
+"edge78": {
+"@source": "node77", 
+"@target": "node79"
+}
+}, 
+"node8": {
+"edge8": {
+"@source": "node8", 
+"@target": "node9"
+}, 
+"edge9": {
+"@source": "node8", 
+"@target": "node10"
+}
+}, 
+"node81": {
+"edge81": {
+"@source": "node81", 
+"@target": "node82"
+}, 
+"edge94": {
+"@source": "node81", 
+"@target": "node95"
+}
+}, 
+"node82": {
+"edge82": {
+"@source": "node82", 
+"@target": "node83"
+}, 
+"edge90": {
+"@source": "node82", 
+"@target": "node91"
+}, 
+"edge93": {
+"@source": "node82", 
+"@target": "node94"
+}
+}, 
+"node83": {
+"edge83": {
+"@source": "node83", 
+"@target": "node84"
+}, 
+"edge86": {
+"@source": "node83", 
+"@target": "node87"
+}, 
+"edge87": {
+"@source": "node83", 
+"@target": "node88"
+}, 
+"edge88": {
+"@source": "node83", 
+"@target": "node89"
+}, 
+"edge89": {
+"@source": "node83", 
+"@target": "node90"
+}
+}, 
+"node84": {
+"edge84": {
+"@source": "node84", 
+"@target": "node85"
+}, 
+"edge85": {
+"@source": "node84", 
+"@target": "node86"
+}
+}, 
+"node91": {
+"edge91": {
+"@source": "node91", 
+"@target": "node92"
+}, 
+"edge92": {
+"@source": "node91", 
+"@target": "node93"
+}
+}, 
+"node96": {
+"edge106": {
+"@source": "node96", 
+"@target": "node107"
+}, 
+"edge96": {
+"@source": "node96", 
+"@target": "node97"
+}
+}, 
+"node97": {
+"edge103": {
+"@source": "node97", 
+"@target": "node104"
+}, 
+"edge97": {
+"@source": "node97", 
+"@target": "node98"
+}
+}, 
+"node98": {
+"edge102": {
+"@source": "node98", 
+"@target": "node103"
+}, 
+"edge98": {
+"@source": "node98", 
+"@target": "node99"
+}
+}, 
+"node99": {
+"edge100": {
+"@source": "node99", 
+"@target": "node101"
+}, 
+"edge101": {
+"@source": "node99", 
+"@target": "node102"
+}, 
+"edge99": {
+"@source": "node99", 
+"@target": "node100"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu2", 
+"^ot:isTaxonExemplar": false
+}, 
+"node100": {
+"@otu": "otu53"
+}, 
+"node101": {
+"@otu": "otu54"
+}, 
+"node102": {
+"@otu": "otu55"
+}, 
+"node103": {
+"@otu": "otu56"
+}, 
+"node104": {}, 
+"node105": {
+"@otu": "otu57"
+}, 
+"node106": {
+"@otu": "otu58"
+}, 
+"node107": {}, 
+"node108": {}, 
+"node109": {}, 
+"node11": {
+"@otu": "otu3"
+}, 
+"node110": {
+"@otu": "otu59"
+}, 
+"node111": {
+"@otu": "otu60"
+}, 
+"node112": {}, 
+"node113": {}, 
+"node114": {
+"@otu": "otu61"
+}, 
+"node115": {
+"@otu": "otu62"
+}, 
+"node116": {
+"@otu": "otu63"
+}, 
+"node117": {
+"@otu": "otu64"
+}, 
+"node118": {
+"@otu": "otu65"
+}, 
+"node119": {
+"@otu": "otu66"
+}, 
+"node12": {
+"@otu": "otu4"
+}, 
+"node120": {}, 
+"node121": {}, 
+"node122": {}, 
+"node123": {}, 
+"node124": {
+"@otu": "otu67", 
+"^ot:isTaxonExemplar": true
+}, 
+"node125": {
+"@otu": "otu68", 
+"^ot:isTaxonExemplar": false
+}, 
+"node126": {
+"@otu": "otu69", 
+"^ot:isTaxonExemplar": false
+}, 
+"node127": {
+"@otu": "otu70", 
+"^ot:isTaxonExemplar": false
+}, 
+"node128": {}, 
+"node129": {}, 
+"node13": {}, 
+"node130": {
+"@otu": "otu71", 
+"^ot:isTaxonExemplar": false
+}, 
+"node131": {
+"@otu": "otu72", 
+"^ot:isTaxonExemplar": false
+}, 
+"node132": {}, 
+"node133": {
+"@otu": "otu73", 
+"^ot:isTaxonExemplar": false
+}, 
+"node134": {
+"@otu": "otu74", 
+"^ot:isTaxonExemplar": false
+}, 
+"node135": {
+"@otu": "otu75", 
+"^ot:isTaxonExemplar": false
+}, 
+"node136": {}, 
+"node137": {}, 
+"node138": {
+"@otu": "otu76"
+}, 
+"node139": {
+"@otu": "otu77"
+}, 
+"node14": {}, 
+"node140": {
+"@otu": "otu78"
+}, 
+"node141": {
+"@otu": "otu79"
+}, 
+"node142": {
+"@otu": "otu80"
+}, 
+"node15": {}, 
+"node16": {}, 
+"node17": {
+"@otu": "otu5", 
+"^ot:isTaxonExemplar": true
+}, 
+"node18": {
+"@otu": "otu6", 
+"^ot:isTaxonExemplar": false
+}, 
+"node19": {
+"@otu": "otu7", 
+"^ot:isTaxonExemplar": false
+}, 
+"node2": {}, 
+"node20": {}, 
+"node21": {
+"@otu": "otu8", 
+"^ot:isTaxonExemplar": false
+}, 
+"node22": {
+"@otu": "otu9", 
+"^ot:isTaxonExemplar": false
+}, 
+"node23": {}, 
+"node24": {}, 
+"node25": {}, 
+"node26": {
+"@otu": "otu10", 
+"^ot:isTaxonExemplar": true
+}, 
+"node27": {
+"@otu": "otu11", 
+"^ot:isTaxonExemplar": false
+}, 
+"node28": {
+"@otu": "otu12", 
+"^ot:isTaxonExemplar": false
+}, 
+"node29": {
+"@otu": "otu13"
+}, 
+"node3": {}, 
+"node30": {}, 
+"node31": {}, 
+"node32": {}, 
+"node33": {}, 
+"node34": {}, 
+"node35": {}, 
+"node36": {}, 
+"node37": {}, 
+"node38": {}, 
+"node39": {}, 
+"node4": {}, 
+"node40": {
+"@otu": "otu14", 
+"^ot:isTaxonExemplar": true
+}, 
+"node41": {
+"@otu": "otu15", 
+"^ot:isTaxonExemplar": false
+}, 
+"node42": {
+"@otu": "otu16", 
+"^ot:isTaxonExemplar": false
+}, 
+"node43": {}, 
+"node44": {}, 
+"node45": {
+"@otu": "otu17", 
+"^ot:isTaxonExemplar": false
+}, 
+"node46": {
+"@otu": "otu18", 
+"^ot:isTaxonExemplar": false
+}, 
+"node47": {
+"@otu": "otu19", 
+"^ot:isTaxonExemplar": false
+}, 
+"node48": {
+"@otu": "otu20"
+}, 
+"node49": {}, 
+"node5": {}, 
+"node50": {
+"@otu": "otu21"
+}, 
+"node51": {
+"@otu": "otu22"
+}, 
+"node52": {}, 
+"node53": {
+"@otu": "otu23"
+}, 
+"node54": {
+"@otu": "otu24"
+}, 
+"node55": {
+"@otu": "otu25"
+}, 
+"node56": {
+"@otu": "otu26"
+}, 
+"node57": {
+"@otu": "otu27"
+}, 
+"node58": {}, 
+"node59": {}, 
+"node6": {}, 
+"node60": {
+"@otu": "otu28", 
+"^ot:isTaxonExemplar": true
+}, 
+"node61": {
+"@otu": "otu29", 
+"^ot:isTaxonExemplar": false
+}, 
+"node62": {
+"@otu": "otu30", 
+"^ot:isTaxonExemplar": false
+}, 
+"node63": {
+"@otu": "otu31", 
+"^ot:isTaxonExemplar": false
+}, 
+"node64": {}, 
+"node65": {}, 
+"node66": {
+"@otu": "otu32", 
+"^ot:isTaxonExemplar": true
+}, 
+"node67": {
+"@otu": "otu33", 
+"^ot:isTaxonExemplar": false
+}, 
+"node68": {
+"@otu": "otu34", 
+"^ot:isTaxonExemplar": false
+}, 
+"node69": {}, 
+"node7": {}, 
+"node70": {}, 
+"node71": {
+"@otu": "otu35", 
+"^ot:isTaxonExemplar": false
+}, 
+"node72": {
+"@otu": "otu36", 
+"^ot:isTaxonExemplar": false
+}, 
+"node73": {
+"@otu": "otu37", 
+"^ot:isTaxonExemplar": false
+}, 
+"node74": {
+"@otu": "otu38", 
+"^ot:isTaxonExemplar": false
+}, 
+"node75": {
+"@otu": "otu39", 
+"^ot:isTaxonExemplar": false
+}, 
+"node76": {}, 
+"node77": {}, 
+"node78": {
+"@otu": "otu40", 
+"^ot:isTaxonExemplar": false
+}, 
+"node79": {
+"@otu": "otu41", 
+"^ot:isTaxonExemplar": false
+}, 
+"node8": {}, 
+"node80": {
+"@otu": "otu42", 
+"^ot:isTaxonExemplar": false
+}, 
+"node81": {}, 
+"node82": {}, 
+"node83": {}, 
+"node84": {}, 
+"node85": {
+"@otu": "otu43"
+}, 
+"node86": {
+"@otu": "otu44"
+}, 
+"node87": {
+"@otu": "otu45"
+}, 
+"node88": {
+"@otu": "otu46"
+}, 
+"node89": {
+"@otu": "otu47"
+}, 
+"node9": {
+"@otu": "otu1", 
+"^ot:isTaxonExemplar": true
+}, 
+"node90": {
+"@otu": "otu48"
+}, 
+"node91": {}, 
+"node92": {
+"@otu": "otu49"
+}, 
+"node93": {
+"@otu": "otu50"
+}, 
+"node94": {
+"@otu": "otu51"
+}, 
+"node95": {
+"@otu": "otu52"
+}, 
+"node96": {}, 
+"node97": {}, 
+"node98": {}, 
+"node99": {}
+}
+}
+}
+}
+}
+}
+}

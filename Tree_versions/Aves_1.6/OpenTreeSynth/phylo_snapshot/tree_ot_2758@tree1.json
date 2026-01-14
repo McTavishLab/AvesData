@@ -1,0 +1,815 @@
+{
+"nexml": {
+"@about": "#study",
+"@generator": "Open Tree API",
+"@id": "study",
+"@nexml2json": "1.2.1",
+"@nexmljson": "http://purl.org/opentree/nexson",
+"@version": "0.9",
+"@xmlns": {
+"$": "http://www.nexml.org/2009",
+"nex": "http://www.nexml.org/2009",
+"ot": "http://purl.org/opentree-terms#",
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+},
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation",
+"@id": "peyotl-validator",
+"@name": "api.opentreeoflife.org/validate",
+"@url": "https://github.com/OpenTreeOfLife/peyotl",
+"@version": "0.0.4a",
+"invocation": {
+"commandLine": [],
+"otherProperty": [
+{
+"name": "pythonVersion",
+"value": "3.10.12"
+},
+{
+"name": "pythonImplementation",
+"value": "CPython"
+}
+]
+}
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
+}
+]
+},
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2025-04-14T19:56:23.701Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "Birds"
+},
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-04-14T19:56:23.701Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-04-14T19:56:23.701Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "mcc.95.75.1.tree",
+"@size": 30279,
+"@type": "nexus",
+"@url": "/curator/download/supporting_files.doc.9a94946d3275cbf3.6d63632e39352e37352e312e74726565.tree",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"eliotmiller"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 28961,
+"^ot:focalCladeOTTTaxonName": "Ptilinopus",
+"^ot:otusElementOrder": [
+"otus1"
+],
+"^ot:studyId": "ot_2758",
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.1111/ibi.13305"
+},
+"^ot:studyPublicationReference": "Nash, J. A., Harrington, R. C., Zyskowski, K., Near, T. J., & Prum, R. O. (2024). Species status and phylogenetic relationships of the enigmatic Negros Fruit Dove (Ptilinopus arcanus). Ibis, 166(3), 1023\u20131040. Portico. https://doi.org/10.1111/ibi.13305\n",
+"^ot:studyYear": 2024,
+"^ot:tag": [],
+"^ot:treesElementOrder": [
+"trees1"
+],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 54,
+"message": 0,
+"node": 55,
+"otu": 28,
+"otus": 2,
+"tree": 1,
+"trees": 2
+},
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Alectroenas pulcherimus",
+"^ot:ottId": 3596525,
+"^ot:ottTaxonName": "Alectroenas pulcherrima"
+},
+"otu10": {
+"^ot:originalLabel": "Ptilinopus jambu",
+"^ot:ottId": 3596560,
+"^ot:ottTaxonName": "Ptilinopus jambu"
+},
+"otu11": {
+"^ot:originalLabel": "Ptilinopus leclancheri",
+"^ot:ottId": 28962,
+"^ot:ottTaxonName": "Ptilinopus leclancheri"
+},
+"otu12": {
+"^ot:originalLabel": "Ptilinopus luteovirens",
+"^ot:ottId": 51614,
+"^ot:ottTaxonName": "Ptilinopus luteovirens"
+},
+"otu13": {
+"^ot:originalLabel": "Ptilinopus magnificus",
+"^ot:ottId": 308571,
+"^ot:ottTaxonName": "Ptilinopus magnificus"
+},
+"otu14": {
+"^ot:originalLabel": "Ptilinopus marchei",
+"^ot:ottId": 3596564,
+"^ot:ottTaxonName": "Ptilinopus marchei"
+},
+"otu15": {
+"^ot:originalLabel": "Ptilinopus melanospilus",
+"^ot:ottId": 359313,
+"^ot:ottTaxonName": "Ptilinopus melanospilus"
+},
+"otu16": {
+"^ot:originalLabel": "Ptilinopus merrilli",
+"^ot:ottId": 3596591,
+"^ot:ottTaxonName": "Ptilinopus merrilli"
+},
+"otu17": {
+"^ot:originalLabel": "Ptilinopus monacha",
+"^ot:ottId": 3596584,
+"^ot:ottTaxonName": "Ptilinopus monacha"
+},
+"otu18": {
+"^ot:originalLabel": "Ptilinopus nainus",
+"^ot:ottId": 3596579,
+"^ot:ottTaxonName": "Ptilinopus nainus"
+},
+"otu19": {
+"^ot:originalLabel": "Ptilinopus occipitalis",
+"^ot:ottId": 244140,
+"^ot:ottTaxonName": "Ptilinopus occipitalis"
+},
+"otu2": {
+"^ot:originalLabel": "Caloenas nicobarica",
+"^ot:ottId": 1032058,
+"^ot:ottTaxonName": "Caloenas nicobarica"
+},
+"otu20": {
+"^ot:originalLabel": "Ptilinopus pelewensis",
+"^ot:ottId": 3596593,
+"^ot:ottTaxonName": "Ptilinopus pelewensis"
+},
+"otu21": {
+"^ot:originalLabel": "Ptilinopus perousii",
+"^ot:ottId": 3596561,
+"^ot:ottTaxonName": "Ptilinopus perousii"
+},
+"otu22": {
+"^ot:originalLabel": "Ptilinopus pulchellus",
+"^ot:ottId": 956244,
+"^ot:ottTaxonName": "Ptilinopus pulchellus"
+},
+"otu23": {
+"^ot:originalLabel": "Ptilinopus purpuratus",
+"^ot:ottId": 3596569,
+"^ot:ottTaxonName": "Ptilinopus purpuratus"
+},
+"otu24": {
+"^ot:originalLabel": "Ptilinopus regina",
+"^ot:ottId": 308574,
+"^ot:ottTaxonName": "Ptilinopus regina"
+},
+"otu25": {
+"^ot:originalLabel": "Ptilinopus rivoli",
+"^ot:ottId": 414989,
+"^ot:ottTaxonName": "Ptilinopus rivoli"
+},
+"otu26": {
+"^ot:originalLabel": "Ptilinopus tannensis",
+"^ot:ottId": 3596582,
+"^ot:ottTaxonName": "Ptilinopus tannensis"
+},
+"otu27": {
+"^ot:originalLabel": "Ptilinopus viridis",
+"^ot:ottId": 3596572,
+"^ot:ottTaxonName": "Ptilinopus viridis"
+},
+"otu28": {
+"^ot:originalLabel": "Treron curvirostra",
+"^ot:ottId": 3596642,
+"^ot:ottTaxonName": "Treron curvirostra"
+},
+"otu3": {
+"^ot:originalLabel": "Drepanoptila holosericea",
+"^ot:ottId": 506107,
+"^ot:ottTaxonName": "Drepanoptila holosericea"
+},
+"otu4": {
+"^ot:originalLabel": "Ducula poliocephala",
+"^ot:ottId": 3596555,
+"^ot:ottTaxonName": "Ducula poliocephala"
+},
+"otu5": {
+"^ot:originalLabel": "Ptilinopus arcanus",
+"^ot:ottId": 3596566,
+"^ot:ottTaxonName": "Ptilinopus arcanus"
+},
+"otu6": {
+"^ot:originalLabel": "Ptilinopus coronulatus",
+"^ot:ottId": 3596595,
+"^ot:ottTaxonName": "Ptilinopus coronulatus"
+},
+"otu7": {
+"^ot:originalLabel": "Ptilinopus dupetithouarsii",
+"^ot:ottId": 3596592,
+"^ot:ottTaxonName": "Ptilinopus dupetithouarsii"
+},
+"otu8": {
+"^ot:originalLabel": "Ptilinopus greyii",
+"^ot:ottId": 3596580,
+"^ot:ottTaxonName": "Ptilinopus greyii"
+},
+"otu9": {
+"^ot:originalLabel": "Ptilinopus hyogastrus",
+"^ot:ottId": 3596567,
+"^ot:ottTaxonName": "Ptilinopus hyogastrus"
+}
+}
+}
+},
+"treesById": {
+"trees1": {
+"@otus": "otus1",
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Fig 5 tree - mcc.95.75.1.tree",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:time",
+"^ot:branchLengthTimeUnit": "Myr",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "node1",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 3.573376,
+"@source": "node1",
+"@target": "node2"
+},
+"edge54": {
+"@length": 24.604616,
+"@source": "node1",
+"@target": "node55"
+}
+},
+"node10": {
+"edge10": {
+"@length": 0.506451,
+"@source": "node10",
+"@target": "node11"
+},
+"edge39": {
+"@length": 9.787394,
+"@source": "node10",
+"@target": "node40"
+}
+},
+"node11": {
+"edge11": {
+"@length": 9.280943,
+"@source": "node11",
+"@target": "node12"
+},
+"edge12": {
+"@length": 0.527186,
+"@source": "node11",
+"@target": "node13"
+}
+},
+"node13": {
+"edge13": {
+"@length": 1.138386,
+"@source": "node13",
+"@target": "node14"
+},
+"edge36": {
+"@length": 1.329528,
+"@source": "node13",
+"@target": "node37"
+}
+},
+"node14": {
+"edge14": {
+"@length": 1.059918,
+"@source": "node14",
+"@target": "node15"
+},
+"edge31": {
+"@length": 2.121543,
+"@source": "node14",
+"@target": "node32"
+}
+},
+"node15": {
+"edge15": {
+"@length": 0.598012,
+"@source": "node15",
+"@target": "node16"
+},
+"edge30": {
+"@length": 6.555454,
+"@source": "node15",
+"@target": "node31"
+}
+},
+"node16": {
+"edge16": {
+"@length": 0.451848,
+"@source": "node16",
+"@target": "node17"
+},
+"edge29": {
+"@length": 5.957442,
+"@source": "node16",
+"@target": "node30"
+}
+},
+"node17": {
+"edge17": {
+"@length": 5.505594,
+"@source": "node17",
+"@target": "node18"
+},
+"edge18": {
+"@length": 1.094232,
+"@source": "node17",
+"@target": "node19"
+}
+},
+"node19": {
+"edge19": {
+"@length": 0.505373,
+"@source": "node19",
+"@target": "node20"
+},
+"edge26": {
+"@length": 0.801241,
+"@source": "node19",
+"@target": "node27"
+}
+},
+"node2": {
+"edge2": {
+"@length": 2.660948,
+"@source": "node2",
+"@target": "node3"
+},
+"edge53": {
+"@length": 21.03124,
+"@source": "node2",
+"@target": "node54"
+}
+},
+"node20": {
+"edge20": {
+"@length": 0.690442,
+"@source": "node20",
+"@target": "node21"
+},
+"edge25": {
+"@length": 3.90599,
+"@source": "node20",
+"@target": "node26"
+}
+},
+"node21": {
+"edge21": {
+"@length": 3.215547,
+"@source": "node21",
+"@target": "node22"
+},
+"edge22": {
+"@length": 0.444841,
+"@source": "node21",
+"@target": "node23"
+}
+},
+"node23": {
+"edge23": {
+"@length": 2.770706,
+"@source": "node23",
+"@target": "node24"
+},
+"edge24": {
+"@length": 2.770706,
+"@source": "node23",
+"@target": "node25"
+}
+},
+"node27": {
+"edge27": {
+"@length": 3.610122,
+"@source": "node27",
+"@target": "node28"
+},
+"edge28": {
+"@length": 3.610122,
+"@source": "node27",
+"@target": "node29"
+}
+},
+"node3": {
+"edge3": {
+"@length": 2.550661,
+"@source": "node3",
+"@target": "node4"
+},
+"edge52": {
+"@length": 18.370293,
+"@source": "node3",
+"@target": "node53"
+}
+},
+"node32": {
+"edge32": {
+"@length": 1.523477,
+"@source": "node32",
+"@target": "node33"
+},
+"edge35": {
+"@length": 5.493828,
+"@source": "node32",
+"@target": "node36"
+}
+},
+"node33": {
+"edge33": {
+"@length": 3.970351,
+"@source": "node33",
+"@target": "node34"
+},
+"edge34": {
+"@length": 3.970351,
+"@source": "node33",
+"@target": "node35"
+}
+},
+"node37": {
+"edge37": {
+"@length": 7.424229,
+"@source": "node37",
+"@target": "node38"
+},
+"edge38": {
+"@length": 7.424229,
+"@source": "node37",
+"@target": "node39"
+}
+},
+"node4": {
+"edge4": {
+"@length": 1.894237,
+"@source": "node4",
+"@target": "node5"
+},
+"edge51": {
+"@length": 15.819632,
+"@source": "node4",
+"@target": "node52"
+}
+},
+"node43": {
+"edge43": {
+"@length": 3.18797,
+"@source": "node43",
+"@target": "node44"
+},
+"edge48": {
+"@length": 5.069077,
+"@source": "node43",
+"@target": "node49"
+}
+},
+"node44": {
+"edge44": {
+"@length": 2.179465,
+"@source": "node44",
+"@target": "node45"
+},
+"edge47": {
+"@length": 6.560614,
+"@source": "node44",
+"@target": "node48"
+}
+},
+"node45": {
+"edge45": {
+"@length": 4.381149,
+"@source": "node45",
+"@target": "node46"
+},
+"edge46": {
+"@length": 4.381149,
+"@source": "node45",
+"@target": "node47"
+}
+},
+"node49": {
+"edge49": {
+"@length": 4.679508,
+"@source": "node49",
+"@target": "node50"
+},
+"edge50": {
+"@length": 4.679508,
+"@source": "node49",
+"@target": "node51"
+}
+},
+"node5": {
+"edge42": {
+"@length": 4.176811,
+"@source": "node5",
+"@target": "node43"
+},
+"edge5": {
+"@length": 1.837825,
+"@source": "node5",
+"@target": "node6"
+}
+},
+"node6": {
+"edge41": {
+"@length": 12.08757,
+"@source": "node6",
+"@target": "node42"
+},
+"edge6": {
+"@length": 1.198606,
+"@source": "node6",
+"@target": "node7"
+}
+},
+"node7": {
+"edge40": {
+"@length": 10.888964,
+"@source": "node7",
+"@target": "node41"
+},
+"edge7": {
+"@length": 0.4867,
+"@source": "node7",
+"@target": "node8"
+}
+},
+"node8": {
+"edge8": {
+"@length": 10.402264,
+"@source": "node8",
+"@target": "node9"
+},
+"edge9": {
+"@length": 0.61487,
+"@source": "node8",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {},
+"node11": {},
+"node12": {
+"@otu": "otu3"
+},
+"node13": {},
+"node14": {},
+"node15": {},
+"node16": {},
+"node17": {},
+"node18": {
+"@otu": "otu6"
+},
+"node19": {},
+"node2": {},
+"node20": {},
+"node21": {},
+"node22": {
+"@otu": "otu7"
+},
+"node23": {},
+"node24": {
+"@otu": "otu21"
+},
+"node25": {
+"@otu": "otu23"
+},
+"node26": {
+"@otu": "otu20"
+},
+"node27": {},
+"node28": {
+"@otu": "otu8"
+},
+"node29": {
+"@otu": "otu24"
+},
+"node3": {},
+"node30": {
+"@otu": "otu22"
+},
+"node31": {
+"@otu": "otu17"
+},
+"node32": {},
+"node33": {},
+"node34": {
+"@otu": "otu9"
+},
+"node35": {
+"@otu": "otu27"
+},
+"node36": {
+"@otu": "otu26"
+},
+"node37": {},
+"node38": {
+"@otu": "otu18"
+},
+"node39": {
+"@otu": "otu25"
+},
+"node4": {},
+"node40": {
+"@otu": "otu15"
+},
+"node41": {
+"@otu": "otu5"
+},
+"node42": {
+"@otu": "otu12"
+},
+"node43": {},
+"node44": {},
+"node45": {},
+"node46": {
+"@otu": "otu10"
+},
+"node47": {
+"@otu": "otu11"
+},
+"node48": {
+"@otu": "otu19"
+},
+"node49": {},
+"node5": {},
+"node50": {
+"@otu": "otu14"
+},
+"node51": {
+"@otu": "otu16"
+},
+"node52": {
+"@otu": "otu13"
+},
+"node53": {
+"@otu": "otu4"
+},
+"node54": {
+"@otu": "otu2"
+},
+"node55": {
+"@otu": "otu28"
+},
+"node6": {},
+"node7": {},
+"node8": {},
+"node9": {
+"@otu": "otu1"
+}
+},
+"rootedge": [
+{
+"@id": "enode1",
+"@length": "0.0",
+"@target": "node1"
+}
+]
+}
+}
+}
+}
+}
+}
