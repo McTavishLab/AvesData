@@ -1,6 +1,7 @@
 README:
 These data are easily accessed using the `clootl` R package. Available on CRAN, example usage on github: https://github.com/eliotmiller/clootl
 
+NOTE: [Ayumi Mizuno](https://ayumi-495.github.io/ayumizuno/) alerted us to some date calibration errors in the v1.6 trees. We are correcting the issue, and will post corrected dated trees for v1.6 soon. Do not use the v1.6 trees for any analyses sensitive to branch lengths in the meantime. 
 
 # Data stucture
 ## Taxonomy:
