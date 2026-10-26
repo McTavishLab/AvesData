@@ -2,7 +2,7 @@ README:
 These data are easily accessed using the `clootl` R package. Available on CRAN, example usage on github: https://github.com/eliotmiller/clootl
 
 NOTE: [Ayumi Mizuno](https://ayumi-495.github.io/ayumizuno/) alerted us to a date calibration errors in the v1.6 trees. A bad data point affected some samples for the root age, and increased the average root age from around 100MYA to 116MYA, which also affected some nodes very deep in the tree. Most internal node ages were not significantly affected.  
-In general, our dated trees provide a broad view of the timing of divergences across the entire bird tree of life. There is high variance among dates across studies - for example age estimates for the root vary by up to 55 Mya, and individual dates are approximate. For downstream analyses that rely on node ages, if a high-quality dated tree is available (or can be readily constructed) that encompasses the relevant taxa for a given research question, we would recommend using that tree.
+In general, our dated trees provide a broad view of the timing of divergences across the entire bird tree of life. There is high variance among dates across studies - for example age estimates for the root vary by up to 55 Mya, and individual dates are approximate. For downstream analyses that rely on node ages, if a high-quality dated tree is available (or can be readily constructed) that encompasses the relevant taxa for a given research question, we would recommend using that tree. See discussion in [McTavish et al. 2025](https://www.pnas.org/doi/10.1073/pnas.2409658122)
 
 # Data stucture
 ## Taxonomy:
