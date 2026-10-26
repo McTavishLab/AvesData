@@ -1,0 +1,407 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.9"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-09-28T03:50:29.715Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-09-28T03:50:29.714Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre", 
+"@size": 214, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.bbe0c63a89976b8a.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 603922, 
+"^ot:focalCladeOTTTaxonName": "Sitta", 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_828", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.1474-919x.1998.tb04553.x"
+}, 
+"^ot:studyPublicationReference": "Pasquet, Eric. 2008. Phylogeny of the nuthatches of the Sitta canadensis group and its evolutionary and biogeographic implications. Ibis 140 (1): 150-156", 
+"^ot:studyYear": 2008, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Parus ater", 
+"^ot:ottId": 746130, 
+"^ot:ottTaxonName": "Periparus ater"
+}, 
+"otu10": {
+"^ot:originalLabel": "Sitta europaea", 
+"^ot:ottId": 82242, 
+"^ot:ottTaxonName": "Sitta europaea"
+}, 
+"otu11": {
+"^ot:originalLabel": "Sitta carolinensis", 
+"^ot:ottId": 82247, 
+"^ot:ottTaxonName": "Sitta carolinensis"
+}, 
+"otu12": {
+"^ot:originalLabel": "Sitta himalayensis", 
+"^ot:ottId": 82248, 
+"^ot:ottTaxonName": "Sitta himalayensis"
+}, 
+"otu2": {
+"^ot:originalLabel": "Sylvia melanocephala", 
+"^ot:ottId": 1093905, 
+"^ot:ottTaxonName": "Sylvia melanocephala"
+}, 
+"otu3": {
+"^ot:originalLabel": "Sitta frontalis", 
+"^ot:ottId": 82249, 
+"^ot:ottTaxonName": "Sitta frontalis"
+}, 
+"otu4": {
+"^ot:originalLabel": "Sitta pygmaea", 
+"^ot:ottId": 82240, 
+"^ot:ottTaxonName": "Sitta pygmaea"
+}, 
+"otu5": {
+"^ot:originalLabel": "Sitta canadensis", 
+"^ot:ottId": 603923, 
+"^ot:ottTaxonName": "Sitta canadensis"
+}, 
+"otu6": {
+"^ot:originalLabel": "Sitta villosa", 
+"^ot:ottId": 82239, 
+"^ot:ottTaxonName": "Sitta villosa"
+}, 
+"otu7": {
+"^ot:originalLabel": "Sitta whiteheadi", 
+"^ot:ottId": 82233, 
+"^ot:ottTaxonName": "Sitta whiteheadi"
+}, 
+"otu8": {
+"^ot:originalLabel": "Sitta krueperi", 
+"^ot:ottId": 82237, 
+"^ot:ottTaxonName": "Sitta krueperi"
+}, 
+"otu9": {
+"^ot:originalLabel": "Sitta ledanti", 
+"^ot:ottId": 82236, 
+"^ot:ottTaxonName": "Sitta ledanti"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 3", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "node4", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge2": {
+"@source": "node1", 
+"@target": "node3"
+}, 
+"edge3": {
+"@source": "node1", 
+"@target": "node4"
+}
+}, 
+"node10": {
+"edge10": {
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge11": {
+"@source": "node10", 
+"@target": "node12"
+}
+}, 
+"node12": {
+"edge12": {
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge13": {
+"@source": "node12", 
+"@target": "node14"
+}
+}, 
+"node15": {
+"edge15": {
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge16": {
+"@source": "node15", 
+"@target": "node17"
+}
+}, 
+"node18": {
+"edge18": {
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge19": {
+"@source": "node18", 
+"@target": "node20"
+}
+}, 
+"node20": {
+"edge20": {
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge21": {
+"@source": "node20", 
+"@target": "node22"
+}
+}, 
+"node4": {
+"edge17": {
+"@source": "node4", 
+"@target": "node18"
+}, 
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node5": {
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}, 
+"edge6": {
+"@source": "node5", 
+"@target": "node7"
+}
+}, 
+"node7": {
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@source": "node7", 
+"@target": "node9"
+}
+}, 
+"node9": {
+"edge14": {
+"@source": "node9", 
+"@target": "node15"
+}, 
+"edge9": {
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node11": {
+"@otu": "otu5"
+}, 
+"node12": {}, 
+"node13": {
+"@otu": "otu6"
+}, 
+"node14": {
+"@otu": "otu7"
+}, 
+"node15": {}, 
+"node16": {
+"@otu": "otu8"
+}, 
+"node17": {
+"@otu": "otu9"
+}, 
+"node18": {}, 
+"node19": {
+"@otu": "otu10"
+}, 
+"node2": {
+"@otu": "otu1"
+}, 
+"node20": {}, 
+"node21": {
+"@otu": "otu11"
+}, 
+"node22": {
+"@otu": "otu12"
+}, 
+"node3": {
+"@otu": "otu2"
+}, 
+"node4": {}, 
+"node5": {}, 
+"node6": {
+"@otu": "otu3"
+}, 
+"node7": {}, 
+"node8": {
+"@otu": "otu4"
+}, 
+"node9": {}
+}
+}
+}
+}
+}
+}
+}

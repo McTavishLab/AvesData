@@ -1,0 +1,575 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.9"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-09-27T02:18:07.141Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-09-27T02:18:07.141Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre", 
+"@size": 523, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.920f94f7dc5bd0b1.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 765193, 
+"^ot:focalCladeOTTTaxonName": "Anatidae", 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_817", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1073/pnas.032166399"
+}, 
+"^ot:studyPublicationReference": "Paxinos, E. E. , H. F. James, S. L. Olson, M. D. Sorenson, J. Jackson, R. C. Fleischer. 2002. mtDNA from fossils reveals a radiation of Hawaiian geese recently derived from the Canada goose (Branta canadensis). Proceedings of the National Academy of Sciences 99 (3): 1399-1404", 
+"^ot:studyYear": 2002, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Anser albifrons frontalis", 
+"^ot:ottId": 455335, 
+"^ot:ottTaxonName": "Anser albifrons frontalis"
+}, 
+"otu10": {
+"^ot:originalLabel": "Branta hylobadistes", 
+"^ot:ottId": 799129, 
+"^ot:ottTaxonName": "Branta hylobadistes"
+}, 
+"otu11": {
+"^ot:originalLabel": "Giant Hawaii Goose"
+}, 
+"otu12": {
+"^ot:originalLabel": "Branta canadensis occidentalis", 
+"^ot:ottId": 1052012, 
+"^ot:ottTaxonName": "Branta canadensis occidentalis"
+}, 
+"otu13": {
+"^ot:originalLabel": "Branta canadensis maxima", 
+"^ot:ottId": 75874, 
+"^ot:ottTaxonName": "Branta canadensis maxima"
+}, 
+"otu14": {
+"^ot:originalLabel": "Branta canadensis minima", 
+"^ot:ottId": 746546, 
+"^ot:ottTaxonName": "Branta hutchinsii minima"
+}, 
+"otu15": {
+"^ot:originalLabel": "Branta canadensis hutchinsii"
+}, 
+"otu16": {
+"^ot:originalLabel": "Branta canadensis taverneri", 
+"^ot:ottId": 1095437, 
+"^ot:ottTaxonName": "Branta hutchinsii taverneri"
+}, 
+"otu17": {
+"^ot:originalLabel": "Branta leucopsis", 
+"^ot:ottId": 799124, 
+"^ot:ottTaxonName": "Branta leucopsis"
+}, 
+"otu18": {
+"^ot:originalLabel": "Branta bernicla hrota", 
+"^ot:ottId": 799134, 
+"^ot:ottTaxonName": "Branta bernicla hrota"
+}, 
+"otu19": {
+"^ot:originalLabel": "Branta bernicla nigricans", 
+"^ot:ottId": 799107, 
+"^ot:ottTaxonName": "Branta bernicla nigricans"
+}, 
+"otu2": {
+"^ot:originalLabel": "Anser albifrons flavirostris", 
+"^ot:ottId": 444177, 
+"^ot:ottTaxonName": "Anser albifrons flavirostris"
+}, 
+"otu20": {
+"^ot:originalLabel": "Branta ruficollis", 
+"^ot:ottId": 799106, 
+"^ot:ottTaxonName": "Branta ruficollis"
+}, 
+"otu3": {
+"^ot:originalLabel": "Anser erythropus", 
+"^ot:ottId": 691333, 
+"^ot:ottTaxonName": "Anser erythropus"
+}, 
+"otu4": {
+"^ot:originalLabel": "Anser cygnoides", 
+"^ot:ottId": 190892, 
+"^ot:ottTaxonName": "Anser cygnoides"
+}, 
+"otu5": {
+"^ot:originalLabel": "Anser canagicus", 
+"^ot:ottId": 166688, 
+"^ot:ottTaxonName": "Anser canagica"
+}, 
+"otu6": {
+"^ot:originalLabel": "Anser rosii", 
+"^ot:ottId": 767830, 
+"^ot:ottTaxonName": "Anser rossii"
+}, 
+"otu7": {
+"^ot:originalLabel": "Branta sandvicensis Maui", 
+"^ot:ottId": 767835, 
+"^ot:ottTaxonName": "Branta sandvicensis"
+}, 
+"otu8": {
+"^ot:originalLabel": "Branta sandvicensis Hawaii", 
+"^ot:ottId": 767835, 
+"^ot:ottTaxonName": "Branta sandvicensis"
+}, 
+"otu9": {
+"^ot:originalLabel": "Branta sandvicensis", 
+"^ot:ottId": 767835, 
+"^ot:ottTaxonName": "Branta sandvicensis"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 4 (MP)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "node1", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2", 
+"^ot:bootstrapValues": 100
+}, 
+"edge12": {
+"@source": "node1", 
+"@target": "node13", 
+"^ot:bootstrapValues": 100
+}
+}, 
+"node13": {
+"edge13": {
+"@source": "node13", 
+"@target": "node14", 
+"^ot:bootstrapValues": 100
+}, 
+"edge33": {
+"@source": "node13", 
+"@target": "node34", 
+"^ot:bootstrapValues": 93
+}
+}, 
+"node14": {
+"edge14": {
+"@source": "node14", 
+"@target": "node15", 
+"^ot:bootstrapValues": 91
+}, 
+"edge26": {
+"@source": "node14", 
+"@target": "node27", 
+"^ot:bootstrapValues": 100
+}
+}, 
+"node15": {
+"edge15": {
+"@source": "node15", 
+"@target": "node16", 
+"^ot:bootstrapValues": 92
+}, 
+"edge23": {
+"@source": "node15", 
+"@target": "node24", 
+"^ot:bootstrapValues": 100
+}
+}, 
+"node16": {
+"edge16": {
+"@source": "node16", 
+"@target": "node17", 
+"^ot:bootstrapValues": 98
+}, 
+"edge22": {
+"@source": "node16", 
+"@target": "node23"
+}
+}, 
+"node17": {
+"edge17": {
+"@source": "node17", 
+"@target": "node18", 
+"^ot:bootstrapValues": 100
+}, 
+"edge21": {
+"@source": "node17", 
+"@target": "node22"
+}
+}, 
+"node18": {
+"edge18": {
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge19": {
+"@source": "node18", 
+"@target": "node20"
+}, 
+"edge20": {
+"@source": "node18", 
+"@target": "node21"
+}
+}, 
+"node2": {
+"edge11": {
+"@source": "node2", 
+"@target": "node12"
+}, 
+"edge2": {
+"@source": "node2", 
+"@target": "node3", 
+"^ot:bootstrapValues": 67
+}
+}, 
+"node24": {
+"edge24": {
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge25": {
+"@source": "node24", 
+"@target": "node26"
+}
+}, 
+"node27": {
+"edge27": {
+"@source": "node27", 
+"@target": "node28"
+}, 
+"edge32": {
+"@source": "node27", 
+"@target": "node33"
+}
+}, 
+"node28": {
+"edge28": {
+"@source": "node28", 
+"@target": "node29", 
+"^ot:bootstrapValues": 98
+}
+}, 
+"node29": {
+"edge29": {
+"@source": "node29", 
+"@target": "node30"
+}, 
+"edge30": {
+"@source": "node29", 
+"@target": "node31"
+}, 
+"edge31": {
+"@source": "node29", 
+"@target": "node32"
+}
+}, 
+"node3": {
+"edge10": {
+"@source": "node3", 
+"@target": "node11"
+}, 
+"edge3": {
+"@source": "node3", 
+"@target": "node4", 
+"^ot:bootstrapValues": 72
+}
+}, 
+"node34": {
+"edge34": {
+"@source": "node34", 
+"@target": "node35", 
+"^ot:bootstrapValues": 100
+}, 
+"edge37": {
+"@source": "node34", 
+"@target": "node38"
+}
+}, 
+"node35": {
+"edge35": {
+"@source": "node35", 
+"@target": "node36"
+}, 
+"edge36": {
+"@source": "node35", 
+"@target": "node37"
+}
+}, 
+"node4": {
+"edge4": {
+"@source": "node4", 
+"@target": "node5", 
+"^ot:bootstrapValues": 64
+}, 
+"edge9": {
+"@source": "node4", 
+"@target": "node10"
+}
+}, 
+"node5": {
+"edge5": {
+"@source": "node5", 
+"@target": "node6", 
+"^ot:bootstrapValues": 77
+}, 
+"edge8": {
+"@source": "node5", 
+"@target": "node9"
+}
+}, 
+"node6": {
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge7": {
+"@source": "node6", 
+"@target": "node8"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu4"
+}, 
+"node11": {
+"@otu": "otu5"
+}, 
+"node12": {
+"@otu": "otu6"
+}, 
+"node13": {}, 
+"node14": {}, 
+"node15": {}, 
+"node16": {}, 
+"node17": {}, 
+"node18": {}, 
+"node19": {
+"@otu": "otu7", 
+"^ot:isTaxonExemplar": true
+}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu8", 
+"^ot:isTaxonExemplar": false
+}, 
+"node21": {
+"@otu": "otu9", 
+"^ot:isTaxonExemplar": false
+}, 
+"node22": {
+"@otu": "otu10"
+}, 
+"node23": {
+"@otu": "otu11"
+}, 
+"node24": {}, 
+"node25": {
+"@otu": "otu12"
+}, 
+"node26": {
+"@otu": "otu13"
+}, 
+"node27": {}, 
+"node28": {}, 
+"node29": {}, 
+"node3": {}, 
+"node30": {
+"@otu": "otu14"
+}, 
+"node31": {
+"@otu": "otu15"
+}, 
+"node32": {
+"@otu": "otu16"
+}, 
+"node33": {
+"@otu": "otu17"
+}, 
+"node34": {}, 
+"node35": {}, 
+"node36": {
+"@otu": "otu18"
+}, 
+"node37": {
+"@otu": "otu19"
+}, 
+"node38": {
+"@otu": "otu20"
+}, 
+"node4": {}, 
+"node5": {}, 
+"node6": {}, 
+"node7": {
+"@otu": "otu1"
+}, 
+"node8": {
+"@otu": "otu2"
+}, 
+"node9": {
+"@otu": "otu3"
+}
+}
+}
+}
+}
+}
+}
+}

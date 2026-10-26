@@ -1,0 +1,6 @@
+tt = readTreeTrace("dated_treeset/dated_rand_sample_clements.tre", "clock", burnin=0)
+mcc_tree = mccTree(trace=tt, file="mcc_dated_clements.nex", positiveBranchLengths=TRUE)
+tt = readTreeTrace("dated_rand_sample_clements.tre", "clock", burnin=0)
+tt = readTreeTrace("dates_add_taxa/dated_rand_sample_clements.tre", "clock", burnin=0)
+mcc_tree = mccTree(trace=tt, file="mcc_dated_clements.nex", positiveBranchLengths=TRUE)
+###python relabel_MCC_nodes.py mcc_dated_clements.nex phylo_only.tre ../../../Taxonomy_versions/Clements2021/OTT_crosswalk_2025.csv  summary_dated_clements.nex

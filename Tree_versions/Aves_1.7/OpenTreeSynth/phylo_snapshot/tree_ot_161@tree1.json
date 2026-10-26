@@ -1,0 +1,1089 @@
+{
+"nexml": {
+"@about": "#study",
+"@generator": "Open Tree API",
+"@id": "study",
+"@nexml2json": "1.2.1",
+"@nexmljson": "http://purl.org/opentree/nexson",
+"@version": "0.9",
+"@xmlns": {
+"$": "http://www.nexml.org/2009",
+"nex": "http://www.nexml.org/2009",
+"ot": "http://purl.org/opentree-terms#",
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+},
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation",
+"@id": "peyotl-validator",
+"@name": "api.opentreeoflife.org/validate",
+"@url": "https://github.com/OpenTreeOfLife/peyotl",
+"@version": "0.0.4a",
+"invocation": {
+"commandLine": [],
+"otherProperty": [
+{
+"name": "pythonVersion",
+"value": "2.7.3"
+},
+{
+"name": "pythonImplementation",
+"value": "CPython"
+}
+]
+}
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
+}
+]
+},
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-07T07:00:05.339Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": true,
+"searchContext": {
+"$": "Birds"
+},
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": true
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2014-08-07T07:00:05.339Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>",
+"@size": 1101,
+"@type": "newick",
+"@url": "/curator/default/to_nexson?output=input&uploadid=udc3b8863-d1b0-48c4-a3b3-8bed7b29a125",
+"description": {
+"$": "Source data for tree 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2023-07-27T16:13:32.686Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+],
+"^ot:comment": "Alipiopsitta xanthops is in taxonomy, but so is older invalid name Amazona xanthops. (JWB)",
+"^ot:curatorName": [
+"Joseph W. Brown",
+"James Waterford"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 135928,
+"^ot:focalCladeOTTTaxonName": "Amazona",
+"^ot:otusElementOrder": [
+"otus1"
+],
+"^ot:studyId": "ot_161",
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/s1055-7903(03)00192-1"
+},
+"^ot:studyPublicationReference": "Russello, Michael A, George Amato. 2004. A molecular phylogeny of Amazona: implications for Neotropical parrot biogeography, taxonomy, and conservation. Molecular Phylogenetics and Evolution 30 (2): 421-437.",
+"^ot:studyYear": 2004,
+"^ot:tag": [],
+"^ot:treesElementOrder": [
+"trees1"
+],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 89,
+"message": 0,
+"node": 90,
+"otu": 46,
+"otus": 1,
+"tree": 1,
+"trees": 1
+},
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Amazona aestiva aestiva",
+"^ot:ottId": 550595,
+"^ot:ottTaxonName": "Amazona aestiva aestiva"
+},
+"otu10": {
+"^ot:originalLabel": "Amazona ochrocephala panamensis",
+"^ot:ottId": 165621,
+"^ot:ottTaxonName": "Amazona ochrocephala panamensis"
+},
+"otu11": {
+"^ot:originalLabel": "Amazona ochrocephala ochrocephala",
+"^ot:ottId": 165623,
+"^ot:ottTaxonName": "Amazona ochrocephala ochrocephala"
+},
+"otu12": {
+"^ot:originalLabel": "Amazona barbadensis",
+"^ot:ottId": 919808,
+"^ot:ottTaxonName": "Amazona barbadensis"
+},
+"otu13": {
+"^ot:originalLabel": "Amazona versicolor",
+"^ot:ottId": 256849,
+"^ot:ottTaxonName": "Amazona versicolor"
+},
+"otu14": {
+"^ot:originalLabel": "Amazona arausiaca",
+"^ot:ottId": 307002,
+"^ot:ottTaxonName": "Amazona arausiaca"
+},
+"otu15": {
+"^ot:originalLabel": "Amazona dufresniana",
+"^ot:ottId": 831220,
+"^ot:ottTaxonName": "Amazona dufresniana"
+},
+"otu16": {
+"^ot:originalLabel": "Amazona rhodocorytha",
+"^ot:ottId": 400201,
+"^ot:ottTaxonName": "Amazona rhodocorytha"
+},
+"otu17": {
+"^ot:originalLabel": "Amazona farinosa inornata",
+"^ot:ottId": 1077164,
+"^ot:ottTaxonName": "Amazona farinosa inornata"
+},
+"otu18": {
+"^ot:originalLabel": "Amazona farinosa farinosa",
+"^ot:ottId": 1077161,
+"^ot:ottTaxonName": "Amazona farinosa farinosa"
+},
+"otu19": {
+"^ot:originalLabel": "Amazona farinosa guatemalae",
+"^ot:ottId": 1077165,
+"^ot:ottTaxonName": "Amazona farinosa guatemalae"
+},
+"otu2": {
+"^ot:originalLabel": "Amazona aestiva xanthopteryx",
+"^ot:ottId": 550596,
+"^ot:ottTaxonName": "Amazona aestiva xanthopteryx"
+},
+"otu20": {
+"^ot:originalLabel": "Amazona farinosa virenticeps",
+"^ot:ottId": 1077168,
+"^ot:ottTaxonName": "Amazona farinosa virenticeps"
+},
+"otu21": {
+"^ot:originalLabel": "Amazona kawalli",
+"^ot:ottId": 717534,
+"^ot:ottTaxonName": "Amazona kawalli"
+},
+"otu22": {
+"^ot:originalLabel": "Amazona autumnalis autumnalis",
+"^ot:ottId": 550598,
+"^ot:ottTaxonName": "Amazona autumnalis autumnalis"
+},
+"otu23": {
+"^ot:originalLabel": "Amazona autumnalis lilacine",
+"^ot:ottId": 550592,
+"^ot:ottTaxonName": "Amazona autumnalis lilacine"
+},
+"otu24": {
+"^ot:originalLabel": "Amazona viridigenalis",
+"^ot:ottId": 919810,
+"^ot:ottTaxonName": "Amazona viridigenalis"
+},
+"otu25": {
+"^ot:originalLabel": "Amazona finschi",
+"^ot:ottId": 831228,
+"^ot:ottTaxonName": "Amazona finschi"
+},
+"otu26": {
+"^ot:originalLabel": "Amazona amazonica",
+"^ot:ottId": 636289,
+"^ot:ottTaxonName": "Amazona amazonica"
+},
+"otu27": {
+"^ot:originalLabel": "Amazona guildingii",
+"^ot:ottId": 1073065,
+"^ot:ottTaxonName": "Amazona guildingii"
+},
+"otu28": {
+"^ot:originalLabel": "Amazona brasiliensis",
+"^ot:ottId": 1077162,
+"^ot:ottTaxonName": "Amazona brasiliensis"
+},
+"otu29": {
+"^ot:originalLabel": "Amazona imperialis",
+"^ot:ottId": 831222,
+"^ot:ottTaxonName": "Amazona imperialis"
+},
+"otu3": {
+"^ot:originalLabel": "Amazona ochrocephala nattereri",
+"^ot:ottId": 919813,
+"^ot:ottTaxonName": "Amazona ochrocephala nattereri"
+},
+"otu30": {
+"^ot:originalLabel": "Amazona pretrei",
+"^ot:ottId": 400199,
+"^ot:ottTaxonName": "Amazona pretrei"
+},
+"otu31": {
+"^ot:originalLabel": "Amazona tucumana",
+"^ot:ottId": 400203,
+"^ot:ottTaxonName": "Amazona tucumana"
+},
+"otu32": {
+"^ot:originalLabel": "Amazona vinacea",
+"^ot:ottId": 400205,
+"^ot:ottTaxonName": "Amazona vinacea"
+},
+"otu33": {
+"^ot:originalLabel": "Amazona festiva bodini",
+"^ot:ottId": 1077170,
+"^ot:ottTaxonName": "Amazona festiva bodini"
+},
+"otu34": {
+"^ot:originalLabel": "Amazona leucocephala",
+"^ot:ottId": 307000,
+"^ot:ottTaxonName": "Amazona leucocephala"
+},
+"otu35": {
+"^ot:originalLabel": "Amazona vittata",
+"^ot:ottId": 256853,
+"^ot:ottTaxonName": "Amazona vittata"
+},
+"otu36": {
+"^ot:originalLabel": "Amazona ventralis",
+"^ot:ottId": 291861,
+"^ot:ottTaxonName": "Amazona ventralis"
+},
+"otu37": {
+"^ot:originalLabel": "Amazona collaria",
+"^ot:ottId": 256847,
+"^ot:ottTaxonName": "Amazona collaria"
+},
+"otu38": {
+"^ot:originalLabel": "Amazona agilis",
+"^ot:ottId": 256845,
+"^ot:ottTaxonName": "Amazona agilis"
+},
+"otu39": {
+"^ot:originalLabel": "Amazona albifrons albifrons",
+"^ot:ottId": 550593,
+"^ot:ottTaxonName": "Amazona albifrons albifrons"
+},
+"otu4": {
+"^ot:originalLabel": "Amazona ochrocephala xantholaema",
+"^ot:ottId": 919812,
+"^ot:ottTaxonName": "Amazona ochrocephala xantholaema"
+},
+"otu40": {
+"^ot:originalLabel": "Amazona albifrons saltuensis",
+"^ot:ottId": 550599,
+"^ot:ottTaxonName": "Amazona albifrons saltuensis"
+},
+"otu41": {
+"^ot:originalLabel": "Amazona albifrons nana",
+"^ot:ottId": 550594,
+"^ot:ottTaxonName": "Amazona albifrons nana"
+},
+"otu42": {
+"^ot:altLabel": "UNMAPPED",
+"^ot:originalLabel": "Pionus"
+},
+"otu43": {
+"^ot:originalLabel": "Amazona xanthops",
+"^ot:ottId": 3600448,
+"^ot:ottTaxonName": "Alipiopsitta xanthops"
+},
+"otu44": {
+"^ot:altLabel": "UNMAPPED",
+"^ot:originalLabel": "Graydidascalus"
+},
+"otu45": {
+"^ot:originalLabel": "Ara",
+"^ot:ottId": 1020129,
+"^ot:ottTaxonName": "Ara"
+},
+"otu46": {
+"^ot:originalLabel": "Aratinga",
+"^ot:ottId": 186445,
+"^ot:ottTaxonName": "Aratinga"
+},
+"otu5": {
+"^ot:originalLabel": "Amazona oratrix belizensis",
+"^ot:ottId": 1077157,
+"^ot:ottTaxonName": "Amazona oratrix belizensis"
+},
+"otu6": {
+"^ot:originalLabel": "Amazona oratrix oratrix",
+"^ot:ottId": 400198,
+"^ot:ottTaxonName": "Amazona oratrix oratrix"
+},
+"otu7": {
+"^ot:originalLabel": "Amazona auropalliata auropalliata",
+"^ot:ottId": 550600,
+"^ot:ottTaxonName": "Amazona auropalliata auropalliata"
+},
+"otu8": {
+"^ot:originalLabel": "Amazona oratrix hondurensis",
+"^ot:ottId": 1077156,
+"^ot:ottTaxonName": "Amazona oratrix hondurensis"
+},
+"otu9": {
+"^ot:originalLabel": "Amazona auropalliata parvipes",
+"^ot:ottId": 550597,
+"^ot:ottTaxonName": "Amazona auropalliata parvipes"
+}
+}
+}
+},
+"treesById": {
+"trees1": {
+"@otus": "otus1",
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Fig. 2",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:curatedType": "Maximum likelihood ",
+"^ot:inGroupClade": "node2",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1",
+"@target": "node2"
+},
+"edge87": {
+"@source": "node1",
+"@target": "node88"
+}
+},
+"node10": {
+"edge10": {
+"@source": "node10",
+"@target": "node11"
+},
+"edge32": {
+"@source": "node10",
+"@target": "node33"
+}
+},
+"node11": {
+"edge11": {
+"@source": "node11",
+"@target": "node12"
+},
+"edge30": {
+"@source": "node11",
+"@target": "node31"
+},
+"edge31": {
+"@source": "node11",
+"@target": "node32"
+}
+},
+"node12": {
+"edge12": {
+"@source": "node12",
+"@target": "node13"
+},
+"edge19": {
+"@source": "node12",
+"@target": "node20"
+}
+},
+"node13": {
+"edge13": {
+"@source": "node13",
+"@target": "node14"
+},
+"edge18": {
+"@source": "node13",
+"@target": "node19"
+}
+},
+"node14": {
+"edge14": {
+"@source": "node14",
+"@target": "node15"
+},
+"edge17": {
+"@source": "node14",
+"@target": "node18"
+}
+},
+"node15": {
+"edge15": {
+"@source": "node15",
+"@target": "node16"
+},
+"edge16": {
+"@source": "node15",
+"@target": "node17"
+}
+},
+"node2": {
+"edge2": {
+"@source": "node2",
+"@target": "node3"
+},
+"edge84": {
+"@source": "node2",
+"@target": "node85"
+}
+},
+"node20": {
+"edge20": {
+"@source": "node20",
+"@target": "node21"
+},
+"edge29": {
+"@source": "node20",
+"@target": "node30"
+}
+},
+"node21": {
+"edge21": {
+"@source": "node21",
+"@target": "node22"
+},
+"edge26": {
+"@source": "node21",
+"@target": "node27"
+}
+},
+"node22": {
+"edge22": {
+"@source": "node22",
+"@target": "node23"
+},
+"edge25": {
+"@source": "node22",
+"@target": "node26"
+}
+},
+"node23": {
+"edge23": {
+"@source": "node23",
+"@target": "node24"
+},
+"edge24": {
+"@source": "node23",
+"@target": "node25"
+}
+},
+"node27": {
+"edge27": {
+"@source": "node27",
+"@target": "node28"
+},
+"edge28": {
+"@source": "node27",
+"@target": "node29"
+}
+},
+"node3": {
+"edge3": {
+"@source": "node3",
+"@target": "node4"
+},
+"edge83": {
+"@source": "node3",
+"@target": "node84"
+}
+},
+"node33": {
+"edge33": {
+"@source": "node33",
+"@target": "node34"
+},
+"edge34": {
+"@source": "node33",
+"@target": "node35"
+}
+},
+"node36": {
+"edge36": {
+"@source": "node36",
+"@target": "node37"
+},
+"edge37": {
+"@source": "node36",
+"@target": "node38"
+}
+},
+"node39": {
+"edge39": {
+"@source": "node39",
+"@target": "node40"
+},
+"edge46": {
+"@source": "node39",
+"@target": "node47"
+}
+},
+"node4": {
+"edge4": {
+"@source": "node4",
+"@target": "node5"
+},
+"edge68": {
+"@source": "node4",
+"@target": "node69"
+}
+},
+"node40": {
+"edge40": {
+"@source": "node40",
+"@target": "node41"
+},
+"edge43": {
+"@source": "node40",
+"@target": "node44"
+}
+},
+"node41": {
+"edge41": {
+"@source": "node41",
+"@target": "node42"
+},
+"edge42": {
+"@source": "node41",
+"@target": "node43"
+}
+},
+"node44": {
+"edge44": {
+"@source": "node44",
+"@target": "node45"
+},
+"edge45": {
+"@source": "node44",
+"@target": "node46"
+}
+},
+"node48": {
+"edge48": {
+"@source": "node48",
+"@target": "node49"
+},
+"edge51": {
+"@source": "node48",
+"@target": "node52"
+}
+},
+"node49": {
+"edge49": {
+"@source": "node49",
+"@target": "node50"
+},
+"edge50": {
+"@source": "node49",
+"@target": "node51"
+}
+},
+"node5": {
+"edge5": {
+"@source": "node5",
+"@target": "node6"
+},
+"edge61": {
+"@source": "node5",
+"@target": "node62"
+}
+},
+"node52": {
+"edge52": {
+"@source": "node52",
+"@target": "node53"
+},
+"edge53": {
+"@source": "node52",
+"@target": "node54"
+}
+},
+"node55": {
+"edge55": {
+"@source": "node55",
+"@target": "node56"
+},
+"edge60": {
+"@source": "node55",
+"@target": "node61"
+}
+},
+"node56": {
+"edge56": {
+"@source": "node56",
+"@target": "node57"
+},
+"edge59": {
+"@source": "node56",
+"@target": "node60"
+}
+},
+"node57": {
+"edge57": {
+"@source": "node57",
+"@target": "node58"
+},
+"edge58": {
+"@source": "node57",
+"@target": "node59"
+}
+},
+"node6": {
+"edge54": {
+"@source": "node6",
+"@target": "node55"
+},
+"edge6": {
+"@source": "node6",
+"@target": "node7"
+}
+},
+"node62": {
+"edge62": {
+"@source": "node62",
+"@target": "node63"
+},
+"edge67": {
+"@source": "node62",
+"@target": "node68"
+}
+},
+"node63": {
+"edge63": {
+"@source": "node63",
+"@target": "node64"
+},
+"edge66": {
+"@source": "node63",
+"@target": "node67"
+}
+},
+"node64": {
+"edge64": {
+"@source": "node64",
+"@target": "node65"
+},
+"edge65": {
+"@source": "node64",
+"@target": "node66"
+}
+},
+"node69": {
+"edge69": {
+"@source": "node69",
+"@target": "node70"
+},
+"edge78": {
+"@source": "node69",
+"@target": "node79"
+}
+},
+"node7": {
+"edge47": {
+"@source": "node7",
+"@target": "node48"
+},
+"edge7": {
+"@source": "node7",
+"@target": "node8"
+}
+},
+"node70": {
+"edge70": {
+"@source": "node70",
+"@target": "node71"
+},
+"edge77": {
+"@source": "node70",
+"@target": "node78"
+}
+},
+"node71": {
+"edge71": {
+"@source": "node71",
+"@target": "node72"
+},
+"edge76": {
+"@source": "node71",
+"@target": "node77"
+}
+},
+"node72": {
+"edge72": {
+"@source": "node72",
+"@target": "node73"
+},
+"edge75": {
+"@source": "node72",
+"@target": "node76"
+}
+},
+"node73": {
+"edge73": {
+"@source": "node73",
+"@target": "node74"
+},
+"edge74": {
+"@source": "node73",
+"@target": "node75"
+}
+},
+"node79": {
+"edge79": {
+"@source": "node79",
+"@target": "node80"
+},
+"edge82": {
+"@source": "node79",
+"@target": "node83"
+}
+},
+"node8": {
+"edge38": {
+"@source": "node8",
+"@target": "node39"
+},
+"edge8": {
+"@source": "node8",
+"@target": "node9"
+}
+},
+"node80": {
+"edge80": {
+"@source": "node80",
+"@target": "node81"
+},
+"edge81": {
+"@source": "node80",
+"@target": "node82"
+}
+},
+"node85": {
+"edge85": {
+"@source": "node85",
+"@target": "node86"
+},
+"edge86": {
+"@source": "node85",
+"@target": "node87"
+}
+},
+"node88": {
+"edge88": {
+"@source": "node88",
+"@target": "node89"
+},
+"edge89": {
+"@source": "node88",
+"@target": "node90"
+}
+},
+"node9": {
+"edge35": {
+"@source": "node9",
+"@target": "node36"
+},
+"edge9": {
+"@source": "node9",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {},
+"node11": {},
+"node12": {},
+"node13": {},
+"node14": {},
+"node15": {},
+"node16": {
+"@otu": "otu1"
+},
+"node17": {
+"@otu": "otu2"
+},
+"node18": {
+"@otu": "otu3"
+},
+"node19": {
+"@otu": "otu4"
+},
+"node2": {},
+"node20": {},
+"node21": {},
+"node22": {},
+"node23": {},
+"node24": {
+"@otu": "otu5"
+},
+"node25": {
+"@otu": "otu6"
+},
+"node26": {
+"@otu": "otu7"
+},
+"node27": {},
+"node28": {
+"@otu": "otu8"
+},
+"node29": {
+"@otu": "otu9"
+},
+"node3": {},
+"node30": {
+"@otu": "otu10"
+},
+"node31": {
+"@otu": "otu11"
+},
+"node32": {
+"@otu": "otu12"
+},
+"node33": {},
+"node34": {
+"@otu": "otu13"
+},
+"node35": {
+"@otu": "otu14"
+},
+"node36": {},
+"node37": {
+"@otu": "otu15"
+},
+"node38": {
+"@otu": "otu16"
+},
+"node39": {},
+"node4": {},
+"node40": {},
+"node41": {},
+"node42": {
+"@otu": "otu17"
+},
+"node43": {
+"@otu": "otu18"
+},
+"node44": {},
+"node45": {
+"@otu": "otu19"
+},
+"node46": {
+"@otu": "otu20"
+},
+"node47": {
+"@otu": "otu21"
+},
+"node48": {},
+"node49": {},
+"node5": {},
+"node50": {
+"@otu": "otu22"
+},
+"node51": {
+"@otu": "otu23"
+},
+"node52": {},
+"node53": {
+"@otu": "otu24"
+},
+"node54": {
+"@otu": "otu25"
+},
+"node55": {},
+"node56": {},
+"node57": {},
+"node58": {
+"@otu": "otu26"
+},
+"node59": {
+"@otu": "otu27"
+},
+"node6": {},
+"node60": {
+"@otu": "otu28"
+},
+"node61": {
+"@otu": "otu29"
+},
+"node62": {},
+"node63": {},
+"node64": {},
+"node65": {
+"@otu": "otu30"
+},
+"node66": {
+"@otu": "otu31"
+},
+"node67": {
+"@otu": "otu32"
+},
+"node68": {
+"@otu": "otu33"
+},
+"node69": {},
+"node7": {},
+"node70": {},
+"node71": {},
+"node72": {},
+"node73": {},
+"node74": {
+"@otu": "otu34"
+},
+"node75": {
+"@otu": "otu35"
+},
+"node76": {
+"@otu": "otu36"
+},
+"node77": {
+"@otu": "otu37"
+},
+"node78": {
+"@otu": "otu38"
+},
+"node79": {},
+"node8": {},
+"node80": {},
+"node81": {
+"@otu": "otu39"
+},
+"node82": {
+"@otu": "otu40"
+},
+"node83": {
+"@otu": "otu41"
+},
+"node84": {
+"@otu": "otu42"
+},
+"node85": {},
+"node86": {
+"@otu": "otu43"
+},
+"node87": {
+"@otu": "otu44"
+},
+"node88": {},
+"node89": {
+"@otu": "otu45"
+},
+"node9": {},
+"node90": {
+"@otu": "otu46"
+}
+}
+}
+}
+}
+}
+}
+}

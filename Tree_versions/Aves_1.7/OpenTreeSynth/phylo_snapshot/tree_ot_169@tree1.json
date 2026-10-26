@@ -1,0 +1,721 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-09T03:47:05.444Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-09T03:47:05.444Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 626, 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u6567af59-6b54-4a35-86fe-672af3fb21d2", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2023-03-30T22:51:22.502Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown", 
+"Emily Jane McTavish"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 5860997, 
+"^ot:focalCladeOTTTaxonName": "Cardinalidae", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_169", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/jbi.12218"
+}, 
+"^ot:studyPublicationReference": "Robert W. Bryson, Jaime Chaves, Brian Tilston Smith, Matthew J. Miller, Kevin Winker, Jorge L. P\u00e9rez-Em\u00e1n, John Klicka, 2014, 'Diversification across the New World within the \u2018blue\u2019 cardinalids (Aves: Cardinalidae)', Journal of Biogeography, vol. 41, no. 3, pp. 587-599", 
+"^ot:studyYear": 2014, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Cyanocompsa cyanoides A", 
+"^ot:ottId": 486842, 
+"^ot:ottTaxonName": "Cyanocompsa cyanoides"
+}, 
+"otu10": {
+"^ot:originalLabel": "Amaurospiza carrizalensis", 
+"^ot:ottId": 3597356, 
+"^ot:ottTaxonName": "Amaurospiza carrizalensis"
+}, 
+"otu11": {
+"^ot:originalLabel": "Amaurospiza moesta", 
+"^ot:ottId": 1044598, 
+"^ot:ottTaxonName": "Amaurospiza moesta"
+}, 
+"otu12": {
+"^ot:originalLabel": "Amaurospiza concolor B", 
+"^ot:ottId": 596726, 
+"^ot:ottTaxonName": "Amaurospiza concolor"
+}, 
+"otu13": {
+"^ot:originalLabel": "Amaurospiza concolor A", 
+"^ot:ottId": 596726, 
+"^ot:ottTaxonName": "Amaurospiza concolor"
+}, 
+"otu14": {
+"^ot:originalLabel": "Passerina versicolor C", 
+"^ot:ottId": 887258, 
+"^ot:ottTaxonName": "Passerina versicolor"
+}, 
+"otu15": {
+"^ot:originalLabel": "Passerina versicolor B", 
+"^ot:ottId": 887258, 
+"^ot:ottTaxonName": "Passerina versicolor"
+}, 
+"otu16": {
+"^ot:originalLabel": "Passerina versicolor A", 
+"^ot:ottId": 887258, 
+"^ot:ottTaxonName": "Passerina versicolor"
+}, 
+"otu17": {
+"^ot:originalLabel": "Passerina ciris", 
+"^ot:ottId": 887250, 
+"^ot:ottTaxonName": "Passerina ciris"
+}, 
+"otu18": {
+"^ot:originalLabel": "Passerina leclancherii", 
+"^ot:ottId": 887253, 
+"^ot:ottTaxonName": "Passerina leclancherii"
+}, 
+"otu19": {
+"^ot:originalLabel": "Passerina rositae", 
+"^ot:ottId": 724916, 
+"^ot:ottTaxonName": "Passerina rositae"
+}, 
+"otu2": {
+"^ot:originalLabel": "Cyanocompsa cyanoides C", 
+"^ot:ottId": 486842, 
+"^ot:ottTaxonName": "Cyanocompsa cyanoides"
+}, 
+"otu20": {
+"^ot:originalLabel": "Passerina amoena", 
+"^ot:ottId": 119888, 
+"^ot:ottTaxonName": "Passerina amoena"
+}, 
+"otu21": {
+"^ot:originalLabel": "Passerina caerulea", 
+"^ot:ottId": 486840, 
+"^ot:ottTaxonName": "Passerina caerulea"
+}, 
+"otu22": {
+"^ot:originalLabel": "Passerina cyanea", 
+"^ot:ottId": 939942, 
+"^ot:ottTaxonName": "Passerina cyanea"
+}, 
+"otu23": {
+"^ot:originalLabel": "Cyanocompsa parellina B", 
+"^ot:ottId": 772205, 
+"^ot:ottTaxonName": "Cyanocompsa parellina"
+}, 
+"otu24": {
+"^ot:originalLabel": "Cyanocompsa parellina C", 
+"^ot:ottId": 772205, 
+"^ot:ottTaxonName": "Cyanocompsa parellina"
+}, 
+"otu25": {
+"^ot:originalLabel": "Cyanocompsa parellina A", 
+"^ot:ottId": 772205, 
+"^ot:ottTaxonName": "Cyanocompsa parellina"
+}, 
+"otu26": {
+"^ot:originalLabel": "Spiza americana", 
+"^ot:ottId": 364334, 
+"^ot:ottTaxonName": "Spiza americana"
+}, 
+"otu3": {
+"^ot:originalLabel": "Cyanocompsa cyanoides B", 
+"^ot:ottId": 486842, 
+"^ot:ottTaxonName": "Cyanocompsa cyanoides"
+}, 
+"otu4": {
+"^ot:originalLabel": "Cyanocompsa cyanoides D", 
+"^ot:ottId": 486842, 
+"^ot:ottTaxonName": "Cyanocompsa cyanoides"
+}, 
+"otu5": {
+"^ot:originalLabel": "Cyanocompsa cyanoides F", 
+"^ot:ottId": 486842, 
+"^ot:ottTaxonName": "Cyanocompsa cyanoides"
+}, 
+"otu6": {
+"^ot:originalLabel": "Cyanocompsa cyanoides E", 
+"^ot:ottId": 486842, 
+"^ot:ottTaxonName": "Cyanocompsa cyanoides"
+}, 
+"otu7": {
+"^ot:originalLabel": "Cyanocompsa brissonii A", 
+"^ot:ottId": 7661234, 
+"^ot:ottTaxonName": "Cyanoloxia brissonii"
+}, 
+"otu8": {
+"^ot:originalLabel": "Cyanocompsa brissonii B", 
+"^ot:ottId": 7661234, 
+"^ot:ottTaxonName": "Cyanoloxia brissonii"
+}, 
+"otu9": {
+"^ot:originalLabel": "Cyanoloxia glaucocaerulea", 
+"^ot:ottId": 75499, 
+"^ot:ottTaxonName": "Cyanoloxia glaucocaerulea"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 3 (multilocus)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge50": {
+"@source": "node1", 
+"@target": "node51"
+}
+}, 
+"node11": {
+"edge11": {
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge14": {
+"@source": "node11", 
+"@target": "node15"
+}
+}, 
+"node12": {
+"edge12": {
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge13": {
+"@source": "node12", 
+"@target": "node14"
+}
+}, 
+"node16": {
+"edge16": {
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge19": {
+"@source": "node16", 
+"@target": "node20"
+}
+}, 
+"node17": {
+"edge17": {
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge18": {
+"@source": "node17", 
+"@target": "node19"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge27": {
+"@source": "node2", 
+"@target": "node28"
+}
+}, 
+"node21": {
+"edge21": {
+"@source": "node21", 
+"@target": "node22"
+}, 
+"edge26": {
+"@source": "node21", 
+"@target": "node27"
+}
+}, 
+"node22": {
+"edge22": {
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge25": {
+"@source": "node22", 
+"@target": "node26"
+}
+}, 
+"node23": {
+"edge23": {
+"@source": "node23", 
+"@target": "node24"
+}, 
+"edge24": {
+"@source": "node23", 
+"@target": "node25"
+}
+}, 
+"node28": {
+"edge28": {
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge45": {
+"@source": "node28", 
+"@target": "node46"
+}
+}, 
+"node29": {
+"edge29": {
+"@source": "node29", 
+"@target": "node30"
+}, 
+"edge40": {
+"@source": "node29", 
+"@target": "node41"
+}
+}, 
+"node3": {
+"edge20": {
+"@source": "node3", 
+"@target": "node21"
+}, 
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node30": {
+"edge30": {
+"@source": "node30", 
+"@target": "node31"
+}, 
+"edge39": {
+"@source": "node30", 
+"@target": "node40"
+}
+}, 
+"node31": {
+"edge31": {
+"@source": "node31", 
+"@target": "node32"
+}, 
+"edge38": {
+"@source": "node31", 
+"@target": "node39"
+}
+}, 
+"node32": {
+"edge32": {
+"@source": "node32", 
+"@target": "node33"
+}, 
+"edge37": {
+"@source": "node32", 
+"@target": "node38"
+}
+}, 
+"node33": {
+"edge33": {
+"@source": "node33", 
+"@target": "node34"
+}, 
+"edge36": {
+"@source": "node33", 
+"@target": "node37"
+}
+}, 
+"node34": {
+"edge34": {
+"@source": "node34", 
+"@target": "node35"
+}, 
+"edge35": {
+"@source": "node34", 
+"@target": "node36"
+}
+}, 
+"node4": {
+"edge15": {
+"@source": "node4", 
+"@target": "node16"
+}, 
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node41": {
+"edge41": {
+"@source": "node41", 
+"@target": "node42"
+}, 
+"edge44": {
+"@source": "node41", 
+"@target": "node45"
+}
+}, 
+"node42": {
+"edge42": {
+"@source": "node42", 
+"@target": "node43"
+}, 
+"edge43": {
+"@source": "node42", 
+"@target": "node44"
+}
+}, 
+"node46": {
+"edge46": {
+"@source": "node46", 
+"@target": "node47"
+}, 
+"edge49": {
+"@source": "node46", 
+"@target": "node50"
+}
+}, 
+"node47": {
+"edge47": {
+"@source": "node47", 
+"@target": "node48"
+}, 
+"edge48": {
+"@source": "node47", 
+"@target": "node49"
+}
+}, 
+"node5": {
+"edge10": {
+"@source": "node5", 
+"@target": "node11"
+}, 
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node6": {
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge9": {
+"@source": "node6", 
+"@target": "node10"
+}
+}, 
+"node7": {
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@source": "node7", 
+"@target": "node9"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu3", 
+"^ot:isTaxonExemplar": false
+}, 
+"node11": {}, 
+"node12": {}, 
+"node13": {
+"@otu": "otu4", 
+"^ot:isTaxonExemplar": true
+}, 
+"node14": {
+"@otu": "otu5", 
+"^ot:isTaxonExemplar": false
+}, 
+"node15": {
+"@otu": "otu6", 
+"^ot:isTaxonExemplar": false
+}, 
+"node16": {}, 
+"node17": {}, 
+"node18": {
+"@otu": "otu7", 
+"^ot:isTaxonExemplar": true
+}, 
+"node19": {
+"@otu": "otu8", 
+"^ot:isTaxonExemplar": false
+}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu9"
+}, 
+"node21": {}, 
+"node22": {}, 
+"node23": {}, 
+"node24": {
+"@otu": "otu10"
+}, 
+"node25": {
+"@otu": "otu11"
+}, 
+"node26": {
+"@otu": "otu12"
+}, 
+"node27": {
+"@otu": "otu13"
+}, 
+"node28": {}, 
+"node29": {}, 
+"node3": {}, 
+"node30": {}, 
+"node31": {}, 
+"node32": {}, 
+"node33": {}, 
+"node34": {}, 
+"node35": {
+"@otu": "otu14", 
+"^ot:isTaxonExemplar": true
+}, 
+"node36": {
+"@otu": "otu15", 
+"^ot:isTaxonExemplar": false
+}, 
+"node37": {
+"@otu": "otu16", 
+"^ot:isTaxonExemplar": false
+}, 
+"node38": {
+"@otu": "otu17"
+}, 
+"node39": {
+"@otu": "otu18"
+}, 
+"node4": {}, 
+"node40": {
+"@otu": "otu19"
+}, 
+"node41": {}, 
+"node42": {}, 
+"node43": {
+"@otu": "otu20"
+}, 
+"node44": {
+"@otu": "otu21"
+}, 
+"node45": {
+"@otu": "otu22"
+}, 
+"node46": {}, 
+"node47": {}, 
+"node48": {
+"@otu": "otu23", 
+"^ot:isTaxonExemplar": true
+}, 
+"node49": {
+"@otu": "otu24", 
+"^ot:isTaxonExemplar": false
+}, 
+"node5": {}, 
+"node50": {
+"@otu": "otu25", 
+"^ot:isTaxonExemplar": false
+}, 
+"node51": {
+"@otu": "otu26"
+}, 
+"node6": {}, 
+"node7": {}, 
+"node8": {
+"@otu": "otu1", 
+"^ot:isTaxonExemplar": false
+}, 
+"node9": {
+"@otu": "otu2", 
+"^ot:isTaxonExemplar": false
+}
+}
+}
+}
+}
+}
+}
+}

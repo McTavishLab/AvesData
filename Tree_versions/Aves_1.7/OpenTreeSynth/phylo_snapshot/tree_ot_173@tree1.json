@@ -1,0 +1,339 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-10T02:06:57.260Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-10T02:06:57.260Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 158, 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u2970f43b-f439-4ff3-925f-04b6271d07be", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown", 
+"Jonathan A Rees"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 119892, 
+"^ot:focalCladeOTTTaxonName": "Poecile", 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_173", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/evo.12280"
+}, 
+"^ot:studyPublicationReference": "Harris, R.B., M.D. Carling, I.J. Lovette. 2014. The influence of sampling design on species tree inference: a new relationship for the New World chickadees (Aves: Poecile). Evolution 68 (2): 501-513.", 
+"^ot:studyYear": 2014, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Poecile sclateri", 
+"^ot:ottId": 171825, 
+"^ot:ottTaxonName": "Poecile sclateri"
+}, 
+"otu2": {
+"^ot:originalLabel": "Poecile gambeli", 
+"^ot:ottId": 694655, 
+"^ot:ottTaxonName": "Poecile gambeli"
+}, 
+"otu3": {
+"^ot:originalLabel": "Poecile atricapillus", 
+"^ot:ottId": 17262, 
+"^ot:ottTaxonName": "Poecile atricapilla"
+}, 
+"otu4": {
+"^ot:originalLabel": "Poecile carolinensis", 
+"^ot:ottId": 17255, 
+"^ot:ottTaxonName": "Poecile carolinensis"
+}, 
+"otu5": {
+"^ot:originalLabel": "Poecile rufescens", 
+"^ot:ottId": 119889, 
+"^ot:ottTaxonName": "Poecile rufescens"
+}, 
+"otu6": {
+"^ot:originalLabel": "Poecile hudsonicus", 
+"^ot:ottId": 171835, 
+"^ot:ottTaxonName": "Poecile hudsonica"
+}, 
+"otu7": {
+"^ot:originalLabel": "Poecile cinctus", 
+"^ot:ottId": 951128, 
+"^ot:ottTaxonName": "Poecile cinctus"
+}, 
+"otu8": {
+"^ot:originalLabel": "Parus palustris", 
+"^ot:ottId": 17260, 
+"^ot:ottTaxonName": "Poecile palustris"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node2", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge14": {
+"@source": "node1", 
+"@target": "node15"
+}
+}, 
+"node10": {
+"edge10": {
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge13": {
+"@source": "node10", 
+"@target": "node14"
+}
+}, 
+"node11": {
+"edge11": {
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge12": {
+"@source": "node11", 
+"@target": "node13"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge9": {
+"@source": "node2", 
+"@target": "node10"
+}
+}, 
+"node3": {
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge6": {
+"@source": "node3", 
+"@target": "node7"
+}
+}, 
+"node4": {
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge5": {
+"@source": "node4", 
+"@target": "node6"
+}
+}, 
+"node7": {
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@source": "node7", 
+"@target": "node9"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node11": {}, 
+"node12": {
+"@otu": "otu5"
+}, 
+"node13": {
+"@otu": "otu6"
+}, 
+"node14": {
+"@otu": "otu7"
+}, 
+"node15": {
+"@otu": "otu8"
+}, 
+"node2": {}, 
+"node3": {}, 
+"node4": {}, 
+"node5": {
+"@otu": "otu1"
+}, 
+"node6": {
+"@otu": "otu2"
+}, 
+"node7": {}, 
+"node8": {
+"@otu": "otu3"
+}, 
+"node9": {
+"@otu": "otu4"
+}
+}
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,48 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://opentreeoflife.github.io/css/main.css">
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+
+    <div></div>
+</head>
+<body>
+    <div>
+<p>Propinquity output documentation. The top-level docs are <a href="../index.html">here</a>.
+<p>This directory holds the output of
+a run of propinquity's <code>run_assessments.py</code> script.
+That script checks for certain types of problems in the output of the pipeline.
+<a href="./summary.json">summary.json</a> is a JSON representation of that data.</p>
+<p>The 4 checks run were:</p>
+<table>
+    <tr><th>nickname of check</th><th>description</th></tr>
+    <tr>
+        <td><code>lost_taxa</code></td>
+        <td>Check that otcetera's otc-taxonomy-parser and otc-unprune-solution-and-name-unnamed-nodes tools agree about the number of taxa that are not present in the solution</td>
+    </tr>
+    <tr>
+        <td><code>lost_taxa_included_in_tree</code></td>
+        <td>Check that none of the taxa listed as "lost" are in the annotations file</td>
+    </tr>
+    <tr>
+        <td><code>num_tips</code></td>
+        <td>Check that the cleaned version of the taxonomy and the supertree have the same number of leaves</td>
+    </tr>
+    <tr>
+        <td><code>unsupported_nodes</code></td>
+        <td>Check that none of the nodes listed in the annotations file are completely unsupported</td>
+    </tr>
+</table>
+
+<div>
+    <p>SUCCESS! No errors were found.</p>
+    
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,717 @@
+{
+"nexml": {
+"@about": "#study",
+"@generator": "Open Tree API",
+"@id": "study",
+"@nexml2json": "1.2.1",
+"@nexmljson": "http://purl.org/opentree/nexson",
+"@version": "0.9",
+"@xmlns": {
+"$": "http://www.nexml.org/2009",
+"nex": "http://www.nexml.org/2009",
+"ot": "http://purl.org/opentree-terms#",
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+},
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation",
+"@id": "peyotl-validator",
+"@name": "api.opentreeoflife.org/validate",
+"@url": "https://github.com/OpenTreeOfLife/peyotl",
+"@version": "0.0.4a",
+"invocation": {
+"commandLine": [],
+"otherProperty": [
+{
+"name": "pythonVersion",
+"value": "2.7.9"
+},
+{
+"name": "pythonImplementation",
+"value": "CPython"
+}
+]
+}
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
+}
+]
+},
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-09-28T19:41:34.685Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "Birds"
+},
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2016-09-28T19:41:34.685Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre",
+"@size": 505,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.90fce245e27c74b2.5041535445442e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2023-08-01T00:53:53.241Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+],
+"^ot:comment": "tree from Davis 2014.",
+"^ot:curatorName": [
+"ningwang83",
+"James Waterford"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 938411,
+"^ot:focalCladeOTTTaxonName": "Alcedinidae",
+"^ot:otusElementOrder": [
+"otus1"
+],
+"^ot:studyId": "ot_835",
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.2007.0908-8857.03921.x"
+},
+"^ot:studyPublicationReference": "Robert G. Moyle, J\u00e9r\u00f4me Fuchs, Eric Pasquet, Ben D. Marks, 2007, 'Feeding behavior, toe count, and the phylogenetic relationships among alcedinine kingfishers (Alcedininae)', Journal of Avian Biology, vol. 38, no. 3, pp. 317-326",
+"^ot:studyYear": 2007,
+"^ot:tag": [],
+"^ot:treesElementOrder": [
+"trees1"
+],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 49,
+"message": 0,
+"node": 50,
+"otu": 27,
+"otus": 1,
+"tree": 1,
+"trees": 1
+},
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Megaceryle alcyon",
+"^ot:ottId": 839181,
+"^ot:ottTaxonName": "Megaceryle alcyon"
+},
+"otu10": {
+"^ot:originalLabel": "Alcedo coerulescens",
+"^ot:ottId": 624772,
+"^ot:ottTaxonName": "Alcedo coerulescens"
+},
+"otu11": {
+"^ot:originalLabel": "Alcedo atthis",
+"^ot:ottId": 549519,
+"^ot:ottTaxonName": "Alcedo atthis"
+},
+"otu12": {
+"^ot:originalLabel": "Ceyx fallax",
+"^ot:ottId": 313662,
+"^ot:ottTaxonName": "Ceyx fallax"
+},
+"otu13": {
+"^ot:originalLabel": "Alcedo pusilla",
+"^ot:ottId": 838167,
+"^ot:ottTaxonName": "Alcedo pusilla"
+},
+"otu14": {
+"^ot:originalLabel": "Alcedo azurea",
+"^ot:ottId": 1061841,
+"^ot:ottTaxonName": "Alcedo azurea"
+},
+"otu15": {
+"^ot:originalLabel": "Alcedo websteri",
+"^ot:ottId": 838174,
+"^ot:ottTaxonName": "Alcedo websteri"
+},
+"otu16": {
+"^ot:originalLabel": "Ceyx melanurus",
+"^ot:ottId": 931027,
+"^ot:ottTaxonName": "Ceyx melanurus"
+},
+"otu17": {
+"^ot:originalLabel": "Ceyx erithacus",
+"^ot:ottId": 215691,
+"^ot:ottTaxonName": "Ceyx erithaca"
+},
+"otu18": {
+"^ot:originalLabel": "Ceyx rufidorsa",
+"^ot:ottId": 313663,
+"^ot:ottTaxonName": "Ceyx rufidorsa"
+},
+"otu19": {
+"^ot:originalLabel": "Ceyx lepidus",
+"^ot:ottId": 931007,
+"^ot:ottTaxonName": "Ceyx lepidus"
+},
+"otu2": {
+"^ot:originalLabel": "Chloroceryle americana",
+"^ot:ottId": 1039522,
+"^ot:ottTaxonName": "Chloroceryle americana"
+},
+"otu20": {
+"^ot:originalLabel": "Alcedo argentata",
+"^ot:ottId": 838166,
+"^ot:ottTaxonName": "Alcedo argentata"
+},
+"otu21": {
+"^ot:originalLabel": "Alcedo cyanopecta",
+"^ot:ottId": 838161,
+"^ot:ottTaxonName": "Alcedo cyanopectus"
+},
+"otu22": {
+"^ot:originalLabel": "Ceyx madagascariensis",
+"^ot:ottId": 3596464,
+"^ot:ottTaxonName": "Corythornis madagascariensis"
+},
+"otu23": {
+"^ot:originalLabel": "Alcedo leucogaster",
+"^ot:ottId": 26087,
+"^ot:ottTaxonName": "Alcedo leucogaster"
+},
+"otu24": {
+"^ot:originalLabel": "Alcedo vintsioides",
+"^ot:ottId": 3596463,
+"^ot:ottTaxonName": "Corythornis vintsioides"
+},
+"otu25": {
+"^ot:originalLabel": "Alcedo cristata",
+"^ot:ottId": 651469,
+"^ot:ottTaxonName": "Alcedo cristata"
+},
+"otu26": {
+"^ot:originalLabel": "Ispidina picta",
+"^ot:ottId": 1097691,
+"^ot:ottTaxonName": "Ceyx pictus"
+},
+"otu27": {
+"^ot:originalLabel": "Ceyx lecontei",
+"^ot:ottId": 1061846,
+"^ot:ottTaxonName": "Ceyx lecontei"
+},
+"otu3": {
+"^ot:originalLabel": "Pelargopsis capensis",
+"^ot:ottId": 589619,
+"^ot:ottTaxonName": "Pelargopsis capensis"
+},
+"otu4": {
+"^ot:originalLabel": "Halcyon malimbica",
+"^ot:ottId": 551379,
+"^ot:ottTaxonName": "Halcyon malimbica"
+},
+"otu5": {
+"^ot:originalLabel": "Alcedo euryzona",
+"^ot:ottId": 838173,
+"^ot:ottTaxonName": "Alcedo euryzona"
+},
+"otu6": {
+"^ot:originalLabel": "Alcedo meninting",
+"^ot:ottId": 838168,
+"^ot:ottTaxonName": "Alcedo meninting"
+},
+"otu7": {
+"^ot:originalLabel": "Alcedo hercules",
+"^ot:ottId": 838172,
+"^ot:ottTaxonName": "Alcedo hercules"
+},
+"otu8": {
+"^ot:originalLabel": "Alcedo quadribrachys",
+"^ot:ottId": 26078,
+"^ot:ottTaxonName": "Alcedo quadribrachys"
+},
+"otu9": {
+"^ot:originalLabel": "Alcedo semitorquata",
+"^ot:ottId": 838175,
+"^ot:ottTaxonName": "Alcedo semitorquata"
+}
+}
+}
+},
+"treesById": {
+"trees1": {
+"@otus": "otus1",
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Untitled (tree1)",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "Bayesian inference ",
+"^ot:inGroupClade": "node6",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1",
+"@target": "node2"
+},
+"edge2": {
+"@source": "node1",
+"@target": "node3"
+},
+"edge3": {
+"@source": "node1",
+"@target": "node4"
+},
+"edge4": {
+"@source": "node1",
+"@target": "node5"
+},
+"edge5": {
+"@source": "node1",
+"@target": "node6"
+}
+},
+"node10": {
+"edge10": {
+"@source": "node10",
+"@target": "node11"
+},
+"edge13": {
+"@source": "node10",
+"@target": "node14"
+}
+},
+"node11": {
+"edge11": {
+"@source": "node11",
+"@target": "node12"
+},
+"edge12": {
+"@source": "node11",
+"@target": "node13"
+}
+},
+"node14": {
+"edge14": {
+"@source": "node14",
+"@target": "node15"
+},
+"edge17": {
+"@source": "node14",
+"@target": "node18"
+}
+},
+"node15": {
+"edge15": {
+"@source": "node15",
+"@target": "node16"
+},
+"edge16": {
+"@source": "node15",
+"@target": "node17"
+}
+},
+"node18": {
+"edge18": {
+"@source": "node18",
+"@target": "node19"
+},
+"edge19": {
+"@source": "node18",
+"@target": "node20"
+}
+},
+"node21": {
+"edge21": {
+"@source": "node21",
+"@target": "node22"
+},
+"edge22": {
+"@source": "node21",
+"@target": "node23"
+}
+},
+"node23": {
+"edge23": {
+"@source": "node23",
+"@target": "node24"
+},
+"edge28": {
+"@source": "node23",
+"@target": "node29"
+}
+},
+"node24": {
+"edge24": {
+"@source": "node24",
+"@target": "node25"
+},
+"edge25": {
+"@source": "node24",
+"@target": "node26"
+}
+},
+"node26": {
+"edge26": {
+"@source": "node26",
+"@target": "node27"
+},
+"edge27": {
+"@source": "node26",
+"@target": "node28"
+}
+},
+"node29": {
+"edge29": {
+"@source": "node29",
+"@target": "node30"
+},
+"edge30": {
+"@source": "node29",
+"@target": "node31"
+}
+},
+"node31": {
+"edge31": {
+"@source": "node31",
+"@target": "node32"
+},
+"edge34": {
+"@source": "node31",
+"@target": "node35"
+}
+},
+"node32": {
+"edge32": {
+"@source": "node32",
+"@target": "node33"
+},
+"edge33": {
+"@source": "node32",
+"@target": "node34"
+}
+},
+"node35": {
+"edge35": {
+"@source": "node35",
+"@target": "node36"
+},
+"edge36": {
+"@source": "node35",
+"@target": "node37"
+}
+},
+"node37": {
+"edge37": {
+"@source": "node37",
+"@target": "node38"
+},
+"edge38": {
+"@source": "node37",
+"@target": "node39"
+}
+},
+"node40": {
+"edge40": {
+"@source": "node40",
+"@target": "node41"
+},
+"edge47": {
+"@source": "node40",
+"@target": "node48"
+}
+},
+"node41": {
+"edge41": {
+"@source": "node41",
+"@target": "node42"
+},
+"edge42": {
+"@source": "node41",
+"@target": "node43"
+}
+},
+"node43": {
+"edge43": {
+"@source": "node43",
+"@target": "node44"
+},
+"edge44": {
+"@source": "node43",
+"@target": "node45"
+}
+},
+"node45": {
+"edge45": {
+"@source": "node45",
+"@target": "node46"
+},
+"edge46": {
+"@source": "node45",
+"@target": "node47"
+}
+},
+"node48": {
+"edge48": {
+"@source": "node48",
+"@target": "node49"
+},
+"edge49": {
+"@source": "node48",
+"@target": "node50"
+}
+},
+"node6": {
+"edge39": {
+"@source": "node6",
+"@target": "node40"
+},
+"edge6": {
+"@source": "node6",
+"@target": "node7"
+}
+},
+"node7": {
+"edge20": {
+"@source": "node7",
+"@target": "node21"
+},
+"edge7": {
+"@source": "node7",
+"@target": "node8"
+}
+},
+"node8": {
+"edge8": {
+"@source": "node8",
+"@target": "node9"
+},
+"edge9": {
+"@source": "node8",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {},
+"node11": {},
+"node12": {
+"@otu": "otu6"
+},
+"node13": {
+"@otu": "otu7"
+},
+"node14": {},
+"node15": {},
+"node16": {
+"@otu": "otu8"
+},
+"node17": {
+"@otu": "otu9"
+},
+"node18": {},
+"node19": {
+"@otu": "otu10"
+},
+"node2": {
+"@otu": "otu1"
+},
+"node20": {
+"@otu": "otu11"
+},
+"node21": {},
+"node22": {
+"@otu": "otu12"
+},
+"node23": {},
+"node24": {},
+"node25": {
+"@otu": "otu13"
+},
+"node26": {},
+"node27": {
+"@otu": "otu14"
+},
+"node28": {
+"@otu": "otu15"
+},
+"node29": {},
+"node3": {
+"@otu": "otu2"
+},
+"node30": {
+"@otu": "otu16"
+},
+"node31": {},
+"node32": {},
+"node33": {
+"@otu": "otu17"
+},
+"node34": {
+"@otu": "otu18"
+},
+"node35": {},
+"node36": {
+"@otu": "otu19"
+},
+"node37": {},
+"node38": {
+"@otu": "otu20"
+},
+"node39": {
+"@otu": "otu21"
+},
+"node4": {
+"@otu": "otu3"
+},
+"node40": {},
+"node41": {},
+"node42": {
+"@otu": "otu22"
+},
+"node43": {},
+"node44": {
+"@otu": "otu23"
+},
+"node45": {},
+"node46": {
+"@otu": "otu24"
+},
+"node47": {
+"@otu": "otu25"
+},
+"node48": {},
+"node49": {
+"@otu": "otu26"
+},
+"node5": {
+"@otu": "otu4"
+},
+"node50": {
+"@otu": "otu27"
+},
+"node6": {},
+"node7": {},
+"node8": {},
+"node9": {
+"@otu": "otu5"
+}
+}
+}
+}
+}
+}
+}
+}

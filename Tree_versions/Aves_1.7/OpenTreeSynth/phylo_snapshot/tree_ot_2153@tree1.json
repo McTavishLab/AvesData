@@ -1,0 +1,722 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.16"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2022-10-04T19:56:06.241Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-10-04T19:56:06.241Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-10-04T19:56:06.241Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "Oliveros_10_Y_consensus.tre", 
+"@size": 29932, 
+"@type": "nexus", 
+"@url": "/curator/download/supporting_files.doc.abf55a1655d65402.4f6c697665726f735f31305f595f636f6e73656e7375732e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"eliotmiller"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 176451, 
+"^ot:focalCladeOTTTaxonName": "Melanocharis", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_2153", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/ibi.12981"
+}, 
+"^ot:studyPublicationReference": "Mil\u00e1, B., Bruxaux, J., Friis, G., Sam, K., Ashari, H., & Th\u00e9baud, C. (2021). A new, undescribed species of\n            Melanocharis\n            berrypecker from western New Guinea and the evolutionary history of the family Melanocharitidae. Ibis, 163(4), 1310\u20131329. Portico. https://doi.org/10.1111/ibi.12981\n", 
+"^ot:studyYear": 2021, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Melanocharis arfakiana MELARF657308", 
+"^ot:ottId": 3597103, 
+"^ot:ottTaxonName": "Melanocharis arfakiana"
+}, 
+"otu10": {
+"^ot:originalLabel": "Melanocharis longicauda MZB 30618", 
+"^ot:ottId": 3597101, 
+"^ot:ottTaxonName": "Melanocharis longicauda"
+}, 
+"otu11": {
+"^ot:originalLabel": "Melanocharis nigra 150402", 
+"^ot:ottId": 176461, 
+"^ot:ottTaxonName": "Melanocharis nigra"
+}, 
+"otu12": {
+"^ot:originalLabel": "Melanocharis nigra B52454", 
+"^ot:ottId": 176461, 
+"^ot:ottTaxonName": "Melanocharis nigra"
+}, 
+"otu13": {
+"^ot:originalLabel": "Melanocharis nigra LGR 028", 
+"^ot:ottId": 176461, 
+"^ot:ottTaxonName": "Melanocharis nigra"
+}, 
+"otu14": {
+"^ot:originalLabel": "Melanocharis striativentris B01008", 
+"^ot:ottId": 3597104, 
+"^ot:ottTaxonName": "Melanocharis striativentris"
+}, 
+"otu15": {
+"^ot:originalLabel": "Melanocharis striativentris B25717", 
+"^ot:ottId": 3597104, 
+"^ot:ottTaxonName": "Melanocharis striativentris"
+}, 
+"otu16": {
+"^ot:originalLabel": "Melanocharis striativentris MS5", 
+"^ot:ottId": 3597104, 
+"^ot:ottTaxonName": "Melanocharis striativentris"
+}, 
+"otu17": {
+"^ot:originalLabel": "Melanocharis versteri 10MV", 
+"^ot:ottId": 1015949, 
+"^ot:ottTaxonName": "Melanocharis versteri"
+}, 
+"otu18": {
+"^ot:originalLabel": "Melanocharis versteri B52505", 
+"^ot:ottId": 1015949, 
+"^ot:ottTaxonName": "Melanocharis versteri"
+}, 
+"otu19": {
+"^ot:originalLabel": "Oedistoma iliolophus 150392", 
+"^ot:ottId": 176464, 
+"^ot:ottTaxonName": "Oedistoma iliolophus"
+}, 
+"otu2": {
+"^ot:originalLabel": "Melanocharis arfakiana MELARF657309", 
+"^ot:ottId": 3597103, 
+"^ot:ottTaxonName": "Melanocharis arfakiana"
+}, 
+"otu20": {
+"^ot:originalLabel": "Oedistoma iliolophus NC 024865", 
+"^ot:ottId": 176464, 
+"^ot:ottTaxonName": "Oedistoma iliolophus"
+}, 
+"otu21": {
+"^ot:originalLabel": "Oedistoma pygmaeum Z44392", 
+"^ot:ottId": 684480, 
+"^ot:ottTaxonName": "Oedistoma pygmaeum"
+}, 
+"otu22": {
+"^ot:originalLabel": "Oedistoma pygmaeum Z44439", 
+"^ot:ottId": 684480, 
+"^ot:ottTaxonName": "Oedistoma pygmaeum"
+}, 
+"otu23": {
+"^ot:originalLabel": "Rhamphocharis crassirostris 150300", 
+"^ot:ottId": 3597102, 
+"^ot:ottTaxonName": "Rhamphocharis crassirostris"
+}, 
+"otu24": {
+"^ot:originalLabel": "Toxorhamphus novaeguineae LGR 144", 
+"^ot:ottId": 699629, 
+"^ot:ottTaxonName": "Toxorhamphus novaeguineae"
+}, 
+"otu3": {
+"^ot:originalLabel": "Melanocharis arfakiana P11111", 
+"^ot:ottId": 3597103, 
+"^ot:ottTaxonName": "Melanocharis arfakiana"
+}, 
+"otu4": {
+"^ot:originalLabel": "Melanocharis citreola LGR 167"
+}, 
+"otu5": {
+"^ot:originalLabel": "Melanocharis citreola MECI15"
+}, 
+"otu6": {
+"^ot:originalLabel": "Melanocharis citreola MECI16"
+}, 
+"otu7": {
+"^ot:originalLabel": "Melanocharis citreola MECI17"
+}, 
+"otu8": {
+"^ot:originalLabel": "Melanocharis longicauda B26041", 
+"^ot:ottId": 3597101, 
+"^ot:ottTaxonName": "Melanocharis longicauda"
+}, 
+"otu9": {
+"^ot:originalLabel": "Melanocharis longicauda B52544", 
+"^ot:ottId": 3597101, 
+"^ot:ottTaxonName": "Melanocharis longicauda"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "TREE1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:time", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 9.781719, 
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge38": {
+"@length": 3.769246, 
+"@source": "node1", 
+"@target": "node39"
+}
+}, 
+"node10": {
+"edge10": {
+"@length": 3.225553, 
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge13": {
+"@length": 3.160183, 
+"@source": "node10", 
+"@target": "node14"
+}
+}, 
+"node11": {
+"edge11": {
+"@length": 1.876315, 
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge12": {
+"@length": 1.876315, 
+"@source": "node11", 
+"@target": "node13"
+}
+}, 
+"node14": {
+"edge14": {
+"@length": 1.700684, 
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge17": {
+"@length": 1.941685, 
+"@source": "node14", 
+"@target": "node18"
+}
+}, 
+"node15": {
+"edge15": {
+"@length": 0.241001, 
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge16": {
+"@length": 0.241001, 
+"@source": "node15", 
+"@target": "node17"
+}
+}, 
+"node2": {
+"edge19": {
+"@length": 4.676289, 
+"@source": "node2", 
+"@target": "node20"
+}, 
+"edge2": {
+"@length": 2.013323, 
+"@source": "node2", 
+"@target": "node3"
+}
+}, 
+"node20": {
+"edge20": {
+"@length": 1.965459, 
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge33": {
+"@length": 4.239818, 
+"@source": "node20", 
+"@target": "node34"
+}
+}, 
+"node21": {
+"edge21": {
+"@length": 2.35063, 
+"@source": "node21", 
+"@target": "node22"
+}, 
+"edge28": {
+"@length": 2.029522, 
+"@source": "node21", 
+"@target": "node29"
+}
+}, 
+"node22": {
+"edge22": {
+"@length": 0.086547, 
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge23": {
+"@length": 0.047189, 
+"@source": "node22", 
+"@target": "node24"
+}
+}, 
+"node24": {
+"edge24": {
+"@length": 0.021099, 
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge27": {
+"@length": 0.039359, 
+"@source": "node24", 
+"@target": "node28"
+}
+}, 
+"node25": {
+"edge25": {
+"@length": 0.01826, 
+"@source": "node25", 
+"@target": "node26"
+}, 
+"edge26": {
+"@length": 0.01826, 
+"@source": "node25", 
+"@target": "node27"
+}
+}, 
+"node29": {
+"edge29": {
+"@length": 0.253586, 
+"@source": "node29", 
+"@target": "node30"
+}, 
+"edge32": {
+"@length": 0.407656, 
+"@source": "node29", 
+"@target": "node33"
+}
+}, 
+"node3": {
+"edge3": {
+"@length": 7.024913, 
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge8": {
+"@length": 1.241413, 
+"@source": "node3", 
+"@target": "node9"
+}
+}, 
+"node30": {
+"edge30": {
+"@length": 0.15407, 
+"@source": "node30", 
+"@target": "node31"
+}, 
+"edge31": {
+"@length": 0.15407, 
+"@source": "node30", 
+"@target": "node32"
+}
+}, 
+"node34": {
+"edge34": {
+"@length": 0.105578, 
+"@source": "node34", 
+"@target": "node35"
+}, 
+"edge37": {
+"@length": 0.162818, 
+"@source": "node34", 
+"@target": "node38"
+}
+}, 
+"node35": {
+"edge35": {
+"@length": 0.057239, 
+"@source": "node35", 
+"@target": "node36"
+}, 
+"edge36": {
+"@length": 0.057239, 
+"@source": "node35", 
+"@target": "node37"
+}
+}, 
+"node39": {
+"edge39": {
+"@length": 5.939427, 
+"@source": "node39", 
+"@target": "node40"
+}, 
+"edge46": {
+"@length": 15.091399, 
+"@source": "node39", 
+"@target": "node47"
+}
+}, 
+"node4": {
+"edge4": {
+"@length": 0.03594, 
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge7": {
+"@length": 0.040689, 
+"@source": "node4", 
+"@target": "node8"
+}
+}, 
+"node40": {
+"edge40": {
+"@length": 7.269113, 
+"@source": "node40", 
+"@target": "node41"
+}, 
+"edge45": {
+"@length": 9.151972, 
+"@source": "node40", 
+"@target": "node46"
+}
+}, 
+"node41": {
+"edge41": {
+"@length": 1.882859, 
+"@source": "node41", 
+"@target": "node42"
+}, 
+"edge42": {
+"@length": 1.717089, 
+"@source": "node41", 
+"@target": "node43"
+}
+}, 
+"node43": {
+"edge43": {
+"@length": 0.16577, 
+"@source": "node43", 
+"@target": "node44"
+}, 
+"edge44": {
+"@length": 0.16577, 
+"@source": "node43", 
+"@target": "node45"
+}
+}, 
+"node5": {
+"edge5": {
+"@length": 0.004749, 
+"@source": "node5", 
+"@target": "node6"
+}, 
+"edge6": {
+"@length": 0.004749, 
+"@source": "node5", 
+"@target": "node7"
+}
+}, 
+"node9": {
+"edge18": {
+"@length": 5.82419, 
+"@source": "node9", 
+"@target": "node19"
+}, 
+"edge9": {
+"@length": 0.722322, 
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node11": {}, 
+"node12": {
+"@otu": "otu8"
+}, 
+"node13": {
+"@otu": "otu10"
+}, 
+"node14": {}, 
+"node15": {}, 
+"node16": {
+"@otu": "otu11"
+}, 
+"node17": {
+"@otu": "otu12"
+}, 
+"node18": {
+"@otu": "otu13"
+}, 
+"node19": {
+"@otu": "otu23"
+}, 
+"node2": {}, 
+"node20": {}, 
+"node21": {}, 
+"node22": {}, 
+"node23": {
+"@otu": "otu4"
+}, 
+"node24": {}, 
+"node25": {}, 
+"node26": {
+"@otu": "otu5"
+}, 
+"node27": {
+"@otu": "otu6"
+}, 
+"node28": {
+"@otu": "otu7"
+}, 
+"node29": {}, 
+"node3": {}, 
+"node30": {}, 
+"node31": {
+"@otu": "otu14"
+}, 
+"node32": {
+"@otu": "otu16"
+}, 
+"node33": {
+"@otu": "otu15"
+}, 
+"node34": {}, 
+"node35": {}, 
+"node36": {
+"@otu": "otu9"
+}, 
+"node37": {
+"@otu": "otu17"
+}, 
+"node38": {
+"@otu": "otu18"
+}, 
+"node39": {}, 
+"node4": {}, 
+"node40": {}, 
+"node41": {}, 
+"node42": {
+"@otu": "otu19"
+}, 
+"node43": {}, 
+"node44": {
+"@otu": "otu20"
+}, 
+"node45": {
+"@otu": "otu21"
+}, 
+"node46": {
+"@otu": "otu22"
+}, 
+"node47": {
+"@otu": "otu24"
+}, 
+"node5": {}, 
+"node6": {
+"@otu": "otu1"
+}, 
+"node7": {
+"@otu": "otu2"
+}, 
+"node8": {
+"@otu": "otu3"
+}, 
+"node9": {}
+}, 
+"rootedge": [
+{
+"@id": "enode1", 
+"@length": "0.0", 
+"@target": "node1"
+}
+]
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,680 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [
+"--embed", 
+"--agent-only"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-07-01T16:45:12.066Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-01T16:45:12.066Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2023-06-05T20:55:44.727Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6662"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown", 
+"jwaterford"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 1015202, 
+"^ot:focalCladeOTTTaxonName": "Micrastur", 
+"^ot:otusElementOrder": [
+"otus2870"
+], 
+"^ot:studyId": "pg_2870", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2011.05.008"
+}, 
+"^ot:studyPublicationReference": "Fuchs, J\u00e9r\u00f4me, Steven Chen, Jeff A. Johnson, David P. Mindell. 2011. Pliocene diversification within the South American forest falcons (Falconidae: Micrastur). Molecular Phylogenetics and Evolution 60 (3): 398-407.", 
+"^ot:studyYear": 2011, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees2870"
+], 
+"otusById": {
+"otus2870": {
+"otuById": {
+"otu427000": {
+"^ot:originalLabel": "Vultur gryphus", 
+"^ot:ottId": 363015, 
+"^ot:ottTaxonName": "Vultur gryphus"
+}, 
+"otu427001": {
+"^ot:originalLabel": "Otus kennicottii", 
+"^ot:ottId": 178680, 
+"^ot:ottTaxonName": "Megascops kennicottii"
+}, 
+"otu427002": {
+"^ot:originalLabel": "Sphyrapicus", 
+"^ot:ottId": 744572, 
+"^ot:ottTaxonName": "Sphyrapicus"
+}, 
+"otu427003": {
+"^ot:originalLabel": "Buteo jamaicensis", 
+"^ot:ottId": 509839, 
+"^ot:ottTaxonName": "Buteo jamaicensis"
+}, 
+"otu427004": {
+"^ot:originalLabel": "Pandion haliaetus", 
+"^ot:ottId": 509837, 
+"^ot:ottTaxonName": "Pandion haliaetus"
+}, 
+"otu427005": {
+"^ot:originalLabel": "Corvus corvax", 
+"^ot:ottId": 140425, 
+"^ot:ottTaxonName": "Corvus corax"
+}, 
+"otu427006": {
+"^ot:originalLabel": "Falco columbarius", 
+"^ot:ottId": 786443, 
+"^ot:ottTaxonName": "Falco columbarius"
+}, 
+"otu427007": {
+"^ot:originalLabel": "Flaco peregrinus", 
+"^ot:ottId": 786435, 
+"^ot:ottTaxonName": "Falco peregrinus"
+}, 
+"otu427008": {
+"^ot:originalLabel": "Polihierax semitorquatus", 
+"^ot:ottId": 1015204, 
+"^ot:ottTaxonName": "Polihierax semitorquatus"
+}, 
+"otu427009": {
+"^ot:originalLabel": "Microhierax caerulescens", 
+"^ot:ottId": 301634, 
+"^ot:ottTaxonName": "Microhierax caerulescens"
+}, 
+"otu427010": {
+"^ot:originalLabel": "Phalcoboenus megalopterus", 
+"^ot:ottId": 728383, 
+"^ot:ottTaxonName": "Phalcoboenus megalopterus"
+}, 
+"otu427011": {
+"^ot:originalLabel": "Milvago chimango", 
+"^ot:ottId": 474152, 
+"^ot:ottTaxonName": "Milvago chimango"
+}, 
+"otu427012": {
+"^ot:originalLabel": "Ibycter americanus", 
+"^ot:ottId": 438659, 
+"^ot:ottTaxonName": "Daptrius americanus"
+}, 
+"otu427013": {
+"^ot:altLabel": "Caracara plancus", 
+"^ot:originalLabel": "Caracara cheriway"
+}, 
+"otu427014": {
+"^ot:originalLabel": "Spiziapteryx circumcincta", 
+"^ot:ottId": 1015196, 
+"^ot:ottTaxonName": "Spiziapteryx circumcincta"
+}, 
+"otu427015": {
+"^ot:originalLabel": "Micrastur semitorquatus", 
+"^ot:ottId": 1015189, 
+"^ot:ottTaxonName": "Micrastur semitorquatus"
+}, 
+"otu427016": {
+"^ot:originalLabel": "Micrastur mirandollei", 
+"^ot:ottId": 749743, 
+"^ot:ottTaxonName": "Micrastur mirandollei"
+}, 
+"otu427017": {
+"^ot:originalLabel": "Micrastur buckleyi", 
+"^ot:ottId": 901268, 
+"^ot:ottTaxonName": "Micrastur buckleyi"
+}, 
+"otu427018": {
+"^ot:originalLabel": "Micrastur gilvicollis", 
+"^ot:ottId": 1015190, 
+"^ot:ottTaxonName": "Micrastur gilvicollis"
+}, 
+"otu427019": {
+"^ot:originalLabel": "Micrastur plumbeus", 
+"^ot:ottId": 192481, 
+"^ot:ottTaxonName": "Micrastur plumbeus"
+}, 
+"otu427020": {
+"^ot:originalLabel": "Micrastur mintoni", 
+"^ot:ottId": 749748, 
+"^ot:ottTaxonName": "Micrastur mintoni"
+}, 
+"otu427021": {
+"^ot:originalLabel": "Micrastur ruficollis", 
+"^ot:ottId": 273700, 
+"^ot:ottTaxonName": "Micrastur ruficollis"
+}, 
+"otu427022": {
+"^ot:originalLabel": "Herpetotheres cachinnans", 
+"^ot:ottId": 438655, 
+"^ot:ottTaxonName": "Herpetotheres cachinnans"
+}
+}
+}
+}, 
+"treesById": {
+"trees2870": {
+"@otus": "otus2870", 
+"^ot:treeElementOrder": [
+"tree6662"
+], 
+"treeById": {
+"tree6662": {
+"@label": "Fig. 3 species tree", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:time", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1161858", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1161846", 
+"^ot:specifiedRoot": "node1161846", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1161846": {
+"edge1161847": {
+"@length": 0.1369308704711617, 
+"@source": "node1161846", 
+"@target": "node1161847"
+}, 
+"edge1161858": {
+"@length": 0.1169006394517732, 
+"@source": "node1161846", 
+"@target": "node1161858"
+}
+}, 
+"node1161847": {
+"edge1161848": {
+"@length": 0.09235824910778173, 
+"@source": "node1161847", 
+"@target": "node1161848"
+}, 
+"edge1161857": {
+"@length": 0.5470563228097722, 
+"@source": "node1161847", 
+"@target": "node1161857"
+}
+}, 
+"node1161848": {
+"edge1161849": {
+"@length": 0.4546980737019905, 
+"@source": "node1161848", 
+"@target": "node1161849"
+}, 
+"edge1161850": {
+"@length": 0.00012130686844985528, 
+"@source": "node1161848", 
+"@target": "node1161850"
+}
+}, 
+"node1161850": {
+"edge1161851": {
+"@length": 0.45457676683354065, 
+"@source": "node1161850", 
+"@target": "node1161851"
+}, 
+"edge1161852": {
+"@length": 0.0013680582857531487, 
+"@source": "node1161850", 
+"@target": "node1161852"
+}
+}, 
+"node1161852": {
+"edge1161853": {
+"@length": 0.4532087085477875, 
+"@source": "node1161852", 
+"@target": "node1161853"
+}, 
+"edge1161854": {
+"@length": 0.134828025943719, 
+"@source": "node1161852", 
+"@target": "node1161854"
+}
+}, 
+"node1161854": {
+"edge1161855": {
+"@length": 0.3183806826040685, 
+"@source": "node1161854", 
+"@target": "node1161855"
+}, 
+"edge1161856": {
+"@length": 0.3183806826040685, 
+"@source": "node1161854", 
+"@target": "node1161856"
+}
+}, 
+"node1161858": {
+"edge1161859": {
+"@length": 0.10330904769962829, 
+"@source": "node1161858", 
+"@target": "node1161859"
+}, 
+"edge1161876": {
+"@length": 0.1950703090923635, 
+"@source": "node1161858", 
+"@target": "node1161876"
+}
+}, 
+"node1161859": {
+"edge1161860": {
+"@length": 0.16796407051029616, 
+"@source": "node1161859", 
+"@target": "node1161860"
+}, 
+"edge1161867": {
+"@length": 0.07032683489993241, 
+"@source": "node1161859", 
+"@target": "node1161867"
+}
+}, 
+"node1161860": {
+"edge1161861": {
+"@length": 0.21079425074129732, 
+"@source": "node1161860", 
+"@target": "node1161861"
+}, 
+"edge1161864": {
+"@length": 0.035997806695939105, 
+"@source": "node1161860", 
+"@target": "node1161864"
+}
+}, 
+"node1161861": {
+"edge1161862": {
+"@length": 0.08501918487793898, 
+"@source": "node1161861", 
+"@target": "node1161862"
+}, 
+"edge1161863": {
+"@length": 0.08501918487793898, 
+"@source": "node1161861", 
+"@target": "node1161863"
+}
+}, 
+"node1161864": {
+"edge1161865": {
+"@length": 0.2598156289232972, 
+"@source": "node1161864", 
+"@target": "node1161865"
+}, 
+"edge1161866": {
+"@length": 0.2598156289232972, 
+"@source": "node1161864", 
+"@target": "node1161866"
+}
+}, 
+"node1161867": {
+"edge1161868": {
+"@length": 0.21980041755383428, 
+"@source": "node1161867", 
+"@target": "node1161868"
+}, 
+"edge1161875": {
+"@length": 0.39345067122960004, 
+"@source": "node1161867", 
+"@target": "node1161875"
+}
+}, 
+"node1161868": {
+"edge1161869": {
+"@length": 0.04838227079230756, 
+"@source": "node1161868", 
+"@target": "node1161869"
+}, 
+"edge1161874": {
+"@length": 0.17365025367576575, 
+"@source": "node1161868", 
+"@target": "node1161874"
+}
+}, 
+"node1161869": {
+"edge1161870": {
+"@length": 0.10456241383270265, 
+"@source": "node1161869", 
+"@target": "node1161870"
+}, 
+"edge1161873": {
+"@length": 0.1252679828834582, 
+"@source": "node1161869", 
+"@target": "node1161873"
+}
+}, 
+"node1161870": {
+"edge1161871": {
+"@length": 0.02070556905075554, 
+"@source": "node1161870", 
+"@target": "node1161871"
+}, 
+"edge1161872": {
+"@length": 0.02070556905075554, 
+"@source": "node1161870", 
+"@target": "node1161872"
+}
+}, 
+"node1161876": {
+"edge1161877": {
+"@length": 0.14171524188842138, 
+"@source": "node1161876", 
+"@target": "node1161877"
+}, 
+"edge1161890": {
+"@length": 0.37201624473679723, 
+"@source": "node1161876", 
+"@target": "node1161890"
+}
+}, 
+"node1161877": {
+"edge1161878": {
+"@length": 0.13875828185245737, 
+"@source": "node1161877", 
+"@target": "node1161878"
+}, 
+"edge1161883": {
+"@length": 0.1882436699579259, 
+"@source": "node1161877", 
+"@target": "node1161883"
+}
+}, 
+"node1161878": {
+"edge1161879": {
+"@length": 0.024307432757407835, 
+"@source": "node1161878", 
+"@target": "node1161879"
+}, 
+"edge1161882": {
+"@length": 0.0915427209959185, 
+"@source": "node1161878", 
+"@target": "node1161882"
+}
+}, 
+"node1161879": {
+"edge1161880": {
+"@length": 0.06723528823851066, 
+"@source": "node1161879", 
+"@target": "node1161880"
+}, 
+"edge1161881": {
+"@length": 0.06723528823851066, 
+"@source": "node1161879", 
+"@target": "node1161881"
+}
+}, 
+"node1161883": {
+"edge1161884": {
+"@length": 0.04205733289044994, 
+"@source": "node1161883", 
+"@target": "node1161884"
+}, 
+"edge1161885": {
+"@length": 0.0058599466327894575, 
+"@source": "node1161883", 
+"@target": "node1161885"
+}
+}, 
+"node1161885": {
+"edge1161886": {
+"@length": 0.001978770635511204, 
+"@source": "node1161885", 
+"@target": "node1161886"
+}, 
+"edge1161889": {
+"@length": 0.03619738625766048, 
+"@source": "node1161885", 
+"@target": "node1161889"
+}
+}, 
+"node1161886": {
+"edge1161887": {
+"@length": 0.03421861562214928, 
+"@source": "node1161886", 
+"@target": "node1161887"
+}, 
+"edge1161888": {
+"@length": 0.03421861562214928, 
+"@source": "node1161886", 
+"@target": "node1161888"
+}
+}
+}, 
+"nodeById": {
+"node1161846": {
+"@root": true
+}, 
+"node1161847": {}, 
+"node1161848": {}, 
+"node1161849": {
+"@otu": "otu427000"
+}, 
+"node1161850": {}, 
+"node1161851": {
+"@otu": "otu427001"
+}, 
+"node1161852": {}, 
+"node1161853": {
+"@otu": "otu427002"
+}, 
+"node1161854": {}, 
+"node1161855": {
+"@otu": "otu427003"
+}, 
+"node1161856": {
+"@otu": "otu427004"
+}, 
+"node1161857": {
+"@otu": "otu427005"
+}, 
+"node1161858": {}, 
+"node1161859": {}, 
+"node1161860": {}, 
+"node1161861": {}, 
+"node1161862": {
+"@otu": "otu427006"
+}, 
+"node1161863": {
+"@otu": "otu427007"
+}, 
+"node1161864": {}, 
+"node1161865": {
+"@otu": "otu427008"
+}, 
+"node1161866": {
+"@otu": "otu427009"
+}, 
+"node1161867": {}, 
+"node1161868": {}, 
+"node1161869": {}, 
+"node1161870": {}, 
+"node1161871": {
+"@otu": "otu427010"
+}, 
+"node1161872": {
+"@otu": "otu427011"
+}, 
+"node1161873": {
+"@otu": "otu427012"
+}, 
+"node1161874": {
+"@otu": "otu427013"
+}, 
+"node1161875": {
+"@otu": "otu427014"
+}, 
+"node1161876": {}, 
+"node1161877": {}, 
+"node1161878": {}, 
+"node1161879": {}, 
+"node1161880": {
+"@otu": "otu427015"
+}, 
+"node1161881": {
+"@otu": "otu427016"
+}, 
+"node1161882": {
+"@otu": "otu427017"
+}, 
+"node1161883": {}, 
+"node1161884": {
+"@otu": "otu427018"
+}, 
+"node1161885": {}, 
+"node1161886": {}, 
+"node1161887": {
+"@otu": "otu427019"
+}, 
+"node1161888": {
+"@otu": "otu427020"
+}, 
+"node1161889": {
+"@otu": "otu427021"
+}, 
+"node1161890": {
+"@otu": "otu427022"
+}
+}
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,76 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: otree2
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count
+---------------------  -------
+prechecksum_inputs           1
+snap_collections_pull        1
+snap_phylesystem_pull        1
+tool_conf_config             1
+tool_conf_otc_config         1
+total                        5
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmp4jb7osnf
+Execute 2 jobs...
+[Fri Dec 19 11:09:30 2025]
+localrule tool_conf_otc_config:
+    output: otc-config
+    log: logs/config
+    jobid: 2
+    reason: Missing output files: otc-config
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:09:30 2025]
+localrule tool_conf_config:
+    output: config
+    log: logs/config
+    jobid: 1
+    reason: Missing output files: config
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:09:31 2025]
+Finished jobid: 1 (Rule: tool_conf_config)
+1 of 5 steps (20%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Fri Dec 19 11:09:31 2025]
+localrule snap_collections_pull:
+    input: config
+    output: phylo_snapshot/collections_shard_shas.txt
+    log: logs/collections_pull
+    jobid: 4
+    reason: Missing output files: phylo_snapshot/collections_shard_shas.txt; Input files updated by another job: config
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:09:31 2025]
+localrule snap_phylesystem_pull:
+    input: config
+    output: phylo_snapshot/ps_shard_shas.txt
+    log: logs/phylesystem_pull
+    jobid: 3
+    reason: Missing output files: phylo_snapshot/ps_shard_shas.txt; Input files updated by another job: config
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:09:31 2025]
+Finished jobid: 2 (Rule: tool_conf_otc_config)
+2 of 5 steps (40%) done
+[Fri Dec 19 11:09:33 2025]
+Finished jobid: 4 (Rule: snap_collections_pull)
+3 of 5 steps (60%) done
+[Fri Dec 19 11:09:33 2025]
+Finished jobid: 3 (Rule: snap_phylesystem_pull)
+4 of 5 steps (80%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Dec 19 11:09:33 2025]
+localrule prechecksum_inputs:
+    input: config, otc-config, phylo_snapshot/ps_shard_shas.txt, phylo_snapshot/collections_shard_shas.txt
+    jobid: 0
+    reason: Input files updated by another job: config, phylo_snapshot/collections_shard_shas.txt, phylo_snapshot/ps_shard_shas.txt, otc-config
+    resources: tmpdir=/tmp
+[Fri Dec 19 11:09:33 2025]
+Finished jobid: 0 (Rule: prechecksum_inputs)
+5 of 5 steps (100%) done
+Complete log(s): /home/deploy/synthesis/custom_synth_scratch/results/snacktavish_aves_81461_tmp4jb7osnf/.snakemake/log/2025-12-19T110930.110786.snakemake.log

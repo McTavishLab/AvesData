@@ -1,0 +1,4407 @@
+{
+"nexml": {
+"@about": "#study",
+"@generator": "Open Tree API",
+"@id": "study",
+"@nexml2json": "1.2.1",
+"@nexmljson": "http://purl.org/opentree/nexson",
+"@version": "0.9",
+"@xmlns": {
+"$": "http://www.nexml.org/2009",
+"nex": "http://www.nexml.org/2009",
+"ot": "http://purl.org/opentree-terms#",
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+},
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation",
+"@id": "peyotl-validator",
+"@name": "api.opentreeoflife.org/validate",
+"@url": "https://github.com/OpenTreeOfLife/peyotl",
+"@version": "0.0.4a",
+"invocation": {
+"commandLine": [],
+"otherProperty": [
+{
+"name": "pythonVersion",
+"value": "3.10.12"
+},
+{
+"name": "pythonImplementation",
+"value": "CPython"
+}
+]
+}
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
+}
+]
+},
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2024-08-14T19:51:00.669Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "Birds"
+},
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2024-08-14T19:51:00.669Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2024-08-14T19:51:00.669Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "PASTED.nex",
+"@size": 7826,
+"@type": "nexus",
+"@url": "/curator/download/supporting_files.doc.93e4dba1e85d9834.5041535445442e6e6578.nex",
+"description": {
+"$": "Source data for tree(s) 'tree5'"
+},
+"sourceForTree": [
+{
+"$": "tree5"
+}
+]
+},
+{
+"@filename": "image.png",
+"@size": 1446,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.aa9be5b10aaee5f0.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1557,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.9de44f572bf4b473.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1507,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.99a025f1da5997ae.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1554,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.863bef0f7e1621ea.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1496,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.a6da6a3568427c1f.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1641,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.a96870d29c722d2c.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1392,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.90dfcac016c3ecf4.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1688,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.be71719f62a6cb9b.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1366,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.b4bdd21f840d4021.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1538,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.a1a296843c820e4e.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1458,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.b2e64d5ebde6e532.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1444,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.ba975ba4a6b67a22.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1616,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.b825ce0eb4d460f6.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1472,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.93011e71e7d149d0.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1307,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.89b10ff18c1d1daf.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"Eleanor Hay",
+"eliotmiller"
+],
+"^ot:dataDeposit": {
+"@href": "https://bridges.monash.edu/articles/dataset/Geographic_range_size_and_speciation_in_honeyeaters/19375091"
+},
+"^ot:focalClade": 1092345,
+"^ot:focalCladeOTTTaxonName": "Meliphagidae",
+"^ot:otusElementOrder": [
+"otus1"
+],
+"^ot:studyId": "ot_2320",
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/s12862-022-02041-6"
+},
+"^ot:studyPublicationReference": "Hay, E. M., McGee, M. D., & Chown, S. L. (2022). Geographic range size and speciation in honeyeaters. BMC Ecology and Evolution, 22(1). https://doi.org/10.1186/s12862-022-02041-6\n",
+"^ot:studyYear": 2022,
+"^ot:tag": [],
+"^ot:treesElementOrder": [
+"trees1"
+],
+"^xhtml:license": {
+"@href": "",
+"@name": ""
+},
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 386,
+"message": 0,
+"node": 387,
+"otu": 200,
+"otus": 10,
+"tree": 5,
+"trees": 6
+},
+"otusById": {
+"otus1": {
+"otuById": {
+"otu10": {
+"^ot:originalLabel": "Myza celebensis",
+"^ot:ottId": 3599861,
+"^ot:ottTaxonName": "Myza celebensis"
+},
+"otu100": {
+"^ot:originalLabel": "Myzomela wahe",
+"^ot:ottId": 6520376,
+"^ot:ottTaxonName": "Myzomela wahe"
+},
+"otu101": {
+"^ot:originalLabel": "Myzomela wakoloensis",
+"^ot:ottId": 5560086,
+"^ot:ottTaxonName": "Myzomela wakoloensis"
+},
+"otu102": {
+"^ot:originalLabel": "Myzomela rubratra",
+"^ot:ottId": 26177,
+"^ot:ottTaxonName": "Myzomela rubratra"
+},
+"otu103": {
+"^ot:originalLabel": "Myzomela chermesina",
+"^ot:ottId": 5560084,
+"^ot:ottTaxonName": "Myzomela chermesina"
+},
+"otu104": {
+"^ot:originalLabel": "Myzomela tristrami",
+"^ot:ottId": 3598777,
+"^ot:ottTaxonName": "Myzomela tristrami"
+},
+"otu105": {
+"^ot:originalLabel": "Myzomela jugularis",
+"^ot:ottId": 3598773,
+"^ot:ottTaxonName": "Myzomela jugularis"
+},
+"otu106": {
+"^ot:originalLabel": "Myzomela melanocephala",
+"^ot:ottId": 3598787,
+"^ot:ottTaxonName": "Myzomela melanocephala"
+},
+"otu107": {
+"^ot:originalLabel": "Myzomela lafargei",
+"^ot:ottId": 346145,
+"^ot:ottTaxonName": "Myzomela lafargei"
+},
+"otu108": {
+"^ot:originalLabel": "Myzomela malaitae",
+"^ot:ottId": 3598782,
+"^ot:ottTaxonName": "Myzomela malaitae"
+},
+"otu109": {
+"^ot:originalLabel": "Myzomela sclateri",
+"^ot:ottId": 3598778,
+"^ot:ottTaxonName": "Myzomela sclateri"
+},
+"otu11": {
+"^ot:originalLabel": "Acanthorhynchus superciliosus",
+"^ot:ottId": 109307,
+"^ot:ottTaxonName": "Acanthorhynchus superciliosus"
+},
+"otu110": {
+"^ot:originalLabel": "Myzomela pammelaena",
+"^ot:ottId": 3598780,
+"^ot:ottTaxonName": "Myzomela pammelaena"
+},
+"otu111": {
+"^ot:originalLabel": "Myzomela eichhorni",
+"^ot:ottId": 3598785,
+"^ot:ottTaxonName": "Myzomela eichhorni"
+},
+"otu112": {
+"^ot:originalLabel": "Myzomela cardinalis",
+"^ot:ottId": 232057,
+"^ot:ottTaxonName": "Myzomela cardinalis"
+},
+"otu113": {
+"^ot:originalLabel": "Myzomela pulchella",
+"^ot:ottId": 3598774,
+"^ot:ottTaxonName": "Myzomela pulchella"
+},
+"otu114": {
+"^ot:originalLabel": "Meliarchus sclateri",
+"^ot:ottId": 4132013,
+"^ot:ottTaxonName": "Meliarchus sclateri"
+},
+"otu115": {
+"^ot:originalLabel": "Guadalcanaria inexpectata",
+"^ot:ottId": 3599547,
+"^ot:ottTaxonName": "Guadalcanaria inexpecta"
+},
+"otu116": {
+"^ot:originalLabel": "Gymnomyza brunneirostris",
+"^ot:ottId": 6152859,
+"^ot:ottTaxonName": "Gymnomyza brunneirostris"
+},
+"otu117": {
+"^ot:originalLabel": "Gymnomyza viridis",
+"^ot:ottId": 3598741,
+"^ot:ottTaxonName": "Gymnomyza viridis"
+},
+"otu118": {
+"^ot:originalLabel": "Foulehaio procerior",
+"^ot:ottId": 6152852,
+"^ot:ottTaxonName": "Foulehaio procerior"
+},
+"otu119": {
+"^ot:originalLabel": "Gymnomyza samoensis",
+"^ot:ottId": 5929,
+"^ot:ottTaxonName": "Gymnomyza samoensis"
+},
+"otu12": {
+"^ot:originalLabel": "Acanthorhynchus tenuirostris",
+"^ot:ottId": 109304,
+"^ot:ottTaxonName": "Acanthorhynchus tenuirostris"
+},
+"otu120": {
+"^ot:originalLabel": "Meliphacator provocator",
+"^ot:ottId": 3598758,
+"^ot:ottTaxonName": "Xanthotis provocator"
+},
+"otu121": {
+"^ot:originalLabel": "Foulehaio carunculatus",
+"^ot:ottId": 1053661,
+"^ot:ottTaxonName": "Foulehaio carunculatus"
+},
+"otu122": {
+"^ot:originalLabel": "Foulehaio taviunensis",
+"^ot:ottId": 7660735,
+"^ot:ottTaxonName": "Foulehaio taviunensis"
+},
+"otu123": {
+"^ot:originalLabel": "Trichodere cockerelli",
+"^ot:ottId": 376599,
+"^ot:ottTaxonName": "Trichodere cockerelli"
+},
+"otu124": {
+"^ot:originalLabel": "Phylidonyris pyrrhopterus",
+"^ot:ottId": 927344,
+"^ot:ottTaxonName": "Phylidonyris pyrrhoptera"
+},
+"otu125": {
+"^ot:originalLabel": "Phylidonyris novaehollandiae",
+"^ot:ottId": 927345,
+"^ot:ottTaxonName": "Phylidonyris novaehollandiae"
+},
+"otu126": {
+"^ot:originalLabel": "Phylidonyris niger",
+"^ot:ottId": 927346,
+"^ot:ottTaxonName": "Phylidonyris niger"
+},
+"otu127": {
+"^ot:originalLabel": "Cissomela pectoralis",
+"^ot:ottId": 7068375,
+"^ot:ottTaxonName": "Cissomela pectoralis"
+},
+"otu128": {
+"^ot:originalLabel": "Lichmera flavicans",
+"^ot:ottId": 3598748,
+"^ot:ottTaxonName": "Lichmera flavicans"
+},
+"otu129": {
+"^ot:originalLabel": "Lichmera notabilis",
+"^ot:ottId": 3598749,
+"^ot:ottTaxonName": "Lichmera notabilis"
+},
+"otu13": {
+"^ot:originalLabel": "Glycichaera fallax",
+"^ot:ottId": 1053669,
+"^ot:ottTaxonName": "Glycichaera fallax"
+},
+"otu130": {
+"^ot:originalLabel": "Lichmera alboauricularis",
+"^ot:ottId": 983497,
+"^ot:ottTaxonName": "Lichmera alboauricularis"
+},
+"otu131": {
+"^ot:originalLabel": "Lichmera squamata",
+"^ot:ottId": 3598746,
+"^ot:ottTaxonName": "Lichmera squamata"
+},
+"otu132": {
+"^ot:originalLabel": "Lichmera incana",
+"^ot:ottId": 3598747,
+"^ot:ottTaxonName": "Lichmera incana"
+},
+"otu133": {
+"^ot:originalLabel": "Lichmera indistincta",
+"^ot:ottId": 527600,
+"^ot:ottTaxonName": "Lichmera indistincta"
+},
+"otu134": {
+"^ot:originalLabel": "Lichmera limbata",
+"^ot:ottId": 5560088,
+"^ot:ottTaxonName": "Lichmera limbata"
+},
+"otu135": {
+"^ot:originalLabel": "Lichmera argentauris",
+"^ot:ottId": 3598752,
+"^ot:ottTaxonName": "Lichmera argentauris"
+},
+"otu136": {
+"^ot:originalLabel": "Lichmera deningeri",
+"^ot:ottId": 3598753,
+"^ot:ottTaxonName": "Lichmera deningeri"
+},
+"otu137": {
+"^ot:originalLabel": "Lichmera monticola",
+"^ot:ottId": 3598750,
+"^ot:ottTaxonName": "Lichmera monticola"
+},
+"otu138": {
+"^ot:originalLabel": "Gymnomyza aubryana",
+"^ot:ottId": 3598740,
+"^ot:ottTaxonName": "Gymnomyza aubryana"
+},
+"otu139": {
+"^ot:originalLabel": "Nesoptilotis flavicollis",
+"^ot:ottId": 701809,
+"^ot:ottTaxonName": "Nesoptilotis flavicollis"
+},
+"otu14": {
+"^ot:originalLabel": "Melionyx fuscus",
+"^ot:ottId": 3598733,
+"^ot:ottTaxonName": "Melidectes fuscus"
+},
+"otu140": {
+"^ot:originalLabel": "Nesoptilotis leucotis",
+"^ot:ottId": 264927,
+"^ot:ottTaxonName": "Nesoptilotis leucotis"
+},
+"otu141": {
+"^ot:originalLabel": "Entomyzon cyanotis",
+"^ot:ottId": 477311,
+"^ot:ottTaxonName": "Entomyzon cyanotis"
+},
+"otu142": {
+"^ot:originalLabel": "Melithreptus albogularis",
+"^ot:ottId": 630944,
+"^ot:ottTaxonName": "Melithreptus albogularis"
+},
+"otu143": {
+"^ot:originalLabel": "Melithreptus validirostris",
+"^ot:ottId": 471800,
+"^ot:ottTaxonName": "Melithreptus validirostris"
+},
+"otu144": {
+"^ot:originalLabel": "Melithreptus gularis",
+"^ot:ottId": 471798,
+"^ot:ottTaxonName": "Melithreptus gularis"
+},
+"otu145": {
+"^ot:originalLabel": "Melithreptus brevirostris",
+"^ot:ottId": 630943,
+"^ot:ottTaxonName": "Melithreptus brevirostris"
+},
+"otu146": {
+"^ot:originalLabel": "Melithreptus affinis",
+"^ot:ottId": 812823,
+"^ot:ottTaxonName": "Melithreptus affinis"
+},
+"otu147": {
+"^ot:originalLabel": "Melithreptus lunatus",
+"^ot:ottId": 598350,
+"^ot:ottTaxonName": "Melithreptus lunatus"
+},
+"otu148": {
+"^ot:originalLabel": "Melithreptus chloropsis",
+"^ot:ottId": 3598790,
+"^ot:ottTaxonName": "Melithreptus chloropsis"
+},
+"otu149": {
+"^ot:originalLabel": "Stomiopera unicolor",
+"^ot:ottId": 45233,
+"^ot:ottTaxonName": "Stomiopera unicolor"
+},
+"otu15": {
+"^ot:originalLabel": "Melionyx princeps",
+"^ot:ottId": 3598729,
+"^ot:ottTaxonName": "Melidectes princeps"
+},
+"otu150": {
+"^ot:originalLabel": "Stomiopera flava",
+"^ot:ottId": 58048,
+"^ot:ottTaxonName": "Stomiopera flava"
+},
+"otu151": {
+"^ot:originalLabel": "Meliphaga aruensis",
+"^ot:ottId": 765834,
+"^ot:ottTaxonName": "Meliphaga aruensis"
+},
+"otu152": {
+"^ot:originalLabel": "Meliphaga lewinii",
+"^ot:ottId": 191557,
+"^ot:ottTaxonName": "Meliphaga lewinii"
+},
+"otu153": {
+"^ot:originalLabel": "Meliphaga notata",
+"^ot:ottId": 195262,
+"^ot:ottTaxonName": "Meliphaga notata"
+},
+"otu154": {
+"^ot:originalLabel": "Territornis reticulata",
+"^ot:ottId": 191562,
+"^ot:ottTaxonName": "Meliphaga reticulata"
+},
+"otu155": {
+"^ot:originalLabel": "Territornis albilineata",
+"^ot:ottId": 191556,
+"^ot:ottTaxonName": "Meliphaga albilineata"
+},
+"otu156": {
+"^ot:originalLabel": "Territornis fordiana",
+"^ot:ottId": 191563,
+"^ot:ottTaxonName": "Meliphaga fordiana"
+},
+"otu157": {
+"^ot:originalLabel": "Oreornis chrysogenys",
+"^ot:ottId": 3599640,
+"^ot:ottTaxonName": "Oreornis chrysogenys"
+},
+"otu158": {
+"^ot:originalLabel": "Microptilotis montanus",
+"^ot:ottId": 765825,
+"^ot:ottTaxonName": "Meliphaga montana"
+},
+"otu159": {
+"^ot:originalLabel": "Microptilotis vicina",
+"^ot:ottId": 3598767,
+"^ot:ottTaxonName": "Meliphaga vicina"
+},
+"otu16": {
+"^ot:originalLabel": "Melionyx nouhuysi",
+"^ot:ottId": 3598731,
+"^ot:ottTaxonName": "Melidectes nouhuysi"
+},
+"otu160": {
+"^ot:originalLabel": "Microptilotis albonotatus",
+"^ot:ottId": 58052,
+"^ot:ottTaxonName": "Meliphaga albonotata"
+},
+"otu161": {
+"^ot:originalLabel": "Microptilotis cinereifrons",
+"^ot:ottId": 191552,
+"^ot:ottTaxonName": "Meliphaga cinereifrons"
+},
+"otu162": {
+"^ot:originalLabel": "Microptilotis gracilis",
+"^ot:ottId": 196942,
+"^ot:ottTaxonName": "Meliphaga gracilis"
+},
+"otu163": {
+"^ot:originalLabel": "Microptilotis imitatrix",
+"^ot:ottId": 6520546,
+"^ot:ottTaxonName": "Microptilotis imitatrix"
+},
+"otu164": {
+"^ot:originalLabel": "Microptilotis flavirictus",
+"^ot:ottId": 191560,
+"^ot:ottTaxonName": "Meliphaga flavirictus"
+},
+"otu165": {
+"^ot:originalLabel": "Microptilotis mimikae",
+"^ot:ottId": 195232,
+"^ot:ottTaxonName": "Meliphaga mimikae"
+},
+"otu166": {
+"^ot:originalLabel": "Microptilotis orientalis",
+"^ot:ottId": 765833,
+"^ot:ottTaxonName": "Meliphaga orientalis"
+},
+"otu167": {
+"^ot:originalLabel": "Microptilotis analogus",
+"^ot:ottId": 263342,
+"^ot:ottTaxonName": "Meliphaga analoga"
+},
+"otu168": {
+"^ot:originalLabel": "Purnella albifrons",
+"^ot:ottId": 927348,
+"^ot:ottTaxonName": "Purnella albifrons"
+},
+"otu169": {
+"^ot:originalLabel": "Lichenostomus melanops",
+"^ot:ottId": 264917,
+"^ot:ottTaxonName": "Lichenostomus melanops"
+},
+"otu17": {
+"^ot:originalLabel": "Ptiloprora plumbea",
+"^ot:ottId": 1058842,
+"^ot:ottTaxonName": "Ptiloprora plumbea"
+},
+"otu170": {
+"^ot:originalLabel": "Lichenostomus cratitius",
+"^ot:ottId": 261570,
+"^ot:ottTaxonName": "Lichenostomus cratitius"
+},
+"otu171": {
+"^ot:originalLabel": "Gavicalis versicolor",
+"^ot:ottId": 701819,
+"^ot:ottTaxonName": "Gavicalis versicolor"
+},
+"otu172": {
+"^ot:originalLabel": "Gavicalis virescens",
+"^ot:ottId": 504461,
+"^ot:ottTaxonName": "Gavicalis virescens"
+},
+"otu173": {
+"^ot:originalLabel": "Gavicalis fasciogularis",
+"^ot:ottId": 701811,
+"^ot:ottTaxonName": "Gavicalis fasciogularis"
+},
+"otu174": {
+"^ot:originalLabel": "Ptilotula penicillata",
+"^ot:ottId": 140612,
+"^ot:ottTaxonName": "Ptilotula penicillata"
+},
+"otu175": {
+"^ot:originalLabel": "Ptilotula ornata",
+"^ot:ottId": 264920,
+"^ot:ottTaxonName": "Lichenostomus ornatus"
+},
+"otu176": {
+"^ot:originalLabel": "Ptilotula plumula",
+"^ot:ottId": 701807,
+"^ot:ottTaxonName": "Lichenostomus plumulus"
+},
+"otu177": {
+"^ot:originalLabel": "Ptilotula keartlandi",
+"^ot:ottId": 701803,
+"^ot:ottTaxonName": "Lichenostomus keartlandi"
+},
+"otu178": {
+"^ot:originalLabel": "Ptilotula fusca",
+"^ot:ottId": 1040145,
+"^ot:ottTaxonName": "Ptilotula fusca"
+},
+"otu179": {
+"^ot:originalLabel": "Ptilotula flavescens",
+"^ot:ottId": 638698,
+"^ot:ottTaxonName": "Ptilotula flavescens"
+},
+"otu18": {
+"^ot:originalLabel": "Ptiloprora meekiana",
+"^ot:ottId": 3598737,
+"^ot:ottTaxonName": "Ptiloprora meekiana"
+},
+"otu180": {
+"^ot:originalLabel": "Caligavis chrysops",
+"^ot:ottId": 261559,
+"^ot:ottTaxonName": "Caligavis chrysops"
+},
+"otu181": {
+"^ot:originalLabel": "Caligavis subfrenata",
+"^ot:ottId": 701805,
+"^ot:ottTaxonName": "Caligavis subfrenata"
+},
+"otu182": {
+"^ot:originalLabel": "Caligavis obscura",
+"^ot:ottId": 701801,
+"^ot:ottTaxonName": "Lichenostomus obscurus"
+},
+"otu183": {
+"^ot:originalLabel": "Acanthagenys rufogularis",
+"^ot:ottId": 927350,
+"^ot:ottTaxonName": "Acanthagenys rufogularis"
+},
+"otu184": {
+"^ot:originalLabel": "Anthochaera chrysoptera",
+"^ot:ottId": 527604,
+"^ot:ottTaxonName": "Anthochaera chrysoptera"
+},
+"otu185": {
+"^ot:originalLabel": "Anthochaera lunulata",
+"^ot:ottId": 527596,
+"^ot:ottTaxonName": "Anthochaera lunulata"
+},
+"otu186": {
+"^ot:originalLabel": "Anthochaera phrygia",
+"^ot:ottId": 376597,
+"^ot:ottTaxonName": "Anthochaera phrygia"
+},
+"otu187": {
+"^ot:originalLabel": "Anthochaera paradoxa",
+"^ot:ottId": 527595,
+"^ot:ottTaxonName": "Anthochaera paradoxa"
+},
+"otu188": {
+"^ot:originalLabel": "Anthochaera carunculata",
+"^ot:ottId": 527605,
+"^ot:ottTaxonName": "Anthochaera carunculata"
+},
+"otu189": {
+"^ot:originalLabel": "Bolemoreus frenatus",
+"^ot:ottId": 701815,
+"^ot:ottTaxonName": "Bolemoreus frenatus"
+},
+"otu19": {
+"^ot:originalLabel": "Ptiloprora perstriata",
+"^ot:ottId": 3598736,
+"^ot:ottTaxonName": "Ptiloprora perstriata"
+},
+"otu190": {
+"^ot:originalLabel": "Bolemoreus hindwoodi",
+"^ot:ottId": 701813,
+"^ot:ottTaxonName": "Bolemoreus hindwoodi"
+},
+"otu191": {
+"^ot:originalLabel": "Manorina melanophrys",
+"^ot:ottId": 239591,
+"^ot:ottTaxonName": "Manorina melanophrys"
+},
+"otu192": {
+"^ot:originalLabel": "Manorina melanocephala",
+"^ot:ottId": 465906,
+"^ot:ottTaxonName": "Manorina melanocephala"
+},
+"otu193": {
+"^ot:originalLabel": "Manorina melanotis",
+"^ot:ottId": 3598725,
+"^ot:ottTaxonName": "Manorina melanotis"
+},
+"otu194": {
+"^ot:originalLabel": "Manorina flavigula",
+"^ot:ottId": 58049,
+"^ot:ottTaxonName": "Manorina flavigula"
+},
+"otu195": {
+"^ot:originalLabel": "Melidectes torquatus",
+"^ot:ottId": 58051,
+"^ot:ottTaxonName": "Melidectes torquatus"
+},
+"otu196": {
+"^ot:originalLabel": "Melidectes leucostephes",
+"^ot:ottId": 3598732,
+"^ot:ottTaxonName": "Melidectes leucostephes"
+},
+"otu197": {
+"^ot:originalLabel": "Melidectes ochromelas",
+"^ot:ottId": 58050,
+"^ot:ottTaxonName": "Melidectes ochromelas"
+},
+"otu198": {
+"^ot:originalLabel": "Melidectes belfordi",
+"^ot:ottId": 463178,
+"^ot:ottTaxonName": "Melidectes belfordi"
+},
+"otu199": {
+"^ot:originalLabel": "Melidectes rufocrissalis",
+"^ot:ottId": 3598730,
+"^ot:ottTaxonName": "Melidectes rufocrissalis"
+},
+"otu20": {
+"^ot:originalLabel": "Ptiloprora erythropleura",
+"^ot:ottId": 3598738,
+"^ot:ottTaxonName": "Ptiloprora erythropleura"
+},
+"otu200": {
+"^ot:originalLabel": "Melidectes foersteri",
+"^ot:ottId": 3598727,
+"^ot:ottTaxonName": "Melidectes foersteri"
+},
+"otu21": {
+"^ot:originalLabel": "Ptiloprora guisei",
+"^ot:ottId": 109311,
+"^ot:ottTaxonName": "Ptiloprora guisei"
+},
+"otu22": {
+"^ot:originalLabel": "Ptiloprora mayri",
+"^ot:ottId": 3598739,
+"^ot:ottTaxonName": "Ptiloprora mayri"
+},
+"otu23": {
+"^ot:originalLabel": "Gliciphila melanops",
+"^ot:ottId": 453656,
+"^ot:ottTaxonName": "Glyciphila melanops"
+},
+"otu24": {
+"^ot:originalLabel": "Glycifohia undulata",
+"^ot:ottId": 3598743,
+"^ot:ottTaxonName": "Glycifohia undulata"
+},
+"otu25": {
+"^ot:originalLabel": "Glycifohia notabilis",
+"^ot:ottId": 4132002,
+"^ot:ottTaxonName": "Glycifohia notabilis"
+},
+"otu26": {
+"^ot:originalLabel": "Certhionyx variegatus",
+"^ot:ottId": 477310,
+"^ot:ottTaxonName": "Certhionyx variegatus"
+},
+"otu27": {
+"^ot:originalLabel": "Pycnopygius cinereus",
+"^ot:ottId": 6262,
+"^ot:ottTaxonName": "Pycnopygius cinereus"
+},
+"otu28": {
+"^ot:originalLabel": "Pycnopygius ixoides",
+"^ot:ottId": 3598761,
+"^ot:ottTaxonName": "Pycnopygius ixoides"
+},
+"otu29": {
+"^ot:originalLabel": "Prosthemadera novaeseelandiae",
+"^ot:ottId": 6264,
+"^ot:ottTaxonName": "Prosthemadera novaeseelandiae"
+},
+"otu30": {
+"^ot:originalLabel": "Anthornis melanura",
+"^ot:ottId": 935032,
+"^ot:ottTaxonName": "Anthornis melanura"
+},
+"otu31": {
+"^ot:originalLabel": "Anthornis melanocephala",
+"^ot:ottId": 3598726,
+"^ot:ottTaxonName": "Anthornis melanocephala"
+},
+"otu32": {
+"^ot:originalLabel": "Conopophila whitei",
+"^ot:ottId": 3598745,
+"^ot:ottTaxonName": "Conopophila whitei"
+},
+"otu33": {
+"^ot:originalLabel": "Timeliopsis fulvigula",
+"^ot:ottId": 376603,
+"^ot:ottTaxonName": "Timeliopsis fulvigula"
+},
+"otu34": {
+"^ot:originalLabel": "Timeliopsis griseigula",
+"^ot:ottId": 376601,
+"^ot:ottTaxonName": "Timeliopsis griseigula"
+},
+"otu35": {
+"^ot:originalLabel": "Melilestes megarhynchus",
+"^ot:ottId": 527602,
+"^ot:ottTaxonName": "Melilestes megarhynchus"
+},
+"otu36": {
+"^ot:originalLabel": "Macgregoria pulchra",
+"^ot:ottId": 598334,
+"^ot:ottTaxonName": "Macgregoria pulchra"
+},
+"otu37": {
+"^ot:originalLabel": "Melipotes ater",
+"^ot:ottId": 3598765,
+"^ot:ottTaxonName": "Melipotes ater"
+},
+"otu38": {
+"^ot:originalLabel": "Melipotes gymnops",
+"^ot:ottId": 3598763,
+"^ot:ottTaxonName": "Melipotes gymnops"
+},
+"otu39": {
+"^ot:originalLabel": "Melipotes carolae",
+"^ot:ottId": 3598764,
+"^ot:ottTaxonName": "Melipotes carolae"
+},
+"otu40": {
+"^ot:originalLabel": "Melipotes fumigatus",
+"^ot:ottId": 284584,
+"^ot:ottTaxonName": "Melipotes fumigatus"
+},
+"otu41": {
+"^ot:originalLabel": "Stresemannia bougainvillei",
+"^ot:ottId": 3599411,
+"^ot:ottTaxonName": "Stresemannia bougainvillei"
+},
+"otu42": {
+"^ot:originalLabel": "Conopophila albogularis",
+"^ot:ottId": 477308,
+"^ot:ottTaxonName": "Conopophila albogularis"
+},
+"otu43": {
+"^ot:originalLabel": "Conopophila rufogularis",
+"^ot:ottId": 477307,
+"^ot:ottTaxonName": "Conopophila rufogularis"
+},
+"otu44": {
+"^ot:originalLabel": "Ramsayornis fasciatus",
+"^ot:ottId": 6258,
+"^ot:ottTaxonName": "Ramsayornis fasciatus"
+},
+"otu45": {
+"^ot:originalLabel": "Ramsayornis modestus",
+"^ot:ottId": 376605,
+"^ot:ottTaxonName": "Ramsayornis modestus"
+},
+"otu46": {
+"^ot:originalLabel": "Ashbyia lovensis",
+"^ot:ottId": 109326,
+"^ot:ottTaxonName": "Ashbyia lovensis"
+},
+"otu47": {
+"^ot:originalLabel": "Epthianura crocea",
+"^ot:ottId": 1053667,
+"^ot:ottTaxonName": "Epthianura crocea"
+},
+"otu48": {
+"^ot:originalLabel": "Epthianura tricolor",
+"^ot:ottId": 1053659,
+"^ot:ottTaxonName": "Epthianura tricolor"
+},
+"otu49": {
+"^ot:originalLabel": "Epthianura albifrons",
+"^ot:ottId": 1053664,
+"^ot:ottTaxonName": "Epthianura albifrons"
+},
+"otu50": {
+"^ot:originalLabel": "Epthianura aurifrons",
+"^ot:ottId": 1053666,
+"^ot:ottTaxonName": "Epthianura aurifrons"
+},
+"otu51": {
+"^ot:originalLabel": "Plectorhyncha lanceolata",
+"^ot:ottId": 6261,
+"^ot:ottTaxonName": "Plectorhyncha lanceolata"
+},
+"otu52": {
+"^ot:originalLabel": "Grantiella picta",
+"^ot:ottId": 527599,
+"^ot:ottTaxonName": "Grantiella picta"
+},
+"otu53": {
+"^ot:originalLabel": "Pycnopygius stictocephalus",
+"^ot:ottId": 6263,
+"^ot:ottTaxonName": "Pycnopygius stictocephalus"
+},
+"otu54": {
+"^ot:originalLabel": "Xanthotis polygrammus",
+"^ot:ottId": 3598760,
+"^ot:ottTaxonName": "Xanthotis polygrammus"
+},
+"otu55": {
+"^ot:originalLabel": "Xanthotis macleayanus",
+"^ot:ottId": 3598759,
+"^ot:ottTaxonName": "Xanthotis macleayanus"
+},
+"otu56": {
+"^ot:originalLabel": "Xanthotis flaviventer",
+"^ot:ottId": 376608,
+"^ot:ottTaxonName": "Xanthotis flaviventer"
+},
+"otu57": {
+"^ot:originalLabel": "Philemon citreogularis",
+"^ot:ottId": 630949,
+"^ot:ottTaxonName": "Philemon citreogularis"
+},
+"otu58": {
+"^ot:originalLabel": "Philemon kisserensis",
+"^ot:ottId": 5560090,
+"^ot:ottTaxonName": "Philemon kisserensis"
+},
+"otu59": {
+"^ot:originalLabel": "Philemon brassi",
+"^ot:ottId": 3598795,
+"^ot:ottTaxonName": "Philemon brassi"
+},
+"otu60": {
+"^ot:originalLabel": "Philemon inornatus",
+"^ot:ottId": 3598798,
+"^ot:ottTaxonName": "Philemon inornatus"
+},
+"otu61": {
+"^ot:originalLabel": "Philemon meyeri",
+"^ot:ottId": 630948,
+"^ot:ottTaxonName": "Philemon meyeri"
+},
+"otu62": {
+"^ot:originalLabel": "Philemon eichhorni",
+"^ot:ottId": 354281,
+"^ot:ottTaxonName": "Philemon eichhorni"
+},
+"otu63": {
+"^ot:originalLabel": "Philemon albitorques",
+"^ot:ottId": 3598793,
+"^ot:ottTaxonName": "Philemon albitorques"
+},
+"otu64": {
+"^ot:originalLabel": "Philemon fuscicapillus",
+"^ot:ottId": 3598792,
+"^ot:ottTaxonName": "Philemon fuscicapillus"
+},
+"otu65": {
+"^ot:originalLabel": "Philemon cockerelli",
+"^ot:ottId": 3598791,
+"^ot:ottTaxonName": "Philemon cockerelli"
+},
+"otu66": {
+"^ot:originalLabel": "Philemon novaeguineae",
+"^ot:ottId": 5560089,
+"^ot:ottTaxonName": "Philemon novaeguineae"
+},
+"otu67": {
+"^ot:originalLabel": "Philemon plumigenis",
+"^ot:ottId": 3598797,
+"^ot:ottTaxonName": "Philemon plumigenis"
+},
+"otu68": {
+"^ot:originalLabel": "Philemon buceroides",
+"^ot:ottId": 630941,
+"^ot:ottTaxonName": "Philemon buceroides"
+},
+"otu69": {
+"^ot:originalLabel": "Philemon yorki",
+"^ot:ottId": 6520547,
+"^ot:ottTaxonName": "Philemon yorki"
+},
+"otu70": {
+"^ot:originalLabel": "Philemon moluccensis",
+"^ot:ottId": 3598799,
+"^ot:ottTaxonName": "Philemon moluccensis"
+},
+"otu71": {
+"^ot:originalLabel": "Philemon subcorniculatus",
+"^ot:ottId": 3598800,
+"^ot:ottTaxonName": "Philemon subcorniculatus"
+},
+"otu72": {
+"^ot:originalLabel": "Philemon diemenensis",
+"^ot:ottId": 3598794,
+"^ot:ottTaxonName": "Philemon diemenensis"
+},
+"otu73": {
+"^ot:originalLabel": "Philemon corniculatus",
+"^ot:ottId": 757331,
+"^ot:ottTaxonName": "Philemon corniculatus"
+},
+"otu74": {
+"^ot:originalLabel": "Philemon argenticeps",
+"^ot:ottId": 630942,
+"^ot:ottTaxonName": "Philemon argenticeps"
+},
+"otu75": {
+"^ot:originalLabel": "Sugomel niger",
+"^ot:ottId": 477305,
+"^ot:ottTaxonName": "Sugomel nigrum"
+},
+"otu76": {
+"^ot:originalLabel": "Lichmera lombokia",
+"^ot:ottId": 3598751,
+"^ot:ottTaxonName": "Lichmera lombokia"
+},
+"otu77": {
+"^ot:originalLabel": "Melitograis gilolensis",
+"^ot:ottId": 3599413,
+"^ot:ottTaxonName": "Melitograis gilolensis"
+},
+"otu78": {
+"^ot:originalLabel": "Vosea whitemanensis",
+"^ot:ottId": 3598728,
+"^ot:ottTaxonName": "Melidectes whitemanensis"
+},
+"otu79": {
+"^ot:originalLabel": "Myzomela rosenbergii",
+"^ot:ottId": 630940,
+"^ot:ottTaxonName": "Myzomela rosenbergii"
+},
+"otu80": {
+"^ot:originalLabel": "Myzomela eques",
+"^ot:ottId": 598353,
+"^ot:ottTaxonName": "Myzomela eques"
+},
+"otu81": {
+"^ot:originalLabel": "Myzomela cineracea",
+"^ot:ottId": 346146,
+"^ot:ottTaxonName": "Myzomela cineracea"
+},
+"otu82": {
+"^ot:originalLabel": "Myzomela obscura",
+"^ot:ottId": 630945,
+"^ot:ottTaxonName": "Myzomela obscura"
+},
+"otu83": {
+"^ot:originalLabel": "Myzomela albigula",
+"^ot:ottId": 3598786,
+"^ot:ottTaxonName": "Myzomela albigula"
+},
+"otu84": {
+"^ot:originalLabel": "Myzomela erythromelas",
+"^ot:ottId": 3598784,
+"^ot:ottTaxonName": "Myzomela erythromelas"
+},
+"otu85": {
+"^ot:originalLabel": "Myzomela blasii",
+"^ot:ottId": 3598776,
+"^ot:ottTaxonName": "Myzomela blasii"
+},
+"otu86": {
+"^ot:originalLabel": "Myzomela rubrotincta",
+"^ot:ottId": 7068377,
+"^ot:ottTaxonName": "Myzomela obscura rubrotincta"
+},
+"otu87": {
+"^ot:originalLabel": "Myzomela cruentata",
+"^ot:ottId": 3598772,
+"^ot:ottTaxonName": "Myzomela cruentata"
+},
+"otu88": {
+"^ot:originalLabel": "Myzomela erythrocephala",
+"^ot:ottId": 630946,
+"^ot:ottTaxonName": "Myzomela erythrocephala"
+},
+"otu89": {
+"^ot:originalLabel": "Myzomela vulnerata",
+"^ot:ottId": 3598771,
+"^ot:ottTaxonName": "Myzomela vulnerata"
+},
+"otu9": {
+"^ot:originalLabel": "Myza sarasinorum",
+"^ot:ottId": 3599541,
+"^ot:ottTaxonName": "Myza sarasinorum"
+},
+"otu90": {
+"^ot:originalLabel": "Myzomela nigrita",
+"^ot:ottId": 3598788,
+"^ot:ottTaxonName": "Myzomela nigrita"
+},
+"otu91": {
+"^ot:originalLabel": "Myzomela irianawidodoae",
+"^ot:ottId": 6520282,
+"^ot:ottTaxonName": "Myzomela irianawidodoae"
+},
+"otu92": {
+"^ot:originalLabel": "Myzomela dammermani",
+"^ot:ottId": 6520545,
+"^ot:ottTaxonName": "Myzomela dammermani"
+},
+"otu93": {
+"^ot:originalLabel": "Myzomela kuehni",
+"^ot:ottId": 3598779,
+"^ot:ottTaxonName": "Myzomela kuehni"
+},
+"otu94": {
+"^ot:originalLabel": "Myzomela prawiradilagae",
+"^ot:ottId": 6520374,
+"^ot:ottTaxonName": "Myzomela prawiradilagae"
+},
+"otu95": {
+"^ot:originalLabel": "Myzomela caledonica",
+"^ot:ottId": 5560083,
+"^ot:ottTaxonName": "Myzomela caledonica"
+},
+"otu96": {
+"^ot:originalLabel": "Myzomela adolphinae",
+"^ot:ottId": 3598783,
+"^ot:ottTaxonName": "Myzomela adolphinae"
+},
+"otu97": {
+"^ot:originalLabel": "Myzomela sanguinolenta",
+"^ot:ottId": 630939,
+"^ot:ottTaxonName": "Myzomela sanguinolenta"
+},
+"otu98": {
+"^ot:originalLabel": "Myzomela boiei",
+"^ot:ottId": 3598781,
+"^ot:ottTaxonName": "Myzomela boiei"
+},
+"otu99": {
+"^ot:originalLabel": "Myzomela chloroptera",
+"^ot:ottId": 5560082,
+"^ot:ottTaxonName": "Myzomela chloroptera"
+}
+}
+}
+},
+"treesById": {
+"trees1": {
+"@otus": "otus1",
+"^ot:treeElementOrder": [
+"tree5"
+],
+"treeById": {
+"tree5": {
+"@label": "tree 1",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:time",
+"^ot:branchLengthTimeUnit": "Relative time",
+"^ot:curatedType": "See methods of paper",
+"^ot:inGroupClade": "node5",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node5",
+"^ot:specifiedRoot": "node5",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node10": {
+"edge10": {
+"@length": 0.348105,
+"@source": "node10",
+"@target": "node11"
+},
+"edge11": {
+"@length": 0.348105,
+"@source": "node10",
+"@target": "node12"
+}
+},
+"node100": {
+"edge100": {
+"@length": 0.11376,
+"@source": "node100",
+"@target": "node101"
+},
+"edge101": {
+"@length": 0.11376,
+"@source": "node100",
+"@target": "node102"
+}
+},
+"node103": {
+"edge103": {
+"@length": 0.086099,
+"@source": "node103",
+"@target": "node104"
+},
+"edge110": {
+"@length": 0.032182,
+"@source": "node103",
+"@target": "node111"
+}
+},
+"node104": {
+"edge104": {
+"@length": 0.220924,
+"@source": "node104",
+"@target": "node105"
+},
+"edge107": {
+"@length": 0.031203,
+"@source": "node104",
+"@target": "node108"
+}
+},
+"node105": {
+"edge105": {
+"@length": 0.007822,
+"@source": "node105",
+"@target": "node106"
+},
+"edge106": {
+"@length": 0.007822,
+"@source": "node105",
+"@target": "node107"
+}
+},
+"node108": {
+"edge108": {
+"@length": 0.197543,
+"@source": "node108",
+"@target": "node109"
+},
+"edge109": {
+"@length": 0.197543,
+"@source": "node108",
+"@target": "node110"
+}
+},
+"node111": {
+"edge111": {
+"@length": 0.282663,
+"@source": "node111",
+"@target": "node112"
+},
+"edge112": {
+"@length": 0.075027,
+"@source": "node111",
+"@target": "node113"
+}
+},
+"node113": {
+"edge113": {
+"@length": 0.207636,
+"@source": "node113",
+"@target": "node114"
+},
+"edge114": {
+"@length": 0.029414,
+"@source": "node113",
+"@target": "node115"
+}
+},
+"node115": {
+"edge115": {
+"@length": 0.007848,
+"@source": "node115",
+"@target": "node116"
+},
+"edge120": {
+"@length": 0.015103,
+"@source": "node115",
+"@target": "node121"
+}
+},
+"node116": {
+"edge116": {
+"@length": 0.170374,
+"@source": "node116",
+"@target": "node117"
+},
+"edge117": {
+"@length": 0.019199,
+"@source": "node116",
+"@target": "node118"
+}
+},
+"node118": {
+"edge118": {
+"@length": 0.151175,
+"@source": "node118",
+"@target": "node119"
+},
+"edge119": {
+"@length": 0.151175,
+"@source": "node118",
+"@target": "node120"
+}
+},
+"node121": {
+"edge121": {
+"@length": 0.026347,
+"@source": "node121",
+"@target": "node122"
+},
+"edge128": {
+"@length": 0.032234,
+"@source": "node121",
+"@target": "node129"
+}
+},
+"node122": {
+"edge122": {
+"@length": 0.136772,
+"@source": "node122",
+"@target": "node123"
+},
+"edge123": {
+"@length": 0.022915,
+"@source": "node122",
+"@target": "node124"
+}
+},
+"node124": {
+"edge124": {
+"@length": 0.113857,
+"@source": "node124",
+"@target": "node125"
+},
+"edge125": {
+"@length": 0.060768,
+"@source": "node124",
+"@target": "node126"
+}
+},
+"node126": {
+"edge126": {
+"@length": 0.053089,
+"@source": "node126",
+"@target": "node127"
+},
+"edge127": {
+"@length": 0.053089,
+"@source": "node126",
+"@target": "node128"
+}
+},
+"node129": {
+"edge129": {
+"@length": 0.027409,
+"@source": "node129",
+"@target": "node130"
+},
+"edge132": {
+"@length": 0.008431,
+"@source": "node129",
+"@target": "node133"
+}
+},
+"node13": {
+"edge13": {
+"@length": 0.10911,
+"@source": "node13",
+"@target": "node14"
+},
+"edge32": {
+"@length": 0.009288,
+"@source": "node13",
+"@target": "node33"
+}
+},
+"node130": {
+"edge130": {
+"@length": 0.103476,
+"@source": "node130",
+"@target": "node131"
+},
+"edge131": {
+"@length": 0.103476,
+"@source": "node130",
+"@target": "node132"
+}
+},
+"node133": {
+"edge133": {
+"@length": 0.122455,
+"@source": "node133",
+"@target": "node134"
+},
+"edge134": {
+"@length": 0.027634,
+"@source": "node133",
+"@target": "node135"
+}
+},
+"node135": {
+"edge135": {
+"@length": 0.094821,
+"@source": "node135",
+"@target": "node136"
+},
+"edge136": {
+"@length": 0.094821,
+"@source": "node135",
+"@target": "node137"
+}
+},
+"node138": {
+"edge138": {
+"@length": 0.168075,
+"@source": "node138",
+"@target": "node139"
+},
+"edge141": {
+"@length": 0.055057,
+"@source": "node138",
+"@target": "node142"
+}
+},
+"node139": {
+"edge139": {
+"@length": 0.400819,
+"@source": "node139",
+"@target": "node140"
+},
+"edge140": {
+"@length": 0.400819,
+"@source": "node139",
+"@target": "node141"
+}
+},
+"node14": {
+"edge14": {
+"@length": 0.656141,
+"@source": "node14",
+"@target": "node15"
+},
+"edge15": {
+"@length": 0.047998,
+"@source": "node14",
+"@target": "node16"
+}
+},
+"node142": {
+"edge142": {
+"@length": 0.513837,
+"@source": "node142",
+"@target": "node143"
+},
+"edge143": {
+"@length": 0.002669,
+"@source": "node142",
+"@target": "node144"
+}
+},
+"node144": {
+"edge144": {
+"@length": 0.511168,
+"@source": "node144",
+"@target": "node145"
+},
+"edge145": {
+"@length": 0.085355,
+"@source": "node144",
+"@target": "node146"
+}
+},
+"node146": {
+"edge146": {
+"@length": 0.425813,
+"@source": "node146",
+"@target": "node147"
+},
+"edge147": {
+"@length": 0.023941,
+"@source": "node146",
+"@target": "node148"
+}
+},
+"node148": {
+"edge148": {
+"@length": 0.133849,
+"@source": "node148",
+"@target": "node149"
+},
+"edge155": {
+"@length": 0.013867,
+"@source": "node148",
+"@target": "node156"
+}
+},
+"node149": {
+"edge149": {
+"@length": 0.268023,
+"@source": "node149",
+"@target": "node150"
+},
+"edge150": {
+"@length": 0.04098,
+"@source": "node149",
+"@target": "node151"
+}
+},
+"node151": {
+"edge151": {
+"@length": 0.227043,
+"@source": "node151",
+"@target": "node152"
+},
+"edge152": {
+"@length": 0.040911,
+"@source": "node151",
+"@target": "node153"
+}
+},
+"node153": {
+"edge153": {
+"@length": 0.186132,
+"@source": "node153",
+"@target": "node154"
+},
+"edge154": {
+"@length": 0.186132,
+"@source": "node153",
+"@target": "node155"
+}
+},
+"node156": {
+"edge156": {
+"@length": 0.388005,
+"@source": "node156",
+"@target": "node157"
+},
+"edge157": {
+"@length": 0.03421,
+"@source": "node156",
+"@target": "node158"
+}
+},
+"node158": {
+"edge158": {
+"@length": 0.149862,
+"@source": "node158",
+"@target": "node159"
+},
+"edge163": {
+"@length": 0.163286,
+"@source": "node158",
+"@target": "node164"
+}
+},
+"node159": {
+"edge159": {
+"@length": 0.203933,
+"@source": "node159",
+"@target": "node160"
+},
+"edge160": {
+"@length": 0.124468,
+"@source": "node159",
+"@target": "node161"
+}
+},
+"node16": {
+"edge16": {
+"@length": 0.339804,
+"@source": "node16",
+"@target": "node17"
+},
+"edge21": {
+"@length": 0.178963,
+"@source": "node16",
+"@target": "node22"
+}
+},
+"node161": {
+"edge161": {
+"@length": 0.079465,
+"@source": "node161",
+"@target": "node162"
+},
+"edge162": {
+"@length": 0.079465,
+"@source": "node161",
+"@target": "node163"
+}
+},
+"node164": {
+"edge164": {
+"@length": 0.190508,
+"@source": "node164",
+"@target": "node165"
+},
+"edge165": {
+"@length": 0.010057,
+"@source": "node164",
+"@target": "node166"
+}
+},
+"node166": {
+"edge166": {
+"@length": 0.006192,
+"@source": "node166",
+"@target": "node167"
+},
+"edge177": {
+"@length": 0.031368,
+"@source": "node166",
+"@target": "node178"
+}
+},
+"node167": {
+"edge167": {
+"@length": 0.030769,
+"@source": "node167",
+"@target": "node168"
+},
+"edge172": {
+"@length": 0.020525,
+"@source": "node167",
+"@target": "node173"
+}
+},
+"node168": {
+"edge168": {
+"@length": 0.143491,
+"@source": "node168",
+"@target": "node169"
+},
+"edge169": {
+"@length": 0.020451,
+"@source": "node168",
+"@target": "node170"
+}
+},
+"node17": {
+"edge17": {
+"@length": 0.26834,
+"@source": "node17",
+"@target": "node18"
+},
+"edge18": {
+"@length": 0.10939,
+"@source": "node17",
+"@target": "node19"
+}
+},
+"node170": {
+"edge170": {
+"@length": 0.12304,
+"@source": "node170",
+"@target": "node171"
+},
+"edge171": {
+"@length": 0.12304,
+"@source": "node170",
+"@target": "node172"
+}
+},
+"node173": {
+"edge173": {
+"@length": 0.153734,
+"@source": "node173",
+"@target": "node174"
+},
+"edge174": {
+"@length": 0.125726,
+"@source": "node173",
+"@target": "node175"
+}
+},
+"node175": {
+"edge175": {
+"@length": 0.028008,
+"@source": "node175",
+"@target": "node176"
+},
+"edge176": {
+"@length": 0.028008,
+"@source": "node175",
+"@target": "node177"
+}
+},
+"node178": {
+"edge178": {
+"@length": 0.008751,
+"@source": "node178",
+"@target": "node179"
+},
+"edge191": {
+"@length": 0.011424,
+"@source": "node178",
+"@target": "node192"
+}
+},
+"node179": {
+"edge179": {
+"@length": 0.140332,
+"@source": "node179",
+"@target": "node180"
+},
+"edge180": {
+"@length": 0.037346,
+"@source": "node179",
+"@target": "node181"
+}
+},
+"node181": {
+"edge181": {
+"@length": 0.005611,
+"@source": "node181",
+"@target": "node182"
+},
+"edge186": {
+"@length": 0.042122,
+"@source": "node181",
+"@target": "node187"
+}
+},
+"node182": {
+"edge182": {
+"@length": 0.097375,
+"@source": "node182",
+"@target": "node183"
+},
+"edge183": {
+"@length": 0.012325,
+"@source": "node182",
+"@target": "node184"
+}
+},
+"node184": {
+"edge184": {
+"@length": 0.08505,
+"@source": "node184",
+"@target": "node185"
+},
+"edge185": {
+"@length": 0.08505,
+"@source": "node184",
+"@target": "node186"
+}
+},
+"node187": {
+"edge187": {
+"@length": 0.060864,
+"@source": "node187",
+"@target": "node188"
+},
+"edge188": {
+"@length": 0.016531,
+"@source": "node187",
+"@target": "node189"
+}
+},
+"node189": {
+"edge189": {
+"@length": 0.044333,
+"@source": "node189",
+"@target": "node190"
+},
+"edge190": {
+"@length": 0.044333,
+"@source": "node189",
+"@target": "node191"
+}
+},
+"node19": {
+"edge19": {
+"@length": 0.15895,
+"@source": "node19",
+"@target": "node20"
+},
+"edge20": {
+"@length": 0.15895,
+"@source": "node19",
+"@target": "node21"
+}
+},
+"node192": {
+"edge192": {
+"@length": 0.085124,
+"@source": "node192",
+"@target": "node193"
+},
+"edge195": {
+"@length": 0.014569,
+"@source": "node192",
+"@target": "node196"
+}
+},
+"node193": {
+"edge193": {
+"@length": 0.052535,
+"@source": "node193",
+"@target": "node194"
+},
+"edge194": {
+"@length": 0.052535,
+"@source": "node193",
+"@target": "node195"
+}
+},
+"node196": {
+"edge196": {
+"@length": 0.12309,
+"@source": "node196",
+"@target": "node197"
+},
+"edge197": {
+"@length": 0.000431,
+"@source": "node196",
+"@target": "node198"
+}
+},
+"node198": {
+"edge198": {
+"@length": 0.122659,
+"@source": "node198",
+"@target": "node199"
+},
+"edge199": {
+"@length": 0.006569,
+"@source": "node198",
+"@target": "node200"
+}
+},
+"node200": {
+"edge200": {
+"@length": 0.038489,
+"@source": "node200",
+"@target": "node201"
+},
+"edge203": {
+"@length": 0.001205,
+"@source": "node200",
+"@target": "node204"
+}
+},
+"node201": {
+"edge201": {
+"@length": 0.077601,
+"@source": "node201",
+"@target": "node202"
+},
+"edge202": {
+"@length": 0.077601,
+"@source": "node201",
+"@target": "node203"
+}
+},
+"node204": {
+"edge204": {
+"@length": 0.00557,
+"@source": "node204",
+"@target": "node205"
+},
+"edge209": {
+"@length": 0.006668,
+"@source": "node204",
+"@target": "node210"
+}
+},
+"node205": {
+"edge205": {
+"@length": 0.109315,
+"@source": "node205",
+"@target": "node206"
+},
+"edge206": {
+"@length": 0.041818,
+"@source": "node205",
+"@target": "node207"
+}
+},
+"node207": {
+"edge207": {
+"@length": 0.067497,
+"@source": "node207",
+"@target": "node208"
+},
+"edge208": {
+"@length": 0.067497,
+"@source": "node207",
+"@target": "node209"
+}
+},
+"node210": {
+"edge210": {
+"@length": 0.108217,
+"@source": "node210",
+"@target": "node211"
+},
+"edge211": {
+"@length": 0.009768,
+"@source": "node210",
+"@target": "node212"
+}
+},
+"node212": {
+"edge212": {
+"@length": 0.098449,
+"@source": "node212",
+"@target": "node213"
+},
+"edge213": {
+"@length": 0.098449,
+"@source": "node212",
+"@target": "node214"
+}
+},
+"node215": {
+"edge215": {
+"@length": 0.11852,
+"@source": "node215",
+"@target": "node216"
+},
+"edge262": {
+"@length": 0.021205,
+"@source": "node215",
+"@target": "node263"
+}
+},
+"node216": {
+"edge216": {
+"@length": 0.271348,
+"@source": "node216",
+"@target": "node217"
+},
+"edge233": {
+"@length": 0.230899,
+"@source": "node216",
+"@target": "node234"
+}
+},
+"node217": {
+"edge217": {
+"@length": 0.009174,
+"@source": "node217",
+"@target": "node218"
+},
+"edge220": {
+"@length": 0.021363,
+"@source": "node217",
+"@target": "node221"
+}
+},
+"node218": {
+"edge218": {
+"@length": 0.298757,
+"@source": "node218",
+"@target": "node219"
+},
+"edge219": {
+"@length": 0.298757,
+"@source": "node218",
+"@target": "node220"
+}
+},
+"node22": {
+"edge22": {
+"@length": 0.140036,
+"@source": "node22",
+"@target": "node23"
+},
+"edge25": {
+"@length": 0.144935,
+"@source": "node22",
+"@target": "node26"
+}
+},
+"node221": {
+"edge221": {
+"@length": 0.2257,
+"@source": "node221",
+"@target": "node222"
+},
+"edge224": {
+"@length": 0.089392,
+"@source": "node221",
+"@target": "node225"
+}
+},
+"node222": {
+"edge222": {
+"@length": 0.060868,
+"@source": "node222",
+"@target": "node223"
+},
+"edge223": {
+"@length": 0.060868,
+"@source": "node222",
+"@target": "node224"
+}
+},
+"node225": {
+"edge225": {
+"@length": 0.017033,
+"@source": "node225",
+"@target": "node226"
+},
+"edge228": {
+"@length": 0.000848,
+"@source": "node225",
+"@target": "node229"
+}
+},
+"node226": {
+"edge226": {
+"@length": 0.180143,
+"@source": "node226",
+"@target": "node227"
+},
+"edge227": {
+"@length": 0.180143,
+"@source": "node226",
+"@target": "node228"
+}
+},
+"node229": {
+"edge229": {
+"@length": 0.196328,
+"@source": "node229",
+"@target": "node230"
+},
+"edge230": {
+"@length": 0.127327,
+"@source": "node229",
+"@target": "node231"
+}
+},
+"node23": {
+"edge23": {
+"@length": 0.289144,
+"@source": "node23",
+"@target": "node24"
+},
+"edge24": {
+"@length": 0.289144,
+"@source": "node23",
+"@target": "node25"
+}
+},
+"node231": {
+"edge231": {
+"@length": 0.069001,
+"@source": "node231",
+"@target": "node232"
+},
+"edge232": {
+"@length": 0.069001,
+"@source": "node231",
+"@target": "node233"
+}
+},
+"node234": {
+"edge234": {
+"@length": 0.052305,
+"@source": "node234",
+"@target": "node235"
+},
+"edge241": {
+"@length": 0.013423,
+"@source": "node234",
+"@target": "node242"
+}
+},
+"node235": {
+"edge235": {
+"@length": 0.296076,
+"@source": "node235",
+"@target": "node236"
+},
+"edge236": {
+"@length": 0.062034,
+"@source": "node235",
+"@target": "node237"
+}
+},
+"node237": {
+"edge237": {
+"@length": 0.234042,
+"@source": "node237",
+"@target": "node238"
+},
+"edge238": {
+"@length": 0.141472,
+"@source": "node237",
+"@target": "node239"
+}
+},
+"node239": {
+"edge239": {
+"@length": 0.09257,
+"@source": "node239",
+"@target": "node240"
+},
+"edge240": {
+"@length": 0.09257,
+"@source": "node239",
+"@target": "node241"
+}
+},
+"node242": {
+"edge242": {
+"@length": 0.334957,
+"@source": "node242",
+"@target": "node243"
+},
+"edge243": {
+"@length": 0.111425,
+"@source": "node242",
+"@target": "node244"
+}
+},
+"node244": {
+"edge244": {
+"@length": 0.223533,
+"@source": "node244",
+"@target": "node245"
+},
+"edge245": {
+"@length": 0.067613,
+"@source": "node244",
+"@target": "node246"
+}
+},
+"node246": {
+"edge246": {
+"@length": 0.15592,
+"@source": "node246",
+"@target": "node247"
+},
+"edge247": {
+"@length": 0.029785,
+"@source": "node246",
+"@target": "node248"
+}
+},
+"node248": {
+"edge248": {
+"@length": 0.126135,
+"@source": "node248",
+"@target": "node249"
+},
+"edge249": {
+"@length": 0.011506,
+"@source": "node248",
+"@target": "node250"
+}
+},
+"node250": {
+"edge250": {
+"@length": 0.114629,
+"@source": "node250",
+"@target": "node251"
+},
+"edge251": {
+"@length": 0.008129,
+"@source": "node250",
+"@target": "node252"
+}
+},
+"node252": {
+"edge252": {
+"@length": 0.077457,
+"@source": "node252",
+"@target": "node253"
+},
+"edge257": {
+"@length": 0.020804,
+"@source": "node252",
+"@target": "node258"
+}
+},
+"node253": {
+"edge253": {
+"@length": 0.029043,
+"@source": "node253",
+"@target": "node254"
+},
+"edge254": {
+"@length": 0.026642,
+"@source": "node253",
+"@target": "node255"
+}
+},
+"node255": {
+"edge255": {
+"@length": 0.002401,
+"@source": "node255",
+"@target": "node256"
+},
+"edge256": {
+"@length": 0.002401,
+"@source": "node255",
+"@target": "node257"
+}
+},
+"node258": {
+"edge258": {
+"@length": 0.085696,
+"@source": "node258",
+"@target": "node259"
+},
+"edge259": {
+"@length": 0.02693,
+"@source": "node258",
+"@target": "node260"
+}
+},
+"node26": {
+"edge26": {
+"@length": 0.140687,
+"@source": "node26",
+"@target": "node27"
+},
+"edge29": {
+"@length": 0.184915,
+"@source": "node26",
+"@target": "node30"
+}
+},
+"node260": {
+"edge260": {
+"@length": 0.058766,
+"@source": "node260",
+"@target": "node261"
+},
+"edge261": {
+"@length": 0.058766,
+"@source": "node260",
+"@target": "node262"
+}
+},
+"node263": {
+"edge263": {
+"@length": 0.161615,
+"@source": "node263",
+"@target": "node264"
+},
+"edge284": {
+"@length": 0.187381,
+"@source": "node263",
+"@target": "node285"
+}
+},
+"node264": {
+"edge264": {
+"@length": 0.027946,
+"@source": "node264",
+"@target": "node265"
+},
+"edge269": {
+"@length": 0.119256,
+"@source": "node264",
+"@target": "node270"
+}
+},
+"node265": {
+"edge265": {
+"@length": 0.487033,
+"@source": "node265",
+"@target": "node266"
+},
+"edge266": {
+"@length": 0.427819,
+"@source": "node265",
+"@target": "node267"
+}
+},
+"node267": {
+"edge267": {
+"@length": 0.059214,
+"@source": "node267",
+"@target": "node268"
+},
+"edge268": {
+"@length": 0.059214,
+"@source": "node267",
+"@target": "node269"
+}
+},
+"node27": {
+"edge27": {
+"@length": 0.143559,
+"@source": "node27",
+"@target": "node28"
+},
+"edge28": {
+"@length": 0.143559,
+"@source": "node27",
+"@target": "node29"
+}
+},
+"node270": {
+"edge270": {
+"@length": 0.395723,
+"@source": "node270",
+"@target": "node271"
+},
+"edge271": {
+"@length": 0.113177,
+"@source": "node270",
+"@target": "node272"
+}
+},
+"node272": {
+"edge272": {
+"@length": 0.282546,
+"@source": "node272",
+"@target": "node273"
+},
+"edge273": {
+"@length": 0.014862,
+"@source": "node272",
+"@target": "node274"
+}
+},
+"node274": {
+"edge274": {
+"@length": 0.057175,
+"@source": "node274",
+"@target": "node275"
+},
+"edge279": {
+"@length": 0.144098,
+"@source": "node274",
+"@target": "node280"
+}
+},
+"node275": {
+"edge275": {
+"@length": 0.210509,
+"@source": "node275",
+"@target": "node276"
+},
+"edge276": {
+"@length": 0.106011,
+"@source": "node275",
+"@target": "node277"
+}
+},
+"node277": {
+"edge277": {
+"@length": 0.104498,
+"@source": "node277",
+"@target": "node278"
+},
+"edge278": {
+"@length": 0.104498,
+"@source": "node277",
+"@target": "node279"
+}
+},
+"node280": {
+"edge280": {
+"@length": 0.123586,
+"@source": "node280",
+"@target": "node281"
+},
+"edge281": {
+"@length": 0.051052,
+"@source": "node280",
+"@target": "node282"
+}
+},
+"node282": {
+"edge282": {
+"@length": 0.072534,
+"@source": "node282",
+"@target": "node283"
+},
+"edge283": {
+"@length": 0.072534,
+"@source": "node282",
+"@target": "node284"
+}
+},
+"node285": {
+"edge285": {
+"@length": 0.017341,
+"@source": "node285",
+"@target": "node286"
+},
+"edge322": {
+"@length": 0.050115,
+"@source": "node285",
+"@target": "node323"
+}
+},
+"node286": {
+"edge286": {
+"@length": 0.269568,
+"@source": "node286",
+"@target": "node287"
+},
+"edge289": {
+"@length": 0.082953,
+"@source": "node286",
+"@target": "node290"
+}
+},
+"node287": {
+"edge287": {
+"@length": 0.202303,
+"@source": "node287",
+"@target": "node288"
+},
+"edge288": {
+"@length": 0.202303,
+"@source": "node287",
+"@target": "node289"
+}
+},
+"node290": {
+"edge290": {
+"@length": 0.147704,
+"@source": "node290",
+"@target": "node291"
+},
+"edge295": {
+"@length": 0.115744,
+"@source": "node290",
+"@target": "node296"
+}
+},
+"node291": {
+"edge291": {
+"@length": 0.241215,
+"@source": "node291",
+"@target": "node292"
+},
+"edge292": {
+"@length": 0.038726,
+"@source": "node291",
+"@target": "node293"
+}
+},
+"node293": {
+"edge293": {
+"@length": 0.202489,
+"@source": "node293",
+"@target": "node294"
+},
+"edge294": {
+"@length": 0.202489,
+"@source": "node293",
+"@target": "node295"
+}
+},
+"node296": {
+"edge296": {
+"@length": 0.101792,
+"@source": "node296",
+"@target": "node297"
+},
+"edge301": {
+"@length": 0.007993,
+"@source": "node296",
+"@target": "node302"
+}
+},
+"node297": {
+"edge297": {
+"@length": 0.171382,
+"@source": "node297",
+"@target": "node298"
+},
+"edge298": {
+"@length": 0.06531,
+"@source": "node297",
+"@target": "node299"
+}
+},
+"node299": {
+"edge299": {
+"@length": 0.106072,
+"@source": "node299",
+"@target": "node300"
+},
+"edge300": {
+"@length": 0.106072,
+"@source": "node299",
+"@target": "node301"
+}
+},
+"node30": {
+"edge30": {
+"@length": 0.099331,
+"@source": "node30",
+"@target": "node31"
+},
+"edge31": {
+"@length": 0.099331,
+"@source": "node30",
+"@target": "node32"
+}
+},
+"node302": {
+"edge302": {
+"@length": 0.265181,
+"@source": "node302",
+"@target": "node303"
+},
+"edge303": {
+"@length": 0.041835,
+"@source": "node302",
+"@target": "node304"
+}
+},
+"node304": {
+"edge304": {
+"@length": 0.025756,
+"@source": "node304",
+"@target": "node305"
+},
+"edge307": {
+"@length": 0.021008,
+"@source": "node304",
+"@target": "node308"
+}
+},
+"node305": {
+"edge305": {
+"@length": 0.19759,
+"@source": "node305",
+"@target": "node306"
+},
+"edge306": {
+"@length": 0.19759,
+"@source": "node305",
+"@target": "node307"
+}
+},
+"node308": {
+"edge308": {
+"@length": 0.056589,
+"@source": "node308",
+"@target": "node309"
+},
+"edge315": {
+"@length": 0.000574,
+"@source": "node308",
+"@target": "node316"
+}
+},
+"node309": {
+"edge309": {
+"@length": 0.145749,
+"@source": "node309",
+"@target": "node310"
+},
+"edge310": {
+"@length": 0.020122,
+"@source": "node309",
+"@target": "node311"
+}
+},
+"node311": {
+"edge311": {
+"@length": 0.125628,
+"@source": "node311",
+"@target": "node312"
+},
+"edge312": {
+"@length": 0.055813,
+"@source": "node311",
+"@target": "node313"
+}
+},
+"node313": {
+"edge313": {
+"@length": 0.069815,
+"@source": "node313",
+"@target": "node314"
+},
+"edge314": {
+"@length": 0.069815,
+"@source": "node313",
+"@target": "node315"
+}
+},
+"node316": {
+"edge316": {
+"@length": 0.201764,
+"@source": "node316",
+"@target": "node317"
+},
+"edge317": {
+"@length": 0.021638,
+"@source": "node316",
+"@target": "node318"
+}
+},
+"node318": {
+"edge318": {
+"@length": 0.180127,
+"@source": "node318",
+"@target": "node319"
+},
+"edge319": {
+"@length": 0.087986,
+"@source": "node318",
+"@target": "node320"
+}
+},
+"node320": {
+"edge320": {
+"@length": 0.092141,
+"@source": "node320",
+"@target": "node321"
+},
+"edge321": {
+"@length": 0.092141,
+"@source": "node320",
+"@target": "node322"
+}
+},
+"node323": {
+"edge323": {
+"@length": 0.035912,
+"@source": "node323",
+"@target": "node324"
+},
+"edge346": {
+"@length": 0.03689,
+"@source": "node323",
+"@target": "node347"
+}
+},
+"node324": {
+"edge324": {
+"@length": 0.123621,
+"@source": "node324",
+"@target": "node325"
+},
+"edge329": {
+"@length": 0.116079,
+"@source": "node324",
+"@target": "node330"
+}
+},
+"node325": {
+"edge325": {
+"@length": 0.279565,
+"@source": "node325",
+"@target": "node326"
+},
+"edge326": {
+"@length": 0.20247,
+"@source": "node325",
+"@target": "node327"
+}
+},
+"node327": {
+"edge327": {
+"@length": 0.077095,
+"@source": "node327",
+"@target": "node328"
+},
+"edge328": {
+"@length": 0.077095,
+"@source": "node327",
+"@target": "node329"
+}
+},
+"node33": {
+"edge33": {
+"@length": 0.069195,
+"@source": "node33",
+"@target": "node34"
+},
+"edge50": {
+"@length": 0.006609,
+"@source": "node33",
+"@target": "node51"
+}
+},
+"node330": {
+"edge330": {
+"@length": 0.175969,
+"@source": "node330",
+"@target": "node331"
+},
+"edge335": {
+"@length": 0.049968,
+"@source": "node330",
+"@target": "node336"
+}
+},
+"node331": {
+"edge331": {
+"@length": 0.111138,
+"@source": "node331",
+"@target": "node332"
+},
+"edge332": {
+"@length": 0.018984,
+"@source": "node331",
+"@target": "node333"
+}
+},
+"node333": {
+"edge333": {
+"@length": 0.092154,
+"@source": "node333",
+"@target": "node334"
+},
+"edge334": {
+"@length": 0.092154,
+"@source": "node333",
+"@target": "node335"
+}
+},
+"node336": {
+"edge336": {
+"@length": 0.170205,
+"@source": "node336",
+"@target": "node337"
+},
+"edge339": {
+"@length": 0.117395,
+"@source": "node336",
+"@target": "node340"
+}
+},
+"node337": {
+"edge337": {
+"@length": 0.066934,
+"@source": "node337",
+"@target": "node338"
+},
+"edge338": {
+"@length": 0.066934,
+"@source": "node337",
+"@target": "node339"
+}
+},
+"node34": {
+"edge34": {
+"@length": 0.479676,
+"@source": "node34",
+"@target": "node35"
+},
+"edge39": {
+"@length": 0.088536,
+"@source": "node34",
+"@target": "node40"
+}
+},
+"node340": {
+"edge340": {
+"@length": 0.029566,
+"@source": "node340",
+"@target": "node341"
+},
+"edge343": {
+"@length": 0.062592,
+"@source": "node340",
+"@target": "node344"
+}
+},
+"node341": {
+"edge341": {
+"@length": 0.090178,
+"@source": "node341",
+"@target": "node342"
+},
+"edge342": {
+"@length": 0.090178,
+"@source": "node341",
+"@target": "node343"
+}
+},
+"node344": {
+"edge344": {
+"@length": 0.057151,
+"@source": "node344",
+"@target": "node345"
+},
+"edge345": {
+"@length": 0.057151,
+"@source": "node344",
+"@target": "node346"
+}
+},
+"node347": {
+"edge347": {
+"@length": 0.008562,
+"@source": "node347",
+"@target": "node348"
+},
+"edge364": {
+"@length": 0.031565,
+"@source": "node347",
+"@target": "node365"
+}
+},
+"node348": {
+"edge348": {
+"@length": 0.145038,
+"@source": "node348",
+"@target": "node349"
+},
+"edge353": {
+"@length": 0.073023,
+"@source": "node348",
+"@target": "node354"
+}
+},
+"node349": {
+"edge349": {
+"@length": 0.248608,
+"@source": "node349",
+"@target": "node350"
+},
+"edge350": {
+"@length": 0.096902,
+"@source": "node349",
+"@target": "node351"
+}
+},
+"node35": {
+"edge35": {
+"@length": 0.207092,
+"@source": "node35",
+"@target": "node36"
+},
+"edge36": {
+"@length": 0.038821,
+"@source": "node35",
+"@target": "node37"
+}
+},
+"node351": {
+"edge351": {
+"@length": 0.151706,
+"@source": "node351",
+"@target": "node352"
+},
+"edge352": {
+"@length": 0.151706,
+"@source": "node351",
+"@target": "node353"
+}
+},
+"node354": {
+"edge354": {
+"@length": 0.320623,
+"@source": "node354",
+"@target": "node355"
+},
+"edge355": {
+"@length": 0.120362,
+"@source": "node354",
+"@target": "node356"
+}
+},
+"node356": {
+"edge356": {
+"@length": 0.080845,
+"@source": "node356",
+"@target": "node357"
+},
+"edge359": {
+"@length": 0.085486,
+"@source": "node356",
+"@target": "node360"
+}
+},
+"node357": {
+"edge357": {
+"@length": 0.119416,
+"@source": "node357",
+"@target": "node358"
+},
+"edge358": {
+"@length": 0.119416,
+"@source": "node357",
+"@target": "node359"
+}
+},
+"node360": {
+"edge360": {
+"@length": 0.114775,
+"@source": "node360",
+"@target": "node361"
+},
+"edge361": {
+"@length": 0.049767,
+"@source": "node360",
+"@target": "node362"
+}
+},
+"node362": {
+"edge362": {
+"@length": 0.065008,
+"@source": "node362",
+"@target": "node363"
+},
+"edge363": {
+"@length": 0.065008,
+"@source": "node362",
+"@target": "node364"
+}
+},
+"node365": {
+"edge365": {
+"@length": 0.138717,
+"@source": "node365",
+"@target": "node366"
+},
+"edge368": {
+"@length": 0.064128,
+"@source": "node365",
+"@target": "node369"
+}
+},
+"node366": {
+"edge366": {
+"@length": 0.231926,
+"@source": "node366",
+"@target": "node367"
+},
+"edge367": {
+"@length": 0.231926,
+"@source": "node366",
+"@target": "node368"
+}
+},
+"node369": {
+"edge369": {
+"@length": 0.079544,
+"@source": "node369",
+"@target": "node370"
+},
+"edge376": {
+"@length": 0.07542,
+"@source": "node369",
+"@target": "node377"
+}
+},
+"node37": {
+"edge37": {
+"@length": 0.168271,
+"@source": "node37",
+"@target": "node38"
+},
+"edge38": {
+"@length": 0.168271,
+"@source": "node37",
+"@target": "node39"
+}
+},
+"node370": {
+"edge370": {
+"@length": 0.226971,
+"@source": "node370",
+"@target": "node371"
+},
+"edge371": {
+"@length": 0.211122,
+"@source": "node370",
+"@target": "node372"
+}
+},
+"node372": {
+"edge372": {
+"@length": 0.015849,
+"@source": "node372",
+"@target": "node373"
+},
+"edge373": {
+"@length": 0.004032,
+"@source": "node372",
+"@target": "node374"
+}
+},
+"node374": {
+"edge374": {
+"@length": 0.011817,
+"@source": "node374",
+"@target": "node375"
+},
+"edge375": {
+"@length": 0.011817,
+"@source": "node374",
+"@target": "node376"
+}
+},
+"node377": {
+"edge377": {
+"@length": 0.231095,
+"@source": "node377",
+"@target": "node378"
+},
+"edge378": {
+"@length": 0.074608,
+"@source": "node377",
+"@target": "node379"
+}
+},
+"node379": {
+"edge379": {
+"@length": 0.156487,
+"@source": "node379",
+"@target": "node380"
+},
+"edge380": {
+"@length": 0.07184,
+"@source": "node379",
+"@target": "node381"
+}
+},
+"node381": {
+"edge381": {
+"@length": 0.084647,
+"@source": "node381",
+"@target": "node382"
+},
+"edge382": {
+"@length": 0.000759,
+"@source": "node381",
+"@target": "node383"
+}
+},
+"node383": {
+"edge383": {
+"@length": 0.083888,
+"@source": "node383",
+"@target": "node384"
+},
+"edge384": {
+"@length": 0.020402,
+"@source": "node383",
+"@target": "node385"
+}
+},
+"node385": {
+"edge385": {
+"@length": 0.063486,
+"@source": "node385",
+"@target": "node386"
+},
+"edge386": {
+"@length": 0.063486,
+"@source": "node385",
+"@target": "node387"
+}
+},
+"node40": {
+"edge40": {
+"@length": 0.042749,
+"@source": "node40",
+"@target": "node41"
+},
+"edge45": {
+"@length": 0.327448,
+"@source": "node40",
+"@target": "node46"
+}
+},
+"node41": {
+"edge41": {
+"@length": 0.555483,
+"@source": "node41",
+"@target": "node42"
+},
+"edge42": {
+"@length": 0.236007,
+"@source": "node41",
+"@target": "node43"
+}
+},
+"node43": {
+"edge43": {
+"@length": 0.319476,
+"@source": "node43",
+"@target": "node44"
+},
+"edge44": {
+"@length": 0.319476,
+"@source": "node43",
+"@target": "node45"
+}
+},
+"node46": {
+"edge46": {
+"@length": 0.270783,
+"@source": "node46",
+"@target": "node47"
+},
+"edge47": {
+"@length": 0.199198,
+"@source": "node46",
+"@target": "node48"
+}
+},
+"node48": {
+"edge48": {
+"@length": 0.071585,
+"@source": "node48",
+"@target": "node49"
+},
+"edge49": {
+"@length": 0.071585,
+"@source": "node48",
+"@target": "node50"
+}
+},
+"node5": {
+"edge5": {
+"@length": 0.836518,
+"@source": "node5",
+"@target": "node6"
+},
+"edge8": {
+"@length": 0.186195,
+"@source": "node5",
+"@target": "node9"
+}
+},
+"node51": {
+"edge51": {
+"@length": 0.044494,
+"@source": "node51",
+"@target": "node52"
+},
+"edge88": {
+"@length": 0.022439,
+"@source": "node51",
+"@target": "node89"
+}
+},
+"node52": {
+"edge52": {
+"@length": 0.704859,
+"@source": "node52",
+"@target": "node53"
+},
+"edge53": {
+"@length": 0.035857,
+"@source": "node52",
+"@target": "node54"
+}
+},
+"node54": {
+"edge54": {
+"@length": 0.051819,
+"@source": "node54",
+"@target": "node55"
+},
+"edge69": {
+"@length": 0.000972,
+"@source": "node54",
+"@target": "node70"
+}
+},
+"node55": {
+"edge55": {
+"@length": 0.261458,
+"@source": "node55",
+"@target": "node56"
+},
+"edge58": {
+"@length": 0.039003,
+"@source": "node55",
+"@target": "node59"
+}
+},
+"node56": {
+"edge56": {
+"@length": 0.355725,
+"@source": "node56",
+"@target": "node57"
+},
+"edge57": {
+"@length": 0.355725,
+"@source": "node56",
+"@target": "node58"
+}
+},
+"node59": {
+"edge59": {
+"@length": 0.57818,
+"@source": "node59",
+"@target": "node60"
+},
+"edge60": {
+"@length": 0.167424,
+"@source": "node59",
+"@target": "node61"
+}
+},
+"node6": {
+"edge6": {
+"@length": 0.163482,
+"@source": "node6",
+"@target": "node7"
+},
+"edge7": {
+"@length": 0.163482,
+"@source": "node6",
+"@target": "node8"
+}
+},
+"node61": {
+"edge61": {
+"@length": 0.410755,
+"@source": "node61",
+"@target": "node62"
+},
+"edge62": {
+"@length": 0.118736,
+"@source": "node61",
+"@target": "node63"
+}
+},
+"node63": {
+"edge63": {
+"@length": 0.29202,
+"@source": "node63",
+"@target": "node64"
+},
+"edge64": {
+"@length": 0.104218,
+"@source": "node63",
+"@target": "node65"
+}
+},
+"node65": {
+"edge65": {
+"@length": 0.187802,
+"@source": "node65",
+"@target": "node66"
+},
+"edge66": {
+"@length": 0.042538,
+"@source": "node65",
+"@target": "node67"
+}
+},
+"node67": {
+"edge67": {
+"@length": 0.145264,
+"@source": "node67",
+"@target": "node68"
+},
+"edge68": {
+"@length": 0.145264,
+"@source": "node67",
+"@target": "node69"
+}
+},
+"node70": {
+"edge70": {
+"@length": 0.122786,
+"@source": "node70",
+"@target": "node71"
+},
+"edge79": {
+"@length": 0.38371,
+"@source": "node70",
+"@target": "node80"
+}
+},
+"node71": {
+"edge71": {
+"@length": 0.545244,
+"@source": "node71",
+"@target": "node72"
+},
+"edge72": {
+"@length": 0.082872,
+"@source": "node71",
+"@target": "node73"
+}
+},
+"node73": {
+"edge73": {
+"@length": 0.278829,
+"@source": "node73",
+"@target": "node74"
+},
+"edge76": {
+"@length": 0.234387,
+"@source": "node73",
+"@target": "node77"
+}
+},
+"node74": {
+"edge74": {
+"@length": 0.183543,
+"@source": "node74",
+"@target": "node75"
+},
+"edge75": {
+"@length": 0.183543,
+"@source": "node74",
+"@target": "node76"
+}
+},
+"node77": {
+"edge77": {
+"@length": 0.227985,
+"@source": "node77",
+"@target": "node78"
+},
+"edge78": {
+"@length": 0.227985,
+"@source": "node77",
+"@target": "node79"
+}
+},
+"node80": {
+"edge80": {
+"@length": 0.28432,
+"@source": "node80",
+"@target": "node81"
+},
+"edge81": {
+"@length": 0.095772,
+"@source": "node80",
+"@target": "node82"
+}
+},
+"node82": {
+"edge82": {
+"@length": 0.188548,
+"@source": "node82",
+"@target": "node83"
+},
+"edge83": {
+"@length": 0.031274,
+"@source": "node82",
+"@target": "node84"
+}
+},
+"node84": {
+"edge84": {
+"@length": 0.157274,
+"@source": "node84",
+"@target": "node85"
+},
+"edge85": {
+"@length": 0.03002,
+"@source": "node84",
+"@target": "node86"
+}
+},
+"node86": {
+"edge86": {
+"@length": 0.127254,
+"@source": "node86",
+"@target": "node87"
+},
+"edge87": {
+"@length": 0.127254,
+"@source": "node86",
+"@target": "node88"
+}
+},
+"node89": {
+"edge214": {
+"@length": 0.029115,
+"@source": "node89",
+"@target": "node215"
+},
+"edge89": {
+"@length": 0.022831,
+"@source": "node89",
+"@target": "node90"
+}
+},
+"node9": {
+"edge12": {
+"@length": 0.048554,
+"@source": "node9",
+"@target": "node13"
+},
+"edge9": {
+"@length": 0.4657,
+"@source": "node9",
+"@target": "node10"
+}
+},
+"node90": {
+"edge137": {
+"@length": 0.13519,
+"@source": "node90",
+"@target": "node138"
+},
+"edge90": {
+"@length": 0.068244,
+"@source": "node90",
+"@target": "node91"
+}
+},
+"node91": {
+"edge102": {
+"@length": 0.320994,
+"@source": "node91",
+"@target": "node103"
+},
+"edge91": {
+"@length": 0.022143,
+"@source": "node91",
+"@target": "node92"
+}
+},
+"node92": {
+"edge92": {
+"@length": 0.021279,
+"@source": "node92",
+"@target": "node93"
+},
+"edge97": {
+"@length": 0.31144,
+"@source": "node92",
+"@target": "node98"
+}
+},
+"node93": {
+"edge93": {
+"@length": 0.592417,
+"@source": "node93",
+"@target": "node94"
+},
+"edge94": {
+"@length": 0.003643,
+"@source": "node93",
+"@target": "node95"
+}
+},
+"node95": {
+"edge95": {
+"@length": 0.588774,
+"@source": "node95",
+"@target": "node96"
+},
+"edge96": {
+"@length": 0.588774,
+"@source": "node95",
+"@target": "node97"
+}
+},
+"node98": {
+"edge98": {
+"@length": 0.302256,
+"@source": "node98",
+"@target": "node99"
+},
+"edge99": {
+"@length": 0.188496,
+"@source": "node98",
+"@target": "node100"
+}
+}
+},
+"nodeById": {
+"node10": {},
+"node100": {},
+"node101": {
+"@otu": "otu55"
+},
+"node102": {
+"@otu": "otu56"
+},
+"node103": {},
+"node104": {},
+"node105": {},
+"node106": {
+"@otu": "otu57"
+},
+"node107": {
+"@otu": "otu58"
+},
+"node108": {},
+"node109": {
+"@otu": "otu59"
+},
+"node11": {
+"@otu": "otu11"
+},
+"node110": {
+"@otu": "otu60"
+},
+"node111": {},
+"node112": {
+"@otu": "otu61"
+},
+"node113": {},
+"node114": {
+"@otu": "otu62"
+},
+"node115": {},
+"node116": {},
+"node117": {
+"@otu": "otu63"
+},
+"node118": {},
+"node119": {
+"@otu": "otu64"
+},
+"node12": {
+"@otu": "otu12"
+},
+"node120": {
+"@otu": "otu65"
+},
+"node121": {},
+"node122": {},
+"node123": {
+"@otu": "otu66"
+},
+"node124": {},
+"node125": {
+"@otu": "otu67"
+},
+"node126": {},
+"node127": {
+"@otu": "otu68"
+},
+"node128": {
+"@otu": "otu69"
+},
+"node129": {},
+"node13": {},
+"node130": {},
+"node131": {
+"@otu": "otu70"
+},
+"node132": {
+"@otu": "otu71"
+},
+"node133": {},
+"node134": {
+"@otu": "otu72"
+},
+"node135": {},
+"node136": {
+"@otu": "otu73"
+},
+"node137": {
+"@otu": "otu74"
+},
+"node138": {},
+"node139": {},
+"node14": {},
+"node140": {
+"@otu": "otu75"
+},
+"node141": {
+"@otu": "otu76"
+},
+"node142": {},
+"node143": {
+"@otu": "otu77"
+},
+"node144": {},
+"node145": {
+"@otu": "otu78"
+},
+"node146": {},
+"node147": {
+"@otu": "otu79"
+},
+"node148": {},
+"node149": {},
+"node15": {
+"@otu": "otu13"
+},
+"node150": {
+"@otu": "otu80"
+},
+"node151": {},
+"node152": {
+"@otu": "otu81"
+},
+"node153": {},
+"node154": {
+"@otu": "otu82"
+},
+"node155": {
+"@otu": "otu83"
+},
+"node156": {},
+"node157": {
+"@otu": "otu84"
+},
+"node158": {},
+"node159": {},
+"node16": {},
+"node160": {
+"@otu": "otu85"
+},
+"node161": {},
+"node162": {
+"@otu": "otu86"
+},
+"node163": {
+"@otu": "otu87"
+},
+"node164": {},
+"node165": {
+"@otu": "otu88"
+},
+"node166": {},
+"node167": {},
+"node168": {},
+"node169": {
+"@otu": "otu89"
+},
+"node17": {},
+"node170": {},
+"node171": {
+"@otu": "otu90"
+},
+"node172": {
+"@otu": "otu91"
+},
+"node173": {},
+"node174": {
+"@otu": "otu92"
+},
+"node175": {},
+"node176": {
+"@otu": "otu93"
+},
+"node177": {
+"@otu": "otu94"
+},
+"node178": {},
+"node179": {},
+"node18": {
+"@otu": "otu14"
+},
+"node180": {
+"@otu": "otu95"
+},
+"node181": {},
+"node182": {},
+"node183": {
+"@otu": "otu96"
+},
+"node184": {},
+"node185": {
+"@otu": "otu97"
+},
+"node186": {
+"@otu": "otu98"
+},
+"node187": {},
+"node188": {
+"@otu": "otu99"
+},
+"node189": {},
+"node19": {},
+"node190": {
+"@otu": "otu100"
+},
+"node191": {
+"@otu": "otu101"
+},
+"node192": {},
+"node193": {},
+"node194": {
+"@otu": "otu102"
+},
+"node195": {
+"@otu": "otu103"
+},
+"node196": {},
+"node197": {
+"@otu": "otu104"
+},
+"node198": {},
+"node199": {
+"@otu": "otu105"
+},
+"node20": {
+"@otu": "otu15"
+},
+"node200": {},
+"node201": {},
+"node202": {
+"@otu": "otu106"
+},
+"node203": {
+"@otu": "otu107"
+},
+"node204": {},
+"node205": {},
+"node206": {
+"@otu": "otu108"
+},
+"node207": {},
+"node208": {
+"@otu": "otu109"
+},
+"node209": {
+"@otu": "otu110"
+},
+"node21": {
+"@otu": "otu16"
+},
+"node210": {},
+"node211": {
+"@otu": "otu111"
+},
+"node212": {},
+"node213": {
+"@otu": "otu112"
+},
+"node214": {
+"@otu": "otu113"
+},
+"node215": {},
+"node216": {},
+"node217": {},
+"node218": {},
+"node219": {
+"@otu": "otu114"
+},
+"node22": {},
+"node220": {
+"@otu": "otu115"
+},
+"node221": {},
+"node222": {},
+"node223": {
+"@otu": "otu116"
+},
+"node224": {
+"@otu": "otu117"
+},
+"node225": {},
+"node226": {},
+"node227": {
+"@otu": "otu118"
+},
+"node228": {
+"@otu": "otu119"
+},
+"node229": {},
+"node23": {},
+"node230": {
+"@otu": "otu120"
+},
+"node231": {},
+"node232": {
+"@otu": "otu121"
+},
+"node233": {
+"@otu": "otu122"
+},
+"node234": {},
+"node235": {},
+"node236": {
+"@otu": "otu123"
+},
+"node237": {},
+"node238": {
+"@otu": "otu124"
+},
+"node239": {},
+"node24": {
+"@otu": "otu17"
+},
+"node240": {
+"@otu": "otu125"
+},
+"node241": {
+"@otu": "otu126"
+},
+"node242": {},
+"node243": {
+"@otu": "otu127"
+},
+"node244": {},
+"node245": {
+"@otu": "otu128"
+},
+"node246": {},
+"node247": {
+"@otu": "otu129"
+},
+"node248": {},
+"node249": {
+"@otu": "otu130"
+},
+"node25": {
+"@otu": "otu18"
+},
+"node250": {},
+"node251": {
+"@otu": "otu131"
+},
+"node252": {},
+"node253": {},
+"node254": {
+"@otu": "otu132"
+},
+"node255": {},
+"node256": {
+"@otu": "otu133"
+},
+"node257": {
+"@otu": "otu134"
+},
+"node258": {},
+"node259": {
+"@otu": "otu135"
+},
+"node26": {},
+"node260": {},
+"node261": {
+"@otu": "otu136"
+},
+"node262": {
+"@otu": "otu137"
+},
+"node263": {},
+"node264": {},
+"node265": {},
+"node266": {
+"@otu": "otu138"
+},
+"node267": {},
+"node268": {
+"@otu": "otu139"
+},
+"node269": {
+"@otu": "otu140"
+},
+"node27": {},
+"node270": {},
+"node271": {
+"@otu": "otu141"
+},
+"node272": {},
+"node273": {
+"@otu": "otu142"
+},
+"node274": {},
+"node275": {},
+"node276": {
+"@otu": "otu143"
+},
+"node277": {},
+"node278": {
+"@otu": "otu144"
+},
+"node279": {
+"@otu": "otu145"
+},
+"node28": {
+"@otu": "otu19"
+},
+"node280": {},
+"node281": {
+"@otu": "otu146"
+},
+"node282": {},
+"node283": {
+"@otu": "otu147"
+},
+"node284": {
+"@otu": "otu148"
+},
+"node285": {},
+"node286": {},
+"node287": {},
+"node288": {
+"@otu": "otu149"
+},
+"node289": {
+"@otu": "otu150"
+},
+"node29": {
+"@otu": "otu20"
+},
+"node290": {},
+"node291": {},
+"node292": {
+"@otu": "otu151"
+},
+"node293": {},
+"node294": {
+"@otu": "otu152"
+},
+"node295": {
+"@otu": "otu153"
+},
+"node296": {},
+"node297": {},
+"node298": {
+"@otu": "otu154"
+},
+"node299": {},
+"node30": {},
+"node300": {
+"@otu": "otu155"
+},
+"node301": {
+"@otu": "otu156"
+},
+"node302": {},
+"node303": {
+"@otu": "otu157"
+},
+"node304": {},
+"node305": {},
+"node306": {
+"@otu": "otu158"
+},
+"node307": {
+"@otu": "otu159"
+},
+"node308": {},
+"node309": {},
+"node31": {
+"@otu": "otu21"
+},
+"node310": {
+"@otu": "otu160"
+},
+"node311": {},
+"node312": {
+"@otu": "otu161"
+},
+"node313": {},
+"node314": {
+"@otu": "otu162"
+},
+"node315": {
+"@otu": "otu163"
+},
+"node316": {},
+"node317": {
+"@otu": "otu164"
+},
+"node318": {},
+"node319": {
+"@otu": "otu165"
+},
+"node32": {
+"@otu": "otu22"
+},
+"node320": {},
+"node321": {
+"@otu": "otu166"
+},
+"node322": {
+"@otu": "otu167"
+},
+"node323": {},
+"node324": {},
+"node325": {},
+"node326": {
+"@otu": "otu168"
+},
+"node327": {},
+"node328": {
+"@otu": "otu169"
+},
+"node329": {
+"@otu": "otu170"
+},
+"node33": {},
+"node330": {},
+"node331": {},
+"node332": {
+"@otu": "otu171"
+},
+"node333": {},
+"node334": {
+"@otu": "otu172"
+},
+"node335": {
+"@otu": "otu173"
+},
+"node336": {},
+"node337": {},
+"node338": {
+"@otu": "otu174"
+},
+"node339": {
+"@otu": "otu175"
+},
+"node34": {},
+"node340": {},
+"node341": {},
+"node342": {
+"@otu": "otu176"
+},
+"node343": {
+"@otu": "otu177"
+},
+"node344": {},
+"node345": {
+"@otu": "otu178"
+},
+"node346": {
+"@otu": "otu179"
+},
+"node347": {},
+"node348": {},
+"node349": {},
+"node35": {},
+"node350": {
+"@otu": "otu180"
+},
+"node351": {},
+"node352": {
+"@otu": "otu181"
+},
+"node353": {
+"@otu": "otu182"
+},
+"node354": {},
+"node355": {
+"@otu": "otu183"
+},
+"node356": {},
+"node357": {},
+"node358": {
+"@otu": "otu184"
+},
+"node359": {
+"@otu": "otu185"
+},
+"node36": {
+"@otu": "otu23"
+},
+"node360": {},
+"node361": {
+"@otu": "otu186"
+},
+"node362": {},
+"node363": {
+"@otu": "otu187"
+},
+"node364": {
+"@otu": "otu188"
+},
+"node365": {},
+"node366": {},
+"node367": {
+"@otu": "otu189"
+},
+"node368": {
+"@otu": "otu190"
+},
+"node369": {},
+"node37": {},
+"node370": {},
+"node371": {
+"@otu": "otu191"
+},
+"node372": {},
+"node373": {
+"@otu": "otu192"
+},
+"node374": {},
+"node375": {
+"@otu": "otu193"
+},
+"node376": {
+"@otu": "otu194"
+},
+"node377": {},
+"node378": {
+"@otu": "otu195"
+},
+"node379": {},
+"node38": {
+"@otu": "otu24"
+},
+"node380": {
+"@otu": "otu196"
+},
+"node381": {},
+"node382": {
+"@otu": "otu197"
+},
+"node383": {},
+"node384": {
+"@otu": "otu198"
+},
+"node385": {},
+"node386": {
+"@otu": "otu199"
+},
+"node387": {
+"@otu": "otu200"
+},
+"node39": {
+"@otu": "otu25"
+},
+"node40": {},
+"node41": {},
+"node42": {
+"@otu": "otu26"
+},
+"node43": {},
+"node44": {
+"@otu": "otu27"
+},
+"node45": {
+"@otu": "otu28"
+},
+"node46": {},
+"node47": {
+"@otu": "otu29"
+},
+"node48": {},
+"node49": {
+"@otu": "otu30"
+},
+"node5": {
+"@root": true
+},
+"node50": {
+"@otu": "otu31"
+},
+"node51": {},
+"node52": {},
+"node53": {
+"@otu": "otu32"
+},
+"node54": {},
+"node55": {},
+"node56": {},
+"node57": {
+"@otu": "otu33"
+},
+"node58": {
+"@otu": "otu34"
+},
+"node59": {},
+"node6": {},
+"node60": {
+"@otu": "otu35"
+},
+"node61": {},
+"node62": {
+"@otu": "otu36"
+},
+"node63": {},
+"node64": {
+"@otu": "otu37"
+},
+"node65": {},
+"node66": {
+"@otu": "otu38"
+},
+"node67": {},
+"node68": {
+"@otu": "otu39"
+},
+"node69": {
+"@otu": "otu40"
+},
+"node7": {
+"@otu": "otu9"
+},
+"node70": {},
+"node71": {},
+"node72": {
+"@otu": "otu41"
+},
+"node73": {},
+"node74": {},
+"node75": {
+"@otu": "otu42"
+},
+"node76": {
+"@otu": "otu43"
+},
+"node77": {},
+"node78": {
+"@otu": "otu44"
+},
+"node79": {
+"@otu": "otu45"
+},
+"node8": {
+"@otu": "otu10"
+},
+"node80": {},
+"node81": {
+"@otu": "otu46"
+},
+"node82": {},
+"node83": {
+"@otu": "otu47"
+},
+"node84": {},
+"node85": {
+"@otu": "otu48"
+},
+"node86": {},
+"node87": {
+"@otu": "otu49"
+},
+"node88": {
+"@otu": "otu50"
+},
+"node89": {},
+"node9": {},
+"node90": {},
+"node91": {},
+"node92": {},
+"node93": {},
+"node94": {
+"@otu": "otu51"
+},
+"node95": {},
+"node96": {
+"@otu": "otu52"
+},
+"node97": {
+"@otu": "otu53"
+},
+"node98": {},
+"node99": {
+"@otu": "otu54"
+}
+}
+}
+}
+}
+}
+}
+}

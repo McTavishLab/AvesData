@@ -1,0 +1,707 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-06T20:32:10.475Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-06T20:32:10.475Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 813, 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=ufe8273b7-b787-4670-b1e7-11beba06863b", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2023-06-05T19:25:24.210Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown", 
+"jwaterford"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 291645, 
+"^ot:focalCladeOTTTaxonName": "Pteroglossus", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_153", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2010.10.016"
+}, 
+"^ot:studyPublicationReference": "Patel, Swati, Jason D. Weckstein, Jos\u00e9 S.L. Patan\u00e9, John M. Bates, Alexandre Aleixo. 2011. Temporal and spatial diversification of Pteroglossus ara\u00e7aris (Aves: Ramphastidae) in the neotropics: constant rate of diversification does not support an increase in radiation during the Pleistocene. Molecular Phylogenetics and Evolution 58 (1): 105-115.", 
+"^ot:studyYear": 2011, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Pteroglossus bitorquatus sturmi", 
+"^ot:ottId": 829349, 
+"^ot:ottTaxonName": "Pteroglossus bitorquatus sturmii"
+}, 
+"otu10": {
+"^ot:originalLabel": "Pteroglossus aracari atricollis", 
+"^ot:ottId": 1031356, 
+"^ot:ottTaxonName": "Pteroglossus aracari atricollis"
+}, 
+"otu11": {
+"^ot:originalLabel": "Pteroglossus aracari aracari", 
+"^ot:ottId": 1031362, 
+"^ot:ottTaxonName": "Pteroglossus aracari aracari"
+}, 
+"otu12": {
+"^ot:originalLabel": "Pteroglossus torquatus sanguineus", 
+"^ot:ottId": 450968, 
+"^ot:ottTaxonName": "Pteroglossus torquatus"
+}, 
+"otu13": {
+"^ot:originalLabel": "Pteroglossus torquatus erythropygius", 
+"^ot:ottId": 450968, 
+"^ot:ottTaxonName": "Pteroglossus torquatus"
+}, 
+"otu14": {
+"^ot:originalLabel": "Pteroglossus frantzii", 
+"^ot:ottId": 355169, 
+"^ot:ottTaxonName": "Pteroglossus frantzii"
+}, 
+"otu15": {
+"^ot:originalLabel": "Pteroglossus torquatus torquatus", 
+"^ot:ottId": 450968, 
+"^ot:ottTaxonName": "Pteroglossus torquatus"
+}, 
+"otu16": {
+"^ot:originalLabel": "Pteroglossus inscriptus inscriptus", 
+"^ot:ottId": 829342, 
+"^ot:ottTaxonName": "Pteroglossus inscriptus inscriptus"
+}, 
+"otu17": {
+"^ot:originalLabel": "Pteroglossus inscriptus humboldtii", 
+"^ot:ottId": 305170, 
+"^ot:ottTaxonName": "Pteroglossus inscriptus humboldti"
+}, 
+"otu18": {
+"^ot:originalLabel": "Pteroglossus viridis", 
+"^ot:ottId": 246963, 
+"^ot:ottTaxonName": "Pteroglossus viridis"
+}, 
+"otu19": {
+"^ot:originalLabel": "Pteroglossus bailloni", 
+"^ot:ottId": 130076, 
+"^ot:ottTaxonName": "Pteroglossus bailloni"
+}, 
+"otu2": {
+"^ot:originalLabel": "Pteroglossus bitorquatus reichenowi", 
+"^ot:ottId": 829347, 
+"^ot:ottTaxonName": "Pteroglossus bitorquatus reichenowi"
+}, 
+"otu20": {
+"^ot:originalLabel": "Aulacorhynchus prasinus atrogularis", 
+"^ot:ottId": 288964, 
+"^ot:ottTaxonName": "Aulacorhynchus atrogularis"
+}, 
+"otu21": {
+"^ot:originalLabel": "Aulacorhynchus prasinus caeruleogularis", 
+"^ot:ottId": 564506, 
+"^ot:ottTaxonName": "Aulacorhynchus caeruleogularis"
+}, 
+"otu22": {
+"^ot:originalLabel": "Selenidera reinwardtii", 
+"^ot:ottId": 485266, 
+"^ot:ottTaxonName": "Selenidera reinwardtii"
+}, 
+"otu23": {
+"^ot:originalLabel": "Andigena cucullata", 
+"^ot:ottId": 485268, 
+"^ot:ottTaxonName": "Andigena cucullata"
+}, 
+"otu24": {
+"^ot:originalLabel": "Ramphastos vitellinus ariel", 
+"^ot:ottId": 266063, 
+"^ot:ottTaxonName": "Ramphastos ariel"
+}, 
+"otu25": {
+"^ot:originalLabel": "Semnornis frantzii", 
+"^ot:ottId": 542000, 
+"^ot:ottTaxonName": "Semnornis frantzii"
+}, 
+"otu26": {
+"^ot:originalLabel": "Semnornis ramphastinus", 
+"^ot:ottId": 1068256, 
+"^ot:ottTaxonName": "Semnornis ramphastinus"
+}, 
+"otu3": {
+"^ot:originalLabel": "Pteroglossus beauharnaesii", 
+"^ot:ottId": 640525, 
+"^ot:ottTaxonName": "Pteroglossus beauharnaesii"
+}, 
+"otu4": {
+"^ot:originalLabel": "Pteroglossus azara flavirostris", 
+"^ot:ottId": 355349, 
+"^ot:ottTaxonName": "Pteroglossus azara flavirostris"
+}, 
+"otu5": {
+"^ot:originalLabel": "Pteroglossus azara mariae", 
+"^ot:ottId": 355345, 
+"^ot:ottTaxonName": "Pteroglossus azara"
+}, 
+"otu6": {
+"^ot:originalLabel": "Pteroglossus azara azara", 
+"^ot:ottId": 263560, 
+"^ot:ottTaxonName": "Pteroglossus azara azara"
+}, 
+"otu7": {
+"^ot:originalLabel": "Pteroglossus castanotis castanotis", 
+"^ot:ottId": 829343, 
+"^ot:ottTaxonName": "Pteroglossus castanotis castanotis"
+}, 
+"otu8": {
+"^ot:originalLabel": "Pteroglossus castanotis australis", 
+"^ot:ottId": 829345, 
+"^ot:ottTaxonName": "Pteroglossus castanotis australis"
+}, 
+"otu9": {
+"^ot:originalLabel": "Pteroglossus pluricinctus", 
+"^ot:ottId": 769998, 
+"^ot:ottTaxonName": "Pteroglossus pluricinctus"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 3", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node4", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge48": {
+"@source": "node1", 
+"@target": "node49"
+}
+}, 
+"node13": {
+"edge13": {
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge16": {
+"@source": "node13", 
+"@target": "node17"
+}
+}, 
+"node14": {
+"edge14": {
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge15": {
+"@source": "node14", 
+"@target": "node16"
+}
+}, 
+"node18": {
+"edge18": {
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge23": {
+"@source": "node18", 
+"@target": "node24"
+}
+}, 
+"node19": {
+"edge19": {
+"@source": "node19", 
+"@target": "node20"
+}, 
+"edge22": {
+"@source": "node19", 
+"@target": "node23"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge47": {
+"@source": "node2", 
+"@target": "node48"
+}
+}, 
+"node20": {
+"edge20": {
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge21": {
+"@source": "node20", 
+"@target": "node22"
+}
+}, 
+"node24": {
+"edge24": {
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge25": {
+"@source": "node24", 
+"@target": "node26"
+}
+}, 
+"node27": {
+"edge27": {
+"@source": "node27", 
+"@target": "node28"
+}, 
+"edge32": {
+"@source": "node27", 
+"@target": "node33"
+}
+}, 
+"node28": {
+"edge28": {
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge31": {
+"@source": "node28", 
+"@target": "node32"
+}
+}, 
+"node29": {
+"edge29": {
+"@source": "node29", 
+"@target": "node30"
+}, 
+"edge30": {
+"@source": "node29", 
+"@target": "node31"
+}
+}, 
+"node3": {
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge40": {
+"@source": "node3", 
+"@target": "node41"
+}
+}, 
+"node34": {
+"edge34": {
+"@source": "node34", 
+"@target": "node35"
+}, 
+"edge39": {
+"@source": "node34", 
+"@target": "node40"
+}
+}, 
+"node35": {
+"edge35": {
+"@source": "node35", 
+"@target": "node36"
+}, 
+"edge38": {
+"@source": "node35", 
+"@target": "node39"
+}
+}, 
+"node36": {
+"edge36": {
+"@source": "node36", 
+"@target": "node37"
+}, 
+"edge37": {
+"@source": "node36", 
+"@target": "node38"
+}
+}, 
+"node4": {
+"edge33": {
+"@source": "node4", 
+"@target": "node34"
+}, 
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node41": {
+"edge41": {
+"@source": "node41", 
+"@target": "node42"
+}, 
+"edge44": {
+"@source": "node41", 
+"@target": "node45"
+}
+}, 
+"node42": {
+"edge42": {
+"@source": "node42", 
+"@target": "node43"
+}, 
+"edge43": {
+"@source": "node42", 
+"@target": "node44"
+}
+}, 
+"node45": {
+"edge45": {
+"@source": "node45", 
+"@target": "node46"
+}, 
+"edge46": {
+"@source": "node45", 
+"@target": "node47"
+}
+}, 
+"node49": {
+"edge49": {
+"@source": "node49", 
+"@target": "node50"
+}, 
+"edge50": {
+"@source": "node49", 
+"@target": "node51"
+}
+}, 
+"node5": {
+"edge26": {
+"@source": "node5", 
+"@target": "node27"
+}, 
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node6": {
+"edge17": {
+"@source": "node6", 
+"@target": "node18"
+}, 
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}
+}, 
+"node7": {
+"edge12": {
+"@source": "node7", 
+"@target": "node13"
+}, 
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}
+}, 
+"node8": {
+"edge11": {
+"@source": "node8", 
+"@target": "node12"
+}, 
+"edge8": {
+"@source": "node8", 
+"@target": "node9"
+}
+}, 
+"node9": {
+"edge10": {
+"@source": "node9", 
+"@target": "node11"
+}, 
+"edge9": {
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu1"
+}, 
+"node11": {
+"@otu": "otu2"
+}, 
+"node12": {
+"@otu": "otu3"
+}, 
+"node13": {}, 
+"node14": {}, 
+"node15": {
+"@otu": "otu4"
+}, 
+"node16": {
+"@otu": "otu5"
+}, 
+"node17": {
+"@otu": "otu6"
+}, 
+"node18": {}, 
+"node19": {}, 
+"node2": {}, 
+"node20": {}, 
+"node21": {
+"@otu": "otu7"
+}, 
+"node22": {
+"@otu": "otu8"
+}, 
+"node23": {
+"@otu": "otu9"
+}, 
+"node24": {}, 
+"node25": {
+"@otu": "otu10"
+}, 
+"node26": {
+"@otu": "otu11"
+}, 
+"node27": {}, 
+"node28": {}, 
+"node29": {}, 
+"node3": {}, 
+"node30": {
+"@otu": "otu12"
+}, 
+"node31": {
+"@otu": "otu13"
+}, 
+"node32": {
+"@otu": "otu14"
+}, 
+"node33": {
+"@otu": "otu15"
+}, 
+"node34": {}, 
+"node35": {}, 
+"node36": {}, 
+"node37": {
+"@otu": "otu16"
+}, 
+"node38": {
+"@otu": "otu17"
+}, 
+"node39": {
+"@otu": "otu18"
+}, 
+"node4": {}, 
+"node40": {
+"@otu": "otu19"
+}, 
+"node41": {}, 
+"node42": {}, 
+"node43": {
+"@otu": "otu20"
+}, 
+"node44": {
+"@otu": "otu21"
+}, 
+"node45": {}, 
+"node46": {
+"@otu": "otu22"
+}, 
+"node47": {
+"@otu": "otu23"
+}, 
+"node48": {
+"@otu": "otu24"
+}, 
+"node49": {}, 
+"node5": {}, 
+"node50": {
+"@otu": "otu25"
+}, 
+"node51": {
+"@otu": "otu26"
+}, 
+"node6": {}, 
+"node7": {}, 
+"node8": {}, 
+"node9": {}
+}
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,714 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.16"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2022-08-08T02:37:25.999Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-08-08T02:37:25.998Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-08-08T02:37:25.998Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.nex", 
+"@size": 7670, 
+"@type": "nexus", 
+"@url": "/curator/download/supporting_files.doc.89b51d617c17368d.5041535445442e6e6578.nex", 
+"description": {
+"$": "Source data for tree(s) 'tree2'"
+}, 
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Randy Posada", 
+"eliotmiller"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 609798, 
+"^ot:focalCladeOTTTaxonName": "Apodiformes", 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_2132", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2019.106611"
+}, 
+"^ot:studyPublicationReference": "White, N. D., & Braun, M. J. (2019). Extracting phylogenetic signal from phylogenomic data: Higher-level relationships of the nightbirds (Strisores). Molecular Phylogenetics and Evolution, 141, 106611. https://doi.org/10.1016/j.ympev.2019.106611\n", 
+"^ot:studyYear": 2019, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu10": {
+"^ot:originalLabel": "Nyctibius jamaicensis", 
+"^ot:ottId": 228481, 
+"^ot:ottTaxonName": "Nyctibius jamaicensis"
+}, 
+"otu11": {
+"^ot:originalLabel": "Nyctibius leucopterus", 
+"^ot:ottId": 178241, 
+"^ot:ottTaxonName": "Nyctibius leucopterus"
+}, 
+"otu12": {
+"^ot:originalLabel": "Nyctibius maculosus", 
+"^ot:ottId": 701553, 
+"^ot:ottTaxonName": "Nyctibius maculosus"
+}, 
+"otu13": {
+"^ot:originalLabel": "Nyctibius aethereus", 
+"^ot:ottId": 178251, 
+"^ot:ottTaxonName": "Nyctibius aethereus"
+}, 
+"otu14": {
+"^ot:originalLabel": "Phyllaemulor bracteatus", 
+"^ot:ottId": 178250, 
+"^ot:ottTaxonName": "Nyctibius bracteatus"
+}, 
+"otu15": {
+"^ot:originalLabel": "Podargus strigoides", 
+"^ot:ottId": 313120, 
+"^ot:ottTaxonName": "Podargus strigoides"
+}, 
+"otu16": {
+"^ot:originalLabel": "Batrachostomus septimus", 
+"^ot:ottId": 624321, 
+"^ot:ottTaxonName": "Batrachostomus septimus"
+}, 
+"otu17": {
+"^ot:originalLabel": "Aegotheles cristatus", 
+"^ot:ottId": 540033, 
+"^ot:ottTaxonName": "Aegotheles cristatus"
+}, 
+"otu18": {
+"^ot:originalLabel": "Aegotheles insignis", 
+"^ot:ottId": 331487, 
+"^ot:ottTaxonName": "Euaegotheles insignis"
+}, 
+"otu19": {
+"^ot:originalLabel": "Hemiprocne mystacea", 
+"^ot:ottId": 174365, 
+"^ot:ottTaxonName": "Hemiprocne mystacea"
+}, 
+"otu20": {
+"^ot:originalLabel": "Aerodramus vanikorensis", 
+"^ot:ottId": 332662, 
+"^ot:ottTaxonName": "Aerodramus vanikorensis"
+}, 
+"otu21": {
+"^ot:originalLabel": "Streptoprocne zonaris", 
+"^ot:ottId": 697414, 
+"^ot:ottTaxonName": "Streptoprocne zonaris"
+}, 
+"otu22": {
+"^ot:originalLabel": "Topaza pella", 
+"^ot:ottId": 664346, 
+"^ot:ottTaxonName": "Topaza pella"
+}, 
+"otu23": {
+"^ot:originalLabel": "Colibri coruscans", 
+"^ot:ottId": 804120, 
+"^ot:ottTaxonName": "Colibri coruscans"
+}, 
+"otu24": {
+"^ot:originalLabel": "Anseranas semipalmata", 
+"^ot:ottId": 714464, 
+"^ot:ottTaxonName": "Anseranas semipalmata"
+}, 
+"otu25": {
+"^ot:originalLabel": "Gallus gallus", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus"
+}, 
+"otu3": {
+"^ot:originalLabel": "Columba livia", 
+"^ot:ottId": 938416, 
+"^ot:ottTaxonName": "Columba livia"
+}, 
+"otu4": {
+"^ot:originalLabel": "Eurostopodus mystacalis", 
+"^ot:ottId": 798642, 
+"^ot:ottTaxonName": "Eurostopodus mystacalis"
+}, 
+"otu5": {
+"^ot:originalLabel": "Lyncornis macrotis", 
+"^ot:ottId": 483809, 
+"^ot:ottTaxonName": "Lyncornis macrotis"
+}, 
+"otu6": {
+"^ot:originalLabel": "Hydropsalis rufiventris", 
+"^ot:ottId": 102377, 
+"^ot:ottTaxonName": "Lurocalis rufiventris"
+}, 
+"otu7": {
+"^ot:originalLabel": "Steatornis caripensis", 
+"^ot:ottId": 701548, 
+"^ot:ottTaxonName": "Steatornis caripensis"
+}, 
+"otu8": {
+"^ot:originalLabel": "Nyctibius grandis", 
+"^ot:ottId": 178249, 
+"^ot:ottTaxonName": "Nyctibius grandis"
+}, 
+"otu9": {
+"^ot:originalLabel": "Nyctibius griseus", 
+"^ot:ottId": 178242, 
+"^ot:ottTaxonName": "Nyctibius griseus"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree2"
+], 
+"treeById": {
+"tree2": {
+"@label": "D4IU_Tree_(Figure_6) ", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:bootstrapValues", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "node5", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node4", 
+"^ot:specifiedRoot": "node4", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node11": {
+"edge11": {
+"@length": 0.001234, 
+"@source": "node11", 
+"@target": "node12", 
+"^ot:bootstrapValues": 100
+}, 
+"edge26": {
+"@length": 0.001528, 
+"@source": "node11", 
+"@target": "node27", 
+"^ot:bootstrapValues": 100
+}
+}, 
+"node12": {
+"edge12": {
+"@length": 0.038456, 
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge13": {
+"@length": 0.02471, 
+"@source": "node12", 
+"@target": "node14", 
+"^ot:bootstrapValues": 100
+}
+}, 
+"node14": {
+"edge14": {
+"@length": 0.005245, 
+"@source": "node14", 
+"@target": "node15", 
+"^ot:bootstrapValues": 100
+}, 
+"edge25": {
+"@length": 0.022518, 
+"@source": "node14", 
+"@target": "node26"
+}
+}, 
+"node15": {
+"edge15": {
+"@length": 0.010223, 
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge16": {
+"@length": 0.000836, 
+"@source": "node15", 
+"@target": "node17", 
+"^ot:bootstrapValues": 100
+}
+}, 
+"node17": {
+"edge17": {
+"@length": 0.001738, 
+"@source": "node17", 
+"@target": "node18", 
+"^ot:bootstrapValues": 100
+}, 
+"edge24": {
+"@length": 0.010449, 
+"@source": "node17", 
+"@target": "node25"
+}
+}, 
+"node18": {
+"edge18": {
+"@length": 0.003171, 
+"@source": "node18", 
+"@target": "node19", 
+"^ot:bootstrapValues": 100
+}, 
+"edge21": {
+"@length": 0.006832, 
+"@source": "node18", 
+"@target": "node22", 
+"^ot:bootstrapValues": 100
+}
+}, 
+"node19": {
+"edge19": {
+"@length": 0.007455, 
+"@source": "node19", 
+"@target": "node20"
+}, 
+"edge20": {
+"@length": 0.008208, 
+"@source": "node19", 
+"@target": "node21"
+}
+}, 
+"node2": {
+"edge2": {
+"@length": 0.034496, 
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge44": {
+"@length": 0.071074, 
+"@source": "node2", 
+"@target": "node45"
+}
+}, 
+"node22": {
+"edge22": {
+"@length": 0.003017, 
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge23": {
+"@length": 0.003471, 
+"@source": "node22", 
+"@target": "node24"
+}
+}, 
+"node27": {
+"edge27": {
+"@length": 0.006834, 
+"@source": "node27", 
+"@target": "node28", 
+"^ot:bootstrapValues": 100
+}, 
+"edge40": {
+"@length": 0.02905, 
+"@source": "node27", 
+"@target": "node41", 
+"^ot:bootstrapValues": 100
+}
+}, 
+"node28": {
+"edge28": {
+"@length": 0.008258, 
+"@source": "node28", 
+"@target": "node29", 
+"^ot:bootstrapValues": 100
+}, 
+"edge37": {
+"@length": 0.036593, 
+"@source": "node28", 
+"@target": "node38", 
+"^ot:bootstrapValues": 100
+}
+}, 
+"node29": {
+"edge29": {
+"@length": 0.047487, 
+"@source": "node29", 
+"@target": "node30", 
+"^ot:bootstrapValues": 100
+}, 
+"edge32": {
+"@length": 0.01965, 
+"@source": "node29", 
+"@target": "node33", 
+"^ot:bootstrapValues": 100
+}
+}, 
+"node30": {
+"edge30": {
+"@length": 0.015644, 
+"@source": "node30", 
+"@target": "node31"
+}, 
+"edge31": {
+"@length": 0.014388, 
+"@source": "node30", 
+"@target": "node32"
+}
+}, 
+"node33": {
+"edge33": {
+"@length": 0.02324, 
+"@source": "node33", 
+"@target": "node34"
+}, 
+"edge34": {
+"@length": 0.006443, 
+"@source": "node33", 
+"@target": "node35", 
+"^ot:bootstrapValues": 100
+}
+}, 
+"node35": {
+"edge35": {
+"@length": 0.025794, 
+"@source": "node35", 
+"@target": "node36"
+}, 
+"edge36": {
+"@length": 0.018155, 
+"@source": "node35", 
+"@target": "node37"
+}
+}, 
+"node38": {
+"edge38": {
+"@length": 0.013749, 
+"@source": "node38", 
+"@target": "node39"
+}, 
+"edge39": {
+"@length": 0.009175, 
+"@source": "node38", 
+"@target": "node40"
+}
+}, 
+"node4": {
+"edge3": {
+"@length": 0.039786, 
+"@source": "node4", 
+"@target": "node2", 
+"^ot:bootstrapValues": 100
+}, 
+"edge4": {
+"@length": 0.003573, 
+"@source": "node4", 
+"@target": "node5", 
+"^ot:bootstrapValues": 100
+}, 
+"edge43": {
+"@length": 0.054068, 
+"@source": "node4", 
+"@target": "node44"
+}
+}, 
+"node41": {
+"edge41": {
+"@length": 0.018224, 
+"@source": "node41", 
+"@target": "node42"
+}, 
+"edge42": {
+"@length": 0.042625, 
+"@source": "node41", 
+"@target": "node43"
+}
+}, 
+"node5": {
+"edge10": {
+"@length": 0.001123, 
+"@source": "node5", 
+"@target": "node11", 
+"^ot:bootstrapValues": 100
+}, 
+"edge5": {
+"@length": 0.018132, 
+"@source": "node5", 
+"@target": "node6", 
+"^ot:bootstrapValues": 100
+}
+}, 
+"node6": {
+"edge6": {
+"@length": 0.002541, 
+"@source": "node6", 
+"@target": "node7", 
+"^ot:bootstrapValues": 84
+}, 
+"edge9": {
+"@length": 0.02735, 
+"@source": "node6", 
+"@target": "node10"
+}
+}, 
+"node7": {
+"edge7": {
+"@length": 0.025709, 
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@length": 0.021922, 
+"@source": "node7", 
+"@target": "node9"
+}
+}
+}, 
+"nodeById": {
+"node10": {
+"@otu": "otu4"
+}, 
+"node11": {}, 
+"node12": {}, 
+"node13": {
+"@otu": "otu7"
+}, 
+"node14": {}, 
+"node15": {}, 
+"node16": {
+"@otu": "otu8"
+}, 
+"node17": {}, 
+"node18": {}, 
+"node19": {}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu11"
+}, 
+"node21": {
+"@otu": "otu12"
+}, 
+"node22": {}, 
+"node23": {
+"@otu": "otu9"
+}, 
+"node24": {
+"@otu": "otu10"
+}, 
+"node25": {
+"@otu": "otu13"
+}, 
+"node26": {
+"@otu": "otu14"
+}, 
+"node27": {}, 
+"node28": {}, 
+"node29": {}, 
+"node3": {
+"@otu": "otu24"
+}, 
+"node30": {}, 
+"node31": {
+"@otu": "otu23"
+}, 
+"node32": {
+"@otu": "otu22"
+}, 
+"node33": {}, 
+"node34": {
+"@otu": "otu19"
+}, 
+"node35": {}, 
+"node36": {
+"@otu": "otu20"
+}, 
+"node37": {
+"@otu": "otu21"
+}, 
+"node38": {}, 
+"node39": {
+"@otu": "otu17"
+}, 
+"node4": {
+"@label": "1.00000000", 
+"@root": true
+}, 
+"node40": {
+"@otu": "otu18"
+}, 
+"node41": {}, 
+"node42": {
+"@otu": "otu15"
+}, 
+"node43": {
+"@otu": "otu16"
+}, 
+"node44": {
+"@otu": "otu3"
+}, 
+"node45": {
+"@otu": "otu25"
+}, 
+"node5": {}, 
+"node6": {}, 
+"node7": {}, 
+"node8": {
+"@otu": "otu6"
+}, 
+"node9": {
+"@otu": "otu5"
+}
+}, 
+"rootedge": [
+{
+"@id": "enode2", 
+"@length": "0.0", 
+"@target": "node2"
+}
+]
+}
+}
+}
+}
+}
+}

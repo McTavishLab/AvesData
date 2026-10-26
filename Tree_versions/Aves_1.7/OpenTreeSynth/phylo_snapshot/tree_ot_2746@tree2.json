@@ -1,0 +1,445 @@
+{
+"nexml": {
+"@about": "#study",
+"@generator": "Open Tree API",
+"@id": "study",
+"@nexml2json": "1.2.1",
+"@nexmljson": "http://purl.org/opentree/nexson",
+"@version": "0.9",
+"@xmlns": {
+"$": "http://www.nexml.org/2009",
+"nex": "http://www.nexml.org/2009",
+"ot": "http://purl.org/opentree-terms#",
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+},
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation",
+"@id": "peyotl-validator",
+"@name": "api.opentreeoflife.org/validate",
+"@url": "https://github.com/OpenTreeOfLife/peyotl",
+"@version": "0.0.4a",
+"invocation": {
+"commandLine": [],
+"otherProperty": [
+{
+"name": "pythonVersion",
+"value": "3.10.12"
+},
+{
+"name": "pythonImplementation",
+"value": "CPython"
+}
+]
+}
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
+}
+]
+},
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2025-04-06T13:49:21.807Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "Birds"
+},
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-04-06T13:49:21.807Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-04-06T13:49:21.807Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "swift.tre",
+"@size": 244,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.88f6a47bcb13ccdc.73776966742e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+},
+{
+"@filename": "swift.tre",
+"@size": 246,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.bcc3e77b6c784124.73776966742e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree2'"
+},
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"eliotmiller"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 534819,
+"^ot:focalCladeOTTTaxonName": "Aerodramus",
+"^ot:otusElementOrder": [
+"otus1"
+],
+"^ot:studyId": "ot_2746",
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.5253/arde.2023.a9"
+},
+"^ot:studyPublicationReference": "Wijnhorst, R. E., Janoo, I., Ferret, P., Tatayah, V., Probst, J.-M., Florens, F. B. V., & Warren, B. H. (2024). Phylogeny and Conservation Status of Mascarene Aerodramus Swiftlets. Ardea, 112(1). https://doi.org/10.5253/arde.2023.a9\n",
+"^ot:studyYear": 2024,
+"^ot:tag": [],
+"^ot:treesElementOrder": [
+"trees1"
+],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 39,
+"message": 0,
+"node": 41,
+"otu": 22,
+"otus": 3,
+"tree": 2,
+"trees": 3
+},
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Aerodramus francicus",
+"^ot:ottId": 534816,
+"^ot:ottTaxonName": "Aerodramus francicus"
+},
+"otu10": {
+"^ot:originalLabel": "Collocalia troglodytes",
+"^ot:ottId": 586269,
+"^ot:ottTaxonName": "Collocalia troglodytes"
+},
+"otu11": {
+"^ot:originalLabel": "Apus melba",
+"^ot:ottId": 795151,
+"^ot:ottTaxonName": "Tachymarptis melba"
+},
+"otu2": {
+"^ot:originalLabel": "Aerodramus elaphrus",
+"^ot:ottId": 534813,
+"^ot:ottTaxonName": "Aerodramus elaphrus"
+},
+"otu3": {
+"^ot:originalLabel": "Aerodramus brevirostris",
+"^ot:ottId": 385669,
+"^ot:ottTaxonName": "Aerodramus brevirostris"
+},
+"otu4": {
+"^ot:originalLabel": "Aerodramus ocistus",
+"^ot:ottId": 3595841,
+"^ot:ottTaxonName": "Aerodramus ocistus"
+},
+"otu5": {
+"^ot:originalLabel": "Aerodramus sororum",
+"^ot:ottId": 3595838,
+"^ot:ottTaxonName": "Aerodramus sororum"
+},
+"otu6": {
+"^ot:originalLabel": "Aerodramus fuciphagus",
+"^ot:ottId": 534806,
+"^ot:ottTaxonName": "Aerodramus fuciphagus"
+},
+"otu7": {
+"^ot:originalLabel": "Aerodramus vanikorensis",
+"^ot:ottId": 332662,
+"^ot:ottTaxonName": "Aerodramus vanikorensis"
+},
+"otu8": {
+"^ot:originalLabel": "Aerodramus spodiopygius",
+"^ot:ottId": 65396,
+"^ot:ottTaxonName": "Aerodramus spodiopygius"
+},
+"otu9": {
+"^ot:originalLabel": "Aerodramus maximus",
+"^ot:ottId": 65399,
+"^ot:ottTaxonName": "Aerodramus maximus"
+}
+}
+}
+},
+"treesById": {
+"trees1": {
+"@otus": "otus1",
+"^ot:treeElementOrder": [
+"tree2"
+],
+"treeById": {
+"tree2": {
+"@label": "Fig 1 + outgroups",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "Maximum likelihood ",
+"^ot:inGroupClade": "node23",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node21",
+"^ot:specifiedRoot": "node21",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node21": {
+"edge20": {
+"@source": "node21",
+"@target": "node22"
+},
+"edge39": {
+"@source": "node21",
+"@target": "node41"
+}
+},
+"node22": {
+"edge21": {
+"@source": "node22",
+"@target": "node23"
+},
+"edge38": {
+"@source": "node22",
+"@target": "node40"
+}
+},
+"node23": {
+"edge22": {
+"@source": "node23",
+"@target": "node24"
+},
+"edge37": {
+"@source": "node23",
+"@target": "node39"
+}
+},
+"node24": {
+"edge23": {
+"@source": "node24",
+"@target": "node25"
+},
+"edge36": {
+"@source": "node24",
+"@target": "node38"
+}
+},
+"node25": {
+"edge24": {
+"@source": "node25",
+"@target": "node26"
+},
+"edge35": {
+"@source": "node25",
+"@target": "node37"
+}
+},
+"node26": {
+"edge25": {
+"@source": "node26",
+"@target": "node27"
+},
+"edge32": {
+"@source": "node26",
+"@target": "node34"
+}
+},
+"node27": {
+"edge26": {
+"@source": "node27",
+"@target": "node28"
+},
+"edge31": {
+"@source": "node27",
+"@target": "node33"
+}
+},
+"node28": {
+"edge27": {
+"@source": "node28",
+"@target": "node29"
+},
+"edge30": {
+"@source": "node28",
+"@target": "node32"
+}
+},
+"node29": {
+"edge28": {
+"@source": "node29",
+"@target": "node30"
+},
+"edge29": {
+"@source": "node29",
+"@target": "node31"
+}
+},
+"node34": {
+"edge33": {
+"@source": "node34",
+"@target": "node35"
+},
+"edge34": {
+"@source": "node34",
+"@target": "node36"
+}
+}
+},
+"nodeById": {
+"node21": {
+"@root": true
+},
+"node22": {},
+"node23": {},
+"node24": {},
+"node25": {},
+"node26": {},
+"node27": {},
+"node28": {},
+"node29": {},
+"node30": {
+"@otu": "otu1"
+},
+"node31": {
+"@otu": "otu2"
+},
+"node32": {
+"@otu": "otu3"
+},
+"node33": {
+"@otu": "otu4"
+},
+"node34": {},
+"node35": {
+"@otu": "otu5"
+},
+"node36": {
+"@otu": "otu6"
+},
+"node37": {
+"@otu": "otu7"
+},
+"node38": {
+"@otu": "otu8"
+},
+"node39": {
+"@otu": "otu9"
+},
+"node40": {
+"@otu": "otu10"
+},
+"node41": {
+"@otu": "otu11"
+}
+}
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,742 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-06T17:44:17.296Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-06T17:44:17.296Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 815707, 
+"^ot:focalCladeOTTTaxonName": "Capito", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_151", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1650/0010-5422(2005)107[0527:gvimds]2.0.co;2"
+}, 
+"^ot:studyPublicationReference": "Armenta, Jessica K., Jason D. Weckstein, Daniel F. Lane. 2005. Geographic variation in mitochondrial DNA sequences of an Amazonian nonpasserine: The Black-spotted Barbet complex. The Condor 107 (3): 527-536.", 
+"^ot:studyYear": 2005, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Capito auratus aurantiicinctus M45737", 
+"^ot:ottId": 977875, 
+"^ot:ottTaxonName": "Capito auratus aurantiicinctus"
+}, 
+"otu10": {
+"^ot:originalLabel": "Capito auratus auratus B6947", 
+"^ot:ottId": 977867, 
+"^ot:ottTaxonName": "Capito auratus auratus"
+}, 
+"otu11": {
+"^ot:originalLabel": "Capito auratus auratus B6969", 
+"^ot:ottId": 977867, 
+"^ot:ottTaxonName": "Capito auratus auratus"
+}, 
+"otu12": {
+"^ot:originalLabel": "Capito auratus orosae B25503", 
+"^ot:ottId": 977876, 
+"^ot:ottTaxonName": "Capito auratus orosae"
+}, 
+"otu13": {
+"^ot:originalLabel": "Capito auratus auratus B4805", 
+"^ot:ottId": 977867, 
+"^ot:ottTaxonName": "Capito auratus auratus"
+}, 
+"otu14": {
+"^ot:originalLabel": "Capito auratus amazonicus M49882", 
+"^ot:ottId": 977868, 
+"^ot:ottTaxonName": "Capito auratus amazonicus"
+}, 
+"otu15": {
+"^ot:originalLabel": "Capito auratus insperatus B6798", 
+"^ot:ottId": 977877, 
+"^ot:ottTaxonName": "Capito auratus insperatus"
+}, 
+"otu16": {
+"^ot:originalLabel": "Capito auratus orosae B35719", 
+"^ot:ottId": 977876, 
+"^ot:ottTaxonName": "Capito auratus orosae"
+}, 
+"otu17": {
+"^ot:originalLabel": "Capito auratus insperatus B11206", 
+"^ot:ottId": 977877, 
+"^ot:ottTaxonName": "Capito auratus insperatus"
+}, 
+"otu18": {
+"^ot:originalLabel": "Capito brunneipectus B25499", 
+"^ot:ottId": 965757, 
+"^ot:ottTaxonName": "Capito brunneipectus"
+}, 
+"otu19": {
+"^ot:originalLabel": "Capito brunneipectus B35612", 
+"^ot:ottId": 965757, 
+"^ot:ottTaxonName": "Capito brunneipectus"
+}, 
+"otu2": {
+"^ot:originalLabel": "Capito auratus aurantiicinctus M49289", 
+"^ot:ottId": 977875, 
+"^ot:ottTaxonName": "Capito auratus aurantiicinctus"
+}, 
+"otu20": {
+"^ot:originalLabel": "Capito niger B09373", 
+"^ot:ottId": 1068254, 
+"^ot:ottTaxonName": "Capito niger"
+}, 
+"otu21": {
+"^ot:originalLabel": "Capito niger B10393", 
+"^ot:ottId": 1068254, 
+"^ot:ottTaxonName": "Capito niger"
+}, 
+"otu22": {
+"^ot:originalLabel": "Capito maculicoronatus maculicoronatus B28524", 
+"^ot:ottId": 977869, 
+"^ot:ottTaxonName": "Capito maculicoronatus maculicoronatus"
+}, 
+"otu23": {
+"^ot:originalLabel": "Capito maculicoronatus rubrilateralis B2178", 
+"^ot:ottId": 370836, 
+"^ot:ottTaxonName": "Capito maculicoronatus rubrilateralis"
+}, 
+"otu24": {
+"^ot:originalLabel": "Capito squamatus B7738", 
+"^ot:ottId": 712005, 
+"^ot:ottTaxonName": "Capito squamatus"
+}, 
+"otu25": {
+"^ot:originalLabel": "Capito wallacei B27757", 
+"^ot:ottId": 712006, 
+"^ot:ottTaxonName": "Capito wallacei"
+}, 
+"otu26": {
+"^ot:originalLabel": "Capito quinticolor B29985", 
+"^ot:ottId": 712004, 
+"^ot:ottTaxonName": "Capito quinticolor"
+}, 
+"otu27": {
+"^ot:originalLabel": "Capito dayi B18305", 
+"^ot:ottId": 815708, 
+"^ot:ottTaxonName": "Capito dayi"
+}, 
+"otu28": {
+"^ot:originalLabel": "Capito aurovirens B7344", 
+"^ot:ottId": 712007, 
+"^ot:ottTaxonName": "Capito aurovirens"
+}, 
+"otu3": {
+"^ot:originalLabel": "Capito auratus transilens B7567", 
+"^ot:ottId": 977865, 
+"^ot:ottTaxonName": "Capito auratus transilens"
+}, 
+"otu4": {
+"^ot:originalLabel": "Capito auratus transilens B25572", 
+"^ot:ottId": 977865, 
+"^ot:ottTaxonName": "Capito auratus transilens"
+}, 
+"otu5": {
+"^ot:originalLabel": "Capito auratus transilens B7549", 
+"^ot:ottId": 977865, 
+"^ot:ottTaxonName": "Capito auratus transilens"
+}, 
+"otu6": {
+"^ot:originalLabel": "Capito auratus punctatus B27403", 
+"^ot:ottId": 977874, 
+"^ot:ottTaxonName": "Capito auratus punctatus"
+}, 
+"otu7": {
+"^ot:originalLabel": "Capito auratus auratus/punctatus intergrade B4448"
+}, 
+"otu8": {
+"^ot:originalLabel": "Capito auratus auratus/punctatus intergrade B4430"
+}, 
+"otu9": {
+"^ot:originalLabel": "Capito auratus punctatus B27553", 
+"^ot:ottId": 977874, 
+"^ot:ottTaxonName": "Capito auratus punctatus"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 3", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageu1e4fe535-98d2-408d-af75-904d673bfe82", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 929, 
+"@sourceForTree": "tree1", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u1e4fe535-98d2-408d-af75-904d673bfe82", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:nearestTaxonMRCAName": "Capito (genus in family Ramphastidae)", 
+"^ot:nearestTaxonMRCAOttId": "815707", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge51": {
+"@source": "node1", 
+"@target": "node52"
+}
+}, 
+"node10": {
+"edge10": {
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge16": {
+"@source": "node10", 
+"@target": "node17"
+}
+}, 
+"node11": {
+"edge11": {
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge12": {
+"@source": "node11", 
+"@target": "node13"
+}, 
+"edge13": {
+"@source": "node11", 
+"@target": "node14"
+}, 
+"edge14": {
+"@source": "node11", 
+"@target": "node15"
+}, 
+"edge15": {
+"@source": "node11", 
+"@target": "node16"
+}
+}, 
+"node17": {
+"edge17": {
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge20": {
+"@source": "node17", 
+"@target": "node21"
+}
+}, 
+"node18": {
+"edge18": {
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge19": {
+"@source": "node18", 
+"@target": "node20"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge48": {
+"@source": "node2", 
+"@target": "node49"
+}
+}, 
+"node23": {
+"edge23": {
+"@source": "node23", 
+"@target": "node24"
+}, 
+"edge24": {
+"@source": "node23", 
+"@target": "node25"
+}
+}, 
+"node26": {
+"edge26": {
+"@source": "node26", 
+"@target": "node27"
+}, 
+"edge35": {
+"@source": "node26", 
+"@target": "node36"
+}
+}, 
+"node27": {
+"edge27": {
+"@source": "node27", 
+"@target": "node28"
+}, 
+"edge34": {
+"@source": "node27", 
+"@target": "node35"
+}
+}, 
+"node28": {
+"edge28": {
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge33": {
+"@source": "node28", 
+"@target": "node34"
+}
+}, 
+"node29": {
+"edge29": {
+"@source": "node29", 
+"@target": "node30"
+}, 
+"edge32": {
+"@source": "node29", 
+"@target": "node33"
+}
+}, 
+"node3": {
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge47": {
+"@source": "node3", 
+"@target": "node48"
+}
+}, 
+"node30": {
+"edge30": {
+"@source": "node30", 
+"@target": "node31"
+}, 
+"edge31": {
+"@source": "node30", 
+"@target": "node32"
+}
+}, 
+"node37": {
+"edge37": {
+"@source": "node37", 
+"@target": "node38"
+}, 
+"edge38": {
+"@source": "node37", 
+"@target": "node39"
+}
+}, 
+"node4": {
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge42": {
+"@source": "node4", 
+"@target": "node43"
+}
+}, 
+"node40": {
+"edge40": {
+"@source": "node40", 
+"@target": "node41"
+}, 
+"edge41": {
+"@source": "node40", 
+"@target": "node42"
+}
+}, 
+"node43": {
+"edge43": {
+"@source": "node43", 
+"@target": "node44"
+}, 
+"edge46": {
+"@source": "node43", 
+"@target": "node47"
+}
+}, 
+"node44": {
+"edge44": {
+"@source": "node44", 
+"@target": "node45"
+}, 
+"edge45": {
+"@source": "node44", 
+"@target": "node46"
+}
+}, 
+"node49": {
+"edge49": {
+"@source": "node49", 
+"@target": "node50"
+}, 
+"edge50": {
+"@source": "node49", 
+"@target": "node51"
+}
+}, 
+"node5": {
+"edge39": {
+"@source": "node5", 
+"@target": "node40"
+}, 
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node6": {
+"edge36": {
+"@source": "node6", 
+"@target": "node37"
+}, 
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}
+}, 
+"node7": {
+"edge25": {
+"@source": "node7", 
+"@target": "node26"
+}, 
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}
+}, 
+"node8": {
+"edge22": {
+"@source": "node8", 
+"@target": "node23"
+}, 
+"edge8": {
+"@source": "node8", 
+"@target": "node9"
+}
+}, 
+"node9": {
+"edge21": {
+"@source": "node9", 
+"@target": "node22"
+}, 
+"edge9": {
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node11": {}, 
+"node12": {
+"@otu": "otu1", 
+"^ot:isTaxonExemplar": true
+}, 
+"node13": {
+"@otu": "otu2", 
+"^ot:isTaxonExemplar": false
+}, 
+"node14": {
+"@otu": "otu3", 
+"^ot:isTaxonExemplar": true
+}, 
+"node15": {
+"@otu": "otu4", 
+"^ot:isTaxonExemplar": false
+}, 
+"node16": {
+"@otu": "otu5", 
+"^ot:isTaxonExemplar": false
+}, 
+"node17": {}, 
+"node18": {}, 
+"node19": {
+"@otu": "otu6"
+}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu7"
+}, 
+"node21": {
+"@otu": "otu8"
+}, 
+"node22": {
+"@otu": "otu9"
+}, 
+"node23": {}, 
+"node24": {
+"@otu": "otu10"
+}, 
+"node25": {
+"@otu": "otu11"
+}, 
+"node26": {}, 
+"node27": {}, 
+"node28": {}, 
+"node29": {}, 
+"node3": {}, 
+"node30": {}, 
+"node31": {
+"@otu": "otu12"
+}, 
+"node32": {
+"@otu": "otu13"
+}, 
+"node33": {
+"@otu": "otu14"
+}, 
+"node34": {
+"@otu": "otu15"
+}, 
+"node35": {
+"@otu": "otu16"
+}, 
+"node36": {
+"@otu": "otu17"
+}, 
+"node37": {}, 
+"node38": {
+"@otu": "otu18", 
+"^ot:isTaxonExemplar": true
+}, 
+"node39": {
+"@otu": "otu19", 
+"^ot:isTaxonExemplar": false
+}, 
+"node4": {}, 
+"node40": {}, 
+"node41": {
+"@otu": "otu20", 
+"^ot:isTaxonExemplar": true
+}, 
+"node42": {
+"@otu": "otu21", 
+"^ot:isTaxonExemplar": false
+}, 
+"node43": {}, 
+"node44": {}, 
+"node45": {
+"@otu": "otu22"
+}, 
+"node46": {
+"@otu": "otu23"
+}, 
+"node47": {
+"@otu": "otu24"
+}, 
+"node48": {
+"@otu": "otu25"
+}, 
+"node49": {}, 
+"node5": {}, 
+"node50": {
+"@otu": "otu26"
+}, 
+"node51": {
+"@otu": "otu27"
+}, 
+"node52": {
+"@otu": "otu28"
+}, 
+"node6": {}, 
+"node7": {}, 
+"node8": {}, 
+"node9": {}
+}
+}
+}
+}
+}
+}
+}

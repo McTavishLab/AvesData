@@ -1,0 +1,341 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-02T01:16:50.759Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-02T01:16:50.759Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 472436, 
+"^ot:focalCladeOTTTaxonName": "Phoenicopteridae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_122", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/1471-2148-14-36"
+}, 
+"^ot:studyPublicationReference": "Torres, Chris R, Lisa M Ogawa, Mark AF Gillingham, Brittney Ferrari, Marcel van Tuinen. 2014. A multi-locus inference of the evolutionary diversification of extant flamingos (Phoenicopteridae). BMC Evolutionary Biology 14 (1): 36.", 
+"^ot:studyYear": 2014, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Phoenicopterus ruber", 
+"^ot:ottId": 443650, 
+"^ot:ottTaxonName": "Phoenicopterus ruber"
+}, 
+"otu2": {
+"^ot:originalLabel": "Phoenicopterus roseus", 
+"^ot:ottId": 595567, 
+"^ot:ottTaxonName": "Phoenicopterus roseus"
+}, 
+"otu3": {
+"^ot:originalLabel": "Phoenicopterus chilensis", 
+"^ot:ottId": 960220, 
+"^ot:ottTaxonName": "Phoenicopterus chilensis"
+}, 
+"otu4": {
+"^ot:originalLabel": "Phoenicoparrus andinus", 
+"^ot:ottId": 1030749, 
+"^ot:ottTaxonName": "Phoenicoparrus andinus"
+}, 
+"otu5": {
+"^ot:originalLabel": "Phoenicoparrus jamesi", 
+"^ot:ottId": 1030759, 
+"^ot:ottTaxonName": "Phoenicoparrus jamesi"
+}, 
+"otu6": {
+"^ot:originalLabel": "Phoenicoparrus minor", 
+"^ot:ottId": 1030753, 
+"^ot:ottTaxonName": "Phoenicoparrus minor"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:time", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageub4336416-56e2-4873-94b1-fa4219bb05c6", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 194, 
+"@sourceForTree": "tree1", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=ub4336416-56e2-4873-94b1-fa4219bb05c6", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:nearestTaxonMRCAName": "Phoenicopteridae", 
+"^ot:nearestTaxonMRCAOttId": "472436", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 2.08, 
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge6": {
+"@length": 1.81, 
+"@source": "node1", 
+"@target": "node7"
+}
+}, 
+"node2": {
+"edge2": {
+"@length": 1.28, 
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge5": {
+"@length": 2.29, 
+"@source": "node2", 
+"@target": "node6"
+}
+}, 
+"node3": {
+"edge3": {
+"@length": 1.01, 
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge4": {
+"@length": 1.01, 
+"@source": "node3", 
+"@target": "node5"
+}
+}, 
+"node7": {
+"edge10": {
+"@length": 2.56, 
+"@source": "node7", 
+"@target": "node11"
+}, 
+"edge7": {
+"@length": 1.22, 
+"@source": "node7", 
+"@target": "node8"
+}
+}, 
+"node8": {
+"edge8": {
+"@length": 1.34, 
+"@source": "node8", 
+"@target": "node9"
+}, 
+"edge9": {
+"@length": 1.34, 
+"@source": "node8", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu5"
+}, 
+"node11": {
+"@otu": "otu6"
+}, 
+"node2": {}, 
+"node3": {}, 
+"node4": {
+"@otu": "otu1"
+}, 
+"node5": {
+"@otu": "otu2"
+}, 
+"node6": {
+"@otu": "otu3"
+}, 
+"node7": {}, 
+"node8": {}, 
+"node9": {
+"@otu": "otu4"
+}
+}
+}
+}
+}
+}
+}
+}

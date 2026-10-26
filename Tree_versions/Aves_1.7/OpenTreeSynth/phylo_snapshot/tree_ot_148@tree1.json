@@ -1,0 +1,849 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-06T05:54:05.735Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-06T05:54:05.735Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 815968, 
+"^ot:focalCladeOTTTaxonName": "Meropidae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_148", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2007.07.004"
+}, 
+"^ot:studyPublicationReference": "Marks, Ben D., Jason D. Weckstein, Robert G. Moyle. 2007. Molecular phylogenetics of the bee-eaters (Aves: Meropidae) based on nuclear and mitochondrial DNA sequence data. Molecular Phylogenetics and Evolution 45 (1): 23-32.", 
+"^ot:studyYear": 2007, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Actenoides concretus", 
+"^ot:ottId": 571609, 
+"^ot:ottTaxonName": "Actenoides concretus"
+}, 
+"otu10": {
+"^ot:originalLabel": "Merops gularis gularis", 
+"^ot:ottId": 150515, 
+"^ot:ottTaxonName": "Merops gularis gularis"
+}, 
+"otu11": {
+"^ot:originalLabel": "Merops muelleri mentalis", 
+"^ot:ottId": 724983, 
+"^ot:ottTaxonName": "Merops muelleri mentalis"
+}, 
+"otu12": {
+"^ot:originalLabel": "Merops muelleri muelleri", 
+"^ot:ottId": 150518, 
+"^ot:ottTaxonName": "Merops muelleri muelleri"
+}, 
+"otu13": {
+"^ot:originalLabel": "Merops boehmi", 
+"^ot:ottId": 423285, 
+"^ot:ottTaxonName": "Merops boehmi"
+}, 
+"otu14": {
+"^ot:originalLabel": "Merops apiaster 1", 
+"^ot:ottId": 755107, 
+"^ot:ottTaxonName": "Merops apiaster"
+}, 
+"otu15": {
+"^ot:originalLabel": "Merops apiaster 2", 
+"^ot:ottId": 755107, 
+"^ot:ottTaxonName": "Merops apiaster"
+}, 
+"otu16": {
+"^ot:originalLabel": "Merops ornatus", 
+"^ot:ottId": 614658, 
+"^ot:ottTaxonName": "Merops ornatus"
+}, 
+"otu17": {
+"^ot:originalLabel": "Merops persicus", 
+"^ot:ottId": 898071, 
+"^ot:ottTaxonName": "Merops persicus"
+}, 
+"otu18": {
+"^ot:originalLabel": "Merops superciliosus", 
+"^ot:ottId": 898073, 
+"^ot:ottTaxonName": "Merops superciliosus"
+}, 
+"otu19": {
+"^ot:originalLabel": "Merops philippinus", 
+"^ot:ottId": 372777, 
+"^ot:ottTaxonName": "Merops philippinus"
+}, 
+"otu2": {
+"^ot:originalLabel": "Todus angustirostris", 
+"^ot:ottId": 986892, 
+"^ot:ottTaxonName": "Todus angustirostris"
+}, 
+"otu20": {
+"^ot:originalLabel": "Merops viridis viridis", 
+"^ot:ottId": 372775, 
+"^ot:ottTaxonName": "Merops viridis viridis"
+}, 
+"otu21": {
+"^ot:originalLabel": "Merops viridis americanus", 
+"^ot:ottId": 372774, 
+"^ot:ottTaxonName": "Merops viridis americanus"
+}, 
+"otu22": {
+"^ot:originalLabel": "Merops leschenaulti 115", 
+"^ot:ottId": 372778, 
+"^ot:ottTaxonName": "Merops leschenaulti"
+}, 
+"otu23": {
+"^ot:originalLabel": "Merops leschenaulti 286", 
+"^ot:ottId": 372778, 
+"^ot:ottTaxonName": "Merops leschenaulti"
+}, 
+"otu24": {
+"^ot:originalLabel": "Merops orientalis", 
+"^ot:ottId": 423282, 
+"^ot:ottTaxonName": "Merops orientalis"
+}, 
+"otu25": {
+"^ot:originalLabel": "Merops nubicus", 
+"^ot:ottId": 989087, 
+"^ot:ottTaxonName": "Merops nubicus"
+}, 
+"otu26": {
+"^ot:originalLabel": "Merops malimbicus", 
+"^ot:ottId": 1050190, 
+"^ot:ottTaxonName": "Merops malimbicus"
+}, 
+"otu27": {
+"^ot:originalLabel": "Merops albicollis", 
+"^ot:ottId": 423284, 
+"^ot:ottTaxonName": "Merops albicollis"
+}, 
+"otu28": {
+"^ot:originalLabel": "Merops breweri", 
+"^ot:ottId": 724987, 
+"^ot:ottTaxonName": "Merops breweri"
+}, 
+"otu29": {
+"^ot:originalLabel": "Merops bulocki", 
+"^ot:ottId": 704136, 
+"^ot:ottTaxonName": "Merops bulocki"
+}, 
+"otu3": {
+"^ot:originalLabel": "Momotus momota", 
+"^ot:ottId": 989081, 
+"^ot:ottTaxonName": "Momotus momota"
+}, 
+"otu30": {
+"^ot:originalLabel": "Merops bullockoides", 
+"^ot:ottId": 423281, 
+"^ot:ottTaxonName": "Merops bullockoides"
+}, 
+"otu31": {
+"^ot:originalLabel": "Meropogon forsteni 315", 
+"^ot:ottId": 1050191, 
+"^ot:ottTaxonName": "Meropogon forsteni"
+}, 
+"otu32": {
+"^ot:originalLabel": "Meropogon forsteni 316", 
+"^ot:ottId": 1050191, 
+"^ot:ottTaxonName": "Meropogon forsteni"
+}, 
+"otu33": {
+"^ot:originalLabel": "Nyctyornis amictus", 
+"^ot:ottId": 524018, 
+"^ot:ottTaxonName": "Nyctyornis amictus"
+}, 
+"otu4": {
+"^ot:originalLabel": "Merops pusillus pusillus", 
+"^ot:ottId": 948869, 
+"^ot:ottTaxonName": "Merops pusillus pusillus"
+}, 
+"otu5": {
+"^ot:originalLabel": "Merops pusillus meridionalis", 
+"^ot:ottId": 948865, 
+"^ot:ottTaxonName": "Merops pusillus meridionalis"
+}, 
+"otu6": {
+"^ot:originalLabel": "Merops variegatus loringi", 
+"^ot:ottId": 948874, 
+"^ot:ottTaxonName": "Merops variegatus loringi"
+}, 
+"otu7": {
+"^ot:originalLabel": "Merops hirundineus", 
+"^ot:ottId": 150514, 
+"^ot:ottTaxonName": "Merops hirundineus"
+}, 
+"otu8": {
+"^ot:originalLabel": "Merops oreobates", 
+"^ot:ottId": 948862, 
+"^ot:ottTaxonName": "Merops oreobates"
+}, 
+"otu9": {
+"^ot:originalLabel": "Merops gularis australis", 
+"^ot:ottId": 150516, 
+"^ot:ottTaxonName": "Merops gularis australis"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 2b", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node7", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageu5f4f44f1-202d-4ef5-9b09-eb16f20043d8", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 737, 
+"@sourceForTree": "tree1", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u5f4f44f1-202d-4ef5-9b09-eb16f20043d8", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:nearestTaxonMRCAName": "Meropidae", 
+"^ot:nearestTaxonMRCAOttId": "815968", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge6": {
+"@source": "node1", 
+"@target": "node7"
+}
+}, 
+"node10": {
+"edge10": {
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge57": {
+"@source": "node10", 
+"@target": "node58"
+}
+}, 
+"node11": {
+"edge11": {
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge30": {
+"@source": "node11", 
+"@target": "node31"
+}
+}, 
+"node12": {
+"edge12": {
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge29": {
+"@source": "node12", 
+"@target": "node30"
+}
+}, 
+"node13": {
+"edge13": {
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge22": {
+"@source": "node13", 
+"@target": "node23"
+}
+}, 
+"node14": {
+"edge14": {
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge19": {
+"@source": "node14", 
+"@target": "node20"
+}
+}, 
+"node15": {
+"edge15": {
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge18": {
+"@source": "node15", 
+"@target": "node19"
+}
+}, 
+"node16": {
+"edge16": {
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge17": {
+"@source": "node16", 
+"@target": "node18"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge5": {
+"@source": "node2", 
+"@target": "node6"
+}
+}, 
+"node20": {
+"edge20": {
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge21": {
+"@source": "node20", 
+"@target": "node22"
+}
+}, 
+"node23": {
+"edge23": {
+"@source": "node23", 
+"@target": "node24"
+}, 
+"edge26": {
+"@source": "node23", 
+"@target": "node27"
+}
+}, 
+"node24": {
+"edge24": {
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge25": {
+"@source": "node24", 
+"@target": "node26"
+}
+}, 
+"node27": {
+"edge27": {
+"@source": "node27", 
+"@target": "node28"
+}, 
+"edge28": {
+"@source": "node27", 
+"@target": "node29"
+}
+}, 
+"node3": {
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge4": {
+"@source": "node3", 
+"@target": "node5"
+}
+}, 
+"node31": {
+"edge31": {
+"@source": "node31", 
+"@target": "node32"
+}, 
+"edge56": {
+"@source": "node31", 
+"@target": "node57"
+}
+}, 
+"node32": {
+"edge32": {
+"@source": "node32", 
+"@target": "node33"
+}, 
+"edge55": {
+"@source": "node32", 
+"@target": "node56"
+}
+}, 
+"node33": {
+"edge33": {
+"@source": "node33", 
+"@target": "node34"
+}, 
+"edge54": {
+"@source": "node33", 
+"@target": "node55"
+}
+}, 
+"node34": {
+"edge34": {
+"@source": "node34", 
+"@target": "node35"
+}, 
+"edge45": {
+"@source": "node34", 
+"@target": "node46"
+}
+}, 
+"node35": {
+"edge35": {
+"@source": "node35", 
+"@target": "node36"
+}, 
+"edge40": {
+"@source": "node35", 
+"@target": "node41"
+}
+}, 
+"node36": {
+"edge36": {
+"@source": "node36", 
+"@target": "node37"
+}, 
+"edge39": {
+"@source": "node36", 
+"@target": "node40"
+}
+}, 
+"node37": {
+"edge37": {
+"@source": "node37", 
+"@target": "node38"
+}, 
+"edge38": {
+"@source": "node37", 
+"@target": "node39"
+}
+}, 
+"node41": {
+"edge41": {
+"@source": "node41", 
+"@target": "node42"
+}, 
+"edge44": {
+"@source": "node41", 
+"@target": "node45"
+}
+}, 
+"node42": {
+"edge42": {
+"@source": "node42", 
+"@target": "node43"
+}, 
+"edge43": {
+"@source": "node42", 
+"@target": "node44"
+}
+}, 
+"node46": {
+"edge46": {
+"@source": "node46", 
+"@target": "node47"
+}, 
+"edge53": {
+"@source": "node46", 
+"@target": "node54"
+}
+}, 
+"node47": {
+"edge47": {
+"@source": "node47", 
+"@target": "node48"
+}, 
+"edge50": {
+"@source": "node47", 
+"@target": "node51"
+}
+}, 
+"node48": {
+"edge48": {
+"@source": "node48", 
+"@target": "node49"
+}, 
+"edge49": {
+"@source": "node48", 
+"@target": "node50"
+}
+}, 
+"node51": {
+"edge51": {
+"@source": "node51", 
+"@target": "node52"
+}, 
+"edge52": {
+"@source": "node51", 
+"@target": "node53"
+}
+}, 
+"node59": {
+"edge59": {
+"@source": "node59", 
+"@target": "node60"
+}, 
+"edge60": {
+"@source": "node59", 
+"@target": "node61"
+}
+}, 
+"node62": {
+"edge62": {
+"@source": "node62", 
+"@target": "node63"
+}, 
+"edge63": {
+"@source": "node62", 
+"@target": "node64"
+}
+}, 
+"node7": {
+"edge64": {
+"@source": "node7", 
+"@target": "node65"
+}, 
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}
+}, 
+"node8": {
+"edge61": {
+"@source": "node8", 
+"@target": "node62"
+}, 
+"edge8": {
+"@source": "node8", 
+"@target": "node9"
+}
+}, 
+"node9": {
+"edge58": {
+"@source": "node9", 
+"@target": "node59"
+}, 
+"edge9": {
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {}, 
+"node11": {}, 
+"node12": {}, 
+"node13": {}, 
+"node14": {}, 
+"node15": {}, 
+"node16": {}, 
+"node17": {
+"@otu": "otu4"
+}, 
+"node18": {
+"@otu": "otu5"
+}, 
+"node19": {
+"@otu": "otu6"
+}, 
+"node2": {}, 
+"node20": {}, 
+"node21": {
+"@otu": "otu7"
+}, 
+"node22": {
+"@otu": "otu8"
+}, 
+"node23": {}, 
+"node24": {}, 
+"node25": {
+"@otu": "otu9"
+}, 
+"node26": {
+"@otu": "otu10"
+}, 
+"node27": {}, 
+"node28": {
+"@otu": "otu11"
+}, 
+"node29": {
+"@otu": "otu12"
+}, 
+"node3": {}, 
+"node30": {
+"@otu": "otu13"
+}, 
+"node31": {}, 
+"node32": {}, 
+"node33": {}, 
+"node34": {}, 
+"node35": {}, 
+"node36": {}, 
+"node37": {}, 
+"node38": {
+"@otu": "otu14", 
+"^ot:isTaxonExemplar": true
+}, 
+"node39": {
+"@otu": "otu15", 
+"^ot:isTaxonExemplar": false
+}, 
+"node4": {
+"@otu": "otu1"
+}, 
+"node40": {
+"@otu": "otu16"
+}, 
+"node41": {}, 
+"node42": {}, 
+"node43": {
+"@otu": "otu17"
+}, 
+"node44": {
+"@otu": "otu18"
+}, 
+"node45": {
+"@otu": "otu19"
+}, 
+"node46": {}, 
+"node47": {}, 
+"node48": {}, 
+"node49": {
+"@otu": "otu20"
+}, 
+"node5": {
+"@otu": "otu2"
+}, 
+"node50": {
+"@otu": "otu21"
+}, 
+"node51": {}, 
+"node52": {
+"@otu": "otu22", 
+"^ot:isTaxonExemplar": true
+}, 
+"node53": {
+"@otu": "otu23", 
+"^ot:isTaxonExemplar": false
+}, 
+"node54": {
+"@otu": "otu24"
+}, 
+"node55": {
+"@otu": "otu25"
+}, 
+"node56": {
+"@otu": "otu26"
+}, 
+"node57": {
+"@otu": "otu27"
+}, 
+"node58": {
+"@otu": "otu28"
+}, 
+"node59": {}, 
+"node6": {
+"@otu": "otu3"
+}, 
+"node60": {
+"@otu": "otu29"
+}, 
+"node61": {
+"@otu": "otu30"
+}, 
+"node62": {}, 
+"node63": {
+"@otu": "otu31", 
+"^ot:isTaxonExemplar": true
+}, 
+"node64": {
+"@otu": "otu32", 
+"^ot:isTaxonExemplar": false
+}, 
+"node65": {
+"@otu": "otu33"
+}, 
+"node7": {}, 
+"node8": {}, 
+"node9": {}
+}
+}
+}
+}
+}
+}
+}

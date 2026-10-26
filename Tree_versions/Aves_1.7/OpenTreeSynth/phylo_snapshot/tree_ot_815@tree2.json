@@ -1,0 +1,332 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.9"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-09-26T20:17:17.607Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-09-26T20:17:17.607Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre", 
+"@size": 161, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.bd7da6cb0f62d9e0.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}, 
+{
+"@filename": "PASTED.tre", 
+"@size": 175, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.b0391a2e2927d308.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree2'"
+}, 
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree2"
+], 
+"^ot:comment": "tree only show topology, no dryad found for this study.\ntree from Davis 2014.", 
+"^ot:curatorName": [
+"ningwang83", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 107064, 
+"^ot:focalCladeOTTTaxonName": "Sericulus", 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_815", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2007.11.019"
+}, 
+"^ot:studyPublicationReference": "Zwiers, Paul B., Gerald Borgia, Robert C. Fleischer. 2008. Plumage based classification of the bowerbird genus Sericulus evaluated using a multi-gene, multi-genome analysis. Molecular Phylogenetics and Evolution 46 (3): 923-931", 
+"^ot:studyYear": 2008, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Malurus leucopterus", 
+"^ot:ottId": 168421, 
+"^ot:ottTaxonName": "Malurus leucopterus"
+}, 
+"otu2": {
+"^ot:originalLabel": "Xanthotis flaviventer", 
+"^ot:ottId": 376608, 
+"^ot:ottTaxonName": "Xanthotis flaviventer"
+}, 
+"otu3": {
+"^ot:originalLabel": "Ailuroedus dentirostris", 
+"^ot:ottId": 776465, 
+"^ot:ottTaxonName": "Scenopoeetes dentirostris"
+}, 
+"otu4": {
+"^ot:originalLabel": "Ptilonorhynchus violaceus", 
+"^ot:ottId": 187409, 
+"^ot:ottTaxonName": "Ptilonorhynchus violaceus"
+}, 
+"otu5": {
+"^ot:originalLabel": "Sericulus chrysocephalus", 
+"^ot:ottId": 107065, 
+"^ot:ottTaxonName": "Sericulus chrysocephalus"
+}, 
+"otu6": {
+"^ot:originalLabel": "Sericulus aureus", 
+"^ot:ottId": 446286, 
+"^ot:ottTaxonName": "Sericulus aureus"
+}, 
+"otu7": {
+"^ot:originalLabel": "Sericulus bakeri", 
+"^ot:ottId": 446287, 
+"^ot:ottTaxonName": "Sericulus bakeri"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree2"
+], 
+"treeById": {
+"tree2": {
+"@label": "Fig. 1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node16", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:posteriorSupport", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node13", 
+"^ot:specifiedRoot": "node13", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node13": {
+"edge12": {
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge13": {
+"@source": "node13", 
+"@target": "node15"
+}, 
+"edge14": {
+"@source": "node13", 
+"@target": "node16", 
+"^ot:posteriorSupport": 1
+}
+}, 
+"node16": {
+"edge15": {
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge16": {
+"@source": "node16", 
+"@target": "node18", 
+"^ot:posteriorSupport": 1
+}
+}, 
+"node18": {
+"edge17": {
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge18": {
+"@source": "node18", 
+"@target": "node20", 
+"^ot:posteriorSupport": 0.98
+}
+}, 
+"node20": {
+"edge19": {
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge20": {
+"@source": "node20", 
+"@target": "node22", 
+"^ot:posteriorSupport": 0.67
+}
+}, 
+"node22": {
+"edge21": {
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge22": {
+"@source": "node22", 
+"@target": "node24"
+}
+}
+}, 
+"nodeById": {
+"node13": {
+"@root": true
+}, 
+"node14": {
+"@otu": "otu1"
+}, 
+"node15": {
+"@otu": "otu2"
+}, 
+"node16": {}, 
+"node17": {
+"@otu": "otu3"
+}, 
+"node18": {}, 
+"node19": {
+"@otu": "otu4"
+}, 
+"node20": {}, 
+"node21": {
+"@otu": "otu5"
+}, 
+"node22": {}, 
+"node23": {
+"@otu": "otu6"
+}, 
+"node24": {
+"@otu": "otu7"
+}
+}
+}
+}
+}
+}
+}
+}

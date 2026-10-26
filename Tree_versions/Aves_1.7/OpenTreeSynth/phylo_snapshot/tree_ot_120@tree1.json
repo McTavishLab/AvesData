@@ -1,0 +1,558 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-07-31T21:18:53.299Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-31T21:18:53.299Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 109893, 
+"^ot:focalCladeOTTTaxonName": "Cracidae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_120", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1642/0004-8038(2004)121[0682:vsocac]2.0.co;2"
+}, 
+"^ot:studyPublicationReference": "Pereira, S\u00e9rgio Luiz, Allan J. Baker. 2004. Vicariant speciation of curassows (Aves, Cracidae): a hypothesis based on mitochondrial DNA phylogeny. The Auk 121 (3): 682-694.", 
+"^ot:studyYear": 2004, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Crax fasciolata", 
+"^ot:ottId": 654699, 
+"^ot:ottTaxonName": "Crax fasciolata"
+}, 
+"otu10": {
+"^ot:originalLabel": "Mitu salvini", 
+"^ot:ottId": 786420, 
+"^ot:ottTaxonName": "Mitu salvini"
+}, 
+"otu11": {
+"^ot:originalLabel": "Mitu mitu", 
+"^ot:ottId": 385229, 
+"^ot:ottTaxonName": "Mitu mitu"
+}, 
+"otu12": {
+"^ot:originalLabel": "Mitu tomentosum", 
+"^ot:ottId": 571014, 
+"^ot:ottTaxonName": "Mitu tomentosum"
+}, 
+"otu13": {
+"^ot:originalLabel": "Pauxi pauxi", 
+"^ot:ottId": 1014138, 
+"^ot:ottTaxonName": "Pauxi pauxi"
+}, 
+"otu14": {
+"^ot:originalLabel": "Nothocrax urumutum", 
+"^ot:ottId": 488148, 
+"^ot:ottTaxonName": "Nothocrax urumutum"
+}, 
+"otu15": {
+"^ot:originalLabel": "Ortalis canicollis", 
+"^ot:ottId": 488158, 
+"^ot:ottTaxonName": "Ortalis canicollis"
+}, 
+"otu16": {
+"^ot:originalLabel": "Penelope obscura", 
+"^ot:ottId": 1014136, 
+"^ot:ottTaxonName": "Penelope obscura"
+}, 
+"otu17": {
+"^ot:originalLabel": "Aburria aburri", 
+"^ot:ottId": 963344, 
+"^ot:ottTaxonName": "Aburria aburri"
+}, 
+"otu18": {
+"^ot:originalLabel": "Chamaepetes goudotii", 
+"^ot:ottId": 488154, 
+"^ot:ottTaxonName": "Chamaepetes goudotii"
+}, 
+"otu2": {
+"^ot:originalLabel": "Crax alector", 
+"^ot:ottId": 654722, 
+"^ot:ottTaxonName": "Crax alector"
+}, 
+"otu3": {
+"^ot:originalLabel": "Crax blumenbachii", 
+"^ot:ottId": 488156, 
+"^ot:ottTaxonName": "Crax blumenbachii"
+}, 
+"otu4": {
+"^ot:originalLabel": "Crax globulosa", 
+"^ot:ottId": 654700, 
+"^ot:ottTaxonName": "Crax globulosa"
+}, 
+"otu5": {
+"^ot:originalLabel": "Crax alberti", 
+"^ot:ottId": 654721, 
+"^ot:ottTaxonName": "Crax alberti"
+}, 
+"otu6": {
+"^ot:originalLabel": "Crax daubentoni", 
+"^ot:ottId": 654723, 
+"^ot:ottTaxonName": "Crax daubentoni"
+}, 
+"otu7": {
+"^ot:originalLabel": "Crax rubra", 
+"^ot:ottId": 132829, 
+"^ot:ottTaxonName": "Crax rubra"
+}, 
+"otu8": {
+"^ot:originalLabel": "Pauxi unicornis", 
+"^ot:ottId": 786422, 
+"^ot:ottTaxonName": "Pauxi unicornis"
+}, 
+"otu9": {
+"^ot:originalLabel": "Mitu tuberosum", 
+"^ot:ottId": 488151, 
+"^ot:ottTaxonName": "Mitu tuberosum"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Fig. 5b", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node3", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageudb80c027-00fe-46f9-8dc1-591dbd7f0471", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 309, 
+"@sourceForTree": "tree1", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=udb80c027-00fe-46f9-8dc1-591dbd7f0471", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:nearestTaxonMRCAName": "Cracidae", 
+"^ot:nearestTaxonMRCAOttId": "109893", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge30": {
+"@source": "node1", 
+"@target": "node31"
+}
+}, 
+"node12": {
+"edge12": {
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge15": {
+"@source": "node12", 
+"@target": "node16"
+}
+}, 
+"node13": {
+"edge13": {
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge14": {
+"@source": "node13", 
+"@target": "node15"
+}
+}, 
+"node17": {
+"edge17": {
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge28": {
+"@source": "node17", 
+"@target": "node29"
+}
+}, 
+"node18": {
+"edge18": {
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge27": {
+"@source": "node18", 
+"@target": "node28"
+}
+}, 
+"node19": {
+"edge19": {
+"@source": "node19", 
+"@target": "node20"
+}, 
+"edge24": {
+"@source": "node19", 
+"@target": "node25"
+}
+}, 
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge29": {
+"@source": "node2", 
+"@target": "node30"
+}
+}, 
+"node20": {
+"edge20": {
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge23": {
+"@source": "node20", 
+"@target": "node24"
+}
+}, 
+"node21": {
+"edge21": {
+"@source": "node21", 
+"@target": "node22"
+}, 
+"edge22": {
+"@source": "node21", 
+"@target": "node23"
+}
+}, 
+"node25": {
+"edge25": {
+"@source": "node25", 
+"@target": "node26"
+}, 
+"edge26": {
+"@source": "node25", 
+"@target": "node27"
+}
+}, 
+"node3": {
+"edge16": {
+"@source": "node3", 
+"@target": "node17"
+}, 
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node31": {
+"edge31": {
+"@source": "node31", 
+"@target": "node32"
+}, 
+"edge34": {
+"@source": "node31", 
+"@target": "node35"
+}
+}, 
+"node32": {
+"edge32": {
+"@source": "node32", 
+"@target": "node33"
+}, 
+"edge33": {
+"@source": "node32", 
+"@target": "node34"
+}
+}, 
+"node4": {
+"edge11": {
+"@source": "node4", 
+"@target": "node12"
+}, 
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node5": {
+"edge10": {
+"@source": "node5", 
+"@target": "node11"
+}, 
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node6": {
+"edge6": {
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge9": {
+"@source": "node6", 
+"@target": "node10"
+}
+}, 
+"node7": {
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@source": "node7", 
+"@target": "node9"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu3"
+}, 
+"node11": {
+"@otu": "otu4"
+}, 
+"node12": {}, 
+"node13": {}, 
+"node14": {
+"@otu": "otu5"
+}, 
+"node15": {
+"@otu": "otu6"
+}, 
+"node16": {
+"@otu": "otu7"
+}, 
+"node17": {}, 
+"node18": {}, 
+"node19": {}, 
+"node2": {}, 
+"node20": {}, 
+"node21": {}, 
+"node22": {
+"@otu": "otu8"
+}, 
+"node23": {
+"@otu": "otu9"
+}, 
+"node24": {
+"@otu": "otu10"
+}, 
+"node25": {}, 
+"node26": {
+"@otu": "otu11"
+}, 
+"node27": {
+"@otu": "otu12"
+}, 
+"node28": {
+"@otu": "otu13"
+}, 
+"node29": {
+"@otu": "otu14"
+}, 
+"node3": {}, 
+"node30": {
+"@otu": "otu15"
+}, 
+"node31": {}, 
+"node32": {}, 
+"node33": {
+"@otu": "otu16"
+}, 
+"node34": {
+"@otu": "otu17"
+}, 
+"node35": {
+"@otu": "otu18"
+}, 
+"node4": {}, 
+"node5": {}, 
+"node6": {}, 
+"node7": {}, 
+"node8": {
+"@otu": "otu1"
+}, 
+"node9": {
+"@otu": "otu2"
+}
+}
+}
+}
+}
+}
+}
+}

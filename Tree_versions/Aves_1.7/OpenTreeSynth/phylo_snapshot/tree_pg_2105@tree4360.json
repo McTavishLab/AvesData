@@ -1,0 +1,683 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [
+"--embed", 
+"--agent-only"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-07-13T21:17:45.248Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-07-13T21:17:45.248Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree4360"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11933"
+}, 
+"^ot:focalClade": 1041547, 
+"^ot:focalCladeOTTTaxonName": "Passeriformes", 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus2105"
+], 
+"^ot:studyId": "pg_2105", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1206/0003-0082(2006)3511[1:ANSOBF]2.0.CO;2"
+}, 
+"^ot:studyPublicationReference": "Lecroy, Mary, F. Keith Barker. 2006. New species of bush-warbler from Bougainville Island and a monophyletic origin for southwest Pacific Cettia. American Museum Novitates 3511: 1-20.", 
+"^ot:studyYear": 2006, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees2105"
+], 
+"otusById": {
+"otus2105": {
+"otuById": {
+"otu312398": {
+"^ot:originalLabel": "Cettia diphone 5 AB159195", 
+"^ot:ottId": 1076190, 
+"^ot:ottTaxonName": "Cettia diphone", 
+"^ot:treebaseOTUId": "Tl626120"
+}, 
+"otu312399": {
+"^ot:originalLabel": "Cettia annae AMNH332080 DQ288970", 
+"^ot:ottId": 721920, 
+"^ot:ottTaxonName": "Cettia annae", 
+"^ot:treebaseOTUId": "Tl626121"
+}, 
+"otu312400": {
+"^ot:originalLabel": "Cettia cetti 4 AJ004798", 
+"^ot:ottId": 1010418, 
+"^ot:ottTaxonName": "Cettia cetti", 
+"^ot:treebaseOTUId": "Tl626122"
+}, 
+"otu312401": {
+"^ot:originalLabel": "Cettia cetti 1 AJ004313", 
+"^ot:ottId": 1010418, 
+"^ot:ottTaxonName": "Cettia cetti", 
+"^ot:treebaseOTUId": "Tl626123"
+}, 
+"otu312402": {
+"^ot:originalLabel": "Cettia haddeni AMNH836189 DQ066451", 
+"^ot:ottId": 743801, 
+"^ot:ottTaxonName": "Cettia haddeni", 
+"^ot:treebaseOTUId": "Tl626124"
+}, 
+"otu312403": {
+"^ot:originalLabel": "Cettia cetti 3 AJ004311", 
+"^ot:ottId": 1010418, 
+"^ot:ottTaxonName": "Cettia cetti", 
+"^ot:treebaseOTUId": "Tl626125"
+}, 
+"otu312404": {
+"^ot:originalLabel": "Psaltriparus minimus AF074597", 
+"^ot:ottId": 1058772, 
+"^ot:ottTaxonName": "Psaltriparus minimus", 
+"^ot:treebaseOTUId": "Tl626126"
+}, 
+"otu312405": {
+"^ot:originalLabel": "Cettia diphone 7 D38315", 
+"^ot:ottId": 1076190, 
+"^ot:ottTaxonName": "Cettia diphone", 
+"^ot:treebaseOTUId": "Tl626127"
+}, 
+"otu312406": {
+"^ot:originalLabel": "Cettia diphone 2 AB159198", 
+"^ot:ottId": 1076190, 
+"^ot:ottTaxonName": "Cettia diphone", 
+"^ot:treebaseOTUId": "Tl626128"
+}, 
+"otu312407": {
+"^ot:originalLabel": "Cettia parens AMNH228061 DQ288966", 
+"^ot:ottId": 147444, 
+"^ot:ottTaxonName": "Cettia parens", 
+"^ot:treebaseOTUId": "Tl626129"
+}, 
+"otu312408": {
+"^ot:originalLabel": "Cettia diphone 6 AB159194", 
+"^ot:ottId": 1076190, 
+"^ot:ottTaxonName": "Cettia diphone", 
+"^ot:treebaseOTUId": "Tl626130"
+}, 
+"otu312409": {
+"^ot:originalLabel": "Urosphena squameiceps 2 AB159177", 
+"^ot:ottId": 699766, 
+"^ot:ottTaxonName": "Urosphena squameiceps", 
+"^ot:treebaseOTUId": "Tl626131"
+}, 
+"otu312410": {
+"^ot:originalLabel": "Cettia diphone 4 AB159196", 
+"^ot:ottId": 1076190, 
+"^ot:ottTaxonName": "Cettia diphone", 
+"^ot:treebaseOTUId": "Tl626132"
+}, 
+"otu312411": {
+"^ot:originalLabel": "Aegithalos caudatus AB159169", 
+"^ot:ottId": 467867, 
+"^ot:ottTaxonName": "Aegithalos caudatus", 
+"^ot:treebaseOTUId": "Tl626133"
+}, 
+"otu312412": {
+"^ot:originalLabel": "Cettia diphone 3 AB159197", 
+"^ot:ottId": 1076190, 
+"^ot:ottTaxonName": "Cettia diphone", 
+"^ot:treebaseOTUId": "Tl626134"
+}, 
+"otu312413": {
+"^ot:originalLabel": "Cettia ruficapilla AMNH251968 DQ288969", 
+"^ot:ottId": 721919, 
+"^ot:ottTaxonName": "Cettia ruficapilla", 
+"^ot:treebaseOTUId": "Tl626135"
+}, 
+"otu312414": {
+"^ot:originalLabel": "Urosphena squameiceps 3 AB159179", 
+"^ot:ottId": 699766, 
+"^ot:ottTaxonName": "Urosphena squameiceps", 
+"^ot:treebaseOTUId": "Tl626136"
+}, 
+"otu312415": {
+"^ot:originalLabel": "Cettia annae AMNH332081 DQ288971", 
+"^ot:ottId": 721920, 
+"^ot:ottTaxonName": "Cettia annae", 
+"^ot:treebaseOTUId": "Tl626137"
+}, 
+"otu312416": {
+"^ot:originalLabel": "Urosphena squameiceps 1 AB159178", 
+"^ot:ottId": 699766, 
+"^ot:ottTaxonName": "Urosphena squameiceps", 
+"^ot:treebaseOTUId": "Tl626138"
+}, 
+"otu312417": {
+"^ot:originalLabel": "Cettia parens AMNH228065 DQ288967", 
+"^ot:ottId": 147444, 
+"^ot:ottTaxonName": "Cettia parens", 
+"^ot:treebaseOTUId": "Tl626139"
+}, 
+"otu312418": {
+"^ot:originalLabel": "Cettia diphone 1 AB159199", 
+"^ot:ottId": 1076190, 
+"^ot:ottTaxonName": "Cettia diphone", 
+"^ot:treebaseOTUId": "Tl626140"
+}, 
+"otu312419": {
+"^ot:originalLabel": "Cettia ruficapilla AMNH224390 DQ288968", 
+"^ot:ottId": 721919, 
+"^ot:ottTaxonName": "Cettia ruficapilla", 
+"^ot:treebaseOTUId": "Tl626141"
+}, 
+"otu312420": {
+"^ot:originalLabel": "Cettia cetti 2 AJ004312", 
+"^ot:ottId": 1010418, 
+"^ot:ottTaxonName": "Cettia cetti", 
+"^ot:treebaseOTUId": "Tl626142"
+}, 
+"otu312421": {
+"^ot:originalLabel": "Cettia fortipes L77122", 
+"^ot:ottId": 903277, 
+"^ot:ottTaxonName": "Cettia fortipes", 
+"^ot:treebaseOTUId": "Tl626143"
+}
+}
+}
+}, 
+"treesById": {
+"trees2105": {
+"@otus": "otus2105", 
+"^ot:treeElementOrder": [
+"tree4360"
+], 
+"treeById": {
+"tree4360": {
+"@label": "Fig. 7", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node795770", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node795763", 
+"^ot:specifiedRoot": "node795763", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node795763": {
+"edge795764": {
+"@length": 0.092619, 
+"@source": "node795763", 
+"@target": "node795764"
+}, 
+"edge795805": {
+"@length": 0.140947, 
+"@source": "node795763", 
+"@target": "node795805"
+}, 
+"edge795806": {
+"@length": 0.122934, 
+"@source": "node795763", 
+"@target": "node795806"
+}
+}, 
+"node795764": {
+"edge795765": {
+"@length": 0.04705, 
+"@source": "node795764", 
+"@target": "node795765"
+}, 
+"edge795770": {
+"@length": 0.007643, 
+"@source": "node795764", 
+"@target": "node795770"
+}
+}, 
+"node795765": {
+"edge795766": {
+"@length": 0.000412, 
+"@source": "node795765", 
+"@target": "node795766"
+}, 
+"edge795769": {
+"@length": 0.002848, 
+"@source": "node795765", 
+"@target": "node795769"
+}
+}, 
+"node795766": {
+"edge795767": {
+"@length": 0.004903, 
+"@source": "node795766", 
+"@target": "node795767"
+}, 
+"edge795768": {
+"@source": "node795766", 
+"@target": "node795768"
+}
+}, 
+"node795770": {
+"edge795771": {
+"@length": 0.158841, 
+"@source": "node795770", 
+"@target": "node795771"
+}, 
+"edge795778": {
+"@length": 0.027638, 
+"@source": "node795770", 
+"@target": "node795778"
+}
+}, 
+"node795771": {
+"edge795772": {
+"@source": "node795771", 
+"@target": "node795772"
+}, 
+"edge795777": {
+"@source": "node795771", 
+"@target": "node795777"
+}
+}, 
+"node795772": {
+"edge795773": {
+"@source": "node795772", 
+"@target": "node795773"
+}, 
+"edge795776": {
+"@length": 0.044119, 
+"@source": "node795772", 
+"@target": "node795776"
+}
+}, 
+"node795773": {
+"edge795774": {
+"@length": 0.018457, 
+"@source": "node795773", 
+"@target": "node795774"
+}, 
+"edge795775": {
+"@source": "node795773", 
+"@target": "node795775"
+}
+}, 
+"node795778": {
+"edge795779": {
+"@length": 0.080997, 
+"@source": "node795778", 
+"@target": "node795779"
+}, 
+"edge795780": {
+"@length": 0.039731, 
+"@source": "node795778", 
+"@target": "node795780"
+}
+}, 
+"node795780": {
+"edge795781": {
+"@length": 0.012758, 
+"@source": "node795780", 
+"@target": "node795781"
+}, 
+"edge795792": {
+"@length": 0.008844, 
+"@source": "node795780", 
+"@target": "node795792"
+}
+}, 
+"node795781": {
+"edge795782": {
+"@length": 0.014027, 
+"@source": "node795781", 
+"@target": "node795782"
+}, 
+"edge795785": {
+"@length": 0.017643, 
+"@source": "node795781", 
+"@target": "node795785"
+}
+}, 
+"node795782": {
+"edge795783": {
+"@source": "node795782", 
+"@target": "node795783"
+}, 
+"edge795784": {
+"@source": "node795782", 
+"@target": "node795784"
+}
+}, 
+"node795785": {
+"edge795786": {
+"@source": "node795785", 
+"@target": "node795786"
+}, 
+"edge795787": {
+"@length": 0.001632, 
+"@source": "node795785", 
+"@target": "node795787"
+}
+}, 
+"node795787": {
+"edge795788": {
+"@source": "node795787", 
+"@target": "node795788"
+}, 
+"edge795789": {
+"@length": 0.001628, 
+"@source": "node795787", 
+"@target": "node795789"
+}, 
+"edge795790": {
+"@source": "node795787", 
+"@target": "node795790"
+}, 
+"edge795791": {
+"@length": 0.003318, 
+"@source": "node795787", 
+"@target": "node795791"
+}
+}, 
+"node795792": {
+"edge795793": {
+"@length": 0.004362, 
+"@source": "node795792", 
+"@target": "node795793"
+}, 
+"edge795802": {
+"@length": 0.019287, 
+"@source": "node795792", 
+"@target": "node795802"
+}
+}, 
+"node795793": {
+"edge795794": {
+"@length": 0.004894, 
+"@source": "node795793", 
+"@target": "node795794"
+}, 
+"edge795799": {
+"@length": 0.022281, 
+"@source": "node795793", 
+"@target": "node795799"
+}
+}, 
+"node795794": {
+"edge795795": {
+"@length": 0.025578, 
+"@source": "node795794", 
+"@target": "node795795"
+}, 
+"edge795796": {
+"@length": 0.018732, 
+"@source": "node795794", 
+"@target": "node795796"
+}
+}, 
+"node795796": {
+"edge795797": {
+"@source": "node795796", 
+"@target": "node795797"
+}, 
+"edge795798": {
+"@length": 0.001617, 
+"@source": "node795796", 
+"@target": "node795798"
+}
+}, 
+"node795799": {
+"edge795800": {
+"@source": "node795799", 
+"@target": "node795800"
+}, 
+"edge795801": {
+"@source": "node795799", 
+"@target": "node795801"
+}
+}, 
+"node795802": {
+"edge795803": {
+"@length": 0.003326, 
+"@source": "node795802", 
+"@target": "node795803"
+}, 
+"edge795804": {
+"@length": 0.001587, 
+"@source": "node795802", 
+"@target": "node795804"
+}
+}
+}, 
+"nodeById": {
+"node795763": {
+"@root": true
+}, 
+"node795764": {}, 
+"node795765": {}, 
+"node795766": {}, 
+"node795767": {
+"@otu": "otu312416", 
+"^ot:isTaxonExemplar": true
+}, 
+"node795768": {
+"@otu": "otu312409", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795769": {
+"@otu": "otu312414", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795770": {}, 
+"node795771": {}, 
+"node795772": {}, 
+"node795773": {}, 
+"node795774": {
+"@otu": "otu312401", 
+"^ot:isTaxonExemplar": true
+}, 
+"node795775": {
+"@otu": "otu312420", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795776": {
+"@otu": "otu312400", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795777": {
+"@otu": "otu312403", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795778": {}, 
+"node795779": {
+"@otu": "otu312421"
+}, 
+"node795780": {}, 
+"node795781": {}, 
+"node795782": {}, 
+"node795783": {
+"@otu": "otu312418", 
+"^ot:isTaxonExemplar": true
+}, 
+"node795784": {
+"@otu": "otu312406", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795785": {}, 
+"node795786": {
+"@otu": "otu312412", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795787": {}, 
+"node795788": {
+"@otu": "otu312410", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795789": {
+"@otu": "otu312398", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795790": {
+"@otu": "otu312408", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795791": {
+"@otu": "otu312405", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795792": {}, 
+"node795793": {}, 
+"node795794": {}, 
+"node795795": {
+"@otu": "otu312402"
+}, 
+"node795796": {}, 
+"node795797": {
+"@otu": "otu312419", 
+"^ot:isTaxonExemplar": true
+}, 
+"node795798": {
+"@otu": "otu312413", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795799": {}, 
+"node795800": {
+"@otu": "otu312407", 
+"^ot:isTaxonExemplar": true
+}, 
+"node795801": {
+"@otu": "otu312417", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795802": {}, 
+"node795803": {
+"@otu": "otu312399", 
+"^ot:isTaxonExemplar": true
+}, 
+"node795804": {
+"@otu": "otu312415", 
+"^ot:isTaxonExemplar": false
+}, 
+"node795805": {
+"@otu": "otu312411"
+}, 
+"node795806": {
+"@otu": "otu312404"
+}
+}
+}
+}
+}
+}
+}
+}
